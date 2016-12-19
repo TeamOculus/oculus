@@ -8,13 +8,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer.component';
 import { HeaderComponent } from './header.component';
+import { RiftComponent } from './rift/rift.component';
+import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    RiftComponent,
+    RiftReadyComponent,
   ],
   imports: [
     BrowserModule,
