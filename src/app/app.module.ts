@@ -10,6 +10,7 @@ import { FooterComponent } from './footer.component';
 import { HeaderComponent } from './header.component';
 import { RiftComponent } from './rift/rift.component';
 import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
     HeaderComponent,
     RiftComponent,
     RiftReadyComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
