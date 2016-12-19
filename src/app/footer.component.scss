@@ -1,5 +1,6 @@
-
-// Top Part of Footer
+// ~~~~~~~~~~~~~~~~~ //
+// 		Site Map     //
+// ~~~~~~~~~~~~~~~~~ //
 .bxPageSiteMap {
     background: #1b1d1f;
 	border-top: 1px solid #323436;
@@ -84,7 +85,6 @@
     padding: 12px 0;
     font-family: "Oculus Sans", "Arial", "Helvetica", sans-serif;
 }
-
 .bxPageSiteMap__listItem {
     font-weight: 400;
 }
@@ -97,8 +97,10 @@
 }
 
 
-// Bottom Footer
-.bxPageFooter {
+// ~~~~~~~~~~~~~~~~~ //
+// 		Footer       //
+// ~~~~~~~~~~~~~~~~~ //
+.footer-wrapper {
     background: #16181a;
 	color: #777879;
 	box-sizing: border-box;
@@ -110,19 +112,23 @@
 	padding: 24px 32px;
 	position: relative;
 	z-index: 100;
+	line-height: 24px;
 }
-.bxPageFooter__content {
+.footer-wrapper ul {
+	margin: 0;
+}
+.footer-content {
 	margin: 0 auto;
 	max-width: 1260px;
 }
 
-// Left
-.bxPageFooter__left {
+// Left Side
+.footer-left {
 	display: inline-block;
 	margin-right: 8px;
 	vertical-align: top;
 }
-div._5f6c {
+div.footer-logo {
 	background-image: url('../assets/images/footer-content.png');
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -133,20 +139,20 @@ div._5f6c {
 	width: 161px;
 }
 
-// Right
-.bxPageFooter__right {
+// Right Side
+.footer-right {
 	float: right;
 	padding: 4px 0 0 0;
 }
-._5f6b {
+.footer-copyright {
 	display: inline-block;
 	padding: 0 16px;
-    font-family: "Oculus Sans";
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 24px;
+    font-family: "Oculus Sans Bold";
+	line-height: 24px
 }
-.bxPageFooter__nav {
+
+// Footer Main Nav
+.footer-main-nav {
 	display: inline-block;
 	font-weight: 400;
 	height: 32px;
@@ -154,13 +160,13 @@ div._5f6c {
 	margin: 0;
 	padding: 0;
 }
-.bxPageFooter__navItem {
+.footer-main-navItem {
 	display: inline-block;
 	margin: 0;
 	vertical-align: top;
     font-family: "Oculus Sans";
 }
-.bxPageFooter__navLink {
+.footer-navLink {
 	color: #777879;
 	display: inline-block;
 	height: 32px;
@@ -168,13 +174,13 @@ div._5f6c {
 	text-decoration: none;
 	transition: opacity 500ms;
 }
-.bxPageFooter__navLink:hover, .bxPageFooter__navLink:focus {
+.footer-navLink:hover, .footer-navLink:focus {
 	color: #fff;
 	transition: none;
 }
 
-// Socials
-.bxPageFooter__socialNav {
+// Footer Socials Nav
+.footer-socials-nav{
 	display: inline-block;
 	height: 32px;
 	list-style: none;
@@ -182,12 +188,12 @@ div._5f6c {
 	padding: 0;
 	text-align: right;
 }
-.bxPageFooter__socialNavItem {
+.footer-socials-navItem {
 	display: inline-block;
 	margin: 0;
 	vertical-align: top;
 }
-.bxIcon24SocialMedia {
+.footer-socials-icons {
     background: url('../assets/images/footer-icons.png') no-repeat 0 0;
 	color: rgba(50, 52, 54, 0);
 	display: inline-block;
@@ -199,25 +205,25 @@ div._5f6c {
 	vertical-align: bottom;
 	width: 24px;
 }
-.bxPageFooter__socialNavItem .bxIcon24SocialMedia {
+.footer-socials-navItem .footer-socials-icons {
 	margin-right: 8px;
 	opacity: .4;
 }
-.bxPageFooter__socialNavItem .bxIcon24SocialMedia:hover, .bxPageFooter__socialNavItem .bxIcon24SocialMedia:focus {
+.footer-socials-navItem .footer-socials-icons:hover, .footer-socials-navItem .footer-socials-icons:focus {
 	opacity: 1;
 }
-.bxIcon24SocialMedia--fb-white {
+.footer-socials-icons--fb-white {
     background-position: -72px 0;
 }
-.bxIcon24SocialMedia--instagram-white {
+.footer-socials-icons--instagram-white {
     background-position: -72px -48px;
 }
-.bxIcon24SocialMedia--twitter-white {
+.footer-socials-icons--twitter-white {
     background-position: -72px -24px;
 }
-.bxIcon24SocialMedia--youtube-white {
+.footer-socials-icons--youtube-white {
     background-position: -72px -72px;
 }
-.bxIcon24SocialMedia--twitch-white {
+.footer-socials-icons--twitch-white {
     background-position: -72px -120px;
 }
