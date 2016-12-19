@@ -18,16 +18,16 @@
                     </ul>-->
                 </li>
                 <li class="header-link">
-                    <a class="header-link-a" [routerLink]="['']">Gear VR</a>
+                    <a class="header-link-a" [routerLink]="['gear-vr']">Gear VR</a>
                 </li>
                 <li class="header-link">
-                    <a class="header-link-a" [routerLink]="['']">Experiences</a>
+                    <a class="header-link-a" [routerLink]="['experiences']">Experiences</a>
                 </li>
                 <li class="header-link">
-                    <a class="header-link-a" [routerLink]="['']">Developers</a>
+                    <a class="header-link-a" [routerLink]="['developers']">Developers</a>
                 </li>
                 <li class="header-link">
-                    <a class="header-link-a" [routerLink]="['']">Blog</a>
+                    <a class="header-link-a" [routerLink]="['blog']">Blog</a>
                 </li>
             </ul>
 
@@ -36,10 +36,10 @@
             </div>
 
             <div class="header-account">
-                <a class="account-cart">
+                <a class="account-cart" [routerLink]="['cart']">
                     <div class="cart-logo"></div>
                 </a>
-                <a class="login" href="#">Login</a>
+                <a class="login" [routerLink]="['login']">Login</a>
             </div>
         </div>
       </div>

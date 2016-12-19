@@ -10,6 +10,12 @@ import { FooterComponent } from './footer.component';
 import { HeaderComponent } from './header.component';
 import { RiftComponent } from './rift/rift.component';
 import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
+import { BlogComponent } from './blog/blog.component';
+import { GearVrComponent } from './gear-vr/gear-vr.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { DevelopersComponent } from './developers/developers.component';
+import { CartComponent } from './cart/cart.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -20,6 +26,12 @@ import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
     HeaderComponent,
     RiftComponent,
     RiftReadyComponent,
+    BlogComponent,
+    GearVrComponent,
+    ExperiencesComponent,
+    DevelopersComponent,
+    CartComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
