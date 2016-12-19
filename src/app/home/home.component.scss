@@ -249,7 +249,98 @@
     font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
 }
 
-
+// ~~~~~~~~~~~~~~~~~ //
+// 		Section 4    //
+// ~~~~~~~~~~~~~~~~~ //
+.content4 {
+    display: inline-block;
+	height: 100%;
+	margin: 0 auto;
+	width: 100%;
+}
+.content4-top {
+    position: absolute;
+	top: -70px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.6;
+}
+.content4-top-img {
+    width: 100%;
+    background-position: center center;
+	background-size: cover;
+	height: 100%;
+	background-image: url('../../assets/images/home-content4-img.jpg');
+}
+.content4-center {
+    display: block;
+	margin-bottom: 24px;
+	margin-top: 24px;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+.content4-center-div {
+    opacity: 1;
+	transform: translate(0px, 0px);
+	transition: opacity 1000ms, transform 1000ms;
+}
+.content4-center-textbox {
+    visibility: visible;
+}
+.content4-center-h2 {
+    display: block;
+	font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+	margin-bottom: .5rem;
+    margin-top: 0;
+    font-size: 30px;
+	font-weight: 100;
+	line-height: 38px;
+    color: #fff;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.content4-center-p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    -webkit-font-smoothing: subpixel-antialiased;
+    display: block;
+	font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+}
+.content4-center-a {
+    background: none;
+	border: 2px solid #1c1e20;
+	border-radius: 24px;
+    border-color: #fff;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	height: 48px;
+	line-height: 28px;
+	min-width: 48px;
+	overflow: hidden;
+	padding: 8px 40px;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	transition: background-color 500ms, border-color 500ms, opacity 500ms;
+	-webkit-user-select: none;
+	vertical-align: bottom;
+	white-space: nowrap;
+	width: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.content4-center-a:hover {
+    background: #fff;
+	border-color: #fff;
+	color: #323436;
+}
 
 // ~~~~~~~~~~~~~~~~~ //
 // 	 Media Queries   //
