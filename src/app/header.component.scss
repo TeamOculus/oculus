@@ -2,7 +2,6 @@
     height: 60px;
     background-color: #1c1e20;
 }
-
 .header-main {
     list-style: none;
 	margin: 0;
@@ -14,6 +13,7 @@
     position: relative;
 }
 
+// Logo
 .header-logo {
     position: absolute;
 }
@@ -34,13 +34,13 @@
 	width: 52px;
 }
 
+// Main Links
 .header-links {
     margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
 }
-
 .header-link {
     display: inline-block;
     font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
@@ -60,27 +60,75 @@
 .header-link-a:hover, .header-link-a:focus {
     color: #777879;
 }
-// .header-dropdown-links {
-//     margin: 0;
-//     background: rgba(255, 255, 255, .85);
-// 	display: none;
-// 	left: 0;
-// 	position: absolute;
-//     padding: 0;
-// 	text-align: center;
-// 	width: 100%;
-//     list-style-type: none;
-// }
-// .header-dropdown-link {
-//     display: inline-block;
-// 	font-weight: 600;
-// 	margin: 0 11px;
-// 	padding: 0 10px;
-//     -webkit-font-smoothing: antialiased;
-//     text-align: -webkit-match-parent;
-// }
 
 
+// Hamburger Menu
+.hamburger-menu {
+    display: none;
+    position: absolute;
+	right: 0;
+	top: 0;
+}
+.hamburger {
+    bottom: 0;
+	height: 30px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 30px;
+}
+.burger-button {
+    -webkit-appearance: none;
+	background: 0 0;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	cursor: pointer;
+	display: block;
+	font-size: 0;
+	height: 30px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-indent: -9999px;
+	transition: background .3s;
+	width: 30px;
+    font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+    text-transform: none;
+}
+.burger-button span {
+    background: #fff;
+	display: block;
+	height: 3px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+.burger-button span:before {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    top: -8px;
+}
+.burger-button span:after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    bottom: -8px;
+}
+
+
+// Cart & Login
 .header-account {
     line-height: 60px;
 	margin-right: 28px;
@@ -120,8 +168,151 @@
 }
 
 
+// Dropdown Menu from Hamburger
+.dropdown {
+    background-color: #16181a;
+	bottom: 0;
+	display: block;
+	max-width: 0;
+	overflow: hidden;
+	padding-top: 48px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: max-width .4s ease-out;
+	width: 70%;
+	z-index: 1000;
+}
+.dropdown-x {
+    display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.dropdown-x-a {
+    text-decoration: none;
+    color: #8d8e8f;
+    transition: color 250ms;
+    background: transparent;
+}
+.dropdown-x-icon {
+    background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/3CGuWj4u7Uy.png') no-repeat 0 0;
+	color: #fff;
+	display: inline-block;
+	height: 48px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 48px;
+	vertical-align: bottom;
+	width: 48px;
+    background: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Header+Component/dropdown-x.png') no-repeat 0 0; 
+    background-size: 384px auto;
+    background-position: -48px -48px;
+}
+
+.dropdown-ul {
+    margin: 0;
+    padding: 0 0 0 24px;
+    list-style-type: none;
+    display: block;
+    -webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+.dropdown-li {
+    border-bottom: 1px solid #28292b;
+	display: block;
+	font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	min-width: 30vw;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 32px;
+	padding-top: 16px;
+	text-overflow: clip;
+	transition: background-color .2s;
+}
+.dropdown-li a {
+    text-decoration: none;
+}
+.dropdown-div {
+    color: #fff;
+	transition: color .2s;
+}
+.arrow-top {
+    position: absolute;
+	right: 0;
+	top: 0;
+}
+.dropdown-arrow-icon-down {
+    background: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Header+Component/dropdown-arrow-icon2.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+    background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Header+Component/dropdown-arrow-icon.png');
+    background-size: 192px auto;
+    background-position: -144px -216px;
+}
+.dropdown-arrow-icon-up {
+    background: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Header+Component/dropdown-arrow-icon2.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+    background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Header+Component/dropdown-arrow-icon.png');
+    background-size: 192px auto;
+    background-position: -96px -216px;
+}
+
+.dropdown-toggle-list {
+    margin: 0;
+    padding: 0 0 0 24px;
+    list-style-type: none;
+    -webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+}
+
+
 @media screen and (max-width: 999px) {
     .header-main {
         min-width: inherit;
+    }
+    .header-links {
+        display: none;
+    }
+    .header-account {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .logo-tag {
+        left: 20px;
+        top: 15px;
+    }
+    .dropdown {
+        width: 70%;
+        z-index: 1000;
+        max-width: 70%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        visibility: visible;
+        transition: max-width .4s ease-out;
     }
 }
