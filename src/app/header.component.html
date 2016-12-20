@@ -16,7 +16,7 @@
                     <a class="header-link-a" [routerLink]="['gear-vr']">Gear VR</a>
                 </li>
                 <li class="header-link">
-                    <a class="header-link-a" [routerLink]="['experiences']">Experiences</a>
+                    <a class="header-link-a" [routerLink]="['experiences/rift']">Experiences</a>
                 </li>
                 <li class="header-link">
                     <a class="header-link-a" [routerLink]="['developers']">Developers</a>
@@ -87,12 +87,12 @@
                             </a>
                         </li>
                         <li class="dropdown-li">
-                            <a href="#">
+                            <a [routerLink]="['/rift/ready']">
                                 <div class="dropdown-div">Oculus Ready PCs</div>
                             </a>
                         </li>
                         <li class="dropdown-li" style="border-bottom: none;">
-                            <a href="#">
+                            <a href="https://live.oculus.com/">
                                 <div class="dropdown-div">Touch</div>
                             </a>
                         </li>
@@ -117,19 +117,19 @@
                     </a>
                     <ul *ngIf="clickedExperiences" class="dropdown-toggle-list">
                         <li class="dropdown-li">
-                            <a href="#">
+                            <a [routerLink]="['experiences/gear-vr']">
                                 <div class="dropdown-div">Gear VR</div>
                             </a>
                         </li>
                         <li class="dropdown-li" style="border-bottom: none;">
-                            <a href="#">
+                            <a [routerLink]="['experiences/rift']">
                                 <div class="dropdown-div">Rift</div>
                             </a>
                         </li>
                     </ul>    
                 </div>
             </li>
-
+            
             <li class="dropdown-li">
                 <a [routerLink]="['developers']">
                     <div class="dropdown-div">Developers</div>
