@@ -167,6 +167,12 @@ div {
                                             font-style: normal;
                                         }
                                     }
+
+                                    button:hover {
+                                        color: #323436;
+                                        background: #fff;
+                                        transition: none;
+                                    }
                                 }
 
                                 ._5auo {
@@ -178,7 +184,7 @@ div {
                                         background: transparent;
 
                                         transition: color 250ms;
-                                        color: #8d8e8f;
+                                        
 
                                         color: #fff;
                                         padding: 0 8px;
@@ -188,6 +194,10 @@ div {
                                         em {
                                             font-style: normal;
                                         }
+                                    }
+                                    a:hover {
+                                        color: #8d8e8f;
+                                        transition: none;
                                     }
                                 }
                             }
@@ -244,6 +254,11 @@ div {
                         color: #8d8e8f;
 
                         text-decoration: none;
+                    }
+
+                    a:hover {
+                        color: #fff;
+                        transition: none;
                     }
             }
         }
