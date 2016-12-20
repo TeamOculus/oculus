@@ -1,0 +1,80 @@
+* {
+    font-family: "Oculus Sans";
+}
+.experience-header{
+    font-family: "Oculus Sans";
+}
+.experience-ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+   
+}
+.experience-ul li {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.oculus-touch {
+    width: 60vw;
+}
+h1 {
+   padding: 20px; 
+}
+.experiences-featured {
+    display: flex;
+    flex-direction: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.invisible {
+    border: 1px solid black;
+    height: 40vh;
+    width: 30vw;
+}
+.touch-featured {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px
+}
+.touch-featured img {
+    width: 31vw;
+    height: 40vh;
+}
+.made-oculus {
+   
+    
+    background-color: black;
+}
+img {
+    max-width: 100%;
+}
+.oculus-symbol {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+h1 {
+    color: white;
+}
+.oculus-view {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.big-img {
+    // width: 50vw;
+    height: 70vh;
+}
+.small-img {
+    // width: 50vw;
+    height: 70vh;
+}
+.big-img img {
+    // width: 40vw;
+    height: 60vh;
+}
+.small-img img {
+    // width: 20vw;
+    height: 30vh;
+}
