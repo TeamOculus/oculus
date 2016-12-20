@@ -51,8 +51,11 @@ img {
     max-width: 100%;
 }
 .oculus-symbol {
+    background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img2.png');
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 0;
+    height: 30px;
 }
 h1 {
     color: white;
@@ -60,21 +63,27 @@ h1 {
 .oculus-view {
     display: flex;
     justify-content: space-between;
-    
-}
-.big-img {
-    // width: 50vw;
-    height: 70vh;
+    padding-bottom: 50px;
 }
 .small-img {
-    // width: 50vw;
-    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -13px;
 }
-.big-img img {
-    // width: 40vw;
+.small-img1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.big-img1 img {
+    width: 50vw;
     height: 60vh;
 }
-.small-img img {
-    // width: 20vw;
+.small-img2 img {
     height: 30vh;
+    width: 23vw;
+    padding-right: 10px;
+    padding-top: 10px;
+  
+   
 }
