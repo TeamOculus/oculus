@@ -10,6 +10,7 @@
     margin-right: 20px;
     font-weight: bold;
 }
+
 .oculus-touch {
     width: 60vw;
 }
@@ -49,6 +50,7 @@ h1 {
     height: 40vh;
 }
 .made-oculus {
+
    background-color: black;
 }
 .made-oculus-title {
@@ -58,6 +60,7 @@ h1 {
 img {
     max-width: 100%;
 }
+
 h2 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:50px 0 50px; } 
 h2 span { background:#fff; padding:0 10px; }
 .oculus-symbol {
@@ -81,6 +84,7 @@ h2 span { background:#fff; padding:0 10px; }
 .oculus-view {
     display: flex;
     justify-content: space-between;
+
     padding-bottom: 50px;
 }
 .small-img {
@@ -102,6 +106,4 @@ h2 span { background:#fff; padding:0 10px; }
     width: 23vw;
     padding-right: 10px;
     padding-top: 10px;
-  
-   
 }

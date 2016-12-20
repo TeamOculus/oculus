@@ -1,6 +1,6 @@
 .home {
     display: block;
-    height: 792px;
+    // height: 792px;
 }
 .home-content {
     background-color: #fff;
@@ -473,7 +473,144 @@
 	color: #fff;
 }
 
+// ~~~~~~~~~~~~~~~~~ //
+// 		Section 6    //
+// ~~~~~~~~~~~~~~~~~ //
+.content-bottom {
+	background-color: #1c1e20;
+	color: #fff;
+}
+.content6 {
+	display: block;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+.content6-boxes {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	padding: 0;
+}
+.content6-boxes:after, .content6-boxes:before {
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+}
 
+.content6-boxes>.content6-box {
+	box-sizing: border-box;
+	float: left;
+	min-height: 1px;
+	overflow: auto;
+}
+.box6-content {
+	overflow: hidden;
+}
+.box6-a {
+	text-decoration: none;
+	color: #8d8e8f;
+	transition: color 250ms;
+	background: transparent;
+	cursor: pointer;
+}
+
+.box6-transition {
+	transition: transform .3s, opacity .3s;
+}
+.box6-opacity {
+	opacity: .3;
+}
+
+.box6-img1 {
+	background-size: cover;
+	height: 300px;
+	background-image: url('https://scontent.oculuscdn.com/t64.5771-25/11162714_283652092025521_547216123_n.jpg');
+	background-position: center center;
+	width: 100%;
+}
+.box6-img2 {
+	background-size: cover;
+	height: 300px;
+	background-image: url('https://scontent.oculuscdn.com/t64.5771-25/12504834_1610504179262797_1233001088_n.jpg');
+	background-position: center center;
+	width: 100%;
+}
+.box6-img3 {
+	background-size: cover;
+	height: 300px;
+	background-image: url('https://scontent-sjc2-1.xx.fbcdn.net/t39.2365-6/14658636_618245888362068_8494262868336705536_n.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.box6-content-textbox {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+}
+.box6-content-text {
+	display: block;
+	margin-bottom: 24px;
+	margin-top: 24px;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+}
+.box6-content-h4 {
+	color: #a4a5a6;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	line-height: 16px;
+	margin: 0;
+	display: block;
+	font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+}
+.box6-content-h3 {
+	display: block;
+	font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #fff;
+	-webkit-font-smoothing: subpixel-antialiased;
+	font-size: 22px;
+	line-height: 28px;
+	margin: 0;
+}
+
+.box3 {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 0 32px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 100%;
+}
+.content6-box-divider {
+	width: 0px;
+	box-sizing: border-box;
+	display: inline-block;
+	float: left;
+	min-height: 1px;
+	overflow: auto;
+}
 // ~~~~~~~~~~~~~~~~~ //
 // 	 Media Queries   //
 // ~~~~~~~~~~~~~~~~~ //
@@ -486,5 +623,14 @@
     .content2-box1 {
         padding-top: 20%;
     }
+	.content1-box2 {
+		// padding-top: 85%;
+	}
 
+}
+
+@media screen and (max-width: 400px) {
+    @viewport {
+        width: device-width
+    }
 }

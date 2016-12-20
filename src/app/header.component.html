@@ -11,17 +11,12 @@
             <ul class="header-links">
                 <li class="header-link">
                     <a class="header-link-a" [routerLink]="['rift']">Rift</a>
-                    <!--<ul class="header-dropdown-links">
-                        <li class="header-dropdown-link">
-                            <a href="">Rift</a>
-                        </li>
-                    </ul>-->
                 </li>
                 <li class="header-link">
                     <a class="header-link-a" [routerLink]="['gear-vr']">Gear VR</a>
                 </li>
                 <li class="header-link">
-                    <a class="header-link-a" [routerLink]="['experiences']">Experiences</a>
+                    <a class="header-link-a" [routerLink]="['experiences/rift']">Experiences</a>
                 </li>
                 <li class="header-link">
                     <a class="header-link-a" [routerLink]="['developers']">Developers</a>
@@ -31,8 +26,16 @@
                 </li>
             </ul>
 
-            <div>
-
+            <div class="hamburger-menu">
+                <a (click)="onClickMenu()">
+                    <div class="hamburger">
+                        <button class="burger-button">
+                            <span class="span-top"></span>
+                            <span></span>
+                            <span class="span-bottom"></span>
+                        </button>
+                    </div>
+                </a>
             </div>
 
             <div class="header-account">
@@ -44,4 +47,99 @@
         </div>
       </div>
   </div>
+</div>
+
+<!-- Small-Screen Dropdown Menu from Hamburger -->
+<div *ngIf="clickedMenu"class="dropdown">
+    <div class="dropdown-x">
+        <a class="dropdown-x-a" (click)="onClickMenu()">
+            <i class="dropdown-x-icon"></i>
+        </a>
+    </div>
+
+    <div class="dropdown-links">
+        <ul class="dropdown-ul">
+            <li class="dropdown-li">
+                <a [routerLink]="['login']">
+                    <div class="dropdown-div">Login</div>
+                </a>
+            </li>
+
+            <li class="dropdown-li">
+                <a [routerLink]="['']">
+                    <div class="dropdown-div">Home</div>
+                </a>
+            </li>
+
+            <li class="dropdown-li">
+                <div>
+                    <a (click)="onClickRift()">
+                        <div style="position: relative; width: 100%;">
+                            <div class="dropdown-div">Rift</div>
+                            <i *ngIf="!clickedRift" class="dropdown-arrow-icon-down arrow-top"></i>
+                            <i *ngIf="clickedRift" class="dropdown-arrow-icon-up arrow-top"></i>
+                        </div>
+                    </a>
+                    <ul *ngIf="clickedRift" class="dropdown-toggle-list">
+                        <li class="dropdown-li">
+                            <a [routerLink]="['rift']">
+                                <div class="dropdown-div">Rift</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li">
+                            <a [routerLink]="['/rift/ready']">
+                                <div class="dropdown-div">Oculus Ready PCs</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li" style="border-bottom: none;">
+                            <a href="https://live.oculus.com/">
+                                <div class="dropdown-div">Touch</div>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </li>
+
+            <li class="dropdown-li">
+                <a [routerLink]="['gear-vr']">
+                    <div class="dropdown-div">Gear VR</div>
+                </a>
+            </li>
+
+            <li class="dropdown-li">
+                <div>
+                    <a (click)="onClickExperiences()">
+                        <div style="position: relative; width: 100%;">
+                            <div class="dropdown-div">Experiences</div>
+                            <i *ngIf="!clickedExperiences" class="dropdown-arrow-icon-down arrow-top"></i>
+                            <i *ngIf="clickedExperiences" class="dropdown-arrow-icon-up arrow-top"></i>
+                        </div>
+                    </a>
+                    <ul *ngIf="clickedExperiences" class="dropdown-toggle-list">
+                        <li class="dropdown-li">
+                            <a [routerLink]="['experiences/gear-vr']">
+                                <div class="dropdown-div">Gear VR</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li" style="border-bottom: none;">
+                            <a [routerLink]="['experiences/rift']">
+                                <div class="dropdown-div">Rift</div>
+                            </a>
+                        </li>
+                    </ul>    
+                </div>
+            </li>
+            
+            <li class="dropdown-li">
+                <a [routerLink]="['developers']">
+                    <div class="dropdown-div">Developers</div>
+                </a>
+            </li>
+            <li class="dropdown-li" style="border-bottom: none;">
+                <a [routerLink]="['blog']">
+                    <div class="dropdown-div">Blog</div>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
