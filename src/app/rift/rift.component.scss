@@ -1,0 +1,487 @@
+.parallax {
+    display: block
+}
+
+.parallax {
+    display: block;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0)
+}
+
+.parallax.parallax-background-y {
+    background-attachment: fixed!important
+}
+
+.parallax-image-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 60px
+}
+
+.parallax-image-container .parallax-image .image img {
+    width: 100%;
+    display: block
+}
+
+#header .header__inner .header__menu-container {
+    top: 33px;
+    right: 45px
+}
+
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    #header .header__inner .header__menu-container {
+        right: 20px;
+        top: 20px
+    }
+}
+
+.inverted-header #header .header__logo a {
+    background-position: -22px -225px
+}
+
+.inverted-header #header .header__nav li a {
+    color: #323436
+}
+
+.inverted-header #header .header__nav li.active a,
+.inverted-header #header .sub-nav li a {
+    color: #777879
+}
+
+.inverted-header #header .header__nav.subnav__active {
+    border-bottom: solid 1px rgba(28, 30, 32, .1)
+}
+
+.inverted-header #header .sub-nav li.active {
+    border-bottom: solid 2px #1c1e20
+}
+
+.inverted-header #header .sub-nav li.active a {
+    color: #1c1e20
+}
+
+@media screen and (max-width:641px) {
+    #header .header__inner .header__menu-container {
+        right: 20px;
+        top: 20px
+    }
+    #header {
+        height: 60px
+    }
+    #header .header__inner {
+        height: 100%
+    }
+    #header .header__logo {
+        left: 20px;
+        top: 15px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    #header {
+        height: 60px
+    }
+    #header .header__inner {
+        height: 100%
+    }
+    #header .header__logo {
+        left: 20px;
+        top: 15px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #header {
+        height: 80px
+    }
+    #header .header__inner {
+        height: 100%
+    }
+}
+
+#header {
+    height: 60px;
+    z-index: 1000;
+    position: relative;
+    background: 0 0
+}
+
+#header .header__inner {
+    background: rgba(28, 30, 32, .95);
+    width: 100%;
+    height: 60px
+}
+
+#header.header--transparent .header__inner {
+    background: 0 0
+}
+
+#header .header__logo {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    text-indent: -99999px
+}
+
+#header .header__logo a {
+    display: block;
+    background: url(../images/global/96_sprite.png) -22px -129px no-repeat;
+    width: 52px;
+    height: 30px
+}
+
+#header .header__sub-site {
+    position: absolute;
+    top: 17px;
+    left: 75px
+}
+
+#header .header__sub-site .icon {
+    margin: 0 3px 0 2px;
+    vertical-align: middle
+}
+
+#header .header__sub-site a {
+    color: #fff;
+    font-size: 16px;
+    -webkit-transition: color 250ms;
+    transition: color 250ms
+}
+
+#header .header__nav,
+#header .sub-nav {
+    display: none
+}
+
+#header .header__menu-container {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 24px;
+    top: 27px;
+    bottom: 0
+}
+
+#header .header__menu-container .header__menu {
+    width: 300px;
+    position: absolute;
+    right: -320px;
+    top: -20px
+}
+
+@media screen and (min-width:1025px) {
+    #header .header__nav,
+    #header .sub-nav {
+        padding: 0;
+        text-align: center;
+        position: relative;
+        list-style: none
+    }
+    #header .header__nav li,
+    #header .sub-nav li {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 60px
+    }
+    .header--high-contrast-links #header .header__nav li a {
+        -webkit-transition: color 250ms;
+        transition: color 250ms
+    }
+    .header--high-contrast-links #header .header__nav li a:hover {
+        color: #323436
+    }
+    .header--high-contrast-links #header .header__nav li.active a {
+        color: #494b4d;
+        opacity: .8
+    }
+    #header .header__inner {
+        text-align: center;
+        height: 100%
+    }
+    #header .header__lower {
+        text-align: center
+    }
+    #header .header__logo {
+        left: 40px;
+        top: 14px;
+        margin-left: 0;
+        z-index: 2
+    }
+    #header .header__nav {
+        margin: 0;
+        display: inline-block
+    }
+    #header .header__nav.subnav__active {
+        border-bottom: solid 1px rgba(255, 255, 255, .1)
+    }
+    #header .header__nav li {
+        display: inline-block;
+        margin: 0 21px;
+        font-weight: 600
+    }
+    #header .header__nav li a {
+        display: block;
+        color: #fff
+    }
+    #header .header__nav li a:hover {
+        color: #a4a5a6
+    }
+    #header .header__nav li.active a {
+        color: #a4a5a6;
+        opacity: .8
+    }
+    #header .sub-nav {
+        margin: 0;
+        display: inline-block;
+        width: 100%
+    }
+    #header .sub-nav li {
+        display: inline-block;
+        margin: 0 15px;
+        padding: 0 8px;
+        font-weight: 400
+    }
+    #header .sub-nav li a {
+        display: block;
+        color: #fff;
+        font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+    }
+    #header .sub-nav li a:hover {
+        color: #d2d2d2
+    }
+    #header .sub-nav li.active {
+        border-bottom: solid 2px #fff;
+        font-weight: 600
+    }
+    #header .sub-nav li.active a {
+        color: #fff;
+        opacity: .8
+    }
+    #header .header__lower--translucent .sub-nav {
+        background-color: rgba(255, 255, 255, .85)
+    }
+    #header .header__lower--translucent .sub-nav li a {
+        color: #777879;
+        text-decoration: none
+    }
+    #header .header__lower--translucent .sub-nav li a:hover {
+        color: #000
+    }
+    #header .header__lower--translucent .sub-nav li.active {
+        border-bottom: solid 2px #000
+    }
+    #header .header__lower--translucent .sub-nav li.active a {
+        color: #000;
+        font-weight: 700
+    }
+    #header .header__fixed.fixable {
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        top: -76px;
+        opacity: 0;
+        -webkit-transition: .9s cubic-bezier(.19, 1, .22, 1);
+        transition: .9s cubic-bezier(.19, 1, .22, 1);
+        background: rgba(0, 121, 207, .1)
+    }
+    #header .header__fixed.fixable.fixed {
+        opacity: 1;
+        top: 0
+    }
+    #header .header__fixed.fixable .header__fixed-nav {
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+    #header .header__fixed.fixable .header__fixed-nav li {
+        display: inline-block;
+        margin: 0 21px;
+        letter-spacing: 1px;
+        line-height: 60px;
+        font-size: 14px;
+        font-weight: 400
+    }
+    #header .header__fixed.fixable .header__fixed-nav li a {
+        display: block;
+        color: #a4a5a6
+    }
+    #header .header__fixed.fixable .header__fixed-nav li a:hover {
+        color: #fff
+    }
+    #header .header__fixed.fixable .header__fixed-nav li.active {
+        border-bottom: solid 2px #fff;
+        font-weight: 600
+    }
+    #header .header__fixed.fixable .header__fixed-nav li.active a {
+        color: #fff;
+        opacity: .8
+    }
+    #header .header__fixed.fixable .header__fixed-nav li:hover {
+        border-bottom: solid 2px #fff
+    }
+    #header .header__menu-container {
+        display: none
+    }
+}
+
+//section-hero
+
+.page-rift-headset .section.hero {
+    background: #0e0e0e;
+    height: auto;
+    margin: 0;
+    text-align: center
+}
+
+.page-rift-headset .section.hero .container {
+    display: inline-block;
+    margin-top: -390px;
+    padding: 0 26px;
+    vertical-align: top
+}
+
+.page-rift-headset .section.hero .content {
+    color: #fff;
+    margin: auto;
+    padding: 0 25px;
+    z-index: 1
+}
+
+.page-rift-headset .section.hero .content .product-name {
+    background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/rift_touch.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60px;
+    margin: 0
+}
+
+.page-rift-headset .section.hero .content h3 {
+    font-size: 19px;
+    margin: 0
+}
+
+.page-rift-headset .section.hero .image {
+    background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/hero1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    margin-top: -46px;
+    padding-top: 147%
+}
+
+.page-rift-headset .section.hero .ordering-container {
+    background: #fff;
+    margin-top: -120px;
+    padding: 20px
+}
+
+.page-rift-headset .section.hero .ordering-container .package-offer.item-3 {
+    padding-bottom: 0
+}
+
+.page-rift-headset .section.hero .content {
+        color: #1c1e20;
+        left: 58%;
+        position: absolute;
+        top: 42%;
+        margin-top: calc(-370px / 2);
+        width: 270px;
+        padding: 0;
+        text-align: left
+    }
+    .page-rift-headset .section.hero .content .product-name {
+        background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/rift_touch.png);
+        background-position: left center;
+        padding-top: 100px
+    }
+    .page-rift-headset .section.hero .content h3 {
+        font-size: 22px;
+        text-align: left;
+        font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+        padding-top: 10px
+        
+    }
+    .page-rift-headset .section.hero .content .rift-pre-order-cta {
+        margin-left: 0
+    }
+    .page-rift-headset .section.hero .image {
+        background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/hero.jpg);
+        margin-top: -36px;
+        padding-top: 103%
+    }
+
+    @media screen and (min-width:1025px) {
+    .page-rift-headset .section.hero .content {
+        width: 340px
+    }
+    .page-rift-headset .section.hero .image {
+        background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/hero2.jpg);
+        padding-top: 58%
+    }
+    }
+
+//hero
+
+.hero,
+.hero .hero__image {
+    position: relative
+}
+
+.hero {
+    width: 100%;
+    min-height: 400px;
+    background-color: #fff;
+    padding-bottom: 0;
+    margin-top: -60px
+}
+
+.hero h1 {
+    font-size: 28px;
+    margin-bottom: 20px
+}
+
+.hero .hero__image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto
+}
+
+.hero hgroup {
+    position: absolute;
+    bottom: 27%;
+    width: 100%
+}
+
+.hero.hero--text-center {
+    text-align: center
+}
+
+.hero.hero--inverse {
+    background: #0c0c0c
+}
+
+.hero.hero--inverse h1 {
+    color: #fff
+}
+
+.hero.height-adjusted .hero__image {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+@media screen and (min-width:640px) {
+    .hero {
+        min-height: 500px;
+        margin-top: -80px
+    }
+    .hero h1 {
+        font-size: 40px
+    }
+}
+
