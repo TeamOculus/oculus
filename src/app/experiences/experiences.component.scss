@@ -1,25 +1,31 @@
 * {
     font-family: "Oculus Sans";
 }
-.experience-header{
-    font-family: "Oculus Sans";
-}
 .experience-ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-   
 }
 .experience-ul li {
     margin-right: 20px;
     font-weight: bold;
 }
-
 .oculus-touch {
     width: 60vw;
 }
+.img-container {
+    position: relative;
+}
+.text {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    color: white;
+    font-size: 25px;
+}
 h1 {
    padding: 20px; 
+   color: black;
 }
 .experiences-featured {
     display: flex;
@@ -43,22 +49,34 @@ h1 {
     height: 40vh;
 }
 .made-oculus {
-   
-    
-    background-color: black;
+   background-color: black;
+}
+.made-oculus-title {
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 img {
     max-width: 100%;
 }
+h2 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:50px 0 50px; } 
+h2 span { background:#fff; padding:0 10px; }
 .oculus-symbol {
     background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img2.png');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: 0 0;
     height: 30px;
+    display: inline-block;
+    width: 70px;
 }
-h1 {
+.made-oculus-font {
+    display: inline-block;
+    height: 30px;
+}
+.made-oculus-font p{
     color: white;
+    font-size: 30px;
+    line-height: 30px;
 }
 .oculus-view {
     display: flex;
