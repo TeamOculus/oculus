@@ -1,0 +1,252 @@
+div {
+    display: block;
+}
+
+.bg-cont {
+    background: #1c1e20;
+
+    .login {
+        color: #fff;
+        margin: 15% auto;
+        max-width: 100%;
+        text-align: center;
+        width: 360px;
+        font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+        font-feature-settings: "kern" 1, "liga" 1;
+        -webkit-font-feature-settings: "kern" 1, "liga" 1;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-size-adjust: 100%;
+        // background: #1c1e20;
+
+        .animation-container {
+            // opacity: 1;
+            // transform: translate(0px, 0px);
+            // transition: opacity 1000ms, transform 1000ms;
+
+            .login-container {
+                visibility: visible;
+
+                .logo-large {
+                    font-style: italic;
+                
+                    background: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Login+Component/black-icon-set.png) no-repeat 0 0;
+                    color: rgba(50, 52, 54, 0);
+                    display: inline-block;
+                    height: 96px;
+                    image-rendering: -webkit-optimize-contrast;
+                    image-rendering: crisp-edges;
+                    overflow: hidden;
+                    text-indent: 96px;
+                    vertical-align: bottom;
+                    width: 96px;
+                
+                    background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Login+Component/white-icon-set.png);
+                
+                    background-position: -192px -288px;
+                }
+
+                .form-container {
+                        padding: 24px;
+
+                        div {
+
+                            form {
+                                margin: 0;
+                                padding: 0;
+
+                                .input-container {
+                                    margin-bottom: 24px;
+                                    text-align: left;
+
+                                    .bx-input-control {
+                                        display: block;
+
+                                        input {
+                                            -webkit-writing-mode: horizontal-tb;
+                                            writing-mode: horizontal-tb;
+
+                                            text-align: start;
+                                            letter-spacing: normal;
+                                            word-spacing: normal;
+                                            text-transform: none;
+                                            text-indent: 0px;
+                                            text-shadow: none;
+                                            text-rendering: auto;
+
+                                            -webkit-rtl-ordering: logical;
+                                            user-select: text;
+                                            cursor: auto;
+
+                                            font: inherit;
+                                            margin: 0;
+
+                                            -webkit-appearance: none;
+                                            outline: none;
+
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            background: #fff;
+                                            border: 1px solid #a4a5a6;
+                                            border-radius: 4px;
+                                            box-sizing: border-box;
+                                            color: #323436;
+                                            display: block;
+                                            height: 44px;
+                                            line-height: 24px;
+                                            padding: 0 16px;
+                                            transition: color 250ms, border-color 250ms;
+                                            width: 100%;
+
+                                            font-family: inherit;
+
+                                            font-size: inherit;
+
+                                            
+                                        }
+
+                                        #password {
+                                            -webkit-text-security: disc;
+                                        }
+                                    }
+
+                                    button {
+                                        -webkit-writing-mode: horizontal-tb;
+                                        writing-mode: horizontal-tb;
+                                        
+                                        text-indent: 0px;
+                                        text-shadow: none;
+                                        letter-spacing: normal;
+                                        word-spacing: normal;
+                                        text-rendering: auto;
+
+                                        align-items: flex-start;
+
+                                        font: inherit;
+                                        margin: 0;
+
+                                        text-transform: none;
+
+                                        -webkit-appearance: button;
+
+                                        vertical-align: bottom;
+                                        white-space: nowrap;
+                                        width: auto;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        padding: 8px 40px;
+                                        text-align: center;
+                                        text-decoration: none;
+                                        transition: background-color 500ms, border-color 500ms, opacity 500ms;
+                                        cursor: pointer;
+                                        display: inline-block;
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        height: 44px;
+                                        line-height: 24px;
+                                        border: 2px solid #1c1e20;
+                                        border-radius: 22px;
+                                        box-sizing: border-box;
+                                        background: #1c1e20;
+
+                                        padding-right: 40px;
+                                        padding-left: 40px;
+
+                                        font-family: inherit;
+
+                                        min-width: 100%;
+
+                                        -webkit-font-smoothing: subpixel-antialiased;
+
+                                        background: none;
+                                        border-color: #fff;
+                                        color: #fff;
+
+                                        em {
+                                            font-style: normal;
+                                        }
+                                    }
+                                }
+
+                                ._5auo {
+                                    text-align: center;
+
+                                    a {
+                                        cursor: pointer;
+
+                                        background: transparent;
+
+                                        transition: color 250ms;
+                                        color: #8d8e8f;
+
+                                        color: #fff;
+                                        padding: 0 8px;
+
+                                        text-decoration: none;
+
+                                        em {
+                                            font-style: normal;
+                                        }
+                                    }
+                                }
+                            }
+
+                            form {
+                                margin: 0;
+                                padding: 0;
+
+                                input {
+                                    -webkit-writing-mode: horizontal-tb;
+                                    writing-mode: horizontal-tb;
+
+                                    text-align: start;
+                                    letter-spacing: normal;
+                                    word-spacing: normal;
+                                    text-transform: none;
+                                    text-indent: 0px;
+                                    text-shadow: none;
+                                    text-rendering: auto;
+
+                                    -webkit-rtl-ordering: logical;
+                                    user-select: text;
+                                    cursor: auto;
+
+                                    display: none;
+
+                                    background-color: initial;
+                                    padding: initial;
+                                    border: initial;
+
+                                    color: inherit;
+                                    font: inherit;
+                                    margin: 0;
+
+                                    -webkit-appearance: none;
+                                    outline: none;
+
+                                    line-height: normal;
+
+                                    font-family: inherit;
+
+                                    font-size: inherit;
+                                }
+                            }
+                        }
+                    }
+
+                    a {
+                        cursor: pointer;
+                        
+                        background: transparent;
+
+                        transition: color 250ms;
+                        color: #8d8e8f;
+
+                        text-decoration: none;
+                    }
+            }
+        }
+    }
+}
+
