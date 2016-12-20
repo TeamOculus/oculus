@@ -1,0 +1,141 @@
+$font-oculus-bold: "Oculus Sans Bold";
+$reg-color: #323436;
+$dark-color: #1c1e20;
+$light-border: 1px solid #F0F0F0;
+$reg-border: 1px solid #D2D2D2;
+
+#cart-container {
+    width: 100%;
+    background-color: springgreen;
+}
+
+#cart-content-container {
+    max-width: 1260px;
+    margin: 0 auto;
+    background-color: navajowhite;
+    padding: 32px 16px;
+}
+
+#cart-shipping-country {
+    width: 100%;
+    background-color:hotpink;
+    text-align: left;
+    padding-bottom: 8px;
+    border-bottom: $light-border;
+}
+
+#cart-shipping-country-content {
+    width: 25%;
+    background-color: peru;
+    
+    h1 {
+        color: #666666;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: $font-oculus-bold;
+    }
+
+    select {
+        border: 1px solid #a4a5a6;
+        border-radius: 4px;
+        width: 100%;
+        height: 44px;
+        padding: 0 16px;
+        font-size: 16px;
+        color: $reg-color;
+    }
+}
+
+#cart-main {
+    width: 100%;
+    background-color: turquoise;
+}
+
+#cart-your-cart {
+    width: 75%;
+    background-color: indianred;
+
+    h1 {
+        color: $dark-color;
+        font-size: 18px;
+        margin: 0;
+    }
+    table {
+        background-color: slateblue;
+        width: 100%;
+
+        tr {
+            td {
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+#cart-table-title {
+    p {
+        font-size: 16px;
+        color: #a4a5a6;
+        font-weight: bold;
+    }
+    td {
+        border: none !important;
+    }
+}
+
+.cart-table-item{
+    text-align: left;
+    width: 65%;
+    border-bottom: $reg-border;
+
+    img {
+        height: 100px;
+        width: 100px;
+        float: left;
+        margin: 0;
+    }
+    .cart-table-item-description {
+        float: left;
+        width: calc(100% - 160px);
+        padding-left: 25px;
+
+        h2 {
+            font-weight: 800;
+            font-size: 16px;
+            color: $reg-color;
+            margin: 0;
+        }
+        p {
+            font-size: 16px;
+            color: $reg-color;
+            margin: 0;
+        }
+    }
+}
+
+.cart-table-quantity{
+    width: 10%;
+    text-align: center;
+    border-bottom: $reg-border;
+
+    span {
+        font-size: 16px;
+        color: $reg-color;
+        border: 1px solid #BDC7D8;
+        padding: 4px 10px;
+    }
+}
+
+.cart-table-price{
+    width: 15%;
+    text-align: center;
+    border-bottom: $reg-border;
+
+}
+
+.cart-table-remove{
+    width: 10%;
+    text-align: center;
+    border-bottom: $reg-border;
+
+}
