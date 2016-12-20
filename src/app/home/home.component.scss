@@ -22,11 +22,12 @@
 // ~~~~~~~~~~~~~~~~~ //
 // 		Section 1    //
 // ~~~~~~~~~~~~~~~~~ //
-.content-container {
+.content-container1 {
     display: block;
 	position: relative;
 	text-align: center;
     height: 834px;
+	background-color: #ebebeb;
 }
 .content-img {
     background-color: #f5f5f5;
@@ -127,13 +128,12 @@
 // ~~~~~~~~~~~~~~~~~ //
 // 		Section 2    //
 // ~~~~~~~~~~~~~~~~~ //
-// .content2 {
-//     display: inline-block;
-// 	height: 100%;
-// 	margin: 0 auto;
-// 	width: 100%;
-// }
-
+.content-container2 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 745px;
+}
 .content2-box1 {
     background-color: #16181a;
 	display: block;
@@ -201,6 +201,12 @@
 // ~~~~~~~~~~~~~~~~~ //
 // 		Section 3    //
 // ~~~~~~~~~~~~~~~~~ //
+.content-container3 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 294px;
+}
 .con3 {
     padding-left: 40px;
     padding-right: 40px;
@@ -252,6 +258,12 @@
 // ~~~~~~~~~~~~~~~~~ //
 // 		Section 4    //
 // ~~~~~~~~~~~~~~~~~ //
+.content-container4 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 740px;
+}
 .content-box {
     display: inline-block;
 	height: 100%;
@@ -346,6 +358,12 @@
 // ~~~~~~~~~~~~~~~~~ //
 // 		Section 5    //
 // ~~~~~~~~~~~~~~~~~ //
+.content-container5 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 834px;
+}
 .content5 {
     display: block;
 	margin: 0;
@@ -364,6 +382,7 @@
     box-sizing: border-box;
 	float: left;
 	min-height: 1px;
+	width: calc(0.5 * (100% + 0px));
 }
 
 // Left side
@@ -476,6 +495,12 @@
 // ~~~~~~~~~~~~~~~~~ //
 // 		Section 6    //
 // ~~~~~~~~~~~~~~~~~ //
+.content-container6 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 307px;
+}
 .content-bottom {
 	background-color: #1c1e20;
 	color: #fff;
@@ -510,6 +535,9 @@
 	float: left;
 	min-height: 1px;
 	overflow: auto;
+}
+.content6-box {
+	width: calc(0.33333333333333 * (100% + 0px));
 }
 .box6-content {
 	overflow: hidden;
@@ -607,10 +635,10 @@
 	width: 0px;
 	box-sizing: border-box;
 	display: inline-block;
-	float: left;
 	min-height: 1px;
 	overflow: auto;
 }
+
 // ~~~~~~~~~~~~~~~~~ //
 // 	 Media Queries   //
 // ~~~~~~~~~~~~~~~~~ //
@@ -619,18 +647,115 @@
         opacity: 1;
     }
 }
-@media screen and (min-width: 767px) {
-    .content2-box1 {
-        padding-top: 20%;
-    }
-	.content1-box2 {
-		// padding-top: 85%;
-	}
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+	.content-container1 {
+		height: 690px;
+	}
+	.content-container2 {
+		height: 525px;
+	}
+	.content-container4 {
+		height: 582px;
+	}
+	.content-container5 {
+		height: 718px;
+	}
 }
 
-@media screen and (max-width: 400px) {
-    @viewport {
-        width: device-width
-    }
+@media screen and (min-width : 848px) and (max-width : 1024px) {
+	.content-container1 {
+		height: 613px;
+	}
+	.content-container2 {
+		height: 475px;
+	}
+	.content-container4 {
+		height: 460px;
+	}
+	.content-container5 {
+		height: 652px;
+	}
+}
+@media screen and (min-width : 672px) and (max-width : 848px) {
+	.content-container1 {
+		height: 557px;
+	}
+	.content-container2 {
+		height: 410px;
+	}
+	.content-container4 {
+		height: 448px;
+	}
+	.content5-half {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container5 {
+		height: 0%;
+	}
+	.content6-box {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container6 {
+		height: 0%;
+	}
+}
+
+@media screen and (min-width : 496px) and (max-width : 672px) {
+	.content-container1 {
+		height: 460px;
+	}
+	.content1-box2 {
+		margin-top: 22px;
+	}
+	.content-container2 {
+		height: 375px;
+	}
+	.content-container4 {
+		height: 381px;
+	}
+	.content5-half {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container5 {
+		height: 0%;
+	}
+	.content6-box {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container6 {
+		height: 0%;
+	}
+}
+@media screen and (min-width : 320px) and (max-width : 496px) {
+	.content-container1 {
+		height: 410px;
+	}
+	.content1-box2 {
+		margin-top: 39px;
+	}
+	.content-container2 {
+		height: 290px;
+	}
+	.content-container4 {
+		height: 314px;
+	}
+	.content5-half {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container5 {
+		height: 0%;
+	}
+	.content6-box {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container6 {
+		height: 0%;
+	}
 }
