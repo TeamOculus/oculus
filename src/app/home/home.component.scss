@@ -143,6 +143,7 @@
 	position: relative;
 	transition: width .3s ease, max-width .3s ease;
 	width: 100%;
+	height: 740px;
 }
 .content2-box1-img {
     bottom: 0;
@@ -247,6 +248,10 @@
     font-weight: 100;
     line-height: 38px;
     color: #1c1e20;
+}
+.content3-center-h2:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
 }
 .content3-center-p {
     margin: 0;
@@ -556,13 +561,13 @@
 .box6-opacity {
 	opacity: .3;
 }
-
 .box6-img1 {
 	background-size: cover;
 	height: 300px;
 	background-image: url('https://scontent.oculuscdn.com/t64.5771-25/11162714_283652092025521_547216123_n.jpg');
 	background-position: center center;
 	width: 100%;
+
 }
 .box6-img2 {
 	background-size: cover;
@@ -576,7 +581,6 @@
 	height: 300px;
 	background-image: url('https://scontent-sjc2-1.xx.fbcdn.net/t39.2365-6/14658636_618245888362068_8494262868336705536_n.jpg');
 	background-position: center center;
-	background-repeat: no-repeat;
 	width: 100%;
 }
 .box6-content-textbox {
@@ -596,6 +600,7 @@
 	overflow: hidden;
 	position: relative;
 	width: auto;
+	z-index: 50;
 }
 .box6-content-h4 {
 	color: #a4a5a6;
@@ -617,27 +622,16 @@
 	line-height: 28px;
 	margin: 0;
 }
+.box6-content-textbox:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+}
+.box6-img1:hover, .box6-img2:hover, .box6-img3:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	opacity: 0.9;
+}
 
-.box3 {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	height: 100%;
-	box-sizing: border-box;
-	padding: 0 32px;
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	width: 100%;
-}
-.content6-box-divider {
-	width: 0px;
-	box-sizing: border-box;
-	display: inline-block;
-	min-height: 1px;
-	overflow: auto;
-}
 
 // ~~~~~~~~~~~~~~~~~ //
 // 	 Media Queries   //
