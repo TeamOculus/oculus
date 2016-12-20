@@ -1,6 +1,6 @@
 .home {
     display: block;
-    height: 792px;
+    // height: 792px;
 }
 .home-content {
     background-color: #fff;
@@ -623,5 +623,14 @@
     .content2-box1 {
         padding-top: 20%;
     }
+	.content1-box2 {
+		// padding-top: 85%;
+	}
 
+}
+
+@media screen and (max-width: 400px) {
+    @viewport {
+        width: device-width
+    }
 }

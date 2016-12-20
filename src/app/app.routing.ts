@@ -1,12 +1,14 @@
-import { LoginComponent } from './login/login.component';
+import { RouterModule, Routes } from '@angular/router';
+
+import { BlogComponent } from './blog/blog.component';
 import { CartComponent } from './cart/cart.component';
 import { DevelopersComponent } from './developers/developers.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
 import { GearVrComponent } from './gear-vr/gear-vr.component';
-import { BlogComponent } from './blog/blog.component';
+import { LoginComponent } from './login/login.component';
 import { RiftComponent } from './rift/rift.component';
 import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
-import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 
@@ -15,7 +17,8 @@ const APP_ROUTES: Routes = [
     { path: 'blog', component: BlogComponent },
     { path: 'cart', component: CartComponent },
     { path: 'developers', component: DevelopersComponent },
-    { path: 'experiences', component: ExperiencesComponent },
+    { path: 'experiences/rift', component: ExperiencesComponent },
+    { path: 'experiences/gear-vr', component: ExperiencesGearVrComponent },
     { path: 'gear-vr', component: GearVrComponent },
     { path: 'login', component: LoginComponent },
     { path: 'rift', component: RiftComponent },
