@@ -1,6 +1,19 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 									 TABLE OF CONTENTS										//
+// 	 							1. Main Styles 		- Line 15								//
+// 	 							2. Section 1 		- Line 37								//
+// 	 							3. Section 2 		- Line 145								//
+// 	 							4. Section 3 		- Line 221								//
+// 	 							5. Section 4 		- Line 284								//
+// 	 							6. Section 5 		- Line 386								//
+// 	 							7. Section 6 		- Line 525								//
+// 	 							8. Youtube Module 	- Line 663								//
+// 	 							9. Media Queries 	- Line 7								//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
 .home {
     display: block;
-    // height: 792px;
 }
 .home-content {
     background-color: #fff;
@@ -19,9 +32,11 @@
 	z-index: 10;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 1    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 1											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .content-container1 {
     display: block;
 	position: relative;
@@ -125,9 +140,11 @@
     text-decoration: none;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 2    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 2											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .content-container2 {
     display: block;
 	position: relative;
@@ -199,9 +216,11 @@
 	vertical-align: middle;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 3    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 3											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .content-container3 {
     display: block;
 	position: relative;
@@ -260,9 +279,11 @@
     font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 4    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 4											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .content-container4 {
     display: block;
 	position: relative;
@@ -360,9 +381,11 @@
 }
 
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 5    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 5											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .content-container5 {
     display: block;
 	position: relative;
@@ -497,9 +520,11 @@
 	color: #fff;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 6    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 6											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .content-container6 {
     display: block;
 	position: relative;
@@ -633,9 +658,88 @@
 }
 
 
-// ~~~~~~~~~~~~~~~~~ //
-// 	 Media Queries   //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								Youtube Module  										//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.modal-wrapper {
+	bottom: 0;
+	box-sizing: border-box;
+	// display: none;
+	left: 0;
+	min-width: 1000px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1100;
+	display: block;
+	overflow: auto;
+	background: rgba(28, 30, 32, .98);
+	border: 8px solid #323436;
+}
+.close-x-icon {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/3CGuWj4u7Uy.png') no-repeat 0 0;
+	color: rgba(73, 75, 77, 0);
+	cursor: pointer;
+	display: block;
+	height: 48px;
+	opacity: 1;
+	overflow: hidden;
+	position: fixed;
+	right: 24px;
+	text-indent: 48px;
+	top: 24px;
+	transition: opacity 250ms;
+	width: 48px;
+	z-index: 1110;
+	background-position: -48px -48px;
+	text-decoration: none;
+	background-size: 384px auto;
+	background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Home+Component/home-close-x-icon.png');
+}
+.modal-content {
+	// background: #fff;
+	// margin: 128px auto;
+	position: relative;
+	// width: 820px;
+	height: calc(100% - (8px * 20));
+	margin: 80px auto;
+	width: 100%;
+	background: none;	
+}
+.modal-section {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.modal-box {
+	display: block;
+	height: 100%;
+	text-align: center;
+}
+.youtube-vid {
+	height: 100%;
+	max-width: 1000px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								Media Queries   										//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 @media screen and (min-width: 1000px) {
     .content2-box1-img {
         opacity: 1;
