@@ -7,7 +7,7 @@ div {
 
     .login {
         color: #fff;
-        margin: 15% auto;
+        margin: 8% auto 15% auto;
         max-width: 100%;
         text-align: center;
         width: 360px;
@@ -20,9 +20,9 @@ div {
         // background: #1c1e20;
 
         .animation-container {
-            // opacity: 1;
-            // transform: translate(0px, 0px);
-            // transition: opacity 1000ms, transform 1000ms;
+            opacity: 1;
+            transform: translate(0px, 0px);
+            transition: opacity 1000ms, transform 1000ms;
 
             .login-container {
                 visibility: visible;
@@ -175,7 +175,7 @@ div {
                                     }
                                 }
 
-                                ._5auo {
+                                .link-container {
                                     text-align: center;
 
                                     a {
