@@ -37,48 +37,98 @@
     margin-top: -46px;
     padding-top: 147%;
 }
-
 .section1-container {
-    // display: inline-block;
-    // margin-top: -390px;
-    // padding: 0 26px;
-    // vertical-align: top;
-    // margin: auto;
+    margin: auto;
+    display: inline-block;
+    margin-top: -390px;
+    padding: 0 26px;
+    vertical-align: top;
 }
-
 .section1-content {
-    // color: #fff;
-    // margin: auto;
-    // padding: 0 25px;
-    // z-index: 1;
-    // margin: auto;
-    // max-width: 640px;
-    // text-align: center;
-    // -webkit-box-sizing: border-box;
-    // -moz-box-sizing: border-box;
-    // box-sizing: border-box;
-    // padding: 60px 25px;
+    max-width: 640px;
+    box-sizing: border-box;
+    margin: auto;
+    z-index: 1;
 }
-.section1-content-h1 {
-    // line-height: 48px;
-    // font-weight: 900;
-    // font-size: 40px;
-    // font-family: "Oculus Sans";
+.section1-content-div {
+    background-image: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_touch_h1_desktop.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: 60px;
+    margin: 0;
 }
-
-.product-name {
-    // background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/rift_touch_h1_desktopx2.png');
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // height: 60px;
-    // margin: 0;
-}
-
 .section1-content-h3 {
-    // font-size: 22px;
-    // text-align: left;
-    // margin: 0;
+    margin: 0;
+    transition-delay: 50ms;
+    font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    font-weight: 600;
 }
+
+// Section 1 - Ordering
+.section1-ordering {
+    margin: 0 auto;
+    max-width: 1000px;
+    // padding: 0 20px;
+    text-align: center;
+    min-width: 0;
+    background: #fff;
+    margin-top: -120px;
+    padding: 20px;
+}
+.section1-ordering-boxes {
+    padding: 10px;
+    width: 33.33333333%;
+    box-sizing: border-box;
+    float: left;
+}
+.section1-item-cart-product-info {
+    float: left;
+    text-align: left;
+    font-family: "Oculus Sans";
+}
+.section1-product-title {
+    font-size: 20px;
+    text-align: left;
+}
+.section1-product-price {
+    color: #1574d4;
+    display: block;
+    text-align: left;
+}
+.section1-button {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 6px 12px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: 2px solid #1c1e20;
+    background-color: #1c1e20;
+    color: #fff;
+    padding: 11px 39px 10px;
+    min-width: 180px;
+    font-size: 14px;
+    -webkit-transition: color .3s,background .3s,border .3s;
+    transition: color .3s,background .3s,border .3s;
+    background-color: #1574d4;
+    border-color: #1574d4;
+    font-size: 12px;
+    padding: 5px 29px 4px;
+    min-width: 150px;
+    float: right;
+}
+
+.section1-clear {
+    display: block;
+    width: 0;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+}
+
 
 
 
@@ -153,5 +203,35 @@
     }
     .section1-content {
         width: 340px;
-    } 
+    }
+    .section1-product-title {
+        font-size: 20px;
+    }
+    .section1-button {
+        padding: 5px 29px;
+        min-width: 150px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .section1-content {
+        color: #1c1e20;
+        left: 58%;
+        position: absolute;
+        top: 42%;
+        margin-top: calc(-370px / 2);
+        width: 270px;
+        padding: 0;
+        text-align: left;
+    }
+    .section1-content-h3 {
+
+    }
+    .section1-product-title {
+        font-size: 16px;
+    }
+    .section1-button {
+        padding: 5px 18px;
+        min-width: 120px;
+    }
 }
