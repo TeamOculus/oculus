@@ -48,7 +48,7 @@
               <h3 class="sitemap1-grid-column-h3">Company</h3>
               <ul class="sitemap1-grid-column-ul ul-open">
                 <li class="sitemap1-grid-ul-item">
-                  <a class="sitemap1-grid-ul-item-a" href="#">Blog</a>
+                  <a class="sitemap1-grid-ul-item-a" [routerLink]="['blog']">Blog</a>
                 </li>
                 <li class="sitemap1-grid-ul-item">
                   <a class="sitemap1-grid-ul-item-a" href="#">Careers</a>
@@ -131,7 +131,7 @@
               <h3 (click)="onCompanyClick()"class="sitemap2-grid-column-h3">Company</h3>
               <ul *ngIf="companyUl" class="sitemap2-grid-column-ul ul-open">
                 <li class="sitemap2-grid-ul-item">
-                  <a class="sitemap2-grid-ul-item-a" href="#">Blog</a>
+                  <a class="sitemap2-grid-ul-item-a" [routerLink]="['blog']">Blog</a>
                 </li>
                 <li class="sitemap2-grid-ul-item">
                   <a class="sitemap2-grid-ul-item-a" href="#">Careers</a>
