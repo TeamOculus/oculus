@@ -14,6 +14,10 @@ div {
         padding: 80px 16px;
         text-align: center;
 
+        @media screen and (max-width: 450px) {
+            padding: 40px 16px;
+        }
+
         h1 {
             -webkit-margin-before: 0.67em;
             -webkit-margin-after: 0.67em;
@@ -36,6 +40,10 @@ div {
 
             color: #fff;
             -webkit-font-smoothing: subpixel-antialiased;
+
+            @media screen and (max-width: 450px) {
+                font-size: 22px;
+            }
         }
     }
 
@@ -169,6 +177,7 @@ div {
                                         -webkit-writing-mode: horizontal-tb;
                                         writing-mode: horizontal-tb;
 
+                                        margin: 0em 0em 0em 0em;
                                         text-align: start;
                                         letter-spacing: normal;
                                         word-spacing: normal;
@@ -182,7 +191,6 @@ div {
                                         cursor: auto;
 
                                         font: inherit;
-                                        margin: 0;
 
                                         -webkit-appearance: none;
                                         outline: none;
@@ -208,6 +216,10 @@ div {
 
                                     }
                                 }
+                            }
+                            @media screen and (max-width: 768px) {
+                                padding: 0;
+                                width: 100%;
                             }
                         }
 
@@ -293,6 +305,11 @@ div {
                             em {
                                 font-style: normal;
                             }
+
+                            @media screen and (max-width: 450px) {
+                                margin: 16px 0;
+                                width: 100%;
+                            }
                         }
 
                         a:hover {
@@ -341,6 +358,11 @@ div {
 
                             em {
                                 font-style: normal;
+                            }
+
+                            @media screen and (max-width: 450px) {
+                                margin: 16px 0;
+                                width: 100%;
                             }
                         }
 
