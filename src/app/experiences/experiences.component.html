@@ -1,34 +1,62 @@
 <header class = 'experiences-header'>
   <section class = 'experiences-menu'>
     <ul class = 'experience-ul'>
-      <li>Rift</li>
-      <li>Gear VR</li>
+      <li>
+        <a [routerLink] = "['/experiences/rift']"> Rift</a>
+      </li>
+      <li>
+        <a  [routerLink] = "['/experiences/gear-vr']">Gear VR</a>
+      </li>
     </ul>
   </section>
   <h1>Featured</h1>
   <section class = 'experiences-featured'>
     
     <div>
-      <img class = 'oculus-touch' src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img1.jpg'>
+      <a href = 'https://www.oculus.com/experiences/section/1131569756933040/'>
+        <img class = 'oculus-touch-big' src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img34.jpg'>
+      </a>
     </div>
-    <div class = 'invisible'></div>
+
+    <div class = 'oculus-touch-small-wrap'>
+      <div>
+        <a href = 'https://www.oculus.com/experiences/section/1490203944340785/'>
+          <img class = 'oculus-touch-small' src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img35.jpg'>
+        </a>
+      </div>
+      <div>
+        <a href = 'https://www.oculus.com/experiences/section/1846893292262053/'>
+          <img class = 'oculus-touch-small' src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img1.jpg'>
+        </a>
+      </div>
+    </div>
+    
   </section>
   <h1>Touch Featured</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
-       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img2.jpg'>
-       <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/bundles/1322004621206222/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img2.jpg'>
+        <div class = 'text'>$89.99</div>
+       </a>
     </div>
     <div class = 'img-container'>
-      <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img3.jpg'>
-      <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/rift/741306562635466/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img3.jpg'>
+        <div class = 'text'>Free</div>
+      </a>
     </div>
     <div class = 'img-container'>
-      <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img4.jpg'>
-      <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/bundles/204185729988685/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img4.jpg'>
+        <div class = 'text'>$89.99</div>
+      </a>
     </div>
-    <h2><span>See More<i class="fa fa-camera-retro fa-lg"></i></span></h2>
+  
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <section class = 'made-oculus'>
     <div class = 'made-oculus-title'>
@@ -44,7 +72,9 @@
 
       <div class = 'big-img'>
         <div class = 'big-img1'>
-          <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img5.jpg'>
+          <a href = 'https://www.oculus.com/experiences/app/926295224105459/'>
+            <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img5.jpg'>
+          </a>
         </div>
       </div>
 
@@ -52,19 +82,27 @@
         
         <div class = 'small-img1'>
           <div class = 'small-img2'>
-            <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img6.png'>
+            <a href = 'https://www.oculus.com/experiences/app/1004798886239391/'>
+              <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img6.png'>
+            </a>
           </div>
           <div class = 'small-img2'>
-            <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img7.png'>
+            <a href = 'https://www.oculus.com/experiences/app/926562347437041/'>
+              <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img7.png'>
+            </a>
           </div>
         </div>
 
         <div class = 'small-img1'>
           <div class = 'small-img2'>
-            <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img8.jpg'>
+            <a href = 'https://www.oculus.com/experiences/app/1043217179077622/'>
+              <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img8.jpg'>
+            </a>
           </div>
           <div class = 'small-img2'>
-            <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img9.jpg'>
+            <a href = 'https://www.oculus.com/experiences/app/1016967501697367/'>
+              <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img9.jpg'>
+            </a>
           </div>
         </div>
       </div>
@@ -83,119 +121,153 @@
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img13.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$39.99</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <h1>Games</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img14.jpg'>
-       <div class = 'text'>$89.99</div>
+       <div class = 'text'>$4.99</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img15.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$3.99</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img16.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$19.99</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
     </section>
     <h1>Entertainment</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img17.jpg'>
-       <div class = 'text'>$89.99</div>
+       <div class = 'text'>Free</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img18.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$1.99</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img19.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>Free</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <h1>Apps</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img20.jpg'>
-       <div class = 'text'>$89.99</div>
+       <div class = 'text'>$7.99</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img21.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>Free</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img22.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>Free</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <h1>Top Selling</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
-       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img23.jpg'>
-       <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/rift/866068943510454/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img23.jpg'>
+        <div class = 'text'>$22.49</div>
+       </a>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img24.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$24.99</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img25.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$19.99</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <h1>Gallery Apps</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
-       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img26.jpg'>
-       <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/rift/980771811959458/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img26.jpg'>
+        <div class = 'text'>Free</div>
+       </a>
     </div>
     <div class = 'img-container'>
-      <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img27.jpg'>
-      <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/rift/1183796961708554/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img27.jpg'>
+         <div class = 'text'>Free</div>
+      </a>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img28.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$4.99</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <h1>Early Access</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img29.jpg'>
-       <div class = 'text'>$89.99</div>
+       <div class = 'text'>$19.99</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img30.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>Free</div>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img31.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$1.99</div>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
   <h1>Browse All</h1>
   <section class = 'touch-featured'>
 
     <div class = 'img-container'>
-       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img32.jpg'>
-       <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/rift/1070597869619581/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img32.jpg'>
+        <div class = 'text'>$39.99</div>
+       </a>
     </div>
     <div class = 'img-container'>
       <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img33.jpg'>
-      <div class = 'text'>$89.99</div>
+      <div class = 'text'>$29.99</div>
     </div>
     <div class = 'img-container'>
-      <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img4.jpg'>
-      <div class = 'text'>$89.99</div>
+      <a href = 'https://www.oculus.com/experiences/rift/1012593518800648/'>
+        <img src = 'https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img4.jpg'>
+        <div class = 'text'>$22.49</div>
+      </a>
     </div>
+    <h2> 
+      <span>See More<i class = 'dropdown-arrow'></i></span>
+    </h2>
   </section>
 </header>

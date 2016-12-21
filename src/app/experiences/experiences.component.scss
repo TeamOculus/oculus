@@ -5,14 +5,38 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
+    
 }
-.experience-ul li {
-    margin-right: 20px;
+.experience-ul li a{
+    margin-right: 30px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
-
-.oculus-touch {
+img.oculous-touch-big { 
+    background-color: black;
+}
+img:hover {
+    opacity: 0.8;
+    
+}
+.oculus-touch-big {
     width: 60vw;
+    height: 80vh;
+}
+.oculus-touch-small-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    padding-left: 15px;
+}
+.oculus-touch-small {
+    width: 30vw;
+    height: 38vh;
+}
+img.oculus-touch-small {
+    margin-top: 10px;
 }
 .img-container {
     position: relative;
@@ -24,6 +48,7 @@
     color: white;
     font-size: 25px;
 }
+
 h1 {
    padding: 20px; 
    color: black;
@@ -33,11 +58,7 @@ h1 {
     flex-direction: space-between;
     flex-wrap: wrap;
     padding: 20px;
-}
-.invisible {
-    border: 1px solid black;
-    height: 40vh;
-    width: 30vw;
+    height: 80vh;
 }
 .touch-featured {
     display: flex;
@@ -57,12 +78,24 @@ h1 {
     padding-top: 80px;
     padding-bottom: 50px;
 }
-img {
-    max-width: 100%;
-}
 
-h2 { width:100%; text-align:center; border-bottom: 1px solid #000; line-height:0.1em; margin:50px 0 50px; } 
-h2 span { background:#fff; padding:0 10px; }
+em {
+    font-size: 16px;
+}
+h2 {
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid grey; 
+   height: 17px;
+   margin: 30px 0 30px;
+   font-weight: normal;
+} 
+
+h2 span { 
+    background:#fff; 
+    padding:0 10px; 
+    font-size: 16px;
+}
 .oculus-symbol {
     background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Experiences+Component/img2.png');
     background-size: auto;
@@ -106,4 +139,82 @@ h2 span { background:#fff; padding:0 10px; }
     width: 23vw;
     padding-right: 10px;
     padding-top: 10px;
+}
+.dropdown-arrow {
+    background: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Header+Component/dropdown-arrow-icon2.png') no-repeat 0 0;
+    background-position: -48px -192px;
+    color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+   
+    background-size: 192px auto;
+}
+@media screen and (max-width: 999px) {
+    section {
+        display: block;
+    }
+    
+    .experiences-header {
+        display: block;
+    }
+    .experiences-featured {
+        display: block;
+        overflow: auto;
+    }
+    .oculus-touch-small-wrap {
+        display: block;
+        padding-left: 0;
+    }
+    .oculus-touch-big {
+        display: block;
+        width: 95vw;
+        height: 80vh;
+    }
+    .oculus-touch-small {
+        display: block;
+        width: 95vw;
+        height: 80vh;
+    }
+    .touch-featured {
+        display: block;
+    }
+    .touch-featured img {
+        display: block;
+        width: 95vw;
+        height: 80vh;
+        margin-top: 10px;
+    }
+    .made-oculus-title {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+    .oculus-view {
+        display: block;
+    }
+    .small-img {
+        display: block;
+    }
+    .small-img1 {
+        display: block;
+    }
+   .big-img1 img {
+        width: 100vw;
+        height: 80vh;
+        margin-top: 50px;
+        margin-bottom: 18px;
+    }
+    .small-img2 img {
+        width: 100vw;
+        height: 80vh;
+        padding-right: 0px;
+        padding-top: 0px;
+        padding-bottom: 18px;
+    }
+
 }
