@@ -16,6 +16,7 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { DevelopersComponent } from './developers/developers.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
+import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { LoginComponent } from './login/login.component';
     DevelopersComponent,
     CartComponent,
     LoginComponent,
+    ExperiencesGearVrComponent,
   ],
   imports: [
     BrowserModule,
