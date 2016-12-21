@@ -17,6 +17,7 @@ import { DevelopersComponent } from './developers/developers.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/ex
     CartComponent,
     LoginComponent,
     ExperiencesGearVrComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

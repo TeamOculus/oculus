@@ -1,0 +1,103 @@
+$font-oculus-bold: "Oculus Sans Bold";
+$reg-color: #323436;
+$dark-color: #1c1e20;
+$light-border: 1px solid #F0F0F0;
+$reg-border: 1px solid #D2D2D2;
+$dark-border: 1px solid #BABABA;
+$dark-button-border: 2px solid #1c1e20;
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#checkout-container {
+    width: 100%;
+    background-color: lemonchiffon;
+    overflow: hidden;
+}
+#checkout-summary-container {
+    width: 20%;
+    background-color: violet;
+    float: right;
+    padding-right: 20px;
+}
+#checkout-checkout-container {
+    width: 38%;
+    background-color: royalblue;
+    margin: 0 auto;
+    margin-top: -16px;
+    padding-top: 25px;
+}
+
+/* summary ==================================== */
+
+.checkout-summary-title {
+    border-bottom: 1px solid #D2D2D2;
+    padding-top: 25px;
+
+
+    h1 {
+        color: $dark-color;
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+    span {
+        font-size: 12px;
+        font-weight: bold;
+        color: $reg-color;
+        float: right;
+        margin: 0px;
+    }
+}
+
+#checkout-summary-stats {
+    color: $reg-color;
+    font-size: 12px;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 7px 0;
+
+    #checkout-summary-stats-stat {
+        span {
+            float: right;
+        }
+    }
+}
+
+#checkout-summary {
+    width: 100%;
+    background-color: orangered;
+}
+
+#checkout-inyourcart {
+    width: 100%;
+    background-color: forestgreen;
+}
+#checkout-inyourcart-item {
+    background-color:mediumturquoise;
+    padding: 10px 0;
+    overflow: hidden;
+
+    img {
+        width: 96px;
+        height: 96px;
+        float: left;
+    }
+}
+#checkout-inyourcart-item-desc {
+    background-color: palegreen;
+    padding: 10px 5px 0;
+    float: left;
+    width: 71%;
+    
+    h2 {
+        color: $reg-color;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 12px;
+        font-weight: 400;
+        color: $reg-color
+    }
+}

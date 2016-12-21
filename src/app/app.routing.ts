@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { BlogComponent } from './blog/blog.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 import { DevelopersComponent } from './developers/developers.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
@@ -16,6 +17,7 @@ const APP_ROUTES: Routes = [
     { path: '', component: HomeComponent },
     { path: 'blog', component: BlogComponent },
     { path: 'cart', component: CartComponent },
+    { path: 'checkout', component: CheckoutComponent},
     { path: 'developers', component: DevelopersComponent },
     { path: 'experiences/rift', component: ExperiencesComponent },
     { path: 'experiences/gear-vr', component: ExperiencesGearVrComponent },
