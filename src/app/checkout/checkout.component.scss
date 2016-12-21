@@ -5,6 +5,8 @@ $light-border: 1px solid #F0F0F0;
 $reg-border: 1px solid #D2D2D2;
 $dark-border: 1px solid #BABABA;
 $dark-button-border: 2px solid #1c1e20;
+$gray-color: #666666;
+$input-border: 1px solid #a4a5a6;
 
 ul {
   list-style-type: none;
@@ -13,21 +15,12 @@ ul {
 
 #checkout-container {
     width: 100%;
-    background-color: lemonchiffon;
     overflow: hidden;
 }
 #checkout-summary-container {
     width: 20%;
-    background-color: violet;
     float: right;
     padding-right: 20px;
-}
-#checkout-checkout-container {
-    width: 38%;
-    background-color: royalblue;
-    margin: 0 auto;
-    margin-top: -16px;
-    padding-top: 25px;
 }
 
 /* summary ==================================== */
@@ -35,7 +28,6 @@ ul {
 .checkout-summary-title {
     border-bottom: 1px solid #D2D2D2;
     padding-top: 25px;
-
 
     h1 {
         color: $dark-color;
@@ -47,7 +39,7 @@ ul {
         font-weight: bold;
         color: $reg-color;
         float: right;
-        margin: 0px;
+        margin: 4px 0 0 0;
     }
 }
 
@@ -66,15 +58,12 @@ ul {
 
 #checkout-summary {
     width: 100%;
-    background-color: orangered;
 }
 
 #checkout-inyourcart {
     width: 100%;
-    background-color: forestgreen;
 }
 #checkout-inyourcart-item {
-    background-color:mediumturquoise;
     padding: 10px 0;
     overflow: hidden;
 
@@ -85,8 +74,7 @@ ul {
     }
 }
 #checkout-inyourcart-item-desc {
-    background-color: palegreen;
-    padding: 10px 5px 0;
+    padding: 0 5px;
     float: left;
     width: 71%;
     
@@ -94,10 +82,152 @@ ul {
         color: $reg-color;
         font-size: 16px;
         font-weight: bold;
+        margin-top: 0px;
     }
     p {
         font-size: 12px;
         font-weight: 400;
         color: $reg-color
+    }
+}
+
+/* shipping =================================*/
+
+#checkout-checkout-container {
+    width: 38%;
+    margin: 0 auto;
+    margin-top: -16px;
+    padding-top: 25px;
+}
+
+.checkout-main-title {
+    border-bottom: $reg-border;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        color: $dark-color;
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+}
+
+#checkout-shipping {
+    width: 100%;
+    border-bottom: $reg-border;
+}
+
+#checkout-shipping-title {
+    padding: 15px 0;
+
+    h1 {
+        font-size: 16px;
+        color: $dark-color;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+#checkout-shipping-form {
+    border-bottom: $reg-border;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    button {
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 8px 40px;
+        border: $dark-button-border;
+        border-radius: 24px;
+        background-color: black;
+        line-height: 28px;
+        transition: background 0.3s ease-in; 
+        margin: 15px auto 30px;               
+    }
+    button:hover {
+        background-color: dimgray;
+        transition: background 0s ease;                
+    }
+}
+
+.checkout-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.checkout-form-item {
+    width: 47%;
+    
+    h3 {
+        margin: 0 0 10px 0;
+        color: $gray-color;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    input {
+        border: $input-border;
+        border-radius: 4px;
+        color: $reg-color;
+        height: 44px;
+        width: 90%;
+        padding: 0 16px;
+
+        color: #494b4d;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    select {
+        @extend input;
+        width: 100%;
+    }
+}
+
+/* payment ===========================*/
+
+#checkout-payment {
+    width: 100%;
+}
+
+#checkout-payment-title {
+    padding: 15px 0;
+
+    h1 {
+        font-size: 16px;
+        color: $dark-color;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+#checkout-payment-content {
+    display: block;
+}
+
+/* media query =================================*/
+@media (max-width: 900px){
+    #checkout-summary-container {
+        width: 100%;
+        float: none;
+        padding-left: 10px;
+    }
+    #checkout-checkout-container {
+        width: 100%;
+        float: none;
+        padding-left: 10px;
+    }
+    #checkout-summary-stats {
+        padding-right: 20px;
+    }
+    .checkout-summary-title {
+        padding-right: 20px;
+    }
+    .checkout-form-row {
+        padding-right: 20px;
     }
 }
