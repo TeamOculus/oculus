@@ -1,0 +1,232 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 									 TABLE OF CONTENTS										//
+// 	 							1. Main Styles 		- Line 15								//
+// 	 							2. Section 1 		- Line 37								//
+// 	 							3. Section 2 		- Line 145								//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			  1a. Full View		 				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+
+.page-wrapper {
+    overflow: hidden;
+    text-align: center;
+}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 1											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.section1 {
+    width: 100%;
+	min-height: 400px;
+	background-color: #fff;
+	padding-bottom: 0;
+	margin-top: -60px;
+    position: relative;
+	color: #323436;
+	background: #fff;
+    background: #eaeaec;
+	height: auto;
+	margin: 0;
+}
+.section1-top {
+    display: block;
+    transform: translate3d(0px, 4.94px, 0px);
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+    background: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/gear-vr-hero.jpg') center top/cover no-repeat;
+	height: 0;
+	padding-top: 145%;
+	margin-top: -16%;
+}
+.section1-container {
+    margin: auto;
+    // padding: 26px;
+}
+.section1-container-div {
+    opacity: 1!important;
+	-webkit-transform: translate(0,0)!important;
+	-moz-transform: translate(0,0)!important;
+	-ms-transform: translate(0,0)!important;
+	transform: translate(0,0)!important;
+    color: #1c1e20;
+	margin: auto;
+	padding-top: 70px;
+	text-align: center;
+	z-index: 1;
+}
+.section1-container-div-product {
+    background-image: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/gear-vr-powered-by.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 125px;
+	padding: 0 30px;
+}
+.section1-container-div-p {
+    display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 19px;
+	margin: 70px 0 50px;
+}
+.section1-container-button {
+    color: -webkit-link;
+	text-decoration: underline;
+	cursor: auto;
+    background: 0 0;
+	text-decoration: none;
+	color: #1574d4;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+}
+.section1-container-button-span {
+    display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
+	font-weight: 600;
+	margin: 0 6px 12px;
+	text-align: center;
+	box-sizing: border-box;
+    border-radius: 22px;
+	border: 2px solid #1c1e20;
+	background-color: #1c1e20;
+	color: #fff;
+	padding: 11px 39px 10px;
+	min-width: 180px;
+	font-size: 14px;
+	-webkit-transition: color .3s,background .3s,border .3s;
+	transition: color .3s,background .3s,border .3s;
+    background-color: #1574d4;
+	border-color: #1574d4;
+}
+.section1-container-button-span:hover {
+    background-color: #148aff;
+	border-color: #148aff;
+}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								Media Queries   										//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+@media screen and (max-width: 641px) {
+    .section1-top {
+        background: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/gear-vr-hero.jpg') center center no-repeat;
+        background-size: cover;
+        height: 639px;
+        margin-top: -24px;
+        padding-top: 0;
+    }
+    .section1-container {
+        display: inline-block;
+        margin-top: -720px;
+        padding: 0 26px;
+        vertical-align: top;
+    }
+    .section1-container-div {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 1a. Section 1	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    .section1 {
+        min-height: 500px;
+	    margin-top: -80px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1025px) {
+    .section1-top {
+        padding-top: 102%;
+	    margin-top: -26%;
+    }
+    .section1-container {
+        margin-top: -20px;
+    }
+    .section1-container-div {
+        margin-top: -82%;
+    }
+}
+
+
+@media screen and (min-width: 1026px) {
+    .page-wrapper {
+        padding-top: 0;
+        text-align: left;
+    }
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 1a. Section 1	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    .section1 {
+        padding: 100px 0;
+        background: 0 0;
+        padding: 58px 0 0;
+        margin-top: 0;
+    }
+    .section1-top {
+        background-image: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/gear-vr-hero.jpg');
+        background-position: center center;
+        background-size: cover;
+        padding-top: 50%;
+        margin-top: -95px;
+        min-height: 100px;
+    }
+    .section1-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+        max-width: calc(1384px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section1-container-div {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+        color: #1c1e20;
+        position: absolute;
+        top: 52%;
+        margin-top: calc(-370px / 2);
+        width: 430px;
+        padding: 0;
+        text-align: left;
+    }
+    .section1-container-div-product {
+        background-position: 0 0;
+	    padding: 0;
+    }
+    .section1-container-div-p {
+        margin: 30px 0;
+        font-size: 22px;
+        text-align: left;
+    }
+    .section1-container-button {
+        min-width: 225px;
+    }
+    .section1-container-button-span {
+        margin-left: 0;
+    }
+}
