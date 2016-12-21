@@ -116,12 +116,73 @@
     background-color: #148aff;
 	border-color: #148aff;
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 2											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.section2 {
+    position: relative;
+	color: #323436;
+	background: #fff;
+    background-color: #16181a;
+	margin-top: -30px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+.section2-container {
+    margin: auto;
+}
+.section2-container-content {
+    max-width: 900px;
+	width: 80%;
+	text-align: center;
+	font-size: 12px;
+	color: #777879;
+	padding: 0;
+	margin: 0 auto;
+}
+.section2-content-p {
+    display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: 400;
+	line-height: 150%;
+    font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 50px;
+    padding: 0;
+	margin: 0;
+}
+.section2-content-a {
+    background: 0 0;
+	text-decoration: none;
+	color: #1574d4;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+}
+
+
+
+
+
+
+
+
+
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 // 																							//
 // 	 								Media Queries   										//
 // 																							//
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 @media screen and (max-width: 641px) {
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 1. Section 1	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
     .section1-top {
         background: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/gear-vr-hero.jpg') center center no-repeat;
         background-size: cover;
@@ -138,6 +199,12 @@
     .section1-container-div {
         margin-top: 120px;
     }
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 2. Section 2	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    .section2-content-p {
+        line-height: 24px;
+    }
 }
 
 @media screen and (min-width: 640px) {
@@ -151,6 +218,9 @@
 }
 
 @media screen and (min-width: 641px) and (max-width: 1025px) {
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 1. Section 1	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
     .section1-top {
         padding-top: 102%;
 	    margin-top: -26%;
@@ -161,6 +231,23 @@
     .section1-container-div {
         margin-top: -82%;
     }
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 2. Section 2	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    .section2 {
+        padding: 70px 0 0;
+        margin-top: 10px;
+    }
+    .section2-container-content {
+        max-width: 606px;
+	    margin: 0 auto;
+    }
+    .section2-content-p {
+        font-size: 18px;
+        line-height: 144%!important;
+        // margin-bottom: 70px;
+        text-align: center;
+    }
 }
 
 
@@ -170,7 +257,7 @@
         text-align: left;
     }
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
-    // 	 		 1a. Section 1	 			//																		
+    // 	 		 1. Section 1	 			//																		
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
     .section1 {
         padding: 100px 0;
@@ -228,5 +315,23 @@
     }
     .section1-container-button-span {
         margin-left: 0;
+    }
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    // 	 		 2. Section 2	 			//																		
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+    .section2 {
+        // padding: 100px 0;
+    }
+    .section2-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section2-content-p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 0;
     }
 }
