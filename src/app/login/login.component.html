@@ -1,3 +1,35 @@
-<p>
-  login works!
-</p>
+<div class="bg-cont">  
+  <div class="login">
+    <div class="animation-container slideUp fadeIn">
+      <div class="login-container">
+        <i class="logo-large"></i>
+        <div></div>
+        <div class="form-container">
+          <div>
+            <form name="login" class="">
+              <div class="input-container">
+                <div class="bx-input-control"><input type="text" id="email" name="email" placeholder="Email" tabindex="1" value="" class=""
+                    autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" wrap="soft"></div>
+              </div>
+              <div class="input-container">
+                <div class="bx-input-control"><input type="password" id="password" name="password" placeholder="Password" tabindex="1" value="" class=""
+                    autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" wrap="soft"></div>
+              </div>
+              <div class="input-container"><button class="" tabindex="1"
+                  type="submit" id="sign_in" autocomplete="off" data-bx-disabled="false"><em class="" data-intl-translation="Sign In" data-intl-trid="">Sign In</em></button></div>
+              <div class="link-container">
+                <a href="https://secure.oculus.com/forgot-password/" class=""><em class="" data-intl-translation="Forgot Password" data-intl-trid="">Forgot Password</em></a>
+                |
+                <a href="https://secure.oculus.com/sign-up/?login_redirect_uri=https%3A%2F%2Fwww.oculus.com%2Fblog" class=""><em class="" data-intl-translation="Create Account" data-intl-trid="">Create Account</em></a>
+              </div>
+            </form>
+            <form name="nonceRedirectForm" method="post" action="/nonce-redirect/">
+              <input type="hidden" name="redirect_uri" value="https://www.oculus.com/blog">
+            </form>
+          </div>
+        </div>
+        <a href="https://secure.oculus.com/guest/login/">Ordered as a Guest?</a>
+      </div>
+    </div>
+  </div>
+</div>  
