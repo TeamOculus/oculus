@@ -40,7 +40,7 @@
                     <span>
                       <span display="inline">
                         <span>
-                          <i class="play-button"></i>
+                          <i (click)="onVideoClick()"class="play-button"></i>
                         </span>
                       </span>
                     </span>
@@ -191,8 +191,8 @@
 </div>
 
 <div>
-  <div class="modal-wrapper">
-    <a class="close-x-icon"></a>
+  <div *ngIf="videoClicked" class="modal-wrapper">
+    <a (click)="onVideoClick()" class="close-x-icon"></a>
     <div class="modal-content">
       <div class="modal-section">
         <div class="modal-box">
