@@ -1,93 +1,178 @@
-<div style="">
-  <footer id="page-footer">
-    <div class="site-map">
-      <div class="site-map-column-wrapper">
-        <div class="site-map-grid site-map-grid-parent">
-          <div class="site-map-grid-column site-map-grid-25 site-map-column">
-            <h3 class="site-map-heading site-map-heading-6 site-map-heading-dark site-map-header">Product</h3>
-            <ul class="site-map-list">
-              <li class="site-map-list-item">
-                <a class="site-map-list-item-link" href="experiences/rift/index.html">Experiences</a>
-              </li>
-              <li class="site-map-list-item">
-                <a class="site-map-list-item-link" href="https://www.oculus.com/gear-vr/">Gear VR</a>
-              </li>
-              <li class="site-map-list-item">
-                <a class="site-map-list-item-link" href="https://www.oculus.com/rift/">Rift</a>
-              </li>
-              <li class="site-map-list-item">
-                <a class="site-map-list-item-link" href="https://www.oculus.com/touch/">Touch</a>
-              </li>
-              <li class="site-map-list-item">
-                <a class="site-map-list-item-link" href="https://www.oculus.com/oculus-ready-pcs/">Oculus Ready PCs</a>
-              </li>
-            </ul>
+<div>
+  <footer>
+    <div class="sitemap">
+      <div class="sitemap-columns">
+        <div class="sitemap-grid">
+          <div class="sitemap-full">
+            <div class="sitemap-grid-column">
+              <h3 class="sitemap-grid-column-h3">Product</h3>
+              <ul class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Experiences</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Gear VR</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Rift</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Touch</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Oculus Ready PCs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-grid-column">
+              <h3 class="sitemap-grid-column-h3">Developers</h3>
+              <ul class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Developer Center</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Docs</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Downloads</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Tools</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Developer Blog</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Developer Forums</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-grid-column">
+              <h3 class="sitemap-grid-column-h3">Company</h3>
+              <ul class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Blog</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Careers</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">News</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Press Kit</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Story Studio</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Oculus Connect</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Research</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-grid-column">
+              <h3 class="sitemap-grid-column-h3">Community</h3>
+              <ul class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Support</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Forums</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Order History</a>
+                </li>     
+              </ul>
+            </div>
           </div>
 
-          <div class="site-map-grid-column site-map-grid-25 site-map-column">
-            <h3 class="site-map-heading site-map-heading-6 site-map-heading-dark site-map-header">Developers</h3>
-            <ul class="site-map-list">
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://developer.oculus.com/">Developer Center</a>
+          <div class="sitemap-small">
+            <div class="sitemap-grid-column">
+              <h3 (click)="onProductClick()"class="sitemap-grid-column-h3">Product</h3>
+              <ul *ngIf="productUl" class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Experiences</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://developer.oculus.com/documentation/">Docs</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Gear VR</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://developer.oculus.com/downloads/">Downloads</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Rift</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://developer.oculus.com/tools/">Tools</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Touch</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://developer.oculus.com/blog/">Developer Blog</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Oculus Ready PCs</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://forums.oculus.com/developer/">Developer Forums</a>
+              </ul>
+            </div>
+            <div class="sitemap-grid-column">
+              <h3 (click)="onDevelopersClick()"class="sitemap-grid-column-h3">Developers</h3>
+              <ul *ngIf="developersUl" class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Developer Center</a>
                 </li>
-            </ul>
-          </div>
-          
-          <div class="site-map-grid-column site-map-grid-25 site-map-column">
-            <h3 class="site-map-heading site-map-heading-6 site-map-heading-dark site-map-header">Company</h3>
-            <ul class="site-map-list">
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="blog/index.html">Blog</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Docs</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://www.oculus.com/careers/">Careers</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Downloads</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="news/index.html">News</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Tools</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="press-kit/identity/index.html">Press Kit</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Developer Blog</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://storystudio.oculus.com/">Story Studio</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Developer Forums</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://www.oculus.com/connect/">Oculus Connect</a>
+              </ul>
+            </div>
+            <div class="sitemap-grid-column">
+              <h3 (click)="onCompanyClick()"class="sitemap-grid-column-h3">Company</h3>
+              <ul *ngIf="companyUl" class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Blog</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="research/index.html">Research</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Careers</a>
                 </li>
-            </ul>
-          </div>
-
-          <div class="site-map-grid-column site-map-grid-25 site-map-column">
-            <h3 class="site-map-heading site-map-heading-6 site-map-heading-dark site-map-header">Community</h3>
-            <ul class="site-map-list">
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://support.oculus.com/">Support</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">News</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://forums.oculus.com/">Forums</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Press Kit</a>
                 </li>
-                <li class="site-map-list-item">
-                  <a class="site-map-list-item-link" href="https://shop.oculus.com/history/">Order History</a>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Story Studio</a>
                 </li>
-            </ul>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Oculus Connect</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Research</a>
+                </li>
+              </ul>
+            </div>
+            <div class="sitemap-grid-column">
+              <h3 (click)="onCommunityClick()"class="sitemap-grid-column-h3">Community</h3>
+              <ul *ngIf="communityUl" class="sitemap-grid-column-ul ul-open">
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Support</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Forums</a>
+                </li>
+                <li class="sitemap-grid-ul-item">
+                  <a class="sitemap-grid-ul-item-a" href="#">Order History</a>
+                </li>     
+              </ul>
+            </div>
           </div>
         </div>
       </div>
