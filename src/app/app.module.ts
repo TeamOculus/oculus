@@ -18,6 +18,7 @@ import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
 import { CreateAccountComponent } from './login/create-account/create-account.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 @NgModule({
@@ -35,7 +36,11 @@ import { CreateAccountComponent } from './login/create-account/create-account.co
     CartComponent,
     LoginComponent,
     ExperiencesGearVrComponent,
+<<<<<<< HEAD
     CreateAccountComponent,
+=======
+    CheckoutComponent,
+>>>>>>> master
   ],
   imports: [
     BrowserModule,
