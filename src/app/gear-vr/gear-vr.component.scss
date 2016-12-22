@@ -339,6 +339,12 @@
 	margin-bottom: 50px;
     transition-delay: 250ms;
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 6											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .section6 {
     display: block;
     position: relative;
@@ -346,7 +352,51 @@
 	background: #fff;
     height: 900px;
 }
-
+.section6-image {
+    border: none;
+}
+.section6-container {
+    margin: auto;
+}
+.section6-container-content-h2 {
+    display: block;
+	font-size: 1.5em;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+    font-weight: 900;
+	margin: 0 0 12px;
+    opacity: 1!important;
+	-webkit-transform: translate(0,0)!important;
+	-moz-transform: translate(0,0)!important;
+	-ms-transform: translate(0,0)!important;
+	transform: translate(0,0)!important;
+    transition-delay: 225ms;
+}
+.section6-container-content-p {
+    display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+    line-height: 28px;
+	margin: 0 0 24px;
+    font-size: 18px;
+	font-weight: 400;
+    opacity: 1!important;
+	-webkit-transform: translate(0,0)!important;
+	-moz-transform: translate(0,0)!important;
+	-ms-transform: translate(0,0)!important;
+	transform: translate(0,0)!important;
+    font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 20px;
+    font-size: 16px;
+	line-height: 22px;
+	margin-bottom: 50px;
+    transition-delay: 250ms;
+}
 
 
 
@@ -413,7 +463,7 @@
     .section3-container-content {
         padding: 0 24px 70px;
     }
-
+// Section 5
     .section5 {
         padding: 50px 0 0;
         height: auto;
@@ -433,6 +483,18 @@
         height: 0;
         padding-top: 64.84%;
         margin-top: 15px;
+    }
+// Section 6
+    .section6 {
+        padding: 50px 0 0;
+        height: auto;
+    }
+    .section6-bg {
+        display: none;
+    }
+    .section6-container-content-p {
+        line-height: 24px;
+        margin: 0;
     }
     .section6-container-background {
         background-image: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/head-game.jpg');
@@ -468,6 +530,7 @@
     .section1-container-div {
         margin-top: -82%;
     }
+// Section 2
     .section2 {
         padding: 70px 0 0;
         margin-top: 10px;
@@ -482,6 +545,7 @@
         // margin-bottom: 70px;
         text-align: center;
     }
+// Section 3
     .section3 {
         overflow: hidden;
         padding: 0;
@@ -499,7 +563,7 @@
         max-width: 540px;
         margin: auto;
     }
-
+// Section 5
     .section5 {
         padding: 70px 0 0;
         height: auto;
@@ -532,6 +596,31 @@
         height: 0;
         padding-top: 64.84%;
     }
+// Section 6
+    .section6 {
+        padding: 70px 0 0;
+        height: auto;
+    }
+    .section6-bg {
+        display: none;
+    }
+    .section6-container-content {
+        max-width: 500px;
+	    margin: 0 auto;
+        padding: 0 24px;
+    }
+    .section6-container-content-h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .section6-container-content-p {
+        font-size: 18px;
+        line-height: 144%!important;
+        margin-bottom: 70px;
+        text-align: center;
+    }
     .section6-container-background {
         background-image: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/tablet/head-game.jpg');
         background-size: cover;
@@ -540,6 +629,7 @@
         height: 0;
         padding-top: 64.84%;
     }
+    
 }
 
 
@@ -608,6 +698,7 @@
     .section1-container-button-span {
         margin-left: 0;
     }
+// Section 2
     // .section2 {
     //     // padding: 100px 0;
     // }
@@ -623,7 +714,7 @@
         line-height: 1.5;
         margin-bottom: 0;
     }
-
+// Section 3
     .section3 {
         padding: 100px 0;
         overflow: hidden;
@@ -751,12 +842,12 @@
         width: 100%;
         left: 0;
     }
-
+// Section 4
     .section4 {
 	    text-align: left;
         padding: 100px 0;
     }
-
+// Section 5
     .section5 {
         padding: 100px 0;
         background: 0 0;
@@ -801,8 +892,8 @@
     .section5-container-content {
         padding: 0;
         width: 430px;
-        // top: 50%;
-        top: 33%;
+        top: 50%;
+        // top: 33%;
         margin-top: calc(-250px / 2);
         position: absolute;
         color: #fff;
@@ -828,6 +919,7 @@
         margin-bottom: 0;
         text-align: left;
     }
+// Section 6
     .section6 {
         padding: 100px 0;
         background: 0 0;
@@ -835,6 +927,69 @@
         padding: 24px 0 0;
         overflow: hidden;
 	    background: #1c1e20;
+    }
+    .section6-bg {
+        right: 0;
+        top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+    }
+    .section6-bg-wrap {
+        right: 0;
+        top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+	    height: 100%;
+    }
+    .section6-image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        transform: translate(0,0);
+    }
+    .section6-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section6-container-content {
+        padding: 0;
+        width: 430px;
+        top: 50%;
+        // top: 33%;
+        margin-top: calc(-250px / 2);
+        position: absolute;
+        color: #fff;
+    }
+    .section6-container-content-h2 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 30px;
+        max-width: 270px;
+        text-align: left;
+        color: inherit;
+    }
+    .section6-container-content-p {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 0;
+        text-align: left;
     }
 
 }
