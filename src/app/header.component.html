@@ -39,6 +39,7 @@
             </div>
 
             <div class="header-account">
+                <p style="color: white" *ngIf="user">{{user.name}}</p>
                 <a class="account-cart" [routerLink]="['cart']">
                     <div class="cart-logo"></div>
                 </a>
