@@ -80,6 +80,9 @@ div {
                     }
 
                     .bxGrid {
+                        // width: 948px;
+                        height: 93px;
+
                         margin-left: auto;
                         margin-right: auto;
 
@@ -92,6 +95,11 @@ div {
                             padding-right: 20px;
 
                             padding-left: 0;
+
+                            @media screen and (max-width: 768px) {
+                                padding: 0;
+                                width: 100%;
+                            }
                         }
 
                         .bxGrid__column {
@@ -109,10 +117,10 @@ div {
                             .bxFormControl {
 
                                 .bxInputLabel {
-                                    display: block;
                                     color: #1c1e20;
                                     margin: 0 0 8px 0;
                                     position: relative;
+                                    height: 24px;
 
                                     label {
                                         cursor: pointer;
@@ -165,8 +173,12 @@ div {
                                         }
 
                                         em {
-                                            font-style: normal;
+                                            font-style: normal;                                      
                                         }
+
+                                        // #first-name, #last-name, #email, #confirm-email, #confirm-password {
+                                        //     margin-bottom: 5px;
+                                        // }
                                     }
                                 }
 
@@ -213,13 +225,8 @@ div {
                                         font-family: inherit;
 
                                         font-size: inherit;
-
                                     }
                                 }
-                            }
-                            @media screen and (max-width: 768px) {
-                                padding: 0;
-                                width: 100%;
                             }
                         }
 
@@ -231,6 +238,11 @@ div {
                             padding-left: 20px;
 
                             padding-right: 0;
+
+                            @media screen and (max-width: 768px) {
+                                padding: 0;
+                                width: 100%;
+                            }
                         }
                     }
 
@@ -239,6 +251,11 @@ div {
                         border-top: 1px solid #f0f0f0;
                         margin-top: 28px;
                         padding: 28px 0;
+                        // height: 19px;
+
+                        @media screen and (max-width: 768px) {
+                            clear: both;
+                        }
 
                         em {
                             font-style: normal;
@@ -289,7 +306,7 @@ div {
                             font-size: 14px;
                             height: 40px;
                             min-width: 40px;
-                            padding: 2px 40px;
+                            padding: 4px 40px;
 
                             background: none;
                             border-color: #1c1e20;
