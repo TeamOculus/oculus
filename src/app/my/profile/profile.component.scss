@@ -25,12 +25,19 @@ h1 {
 
         word-wrap: break-word;
 
+        @media screen and (max-width: 1024px) {
+            border-left: 0 solid #f0f0f0;
+            padding: 48px 20px;
+            width: 100%;
+        }
+
         ._4h-a {
 
             h1 {
-                font: 900 40px/48px "Oculus Sans Bold", "Arial", "Helvetica", sans-serif;
+                font: 900 30px/38px "Oculus Sans Bold", "Arial", "Helvetica", sans-serif;
 
                 font-size: 30px;
+                font-style: normal !important;
                 font-weight: 900;
                 line-height: 38px;
 
@@ -42,6 +49,8 @@ h1 {
                 padding: 0;
 
                 padding-bottom: 32px;
+
+                -webkit-font-smoothing: subpixel-antialiased;
 
                 ._4qba {
                     font-style: normal;
@@ -103,15 +112,9 @@ h1 {
                         margin-right: auto;
 
                         .bxGrid__column:first-child {
-                            padding-left: 0;
-
-                            padding-left: 4px;
+                            padding: 0;
 
                             padding-right: 20px;
-
-                            padding-left: 4px;
-
-                            padding: 0 12px;
 
                             margin-bottom: 16px;
 
@@ -206,6 +209,10 @@ h1 {
                         line-height: 0;
                         width: 0;
                         height: 0;
+                    }
+
+                    .bxGrid:after {
+                        clear: both;
                     }
                 }
 
