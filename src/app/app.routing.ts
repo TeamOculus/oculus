@@ -29,7 +29,7 @@ const APP_ROUTES: Routes = [
     { path: 'my', component: MyComponent, children: [
         {path: 'profile', component: ProfileComponent},
         {path: 'orders', component: OrdersComponent}
-    ]}
+    ]},
     { path: 'rift', component: RiftComponent },
     { path: 'rift/ready', component: RiftReadyComponent }
 ]

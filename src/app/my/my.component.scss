@@ -1,0 +1,51 @@
+#my-banner {
+    width: 100%;
+    height: 208px;
+    background-color: mediumaquamarine;
+}
+
+#my-container {
+    width: 100%;
+    height: 616px;
+    background-color: steelblue;
+}
+#my-container-content {
+    width: 1228px;
+    height: 100%;
+    background-color: mediumpurple;
+    margin: 0 auto;
+}
+#my-menu {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background-color: rosybrown;
+}
+#my-profile {
+    width: 75%;
+    height: 100%;
+    float: left;
+    background-color: darkslategray;
+}
+
+/* media query ==================*/
+
+// @media (max-width: 900px){
+//     #my-container {
+//         height: initial;
+//     }
+//     #my-container-content {
+//         display: none;
+//     }
+//     #my-menu {
+//         width: 100%;
+//         float: none;
+//         height: 76px;
+//     }
+//     #my-profile {
+//         width: 100%;
+//         float: none;
+//         height: 616px;
+//     }
+
+// }
