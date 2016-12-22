@@ -1,7 +1,7 @@
 <div class="home">
   <div class="home-content home-content1">
 
-    <section class="content-container content-img" style="background-color: #ebebeb;">
+    <section class="content-container1">
       <div class="content-box">
 
         <div class="content1-box1">
@@ -24,7 +24,7 @@
       </div>
     </section>
 
-    <section class="content-container content-img" style="height: 732px;">
+    <section class="content-container2 content-img">
       <div class="content-box">
         <div class="content2-box1">
           <img class="content2-box1-img"src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Home+Component/home-content2-img.jpg" alt="">
@@ -53,18 +53,16 @@
       </div>
     </section>
 
-    <section class="content-container content-img con3" style="height: 294px;">
+    <section class="content-container3 content-img con3">
       <div class="content3">
         <div class="content3-box">
           <div class="content3-box-center" style="margin: 0; padding: 100px 0;">
             <div>
-              <div style="opacity: 1; transform: translate(0px, 0px); transition: opacity 1000ms, transform 1000ms;">
-                <div class="content3-center-textbox">
-                  <h2 class="content3-center-h2" style="font-size: 40px;">Let your mind explore</h2>
-                  <p class="content3-center-p" style="color: #777879; font-size: 16px; max-width: 680px;">
-                    Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang out with friends in VR.
-                  </p>
-                </div>
+              <div class="content3-center-textbox">
+                <h2 class="content3-center-h2 box6-transition" style="font-size: 40px;">Let your mind explore</h2>
+                <p class="content3-center-p" style="color: #777879; font-size: 16px; max-width: 680px;">
+                  Oculus radically redefines digital entertainment. Immerse yourself in games or go inside your favorite movies. Time travel, space travel, or hang out with friends in VR.
+                </p>
               </div>
             </div>
           </div>
@@ -72,7 +70,7 @@
       </div>
     </section>
 
-    <section class="content-container" style="background: #1c1e20; overflow: hidden; position: relative; color: #323436; height: 715px;">
+    <section class="content-container4" style="background: #1c1e20; overflow: hidden; position: relative; color: #323436;">
       <div class="content-box">
         <div class="content4-top">
           <span>
@@ -85,7 +83,7 @@
               <div class="content4-center-textbox">
                 <h2 class="content4-center-h2">Oculus Experiences</h2>
                 <p class="content4-center-p">Endless worlds await.</p>
-                <a class="content4-center-a" href="https://www.oculus.com/experiences">Explore Now</a>
+                <a class="content4-center-a" [routerLink]="['experiences/rift']">Explore Now</a>
               </div>
             </div>
           </div>
@@ -93,11 +91,11 @@
       </div>
     </section>
 
-    <section class="content-container content-img" style="height: 850px;">
+    <section class="content-container5 content-img">
       <div class="content-box">
         <div class="content5">
           <div class="content5-box">
-            <div class="content5-half" style="width: calc(0.5 * (100% + 0px));">
+            <div class="content5-half">
               <div class="content5-half-left">
                 <span>
                   <img class="content5-half-left-img"src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Home+Component/home-content5-left-img.jpg" style="height: 100%; max-height: 600px; max-width: 865px; margin: 0px auto;" alt="">
@@ -105,7 +103,7 @@
                 <div class="content5-half-left-box">
                   <div class="content5-left-textbox" style="padding-bottom: 60px;">
                     <h2 class="content5-half-textbox-h2">Gear VR</h2>
-                    <a class="content5-half-textbox-a" href="https://www.oculus.com/gear-vr">Learn More</a>
+                    <a class="content5-half-textbox-a" [routerLink]="['gear-vr']">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -113,7 +111,7 @@
 
             <div class=""></div>
 
-            <div class="content5-half" style="width: calc(0.5 * (100% + 0px));">
+            <div class="content5-half">
               <div class="content5-half-right">
                 <span>
                   <img class="content5-half-right-img"src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Home+Component/home-content5-right-img.jpg" style="height: 100%; max-height: 600px; max-width: 865px; margin: 0px auto;" alt="">
@@ -121,7 +119,7 @@
                 <div class="content5-half-right-box">
                   <div class="content5-right-textbox" style="padding-bottom: 60px;">
                     <h2 class="content5-half-textbox-h2">Rift</h2>
-                    <a class="content5-half-textbox-a" href="https://www.oculus.com/rift">Learn More</a>
+                    <a class="content5-half-textbox-a" [routerLink]="['rift']">Learn More</a>
                   </div>
                 </div>
               </div>
@@ -131,64 +129,54 @@
       </div>
     </section>
 
-    <section class="content-container content-bottom" style="height: 307px;">
+    <section class="content-container6 content-bottom">
       <div class="content-box">
         <div class="content6">
           <div class="content6-boxes">
 
-            <div class="content6-box" style="width: calc(0.33333333333333 * (100% + 0px));">
+            <div class="content6-box">
               <div class="box6-content">
                 <div style="height: 300px; position: relative;">
                   <a class="box6-a" href="https://www.oculus.com/experiences/rift/775907692521284/">
-                    <span>
-                      <div class="box6-img1 box6-transition box6-opacity"></div>
-                    </span>
-                    <div class="box6-content-textbox">
-                      <div class="box6-content-text">
-                        <h4 class="box6-content-h4">FEATURED CONTENT</h4>
-                        <h3 class="box6-content-h3">EVE: Valkyrie</h3>
+                      <div class="box6-content-textbox">
+                        <div class="box6-content-text">
+                          <h4 class="box6-content-h4">FEATURED CONTENT</h4>
+                          <h3 class="box6-content-h3">EVE: Valkyrie</h3>
+                        </div>
                       </div>
-                    </div>
+                      <div class="box6-img1 box6-transition box6-opacity"></div>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="content6-box-divider"></div>
-
-            <div class="content6-box" style="width: calc(0.33333333333333 * (100% + 0px));">
+            <div class="content6-box">
               <div class="box6-content">
                 <div style="height: 300px; position: relative;">
                   <a class="box6-a" href="https://www.oculus.com/experiences/rift/909129545868758/">
-                    <span>
-                      <div class="box6-img2 box6-transition box6-opacity"></div>
-                    </span>
-                    <div class="box6-content-textbox">
-                      <div class="box6-content-text">
-                        <h4 class="box6-content-h4">INCLUDED WITH ALL RIFT PURCHASES</h4>
-                        <h3 class="box6-content-h3">Lucky's Tale</h3>
+                      <div class="box6-content-textbox">
+                        <div class="box6-content-text">
+                          <h4 class="box6-content-h4">INCLUDED WITH ALL RIFT PURCHASES</h4>
+                          <h3 class="box6-content-h3">Lucky's Tale</h3>
+                        </div>
                       </div>
-                    </div>
+                      <div class="box6-img2 box6-transition box6-opacity"></div>
                   </a>
                 </div>
               </div>
             </div>
 
-            <div class="content6-box-divider"></div>
-
-            <div class="content6-box" style="width: calc(0.33333333333333 * (100% + 0px));">
+            <div class="content6-box">
               <div class="box6-content">
                 <div style="height: 300px; position: relative;">
                   <a class="box6-a" href="https://www.oculus.com/blog/oculus-touch-pre-orders-are-now-live/">
-                    <span>
-                      <div class="box6-img3 box6-transition box6-opacity"></div>
-                    </span>
-                    <div class="box3">
-                      <div class="box6-content-text">
-                        <h4 class="box6-content-h4">FEATURED STORY</h4>
-                        <h3 class="box6-content-h3">Oculus Touch Pre-Orders Are Now Live</h3>
+                      <div class="box6-content-textbox">
+                        <div class="box6-content-text">
+                          <h4 class="box6-content-h4">FEATURED STORY</h4>
+                          <h3 class="box6-content-h3">Oculus Touch Pre-Orders Are Now Live</h3>
+                        </div>
                       </div>
-                    </div>
+                      <div class="box6-img3 box6-transition box6-opacity"></div>
                   </a>
                 </div>
               </div>
@@ -202,3 +190,15 @@
   </div>
 </div>
 
+<div>
+  <div class="modal-wrapper">
+    <a class="close-x-icon"></a>
+    <div class="modal-content">
+      <div class="modal-section">
+        <div class="modal-box">
+          <iframe class="youtube-vid" src="https://www.youtube.com/embed/pN6YCFlS8nU?autoplay=true&amp;rel=false&amp;showinfo=false" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

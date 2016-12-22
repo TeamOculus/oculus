@@ -1,6 +1,19 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 									 TABLE OF CONTENTS										//
+// 	 							1. Main Styles 		- Line 15								//
+// 	 							2. Section 1 		- Line 37								//
+// 	 							3. Section 2 		- Line 145								//
+// 	 							4. Section 3 		- Line 221								//
+// 	 							5. Section 4 		- Line 284								//
+// 	 							6. Section 5 		- Line 386								//
+// 	 							7. Section 6 		- Line 525								//
+// 	 							8. Youtube Module 	- Line 663								//
+// 	 							9. Media Queries 	- Line 7								//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
 .home {
     display: block;
-    // height: 792px;
 }
 .home-content {
     background-color: #fff;
@@ -19,14 +32,17 @@
 	z-index: 10;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 1    //
-// ~~~~~~~~~~~~~~~~~ //
-.content-container {
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 1											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.content-container1 {
     display: block;
 	position: relative;
 	text-align: center;
     height: 834px;
+	background-color: #ebebeb;
 }
 .content-img {
     background-color: #f5f5f5;
@@ -124,16 +140,17 @@
     text-decoration: none;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 2    //
-// ~~~~~~~~~~~~~~~~~ //
-// .content2 {
-//     display: inline-block;
-// 	height: 100%;
-// 	margin: 0 auto;
-// 	width: 100%;
-// }
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 2											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.content-container2 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 745px;
+}
 .content2-box1 {
     background-color: #16181a;
 	display: block;
@@ -143,6 +160,7 @@
 	position: relative;
 	transition: width .3s ease, max-width .3s ease;
 	width: 100%;
+	height: 740px;
 }
 .content2-box1-img {
     bottom: 0;
@@ -198,9 +216,17 @@
 	vertical-align: middle;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 3    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 3											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.content-container3 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 294px;
+}
 .con3 {
     padding-left: 40px;
     padding-right: 40px;
@@ -242,6 +268,10 @@
     line-height: 38px;
     color: #1c1e20;
 }
+.content3-center-h2:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+}
 .content3-center-p {
     margin: 0;
     line-height: 24px;
@@ -249,9 +279,17 @@
     font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 4    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 4											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.content-container4 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 740px;
+}
 .content-box {
     display: inline-block;
 	height: 100%;
@@ -343,9 +381,17 @@
 }
 
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 5    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 5											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.content-container5 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 834px;
+}
 .content5 {
     display: block;
 	margin: 0;
@@ -364,6 +410,7 @@
     box-sizing: border-box;
 	float: left;
 	min-height: 1px;
+	width: calc(0.5 * (100% + 0px));
 }
 
 // Left side
@@ -473,9 +520,17 @@
 	color: #fff;
 }
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Section 6    //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 6											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.content-container6 {
+    display: block;
+	position: relative;
+	text-align: center;
+    height: 307px;
+}
 .content-bottom {
 	background-color: #1c1e20;
 	color: #fff;
@@ -511,6 +566,9 @@
 	min-height: 1px;
 	overflow: auto;
 }
+.content6-box {
+	width: calc(0.33333333333333 * (100% + 0px));
+}
 .box6-content {
 	overflow: hidden;
 }
@@ -528,13 +586,13 @@
 .box6-opacity {
 	opacity: .3;
 }
-
 .box6-img1 {
 	background-size: cover;
 	height: 300px;
 	background-image: url('https://scontent.oculuscdn.com/t64.5771-25/11162714_283652092025521_547216123_n.jpg');
 	background-position: center center;
 	width: 100%;
+
 }
 .box6-img2 {
 	background-size: cover;
@@ -548,7 +606,6 @@
 	height: 300px;
 	background-image: url('https://scontent-sjc2-1.xx.fbcdn.net/t39.2365-6/14658636_618245888362068_8494262868336705536_n.jpg');
 	background-position: center center;
-	background-repeat: no-repeat;
 	width: 100%;
 }
 .box6-content-textbox {
@@ -568,6 +625,7 @@
 	overflow: hidden;
 	position: relative;
 	width: auto;
+	z-index: 50;
 }
 .box6-content-h4 {
 	color: #a4a5a6;
@@ -589,48 +647,213 @@
 	line-height: 28px;
 	margin: 0;
 }
+.box6-content-textbox:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+}
+.box6-img1:hover, .box6-img2:hover, .box6-img3:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+	opacity: 0.9;
+}
 
-.box3 {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	height: 100%;
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								Youtube Module  										//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.modal-wrapper {
+	bottom: 0;
 	box-sizing: border-box;
-	padding: 0 32px;
+	// display: none;
+	left: 0;
+	min-width: 1000px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 1100;
+	display: block;
+	overflow: auto;
+	background: rgba(28, 30, 32, .98);
+	border: 8px solid #323436;
+}
+.close-x-icon {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/3CGuWj4u7Uy.png') no-repeat 0 0;
+	color: rgba(73, 75, 77, 0);
+	cursor: pointer;
+	display: block;
+	height: 48px;
+	opacity: 1;
+	overflow: hidden;
+	position: fixed;
+	right: 24px;
+	text-indent: 48px;
+	top: 24px;
+	transition: opacity 250ms;
+	width: 48px;
+	z-index: 1110;
+	background-position: -48px -48px;
+	text-decoration: none;
+	background-size: 384px auto;
+	background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Home+Component/home-close-x-icon.png');
+}
+.modal-content {
+	// background: #fff;
+	// margin: 128px auto;
+	position: relative;
+	// width: 820px;
+	height: calc(100% - (8px * 20));
+	margin: 80px auto;
+	width: 100%;
+	background: none;	
+}
+.modal-section {
+	bottom: 0;
+	left: 0;
 	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
+	right: 0;
+	top: 0;
+}
+.modal-box {
+	display: block;
+	height: 100%;
+	text-align: center;
+}
+.youtube-vid {
+	height: 100%;
+	max-width: 1000px;
 	width: 100%;
 }
-.content6-box-divider {
-	width: 0px;
-	box-sizing: border-box;
-	display: inline-block;
-	float: left;
-	min-height: 1px;
-	overflow: auto;
-}
-// ~~~~~~~~~~~~~~~~~ //
-// 	 Media Queries   //
-// ~~~~~~~~~~~~~~~~~ //
+
+
+
+
+
+
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								Media Queries   										//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 @media screen and (min-width: 1000px) {
     .content2-box1-img {
         opacity: 1;
     }
 }
-@media screen and (min-width: 767px) {
-    .content2-box1 {
-        padding-top: 20%;
-    }
-	.content1-box2 {
-		// padding-top: 85%;
-	}
 
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+	.content-container1 {
+		height: 690px;
+	}
+	.content-container2 {
+		height: 525px;
+	}
+	.content-container4 {
+		height: 582px;
+	}
+	.content-container5 {
+		height: 718px;
+	}
 }
 
-@media screen and (max-width: 400px) {
-    @viewport {
-        width: device-width
-    }
+@media screen and (min-width : 848px) and (max-width : 1024px) {
+	.content-container1 {
+		height: 613px;
+	}
+	.content-container2 {
+		height: 475px;
+	}
+	.content-container4 {
+		height: 460px;
+	}
+	.content-container5 {
+		height: 652px;
+	}
+}
+@media screen and (min-width : 672px) and (max-width : 848px) {
+	.content-container1 {
+		height: 557px;
+	}
+	.content-container2 {
+		height: 410px;
+	}
+	.content-container4 {
+		height: 448px;
+	}
+	.content5-half {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container5 {
+		height: 0%;
+	}
+	.content6-box {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container6 {
+		height: 0%;
+	}
+}
+
+@media screen and (min-width : 496px) and (max-width : 672px) {
+	.content-container1 {
+		height: 460px;
+	}
+	.content1-box2 {
+		margin-top: 22px;
+	}
+	.content-container2 {
+		height: 375px;
+	}
+	.content-container4 {
+		height: 381px;
+	}
+	.content5-half {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container5 {
+		height: 0%;
+	}
+	.content6-box {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container6 {
+		height: 0%;
+	}
+}
+@media screen and (min-width : 320px) and (max-width : 496px) {
+	.content-container1 {
+		height: 410px;
+	}
+	.content1-box2 {
+		margin-top: 39px;
+	}
+	.content-container2 {
+		height: 290px;
+	}
+	.content-container4 {
+		height: 314px;
+	}
+	.content5-half {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container5 {
+		height: 0%;
+	}
+	.content6-box {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	.content-container6 {
+		height: 0%;
+	}
 }
