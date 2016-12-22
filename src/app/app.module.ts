@@ -17,6 +17,7 @@ import { DevelopersComponent } from './developers/developers.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
 import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
+import { CreateAccountComponent } from './login/create-account/create-account.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { MyComponent } from './my/my.component';
 import { ProfileComponent } from './my/profile/profile.component';
@@ -38,6 +39,7 @@ import { OrdersComponent } from './my/orders/orders.component';
     CartComponent,
     LoginComponent,
     ExperiencesGearVrComponent,
+    CreateAccountComponent,
     CheckoutComponent,
     MyComponent,
     ProfileComponent,

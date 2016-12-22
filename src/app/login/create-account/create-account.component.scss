@@ -1,0 +1,397 @@
+div {
+    display: block;
+}
+
+.create-account-container {
+    -webkit-font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    .view-header {
+        background: #1c1e20;
+        box-sizing: border-box;
+        color: #fff;
+        padding: 80px 16px;
+        text-align: center;
+
+        @media screen and (max-width: 450px) {
+            padding: 40px 16px;
+        }
+
+        h1 {
+            -webkit-margin-before: 0.67em;
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+
+            padding: 0;
+
+            font: 900 40px/48px "Oculus Sans Bold", "Arial", "Helvetica", sans-serif;
+
+            display: block;
+
+            margin: 0;
+
+            // font-family: "Oculus Sans", "Arial", "Helvetica", sans-serif;
+            font-size: 40px;
+            font-style: normal !important;
+            font-weight: 900;
+            line-height: 48px;
+
+            color: #fff;
+            -webkit-font-smoothing: subpixel-antialiased;
+
+            @media screen and (max-width: 450px) {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .view-main {
+        -webkit-font-feature-settings: "kern" 1, "liga" 1;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+
+        background: #fff;
+        padding: 48px 0;
+
+        .form-margins {
+            box-sizing: border-box;
+            margin: 0 auto;
+            max-width: 980px;
+            padding: 0 16px;
+            width: 100%;
+
+            .form-container {
+
+                form {
+                    margin: 0;
+                    padding: 0;
+
+                    .bxGrid:before, .bxGrid:after {
+                        content: " ";
+                        display: block;
+                        overflow: hidden;
+                        visibility: hidden;
+                        font-size: 0;
+                        line-height: 0;
+                        width: 0;
+                        height: 0;
+                    }
+
+                    .bxGrid {
+                        // width: 948px;
+                        height: 93px;
+
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        min-width: 0;
+                        max-width: none;
+                        padding-left: 0;
+                        padding-right: 0;
+
+                        .bxGrid__column:first-child {
+                            padding-right: 20px;
+
+                            padding-left: 0;
+
+                            @media screen and (max-width: 768px) {
+                                padding: 0;
+                                width: 100%;
+                            }
+                        }
+
+                        .bxGrid__column {
+                            box-sizing: border-box;
+                            min-height: 1px;
+                            padding: 0 4px;
+
+                            float: left;
+                            width: 50%;
+
+                            margin-bottom: 16px;
+
+                            padding: 0 12px;
+
+                            .bxFormControl {
+
+                                .bxInputLabel {
+                                    color: #1c1e20;
+                                    margin: 0 0 8px 0;
+                                    position: relative;
+                                    height: 24px;
+
+                                    label {
+                                        cursor: pointer;
+                                        color: #666;
+                                        font-weight: bold;
+                                        vertical-align: middle;
+
+                                        display: inline-block;
+                                        font-weight: 700;
+                                        vertical-align: bottom;
+
+                                        cursor: pointer;
+
+                                        font-family: inherit;
+
+                                        font-size: inherit;
+
+                                        div {
+                                            em {
+                                                font-style: normal;
+                                            }
+
+                                            .question-icon {
+                                                outline: none;
+
+                                                i {
+                                                    font-style: italic;
+
+                                                    background: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Login+Component/Create-Account+Component/site-icons.png) no-repeat 0 0;
+                                                    color: rgba(50, 52, 54, 0);
+                                                    display: inline-block;
+                                                    height: 24px;
+                                                    image-rendering: -webkit-optimize-contrast;
+                                                    image-rendering: crisp-edges;
+                                                    overflow: hidden;
+                                                    text-indent: 24px;
+                                                    width: 24px;
+
+                                                    background-position: -72px -96px;
+
+                                                    cursor: pointer;
+                                                    outline: none;
+                                                    vertical-align: middle;
+
+                                                    em {
+                                                        font-style: normal;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        em {
+                                            font-style: normal;                                      
+                                        }
+
+                                        // #first-name, #last-name, #email, #confirm-email, #confirm-password {
+                                        //     margin-bottom: 5px;
+                                        // }
+                                    }
+                                }
+
+                                .bxInputControl {
+                                    display: block;
+
+                                    input {
+                                        -webkit-writing-mode: horizontal-tb;
+                                        writing-mode: horizontal-tb;
+
+                                        margin: 0em 0em 0em 0em;
+                                        text-align: start;
+                                        letter-spacing: normal;
+                                        word-spacing: normal;
+                                        text-transform: none;
+                                        text-indent: 0px;
+                                        text-shadow: none;
+                                        text-rendering: auto;
+
+                                        -webkit-rtl-ordering: logical;
+                                        user-select: text;
+                                        cursor: auto;
+
+                                        font: inherit;
+
+                                        -webkit-appearance: none;
+                                        outline: none;
+
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        background: #fff;
+                                        border: 1px solid #a4a5a6;
+                                        border-radius: 4px;
+                                        box-sizing: border-box;
+                                        color: #323436;
+                                        display: block;
+                                        height: 44px;
+                                        line-height: 24px;
+                                        padding: 0 16px;
+                                        transition: color 250ms, border-color 250ms;
+                                        width: 100%;
+
+                                        font-family: inherit;
+
+                                        font-size: inherit;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bxGrid:after {
+                            clear: both;
+                        }
+
+                        .bxGrid__column:last-child {
+                            padding-left: 20px;
+
+                            padding-right: 0;
+
+                            @media screen and (max-width: 768px) {
+                                padding: 0;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .terms-container {
+                        border-bottom: 1px solid #f0f0f0;
+                        border-top: 1px solid #f0f0f0;
+                        margin-top: 28px;
+                        padding: 28px 0;
+                        // height: 19px;
+
+                        @media screen and (max-width: 768px) {
+                            clear: both;
+                        }
+
+                        em {
+                            font-style: normal;
+
+                            a {
+                                cursor: pointer;
+
+                                background: transparent;
+
+                                transition: color 250ms;
+                                color: #8d8e8f;
+
+                                text-decoration: none;
+
+                                em {
+                                    font-style: normal;
+                                }
+                            }
+
+                            a:hover {
+                                color: #67696A;
+                                transition: none;
+                            }
+                        }
+                    }
+
+                    .button-container {
+                        padding: 32px 0 16px 0;
+                        text-align: center;
+
+                        a {
+                            border: 2px solid #1c1e20;
+                            border-radius: 24px;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            display: inline-block;
+                            font-family: Oculus Sans, Arial, Helvetica, sans-serif;
+                            font-weight: 600;
+                            line-height: 28px;
+                            overflow: hidden;
+                            text-align: center;
+                            text-overflow: ellipsis;
+                            transition: background-color 500ms, border-color 500ms, opacity 500ms;
+                            vertical-align: bottom;
+                            white-space: nowrap;
+                            width: auto;
+
+                            font-size: 14px;
+                            height: 40px;
+                            min-width: 40px;
+                            padding: 4px 40px;
+
+                            background: none;
+                            border-color: #1c1e20;
+                            color: #323436;
+
+                            padding-left: 40px;
+                            padding-right: 40px;
+
+                            margin: 0 8px;
+
+                            text-decoration: none;
+
+                            em {
+                                font-style: normal;
+                            }
+
+                            @media screen and (max-width: 450px) {
+                                margin: 16px 0;
+                                width: 100%;
+                            }
+                        }
+
+                        a:hover {
+                            color: #fff;
+                            background: #1c1e20;
+                            transition: none;
+                        }
+
+                        button {
+                            color: inherit;
+                            font: inherit;
+
+                            text-transform: none;
+
+                            -webkit-appearance: button;
+
+                            background: #1c1e20;
+                            border: 2px solid #1c1e20;
+                            border-radius: 24px;
+                            box-sizing: border-box;
+                            color: #fff;
+                            cursor: pointer;
+                            display: inline-block;
+                            font-weight: 600;
+                            line-height: 28px;
+                            overflow: hidden;
+                            text-align: center;
+                            text-decoration: none;
+                            text-overflow: ellipsis;
+                            transition: background-color 500ms, border-color 500ms, opacity 500ms;
+                            vertical-align: bottom;
+                            white-space: nowrap;
+                            width: auto;
+
+                            font-size: 14px;
+                            height: 40px;
+                            min-width: 40px;
+                            padding: 2px 40px;
+
+                            padding-left: 40px;
+                            padding-right: 40px;
+
+                            font-family: inherit;
+
+                            margin: 0 8px;
+
+                            em {
+                                font-style: normal;
+                            }
+
+                            @media screen and (max-width: 450px) {
+                                margin: 16px 0;
+                                width: 100%;
+                            }
+                        }
+
+                        button:hover {
+                            color: #fff;
+                            background: #494B4D;
+                            transition: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
