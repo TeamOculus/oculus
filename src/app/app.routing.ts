@@ -8,6 +8,7 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
 import { GearVrComponent } from './gear-vr/gear-vr.component';
 import { LoginComponent } from './login/login.component';
+import { CreateAccountComponent } from './login/create-account/create-account.component';
 import { MyComponent } from './my/my.component';
 import { OrdersComponent } from './my/orders/orders.component';
 import { ProfileComponent } from './my/profile/profile.component';
@@ -26,6 +27,7 @@ const APP_ROUTES: Routes = [
     { path: 'experiences/gear-vr', component: ExperiencesGearVrComponent },
     { path: 'gear-vr', component: GearVrComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'create-account', component: CreateAccountComponent },
     { path: 'my', component: MyComponent, children: [
         {path: 'profile', component: ProfileComponent},
         {path: 'orders', component: OrdersComponent}
