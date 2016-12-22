@@ -1,0 +1,14 @@
+#my-profile {
+    width: 75%;
+    float: left;
+    background-color: crimson;
+}
+
+/* media query ==================*/
+
+@media (max-width: 900px){
+    #my-profile {
+        width: 100%;
+        float: none;
+    }
+}
