@@ -6,7 +6,7 @@
 // 																							//
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 
-@import './assets/owl-carousel.scss';
+// @import './assets/owl-carousel.scss';
 @import './assets/owl-carousel2.scss';
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
@@ -248,9 +248,9 @@
 .section3-container-phones {
     display: block;  
 }
-.section3-container-phone {
+// .section3-container-phone {
 
-}
+// }
 .s3-phones {
     opacity: 1!important;
 	-webkit-transform: translate(0,0)!important;
@@ -608,9 +608,9 @@
     .section1-container-button-span {
         margin-left: 0;
     }
-    .section2 {
-        // padding: 100px 0;
-    }
+    // .section2 {
+    //     // padding: 100px 0;
+    // }
     .section2-container {
         max-width: calc(1184px + 80px);
         margin: auto;
@@ -701,7 +701,7 @@
         transform: translate(0,50px);
         -webkit-transition: opacity .6s .1s,transform .6s ease;
         transition: opacity .6s .1s,transform .6s ease;
-        webkit-transform: translate(0,-50px);
+        -webkit-transform: translate(0,-50px);
         -moz-transform: translate(0,-50px);
         -ms-transform: translate(0,-50px);
         transform: translate(0,-50px);
