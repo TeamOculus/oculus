@@ -36,11 +36,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     CartComponent,
     LoginComponent,
     ExperiencesGearVrComponent,
-<<<<<<< HEAD
     CreateAccountComponent,
-=======
     CheckoutComponent,
->>>>>>> master
   ],
   imports: [
     BrowserModule,
