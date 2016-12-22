@@ -8,6 +8,9 @@ import { ExperiencesComponent } from './experiences/experiences.component';
 import { ExperiencesGearVrComponent } from './experiences/experiences-gear-vr/experiences-gear-vr.component';
 import { GearVrComponent } from './gear-vr/gear-vr.component';
 import { LoginComponent } from './login/login.component';
+import { MyComponent } from './my/my.component';
+import { OrdersComponent } from './my/orders/orders.component';
+import { ProfileComponent } from './my/profile/profile.component';
 import { RiftComponent } from './rift/rift.component';
 import { RiftReadyComponent } from './rift/rift-ready/rift-ready.component';
 
@@ -23,6 +26,10 @@ const APP_ROUTES: Routes = [
     { path: 'experiences/gear-vr', component: ExperiencesGearVrComponent },
     { path: 'gear-vr', component: GearVrComponent },
     { path: 'login', component: LoginComponent },
+    { path: 'my', component: MyComponent, children: [
+        {path: 'profile', component: ProfileComponent},
+        {path: 'orders', component: OrdersComponent}
+    ]}
     { path: 'rift', component: RiftComponent },
     { path: 'rift/ready', component: RiftReadyComponent }
 ]
