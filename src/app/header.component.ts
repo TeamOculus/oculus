@@ -1,3 +1,6 @@
+import { Observable } from 'rxjs/Observable';
+import { user } from './reducers/user_reducer';
+import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +12,24 @@ export class HeaderComponent implements OnInit {
   clickedMenu: boolean = false;
   clickedRift: boolean = false;
   clickedExperiences: boolean = false;
-  constructor() { }
+  // isloggedin: boolean = false;
+
+  user$: Observable<any>;
+  // firstname: Observable<String>;
+  constructor(private store: Store<any>) {
+
+    this.user$ = store.select('user');
+    // this.firstname = store.select(state => state.user.firstname)
+
+    console.log("from store.select",this.user$)
+
+    // this.store.select('user')
+    //   .subscribe(user => {
+    //     console.log("from store.select", user)
+    //     this.user = user;
+    //     this.isloggedin = true;
+    //   });
+  }
 
   ngOnInit() {
   }

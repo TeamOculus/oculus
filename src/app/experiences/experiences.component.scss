@@ -25,21 +25,21 @@ img:hover {
 }
 .oculus-touch-big {
     width: 60vw;
-    height: 80vh;
+    
 }
 .oculus-touch-small-wrap {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
+    
     padding-left: 15px;
 }
 .oculus-touch-small {
     width: 30vw;
-    height: 38vh;
+    
 }
 img.oculus-touch-small {
-    margin-top: 10px;
+    
 }
 .img-container {
     position: relative;
@@ -61,7 +61,7 @@ h1 {
     flex-direction: space-between;
     flex-wrap: wrap;
     padding: 20px;
-    height: 80vh;
+    
 }
 .touch-featured {
     display: flex;
@@ -71,7 +71,7 @@ h1 {
 }
 .touch-featured img {
     width: 31vw;
-    height: 40vh;
+   
 }
 .made-oculus {
 
@@ -135,10 +135,10 @@ h2 span {
 }
 .big-img1 img {
     width: 50vw;
-    height: 60vh;
+    
 }
 .small-img2 img {
-    height: 30vh;
+    
     width: 23vw;
     padding-right: 10px;
     padding-top: 10px;
@@ -169,6 +169,8 @@ h2 span {
     .experiences-featured {
         display: block;
         overflow: auto;
+        padding: 0px;
+        
     }
     .oculus-touch-small-wrap {
         display: block;
@@ -176,21 +178,24 @@ h2 span {
     }
     .oculus-touch-big {
         display: block;
-        width: 95vw;
-        height: 80vh;
+        width: 92vw;
+        margin: 0 auto;
     }
     .oculus-touch-small {
         display: block;
-        width: 95vw;
-        height: 80vh;
+        width: 92vw;
+        margin: 0 auto;
+        
     }
     .touch-featured {
         display: block;
+        padding: 0px;
+        
     }
     .touch-featured img {
         display: block;
-        width: 95vw;
-        height: 80vh;
+        width: 92vw;
+        margin: 0 auto;
         margin-top: 10px;
     }
     .made-oculus-title {
@@ -207,14 +212,14 @@ h2 span {
         display: block;
     }
    .big-img1 img {
-        width: 100vw;
-        height: 80vh;
+        width: 100%;
+       
         margin-top: 50px;
         margin-bottom: 18px;
     }
     .small-img2 img {
-        width: 100vw;
-        height: 80vh;
+        width: 100%;
+        
         padding-right: 0px;
         padding-top: 0px;
         padding-bottom: 18px;

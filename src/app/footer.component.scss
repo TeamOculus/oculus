@@ -1,11 +1,25 @@
-// Site Map - Line 6
-// Footer - Line 105
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 									 TABLE OF CONTENTS										//
+// 	 						1. Site Map					- Line 18							//
+// 	 							1a. Full View 			- Line 49							//
+// 	 							1b. Mobile View 		- Line 113							//
+// 	 						2. Footer 					- Line 176							//
+// 	 							2a. Left side 			- Line 201							//
+// 	 							2b. Right side 			- Line 220							//
+// 	 							2c. Main Nav 			- Line 234							//
+// 								2d. Socials Nav 		- Line 264							//
+//  						3. Media Queries 			- Line 319							//
+// 	 							3a. SiteMap Queries 	- Line 333							//
+// 	 							3a. Footer Queries 		- Line 373							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 
-// ~~~~~~~~~~~~~~~~~ //
-// 		Site Map     //
-// ~~~~~~~~~~~~~~~~~ //
-.site-map {
-    background: #1b1d1f;
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 1. Site Map											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.sitemap {
+	background: #1b1d1f;
 	border-top: 1px solid #323436;
 	box-sizing: border-box;
 	color: #777879;
@@ -18,94 +32,150 @@
 	padding: 24px 32px;
 	position: relative;
 	z-index: 100;
-}
-.site-map-column-wrapper {
-    margin: 0 auto;
-    max-width: 1260px;
+
+	.sitemap-columns {
+		margin: 0 auto;
+		max-width: 1260px;
+	
+		.sitemap-grid {
+			margin-left: auto;
+			margin-right: auto;
+			min-width: 0;
+			max-width: none;
+			padding-left: 0;
+			padding-right: 0;
+
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			// 	 			  1a. Full View		 				//																		
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			.sitemap1-grid-column {
+				padding: 12px 32px;
+				min-width: 185px;
+				box-sizing: border-box;
+				min-height: 1px;
+				padding: 0 4px;
+				float: left;
+				width: 25%;
+				box-sizing: border-box;
+				min-height: 1px;
+				padding: 0 4px;
+			}
+			.sitemap1-grid-column:first-child {
+				padding-left: 0;
+			}
+			.sitemap1-grid-column-h3 {
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				padding: 0 0 12px 22px;
+				font-size: 16px;
+				color: #323436;
+				font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+				color: #fff;
+				-webkit-font-smoothing: subpixel-antialiased;
+				font-size: 14px;
+				letter-spacing: .025em;
+				text-transform: uppercase;
+				padding: 0;
+			}
+			.sitemap1-grid-column-ul {
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				-webkit-padding-start: 40px;
+				border-top: 1px solid #323436;
+				list-style: none;
+				padding: 12px 0;
+				margin: 0;
+
+				.sitemap1-grid-ul-item {
+					display: list-item;
+					text-align: -webkit-match-parent;
+					font-weight: 400;
+				}
+				.sitemap1-grid-ul-item-a {
+					cursor: pointer;
+					background: transparent;
+					transition: color 250ms;
+					color: #777879;
+					font-weight: 400;
+					text-decoration: none;
+				}
+			}
+
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			// 	 			1b. Mobile/Small	 				//																		
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			.sitemap2-grid-column {
+				min-width: 185px;
+				box-sizing: border-box;
+				min-height: 1px;
+				float: left;
+				width: 25%;
+				box-sizing: border-box;
+				min-height: 1px;
+				width: 100%;
+			}
+
+			.sitemap2-grid-column-h3 {
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				padding: 0 0 12px 0;
+				font-size: 16px;
+				color: #323436;
+				font-family: "Oculus Sans", Arial, Helvetica, sans-serif;
+				font-size: 16px;
+				font-weight: 700;
+				line-height: 24px;
+				color: #fff;
+				-webkit-font-smoothing: subpixel-antialiased;
+				font-size: 14px;
+				letter-spacing: .025em;
+				text-transform: uppercase;
+			}
+			.sitemap2-grid-column-ul {
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				-webkit-padding-start: 40px;
+				// border-top: 1px solid #323436;
+				list-style: none;
+				padding: 0 0;
+				margin: 0;
+			
+				.sitemap2-grid-ul-item {
+					display: list-item;
+					text-align: -webkit-match-parent;
+					font-weight: 400;
+				}
+				.sitemap2-grid-ul-item-a {
+					cursor: pointer;
+					background: transparent;
+					transition: color 250ms;
+					color: #777879;
+					font-weight: 400;
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 
-.site-map-grid {
-    margin-left: auto;
-	margin-right: auto;
-	min-width: 936px;
-	max-width: 1260px;
-	padding-left: 28px;
-	padding-right: 28px;
-}
-.site-map-grid-parent {
-    min-width: 0;
-	max-width: none;
-	padding-left: 0;
-	padding-right: 0;
-}
-.site-map-grid-column {
-    box-sizing: border-box;
-	min-height: 1px;
-	padding: 0 4px;
-}
-.site-map-grid>.site-map-grid-column:first-child {
-    padding-left: 4px;
-}
-
-.site-map-grid-parent>.site-map-grid-column:first-child {
-    padding-left: 0;
-}
-.site-map-grid-25 {
-    float: left;
-    width: 25%;
-}
-.site-map-column {
-    padding: 12px 32px;
-    min-width: 185px;
-}
-
-// H3 header styling
-.site-map-heading {
-    color: #1c1e20;
-    display: block;
-}
-.site-map-heading-6 {
-    color: #323436;
-    font-family: "Oculus Sans", "Arial", "Helvetica", sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-}
-.site-map-heading-dark {
-    color: #fff;
-    -webkit-font-smoothing: subpixel-antialiased;
-}
-.site-map-header {
-    font-size: 14px;
-    letter-spacing: .025em;
-    text-transform: uppercase;
-}
-
-// UL and LI items
-.site-map-list {
-    border-top: 1px solid #323436;
-    list-style: none;
-    padding: 12px 0;
-    font-family: "Oculus Sans", "Arial", "Helvetica", sans-serif;
-}
-.site-map-list-item {
-    font-weight: 400;
-}
-.site-map-list-item-link {
-    color: #777879;
-    text-decoration: none;
-}
-.site-map-list-item-link:hover {
-    color: #fff;
-}
-.site-map-list-open {
-	// display: none;
-}
-
-
-// ~~~~~~~~~~~~~~~~~ //
-// 		Footer       //
-// ~~~~~~~~~~~~~~~~~ //
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 	Footer												//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .footer-wrapper {
     background: #16181a;
 	color: #777879;
@@ -119,169 +189,189 @@
 	position: relative;
 	z-index: 100;
 	line-height: 24px;
-}
-.footer-wrapper ul {
-	margin: 0;
-}
-.footer-content {
-	margin: 0 auto;
-	max-width: 1260px;
+
+	.footer-wrapper ul {
+		margin: 0;
+	}
+	.footer-content {
+		margin: 0 auto;
+		max-width: 1260px;
+
+		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+		// 	 				 Left Side		 				//																		
+		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+		.footer-left {
+			display: inline-block;
+			margin-right: 8px;
+			vertical-align: top;
+		}
+		div.footer-logo {
+			background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Footer+Component/footer-content.png');
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: 0 0;
+			height: 28px;
+			margin-right: 24px;
+			margin-top: 2px;
+			width: 161px;
+		}
+
+		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+		// 	 				 Right Side		 				//																		
+		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+		.footer-right {
+			float: right;
+			padding: 4px 0 0 0;
+
+			.footer-copyright {
+				display: inline-block;
+				padding: 0 16px;
+				font-family: "Oculus Sans Bold";
+				line-height: 24px
+			}
+
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			// 	 				 Main Nav		 				//																		
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			.footer-main-nav {
+				display: inline-block;
+				font-weight: 400;
+				height: 32px;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.footer-main-navItem {
+				display: inline-block;
+				margin: 0;
+				vertical-align: top;
+				font-family: "Oculus Sans";
+			}
+			.footer-navLink {
+				color: #777879;
+				display: inline-block;
+				height: 32px;
+				padding: 0 12px;
+				text-decoration: none;
+				transition: opacity 500ms;
+			}
+			.footer-navLink:hover, .footer-navLink:focus {
+				color: #fff;
+				transition: none;
+			}
+
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			// 	 				Socials Nav		 				//																		
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+			.footer-socials-nav{
+				display: inline-block;
+				height: 32px;
+				list-style: none;
+				margin: 0 0 0 24px;
+				padding: 0;
+				text-align: right;
+			}
+			.footer-socials-navItem {
+				display: inline-block;
+				margin: 0;
+				vertical-align: top;
+			}
+			.footer-socials-icons {
+				background: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Footer+Component/footer-icons.png') no-repeat 0 0;
+				color: rgba(50, 52, 54, 0);
+				display: inline-block;
+				height: 24px;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: crisp-edges;
+				overflow: hidden;
+				text-indent: 24px;
+				vertical-align: bottom;
+				width: 24px;
+			}
+			.footer-socials-navItem .footer-socials-icons {
+				margin-right: 8px;
+				opacity: .4;
+			}
+			.footer-socials-navItem .footer-socials-icons:hover, .footer-socials-navItem .footer-socials-icons:focus {
+				opacity: 1;
+			}
+			.footer-socials-icons--fb-white {
+				background-position: -72px 0;
+			}
+			.footer-socials-icons--instagram-white {
+				background-position: -72px -48px;
+			}
+			.footer-socials-icons--twitter-white {
+				background-position: -72px -24px;
+			}
+			.footer-socials-icons--youtube-white {
+				background-position: -72px -72px;
+			}
+			.footer-socials-icons--twitch-white {
+				background-position: -72px -120px;
+			}
+		}
+	}
 }
 
-// Left Side
-.footer-left {
-	display: inline-block;
-	margin-right: 8px;
-	vertical-align: top;
-}
-div.footer-logo {
-	background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Footer+Component/footer-content.png');
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: 0 0;
-	height: 28px;
-	margin-right: 24px;
-	margin-top: 2px;
-	width: 161px;
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 Media Queries											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+@media screen and (min-width: 849px) {
+	.sitemap-small {
+		display: none;
+	}
+	.sitemap1-grid-column-h3 {
+		padding: 0;
+	}
 }
 
-// Right Side
-.footer-right {
-	float: right;
-	padding: 4px 0 0 0;
-}
-.footer-copyright {
-	display: inline-block;
-	padding: 0 16px;
-    font-family: "Oculus Sans Bold";
-	line-height: 24px
-}
-
-// Footer Main Nav
-.footer-main-nav {
-	display: inline-block;
-	font-weight: 400;
-	height: 32px;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-.footer-main-navItem {
-	display: inline-block;
-	margin: 0;
-	vertical-align: top;
-    font-family: "Oculus Sans";
-}
-.footer-navLink {
-	color: #777879;
-	display: inline-block;
-	height: 32px;
-	padding: 0 12px;
-	text-decoration: none;
-	transition: opacity 500ms;
-}
-.footer-navLink:hover, .footer-navLink:focus {
-	color: #fff;
-	transition: none;
-}
-
-// Footer Socials Nav
-.footer-socials-nav{
-	display: inline-block;
-	height: 32px;
-	list-style: none;
-	margin: 0 0 0 24px;
-	padding: 0;
-	text-align: right;
-}
-.footer-socials-navItem {
-	display: inline-block;
-	margin: 0;
-	vertical-align: top;
-}
-.footer-socials-icons {
-    background: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Footer+Component/footer-icons.png') no-repeat 0 0;
-	color: rgba(50, 52, 54, 0);
-	display: inline-block;
-	height: 24px;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: crisp-edges;
-	overflow: hidden;
-	text-indent: 24px;
-	vertical-align: bottom;
-	width: 24px;
-}
-.footer-socials-navItem .footer-socials-icons {
-	margin-right: 8px;
-	opacity: .4;
-}
-.footer-socials-navItem .footer-socials-icons:hover, .footer-socials-navItem .footer-socials-icons:focus {
-	opacity: 1;
-}
-.footer-socials-icons--fb-white {
-    background-position: -72px 0;
-}
-.footer-socials-icons--instagram-white {
-    background-position: -72px -48px;
-}
-.footer-socials-icons--twitter-white {
-    background-position: -72px -24px;
-}
-.footer-socials-icons--youtube-white {
-    background-position: -72px -72px;
-}
-.footer-socials-icons--twitch-white {
-    background-position: -72px -120px;
-}
-
-
-
-// ~~~~~~~~~~~~~~~~~ //
-// 	 Media Queries   //
-// ~~~~~~~~~~~~~~~~~ //
-
-@media screen and (max-width: 820px) {
-	// Site Map
-
-	.site-map {
+@media screen and (max-width: 848px) {
+	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+	// 	 				SiteMap Queries	 				//																		
+	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+	.sitemap-full {
+		display: none;
+	}
+	.sitemap2 {
 		padding: 0 0;
 	}
-	.site-map-column.site-map-grid-column.site-map-grid-25 {
+	.sitemap2-grid-column {
 		padding: 0 0;
 		width: 100%;
 	}
-	.site-map-grid-column {
-		height: 61px;
-		width: 100%;
+	.sitemap2-grid-column-h3 {
+		border-bottom: 1px solid #323436;
+		cursor: pointer;
+		padding: 18px 20px;
+		transition: .1s linear background;
 	}
-	.site-map-list {
+	.sitemap2-grid-column-ul {
 		border: 0;
 		padding: 0 0;
 		max-height: 0;
 		overflow: hidden;
 		transition: .2s ease-out max-height;
 	}
-	.site-map-list-open {
+	.ul-open {
 		max-height: 1000px;
 		transition: .5s ease-out max-height;
 	}
-	.site-map-heading, .site-map-list-item {
+	.sitemap2-grid-ul-item {
 		border-bottom: 1px solid #323436;
 		cursor: pointer;
 		padding: 18px 20px;
 		transition: .1s linear background;
-	}
-	.site-map-list-item {
 		font-size: 12px;
 		line-height: 12px;
 		padding-left: 35px;
 	}
-	.site-map-heading:hover {
-		background: #323436;
-		color: #777879;
-	}
-	
-	// Footer
+
+	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+	// 	 				Footer Queries	 				//																		
+	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 	.footer-content {
 		text-align: center;
 	}
@@ -296,7 +386,6 @@ div.footer-logo {
 	}
 	.footer-right {
 		display: inline-block;
-		float: none;
 		padding: 0;
 	}
 	.footer-copyright {

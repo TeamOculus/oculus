@@ -1,0 +1,6026 @@
+/*! Oculus WWW v0.5.49 | ©2016 Oculus, LLC. All Rights Reserved. | www.oculus.com */
+
+.page-product .mosaic:after,
+.page-product .specs .content .download-specs:after,
+.page-product .specs .content .row:after,
+.technology-thumbs .thumbs:after {
+    clear: both
+}
+
+.specs-container hr {
+    margin: 0!important
+}
+
+.specs-container .spec-line-item {
+    font-size: 14px;
+    text-align: left;
+    padding: 20px 0
+}
+
+.specs-container .spec-line-item .spec-type {
+    display: block;
+    font-weight: 700;
+    width: 100%
+}
+
+@media screen and (min-width:641px) {
+    .specs-container .spec-line-item .spec-type {
+        display: inline-block;
+        width: 30%
+    }
+}
+
+.technology-thumbs .thumbs {
+    position: relative
+}
+
+.technology-thumbs .thumbs:after,
+.technology-thumbs .thumbs:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0
+}
+
+.technology-thumbs .thumbs .item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block
+}
+
+.technology-thumbs .thumbs .item .photo {
+    position: relative;
+    background: center center no-repeat #fff;
+    background-size: cover;
+    display: block;
+    height: 200px
+}
+
+.technology-thumbs .thumbs .item .label,
+.technology-thumbs .thumbs .item.no-detail:after {
+    display: none
+}
+
+.technology-thumbs .thumbs .item:after {
+    content: " ";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/modules/technology-thumbs/thumb-zoom.png) center center no-repeat;
+    background-size: 48px 48px
+}
+
+.no-touch .technology-thumbs .thumbs .item:hover:after {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    -moz-transform: rotate3d(0, 0, 1, 90deg);
+    -ms-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    opacity: 1
+}
+
+@media screen and (max-width:1024px) {
+    .technology-thumbs .thumbs .item:after {
+        top: calc(50% - 24px);
+        left: calc(50% - 24px);
+        width: 48px;
+        height: 48px;
+        background-size: 48px 48px!important;
+        opacity: 1!important
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .technology-thumbs {
+        padding-top: 0
+    }
+    .technology-thumbs .thumbs .item {
+        width: 50%;
+        height: 50%;
+        float: left;
+        position: relative;
+        overflow: hidden
+    }
+    .technology-thumbs .thumbs .item .photo {
+        background: center center no-repeat #fff;
+        background-size: cover;
+        display: block
+    }
+    .technology-thumbs .thumbs .item:after {
+        content: " ";
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/modules/technology-thumbs/thumb-zoom.png) center center no-repeat;
+        background-size: 24px 24px;
+        -webkit-transition: all .8s cubic-bezier(.165, .84, .44, 1);
+        transition: all .8s cubic-bezier(.165, .84, .44, 1);
+        -webkit-transform: rotate3d(0, 0, 0, 0);
+        -moz-transform: rotate3d(0, 0, 0, 0);
+        -ms-transform: rotate3d(0, 0, 0, 0);
+        transform: rotate3d(0, 0, 0, 0)
+    }
+    .no-touch .technology-thumbs .thumbs .item .photo {
+        -webkit-transition: all 1s cubic-bezier(.165, .84, .44, 1);
+        transition: all 1s cubic-bezier(.165, .84, .44, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    .no-touch .technology-thumbs .thumbs .item:hover .photo {
+        -webkit-transition: all 15s cubic-bezier(.2, .235, .835, 1);
+        transition: all 15s cubic-bezier(.2, .235, .835, 1);
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        -moz-transform: scale3d(1.2, 1.2, 1);
+        -ms-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1)
+    }
+    .no-touch .technology-thumbs .thumbs .item:hover .label .text {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    .no-touch .technology-thumbs .thumbs .item:hover:after {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        -moz-transform: rotate3d(0, 0, 1, 90deg);
+        -ms-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+        opacity: 1
+    }
+    .technology-thumbs .container .content {
+        padding: 0 24px 70px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .technology-thumbs {
+        background: #323436;
+        height: 900px
+    }
+    .technology-thumbs .thumbs {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0
+    }
+    .technology-thumbs .thumbs:after,
+    .technology-thumbs .thumbs:before {
+        content: " ";
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        height: 0
+    }
+    .technology-thumbs .thumbs:after {
+        clear: both
+    }
+    .technology-thumbs .thumbs .item {
+        width: 50%;
+        height: 50%;
+        float: left;
+        position: relative;
+        overflow: hidden
+    }
+    .technology-thumbs .thumbs .item .photo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: center center no-repeat #fff;
+        background-size: cover;
+        display: block;
+        height: auto
+    }
+    .technology-thumbs .thumbs .item .label {
+        display: block;
+        position: absolute;
+        right: 48px;
+        bottom: 21px;
+        left: 0;
+        height: 30px;
+        overflow: hidden
+    }
+    .technology-thumbs .thumbs .item .label .text {
+        color: #fff;
+        line-height: 30px;
+        text-align: right;
+        font-size: 18px;
+        padding-right: 10px;
+        position: absolute;
+        right: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        -moz-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        -webkit-transition: all .5s cubic-bezier(.165, .84, .44, 1);
+        transition: all .5s cubic-bezier(.165, .84, .44, 1)
+    }
+    .technology-thumbs .thumbs .item:after {
+        content: " ";
+        width: 72px;
+        height: 72px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/modules/technology-thumbs/thumb-zoom.png) center center no-repeat;
+        background-size: 24px 24px;
+        -webkit-transition: all .8s cubic-bezier(.165, .84, .44, 1);
+        transition: all .8s cubic-bezier(.165, .84, .44, 1);
+        -webkit-transform: rotate3d(0, 0, 0, 0);
+        -moz-transform: rotate3d(0, 0, 0, 0);
+        -ms-transform: rotate3d(0, 0, 0, 0);
+        transform: rotate3d(0, 0, 0, 0)
+    }
+    .no-touch .technology-thumbs .thumbs .item .photo {
+        -webkit-transition: all 1s cubic-bezier(.165, .84, .44, 1);
+        transition: all 1s cubic-bezier(.165, .84, .44, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+    .no-touch .technology-thumbs .thumbs .item:hover .photo {
+        -webkit-transition: all 15s cubic-bezier(.2, .235, .835, 1);
+        transition: all 15s cubic-bezier(.2, .235, .835, 1);
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+        -moz-transform: scale3d(1.2, 1.2, 1);
+        -ms-transform: scale3d(1.2, 1.2, 1);
+        transform: scale3d(1.2, 1.2, 1)
+    }
+    .no-touch .technology-thumbs .thumbs .item:hover .label .text {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    .no-touch .technology-thumbs .thumbs .item:hover:after {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        -moz-transform: rotate3d(0, 0, 1, 90deg);
+        -ms-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+        opacity: 1
+    }
+}
+
+.parallax {
+    display: block;
+    // -webkit-backface-visibility: hidden;
+    // -moz-backface-visibility: hidden;
+    // -webkit-transform: translate3d(0, 0, 0);
+    // -moz-transform: translate3d(0, 0, 0)
+}
+
+.parallax.parallax-background-y {
+    background-attachment: fixed!important
+}
+
+.page-product {
+    overflow: hidden
+}
+
+.page-product .section {
+    position: relative;
+    color: #323436;
+    background: #fff
+}
+
+.page-product .section .container {
+    margin: auto
+}
+
+.page-product .section p {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px
+}
+
+.page-product .section hr {
+    height: 0;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 34px 0
+}
+
+.page-product .section h1,
+.page-product .section h2,
+.page-product .section h3,
+.page-product .section h4,
+.page-product .section h5 {
+    color: inherit
+}
+
+.page-product .specs .content {
+    padding: 65px 24px 60px;
+    text-align: center
+}
+
+.page-product .specs .content .top {
+    display: block;
+    max-width: none;
+    margin: auto;
+    padding-bottom: 0
+}
+
+.page-product .specs .content h2 {
+    color: inherit;
+    text-align: center
+}
+
+.page-product .specs .content .row {
+    font-size: 18px
+}
+
+.page-product .specs .content .row:after,
+.page-product .specs .content .row:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0
+}
+
+.page-product .specs .content .row p {
+    font-size: 15px;
+    margin: 0
+}
+
+.page-product .specs .content .row .col {
+    float: left;
+    width: 100%
+}
+
+.page-product .specs .content .row .col.col-group {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 8px
+}
+
+.page-product .specs .content .download-specs {
+    border: 1px solid #d4d4d4;
+    background: #f0f0f0;
+    border-radius: 3px;
+    padding: 16px 21px;
+    text-align: left
+}
+
+.page-product .specs .content .download-specs:after,
+.page-product .specs .content .download-specs:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0
+}
+
+.page-product .specs .content .download-specs .circle {
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 5px solid #494b4d;
+    margin-right: 23px
+}
+
+.page-product .specs .content .download-specs .info {
+    float: left;
+    margin-top: 2px
+}
+
+.page-product .specs .content .download-specs .download {
+    display: block;
+    float: right;
+    margin-top: 8px
+}
+
+.page-product .mosaic .group,
+.page-product .mosaic .item {
+    float: left;
+    position: relative;
+    // -webkit-box-sizing: border-box;
+}
+
+.page-product .specs .content .download-specs p {
+    margin-bottom: 0;
+    line-height: 125%;
+    font-weight: 700
+}
+
+.page-product .specs .content .download-specs small {
+    margin-bottom: 0;
+    color: #777879;
+    font-size: 14px
+}
+
+.page-product .specs .content .partnered {
+    margin-top: 60px
+}
+
+.page-product .specs .content .partnered p {
+    font-size: 16px;
+    max-width: 480px
+}
+
+.page-product .specs .content .tabs {
+    display: inline-block;
+    margin: 0 0 60px;
+    width: 100%
+}
+
+.page-product .specs .content .tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 0
+}
+
+.page-product .specs .content .tabs ul li {
+    display: inline-block;
+    width: 50%;
+    font-size: 14px
+}
+
+.page-product .specs .content .tabs ul li a {
+    display: block;
+    padding: 3px 0;
+    line-height: 38px;
+    color: #777879;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer
+}
+
+.page-product .specs .content .tabs ul li a img {
+    display: none
+}
+
+.no-touch .page-product .specs .content .tabs ul li a:hover,
+.page-product .specs .content .tabs ul li a.active {
+    font-weight: 700;
+    color: #323436
+}
+
+.page-product .specs .content .tabs ul li a.active {
+    cursor: default
+}
+
+.home .video__play .icon,
+.page-gearvr .section.purchase-options .partner-channel:hover .oc-button--disabled,
+.page-oculus-ready-pcs .partner-channels .partner-channel:hover .oc-button--disabled,
+.page-oculus-ready-pcs .partner-offers .partner-offer:hover .oc-button--disabled {
+    cursor: pointer
+}
+
+.page-product .specs .content .tabs .line {
+    background: #f0f0f0;
+    height: 4px;
+    border-radius: 2px;
+    width: 100%
+}
+
+.page-product .specs .content .tabs .line .track {
+    background: #1c1e20;
+    height: 4px;
+    border-radius: 2px;
+    width: 50%;
+    transition: margin .5s cubic-bezier(.23, 1, .32, 1)
+}
+
+.page-product .specs .content .tabs-content {
+    text-align: left
+}
+
+.page-product .mosaic {
+    z-index: 50;
+    background: #323436
+}
+
+.page-product .mosaic:after,
+.page-product .mosaic:before {
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0
+}
+
+.page-product .mosaic .wrap {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.page-product .mosaic .fixable.fixed {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0
+}
+
+.page-product .mosaic .group {
+    width: 100%;
+    height: 320px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.page-product .mosaic .group.w-2,
+.page-product .mosaic .group.w-3 {
+    width: 100%
+}
+
+.page-product .mosaic .item {
+    width: 100%;
+    height: 160px;
+    background: center center no-repeat;
+    background-size: cover;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.page-product .mosaic .item.w-1,
+.page-product .mosaic .item.w-2 {
+    width: 50%
+}
+
+.page-product .mosaic .h-1,
+.page-product .mosaic .h-2 {
+    height: 50%
+}
+
+.page-product .product-detail .details {
+    display: none
+}
+
+#product-detail-carousel .owl-controls .owl-nav [class*=owl-] {
+    height: 590px
+}
+
+#product-detail-carousel h1 {
+    font-size: 30px
+}
+
+@media screen and (min-width:641px) {
+    .page-product .specs .content {
+        padding: 70px 40px
+    }
+    .page-product .specs .content .top {
+        max-width: 500px;
+        padding-bottom: 10px
+    }
+    .page-product .specs .content .row {
+        font-size: 30px
+    }
+    .page-product .specs .content .row p {
+        font-size: 18px;
+        margin-bottom: 20px
+    }
+    .page-product .specs .content .row .col {
+        width: 60%
+    }
+    .page-product .specs .content .row .col.col-group {
+        width: 40%;
+        font-size: 22px
+    }
+    .page-product .specs .content .tabs,
+    .page-product .specs .content .tabs ul {
+        width: auto
+    }
+    .page-product .specs .content .tabs ul li {
+        padding-right: 10px;
+        width: auto
+    }
+    .page-product .specs .content .tabs ul li a {
+        width: 230px
+    }
+    .page-product .specs .content .tabs ul li a img {
+        display: inline-block;
+        margin-bottom: -20px;
+        position: relative
+    }
+    .page-product .mosaic {
+        margin-bottom: -1px
+    }
+    .page-product .mosaic .group {
+        width: 100%;
+        height: 464px
+    }
+    .page-product .mosaic .group.w-2 {
+        width: 40%
+    }
+    .page-product .mosaic .group.w-3 {
+        width: 60%
+    }
+    .page-product .mosaic .item {
+        width: 100%;
+        height: 100%
+    }
+    .page-product .mosaic .item.w-1 {
+        width: 33%
+    }
+    .page-product .mosaic .item.w-2 {
+        width: 67%
+    }
+    .page-product .mosaic .h-1 {
+        height: 33%
+    }
+    .page-product .mosaic .h-2 {
+        height: 67%
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-product .section .container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left
+    }
+    .page-product .section .container .oc-button--cta-primary,
+    .page-product .section .container .oc-button--cta-secondary {
+        margin-left: 0
+    }
+    .page-product .mosaic .fixable.fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0
+    }
+    .page-product .mosaic .group {
+        width: 100%;
+        height: 100%
+    }
+    .page-product .mosaic .group.w-2 {
+        width: 40%
+    }
+    .page-product .mosaic .group.w-3 {
+        width: 60%
+    }
+    .page-product .mosaic .item {
+        width: 100%;
+        height: 100%
+    }
+    .page-product .mosaic .item.w-1 {
+        width: 33.33333%
+    }
+    .page-product .mosaic .item.w-2 {
+        width: 66.66667%
+    }
+    .page-product .mosaic .h-1 {
+        height: 33.33333%
+    }
+    .page-product .mosaic .h-2 {
+        height: 66.66667%
+    }
+}
+
+.page-product .wordmark {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60px
+}
+
+.page-product .wordmark-h1--rift {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_h1_desktop.png)
+}
+
+.page-product .wordmark-h1--touch {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/touch_h1_desktop.png)
+}
+
+.page-product .wordmark-h1--rift-touch {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_touch_h1_desktop.png)
+}
+
+.page-product .wordmark-h1--rift-2x {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_h1_desktopx2.png);
+    background-size: 105px 60px
+}
+
+.page-product .wordmark-h1--touch-2x {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/touch_h1_desktopx2.png);
+    background-size: 202px 60px
+}
+
+.page-product .wordmark-h1--rift-touch-2x {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_touch_h1_desktopx2.png)
+}
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi) {
+    .page-product .wordmark-h1--rift {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_h1_desktopx2.png);
+        background-size: 105px 60px
+    }
+    .page-product .wordmark-h1--touch {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/touch_h1_desktopx2.png);
+        background-size: 202px 60px
+    }
+    .page-product .wordmark-h1--rift-touch {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_touch_h1_desktopx2.png)
+    }
+}
+
+.module-generic-container--legal {
+    min-width: inherit;
+    background: #fff;
+    padding: 50px;
+    position: relative
+}
+
+.module-generic-container--legal .legal-nav {
+    padding: 30px
+}
+
+.module-generic-container--legal .legal-nav h3 {
+    font-size: 16px
+}
+
+.module-generic-container--legal .legal-nav ul {
+    padding: 0
+}
+
+.module-generic-container--legal .legal-nav ul li {
+    list-style-type: none;
+    font-size: 14px;
+    padding-bottom: 8px
+}
+
+.module-generic-container--legal .legal-doc-content {
+    padding: 30px
+}
+
+.module-generic-container--legal .module-generic--content {
+    margin: 0 auto;
+    max-width: 780px
+}
+
+.module-generic-container--legal .module-generic--content .module-link-menu-container {
+    padding: 0 0 10px
+}
+
+.module-generic-container--legal .module-generic--content .module-generic--legal p {
+    font-size: 16px
+}
+
+.module-generic-container--legal .module-generic--content .module-generic--legal a {
+    color: #1c1e20;
+    text-decoration: underline
+}
+
+.module-generic-container--legal .module-generic--content .module-generic--legal ul {
+    padding: 0;
+    list-style: none;
+    margin: 0 0 40px
+}
+
+.module-generic-container--legal .module-generic--content .module-generic--legal ul li {
+    padding: 0 0 0 20px;
+    margin: 0 0 8px;
+    position: relative
+}
+
+.module-generic-container--legal .module-generic--content .module-generic--legal ul li:before {
+    content: '';
+    background: #a4a5a6;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    border-radius: 3px
+}
+
+.page-rift-headset .experience-tiles .grid-container {
+    min-width: inherit;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0
+}
+
+.page-rift-headset .experience-tiles .experience-tile {
+    background-color: #1c1e20
+}
+
+.page-rift-headset .experience-tiles .experience-tile .background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px
+}
+
+@media screen and (min-width:1025px) {
+    .page-rift-headset .experience-tiles .experience-tile .background {
+        height: 322px
+    }
+}
+
+@media screen and (min-width:1350px) {
+    .page-rift-headset .experience-tiles .experience-tile .background {
+        height: 400px
+    }
+}
+
+.page-rift-headset .book-a-demo .content h2 {
+    margin: 30px
+}
+
+.page-rift-headset .book-a-demo .content .location-icon--large {
+    display: block;
+    margin: 0 auto;
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/location.png);
+    background-repeat: no-repeat;
+    background-size: 82px 82px;
+    width: 82px;
+    height: 82px
+}
+
+.page-rift-headset .hide-mobile {
+    display: none!important
+}
+
+.page-rift-headset .section .content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px
+}
+
+.page-rift-headset .section .content p {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.page-rift-headset .section h2 {
+    font-weight: 100
+}
+
+.page-rift-headset .section.hero {
+    background: #0e0e0e;
+    height: auto;
+    margin: 0;
+    text-align: center
+}
+
+.page-rift-headset .section.hero .container {
+    display: inline-block;
+    margin-top: -390px;
+    padding: 0 26px;
+    vertical-align: top
+}
+
+.page-rift-headset .section.hero .content {
+    color: #fff;
+    margin: auto;
+    padding: 0 25px;
+    z-index: 1
+}
+
+.page-rift-headset .section.hero .content .product-name {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_touch_h1_desktopx2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 60px;
+    margin: 0
+}
+
+.page-rift-headset .section.hero .content h3 {
+    font-size: 19px;
+    margin: 0
+}
+
+.page-rift-headset .section.hero .image {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/hero.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 0;
+    margin-top: -46px;
+    padding-top: 147%
+}
+
+.page-rift-headset .section.hero .ordering-container {
+    background: #fff;
+    margin-top: -120px;
+    padding: 20px
+}
+
+.page-rift-headset .section.hero .ordering-container .package-offer.item-3 {
+    padding-bottom: 0
+}
+
+.page-rift-headset .section.travel {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/travel-bg.jpg) bottom center no-repeat #0c0c0c;
+    background-size: cover;
+    color: #fff;
+    height: 720px
+}
+
+.page-rift-headset .section.science-fiction {
+    height: 750px;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/science-fiction-bg.jpg) bottom center no-repeat;
+    background-size: 100% auto
+}
+
+.page-rift-headset .section.science-fiction .content {
+    max-width: 430px
+}
+
+.page-rift-headset .section.science-fiction .bg {
+    position: absolute;
+    display: none
+}
+
+.page-rift-headset .section.science-fiction .bg-left {
+    background: left bottom no-repeat;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 400px
+}
+
+.page-rift-headset .section.science-fiction .bg-right {
+    background: left bottom no-repeat;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 780px
+}
+
+.page-rift-headset .section.features {
+    height: 655px;
+    color: #fff;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/features-bg.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.page-rift-headset .section.features .content {
+    padding-top: 310px;
+    max-width: 600px;
+    text-align: center;
+    margin: auto
+}
+
+.page-rift-headset .section.product-gallery {
+    background: #f7f7f7
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .owl-controls {
+    padding: 30px 0
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide {
+    padding-top: 94%
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-01 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/01.jpg)!important
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-02 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/02.jpg)!important
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-03 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/03.jpg)!important
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-04 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/04.jpg)!important
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-05 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/05.jpg)!important
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-06 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/06.jpg)!important
+}
+
+.page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-07 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/mobile/07.jpg)!important
+}
+
+.page-rift-headset .section.ready-pcs-laptops {
+    color: #fff;
+    background-color: #f0f0f0;
+    height: 600px;
+    margin: 0;
+    padding: 0!important;
+    overflow: hidden
+}
+
+.page-rift-headset .section.ready-pcs-laptops .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%
+}
+
+.page-rift-headset .section.ready-pcs-laptops .container .content {
+    max-width: 850px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.page-rift-headset .section.ready-pcs-laptops .container .content .oc-button--cta-secondary {
+    margin-top: 13px
+}
+
+.page-rift-headset .section.ready-pcs-laptops .image {
+    background-clip: border-box;
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/ready-pcs-laptops.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    height: 100%;
+    margin-top: 0
+}
+
+.page-rift-headset .section.connected {
+    color: #fff;
+    height: 600px
+}
+
+.page-rift-headset .section.connected .content {
+    padding-bottom: 30px;
+    max-width: 530px
+}
+
+.page-rift-headset .section.connected .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: bottom center no-repeat;
+    background-size: cover;
+    z-index: 0
+}
+
+.page-rift-headset .section.connected .bg.bg1 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/connected-bg1.jpg)
+}
+
+.page-rift-headset .section.connected .bg.bg2 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/connected-bg2.jpg)
+}
+
+.page-rift-headset .section.pc-specs {
+    background-color: #f0f0f0
+}
+
+.page-rift-headset .section.pc-specs .container .compat-check-container {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #d2d2d2;
+    padding: 14px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 16px 8px 0 rgba(0, 0, 0, .1);
+    -moz-box-shadow: 0 16px 8px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 16px 8px 0 rgba(0, 0, 0, .1)
+}
+
+.page-rift-headset .section.pc-specs .container .compat-check-container .compat-check-content {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.page-rift-headset .section.pc-specs .container .compat-check-container .compat-check-content i {
+    display: none
+}
+
+.page-rift-headset .section.pc-specs .container .compat-check-container .compat-check-content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0
+}
+
+.page-rift-headset .section.pc-specs .container .compat-check-container .compat-check-content p {
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding: 0
+}
+
+.page-rift-headset .section.pc-specs .container .compat-check-container #oculus-touch--compat-tool-download-cta {
+    margin: 0
+}
+
+.page-rift-headset .section.pc-specs .container .specs-container {
+    max-width: 800px;
+    margin: auto
+}
+
+.page-rift-headset .section.pc-specs .container .specs-container .spacer {
+    margin: 34px 0!important
+}
+
+.page-rift-headset .section.pc-specs .container .specs-container .accordion-toggle {
+    cursor: pointer;
+    text-align: left
+}
+
+.page-rift-headset .section.pc-specs .container .specs-container .accordion-toggle .plus {
+    float: right;
+    font-size: 30px;
+    transition-duration: 1s;
+    vertical-align: text-bottom
+}
+
+.page-rift-headset .section.pc-specs .container .specs-container .accordion-content {
+    display: none;
+    padding-top: 20px
+}
+
+.page-rift-headset .section.pc-specs .container .specs-container .accordion-content.default {
+    display: block
+}
+
+.page-rift-headset .section.pc-specs .container hr {
+    border-bottom: 1px solid #d2d2d2
+}
+
+.page-rift-headset .section.earphone-accessory {
+    height: 690px;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/earphone-accessory.jpg) no-repeat #f0f0f0;
+    background-size: initial;
+    background-position-x: center;
+    background-position-y: 325px
+}
+
+.page-rift-headset .section.sensor-accessory .container {
+    text-align: center
+}
+
+.page-rift-headset .section.sensor-accessory .container .content {
+    display: inline-block;
+    padding-top: 30px;
+    vertical-align: top
+}
+
+.page-rift-headset .section.sensor-accessory .container .content h2,
+.page-rift-headset .section.sensor-accessory .container .content p {
+    margin-bottom: 25px
+}
+
+.page-rift-headset .section.sensor-accessory .container .image-content {
+    display: inline-block
+}
+
+.page-rift-headset .section.sensor-accessory .container .image-content .image {
+    width: 100%
+}
+
+.page-rift-headset .section.ordering .content {
+    padding-bottom: 0
+}
+
+.page-rift-headset .section .ordering-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+    text-align: center;
+    min-width: 0
+}
+
+.page-rift-headset .section .ordering-container .package-offer {
+    padding: 10px
+}
+
+.page-rift-headset .section .ordering-container .package-offer img {
+    padding-bottom: 25px;
+    width: 100%
+}
+
+.page-rift-headset .section .ordering-container .package-offer .disclaimer-message-container {
+    color: #a4a5a6;
+    display: block;
+    font-size: 12px;
+    padding-top: 50px;
+    text-align: left
+}
+
+.page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .product-info {
+    float: left;
+    text-align: left
+}
+
+.page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .product-info .product-title {
+    font-size: 20px;
+    text-align: left
+}
+
+.page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .product-info .product-price {
+    color: #1574d4;
+    display: block;
+    text-align: left
+}
+
+.page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .ordering-cta {
+    float: right
+}
+
+.page-rift-headset .section .ordering-container .package-offer .specs hr {
+    margin: 12px 0
+}
+
+.page-rift-headset .section .ordering-container .package-offer .specs .spec-line-item {
+    font-size: 14px;
+    text-align: left
+}
+
+.page-rift-headset .section.disclaimer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #16181a
+}
+
+.page-rift-headset .section.disclaimer .content {
+    max-width: 900px;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    color: #777879;
+    padding: 0;
+    margin: 0 auto
+}
+
+.page-rift-headset .section.disclaimer .content p {
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (min-width:641px) {
+    .page-rift-headset .hide-mobile {
+        display: inline-block!important
+    }
+    .page-rift-headset .section .content {
+        padding-top: 100px;
+        padding-bottom: 100px
+    }
+    .page-rift-headset .section .content h2 {
+        line-height: 38px
+    }
+    .page-rift-headset .section.hero .content {
+        color: #1c1e20;
+        left: 58%;
+        position: absolute;
+        top: 42%;
+        margin-top: calc(-370px / 2);
+        width: 270px;
+        padding: 0;
+        text-align: left
+    }
+    .page-rift-headset .section.hero .content .product-name {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/wordmarks/rift_touch_h1_desktop.png);
+        background-position: left center
+    }
+    .page-rift-headset .section.hero .content h3 {
+        font-size: 22px;
+        text-align: left
+    }
+    .page-rift-headset .section.hero .content .rift-pre-order-cta {
+        margin-left: 0
+    }
+    .page-rift-headset .section.hero .image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/hero.jpg);
+        margin-top: -36px;
+        padding-top: 103%
+    }
+    .page-rift-headset .section.travel {
+        background-size: auto;
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/travel-bg.jpg);
+        height: 800px;
+        color: #a4a5a6
+    }
+    .page-rift-headset .section.travel .content {
+        max-width: 530px
+    }
+    .page-rift-headset .section.science-fiction {
+        height: 850px;
+        background: 0 0
+    }
+    .page-rift-headset .section.science-fiction .content {
+        padding-top: 160px;
+        max-width: 620px
+    }
+    .page-rift-headset .section.science-fiction .bg {
+        display: block!important
+    }
+    .page-rift-headset .section.science-fiction .bg-left {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/science-fiction-left.jpg);
+        width: 251px
+    }
+    .page-rift-headset .section.science-fiction .bg-right {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/science-fiction-right.jpg);
+        width: 429px
+    }
+    .page-rift-headset .section.features {
+        height: 900px;
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/features-bg.jpg);
+        color: #a4a5a6
+    }
+    .page-rift-headset .section.features .content {
+        padding-top: 640px;
+        max-width: 540px
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide {
+        padding-top: 47%
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-01 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/01.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-02 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/02.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-03 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/03.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-04 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/04.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-05 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/05.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-06 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/06.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-07 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/07.jpg)!important
+    }
+    .page-rift-headset .section.ready-pcs-laptops .image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/ready-pcs-laptops.jpg)
+    }
+    .page-rift-headset .section.connected {
+        height: 900px
+    }
+    .page-rift-headset .section.connected .content {
+        max-width: 550px
+    }
+    .page-rift-headset .section.connected .content p {
+        max-width: 483px;
+        margin: 0 auto
+    }
+    .page-rift-headset .section.connected .bg.bg1 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/connected-bg1.jpg)
+    }
+    .page-rift-headset .section.connected .bg.bg2 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/connected-bg2.jpg)
+    }
+    .page-rift-headset .section.earphone-accessory {
+        height: 950px;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/tablet/earphone-accessory.jpg) no-repeat #f0f0f0;
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: 270px
+    }
+    .page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .product-info .product-title {
+        font-size: 16px
+    }
+    .page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .ordering-cta {
+        padding: 5px 18px;
+        min-width: 120px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:767px) {
+    .page-rift-headset .mobile-grid-100 {
+        clear: initial;
+        float: left;
+        width: 33.33333333%
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-rift-headset .section.hero .content {
+        width: 340px
+    }
+    .page-rift-headset .section.hero .image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/hero.jpg);
+        padding-top: 58%
+    }
+    .page-rift-headset .section.travel {
+        background: #0c0c0c;
+        color: #a4a5a6;
+        height: 1100px;
+        overflow: hidden
+    }
+    .page-rift-headset .section.travel .rift {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0
+    }
+    .page-rift-headset .section.travel .rift .image {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 105%;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/travel-bg.jpg) center center no-repeat
+    }
+    .page-rift-headset .section.travel .content {
+        padding-top: 130px;
+        max-width: 600px
+    }
+    .page-rift-headset .section.science-fiction {
+        height: 900px
+    }
+    .page-rift-headset .section.science-fiction .content {
+        padding-top: 320px;
+        max-width: 430px
+    }
+    .page-rift-headset .section.science-fiction .bg {
+        position: absolute
+    }
+    .page-rift-headset .section.science-fiction .bg-left {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/science-fiction-left.jpg) left bottom no-repeat;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 400px
+    }
+    .page-rift-headset .section.science-fiction .bg-right {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/science-fiction-right.jpg) left bottom no-repeat;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 622px
+    }
+    .page-rift-headset .section.features {
+        color: #a4a5a6;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/features-bg.jpg) center center no-repeat;
+        background-size: cover;
+        height: 900px
+    }
+    .page-rift-headset .section.features .content {
+        padding-top: 100px;
+        max-width: 570px;
+        text-align: center;
+        margin: auto
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .owl-controls {
+        padding: 45px 0
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide {
+        padding-top: 41%
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-01 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/01.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-02 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/02.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-03 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/03.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-04 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/04.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-05 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/05.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-06 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/06.jpg)!important
+    }
+    .page-rift-headset .section.product-gallery .owl-carousel .carousel__slide.product-gallery-07 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/07.jpg)!important
+    }
+    .page-rift-headset .section.ready-pcs-laptops {
+        height: 900px
+    }
+    .page-rift-headset .section.connected {
+        color: #fff;
+        height: 900px
+    }
+    .page-rift-headset .section.connected .content {
+        max-width: 600px
+    }
+    .page-rift-headset .section.connected .bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: center center no-repeat;
+        background-size: cover
+    }
+    .page-rift-headset .section.connected .bg.bg1 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/connected-bg1.jpg)
+    }
+    .page-rift-headset .section.pc-specs .container .content {
+        max-width: 840px
+    }
+    .page-rift-headset .section.pc-specs .container .content .compat-check-container .compat-check-content {
+        text-align: left;
+        padding-left: 70px;
+        margin: 0
+    }
+    .page-rift-headset .section.pc-specs .container .content .compat-check-container .compat-check-content i {
+        position: absolute;
+        left: 0;
+        top: 2px;
+        display: block
+    }
+    .page-rift-headset .section.pc-specs .container .content .compat-check-container .compat-check-content h4 {
+        padding: 0;
+        margin: 0
+    }
+    .page-rift-headset .section.pc-specs .container .content .compat-check-container .compat-check-content p {
+        margin: 0
+    }
+    .page-rift-headset .section.pc-specs .container .content .compat-check-container .compat-check-content #oculus-touch--compat-tool-download-cta {
+        position: absolute;
+        right: 10px;
+        top: 12px
+    }
+    .page-rift-headset .section.pc-specs .container .content .specs-container {
+        margin: auto
+    }
+    .page-rift-headset .section.earphone-accessory {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/earphone-accessory.jpg) no-repeat #f0f0f0;
+        background-size: initial;
+        background-position-x: center;
+        background-position-y: 285px;
+        height: 1200px
+    }
+    .page-rift-headset .section.sensor-accessory .container {
+        padding: 100px 0
+    }
+    .page-rift-headset .section.sensor-accessory .container .content {
+        max-width: 380px;
+        padding-bottom: 16%;
+        text-align: left;
+        vertical-align: bottom
+    }
+    .page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .product-info .product-title {
+        font-size: 20px
+    }
+    .page-rift-headset .section .ordering-container .package-offer .add-to-cart-container .ordering-cta {
+        padding: 5px 29px;
+        min-width: 150px
+    }
+}
+
+.page-rift-setup {
+    height: 100vh
+}
+
+.page-rift-setup .hide-mobile {
+    display: none!important
+}
+
+.page-rift-setup #rift-restart-download-button,
+.page-rift-setup .hero .content.content--desktop {
+    display: none
+}
+
+.page-rift-setup h1,
+.page-rift-setup h2,
+.page-rift-setup h3,
+.page-rift-setup p {
+    color: #fff
+}
+
+.page-rift-setup #rift-restart-download-button,
+.page-rift-setup #rift-start-download-button {
+    margin-top: 28px
+}
+
+.page-rift-setup .icon-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%)
+}
+
+.page-rift-setup .section .container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    overflow: hidden
+}
+
+.page-rift-setup .section .container .content--desktop h3 {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.page-rift-setup .section .container .content--mobile h3 {
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.page-rift-setup .section .container .hero--rift-setup-image {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.page-rift-setup .section .hero--rift-setup-image-before {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/setup-before-download.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 1s ease-in-out
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer:hover .background,
+.page-rift-setup .section .hero--rift-setup-image-before--hidden {
+    opacity: 0
+}
+
+.page-rift-setup .section .hero--rift-setup-image-after {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/setup-after-download.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.page-rift-setup .section .content {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.page-rift-setup .section .content i.icon-right-arrow--medium--inverse {
+    position: absolute;
+    right: -24px;
+    top: 30px;
+    height: 48px;
+    width: 48px
+}
+
+.page-rift-setup .section .content .setup-step:nth-last-child(n+2) {
+    position: relative
+}
+
+.page-rift-setup .section .module-center-icons-container {
+    margin: 0;
+    padding: 40px 0 0
+}
+
+.page-rift-setup .section .module-center-icons-container .module-center-icons.grid-container.tablet-grid-container.mobile-grid-container {
+    margin: 0;
+    padding: 0
+}
+
+.page-rift-setup .section .module-center-icons-container .module-center-icons>div {
+    padding: 0
+}
+
+.page-rift-setup .section .module-center-icons-container .module-center-icons>div .text p {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.page-rift-setup .section .module-center-icons-container .module-center-icons>div .icon .image {
+    position: relative
+}
+
+.page-rift-setup .section .module-center-icons-container .module-center-icons i {
+    height: 48px;
+    width: 48px
+}
+
+.page-rift-setup .hero {
+    height: 100vh;
+    margin: 0;
+    background: #1c1e20
+}
+
+.page-rift-setup .hero .content {
+    margin: auto;
+    text-align: center
+}
+
+.page-rift-setup .hero .content.content--mobile {
+    display: none;
+    padding: 200px 40px 0
+}
+
+.page-rift-setup .hero .image.hero--rift-setup-image-after {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/setup-after-download.jpg) center center no-repeat
+}
+
+@media screen and (max-width:640px) {
+    .page-rift-setup .section .content.content--mobile {
+        display: block
+    }
+}
+
+@media screen and (min-width:641px) {
+    .page-rift-setup .hide-mobile {
+        display: inline-block!important
+    }
+    .page-rift-setup .hero {
+        height: auto
+    }
+    .page-rift-setup .hero .content {
+        padding-top: 200px;
+        padding-bottom: 24px
+    }
+    .page-rift-setup .hero .content.content--desktop {
+        display: block
+    }
+    .page-rift-setup .hero .image.hero--rift-setup-image.hero--rift-setup-image-before {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/setup-before-download.jpg) center center no-repeat;
+        background-size: cover
+    }
+    .page-rift-setup .hero .image.hero--rift-setup-image.hero--rift-setup-image-after {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/setup-after-download.jpg) center center no-repeat;
+        background-size: cover
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-rift-setup .hero {
+        height: auto
+    }
+    .page-rift-setup .hero .content {
+        margin: auto;
+        padding-top: 120px;
+        padding-bottom: 25px;
+        text-align: center
+    }
+    .page-rift-setup .hero .content.content--desktop {
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    .page-rift-setup .hero .hero--rift-setup-image-before {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/setup-before-download.jpg) center center no-repeat;
+        background-size: cover
+    }
+    .page-rift-setup .hero .hero--rift-setup-image-after {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/setup-after-download.jpg) center center no-repeat;
+        background-size: cover
+    }
+}
+
+.page-oculus-ready-pcs .family-bundle-header {
+    padding: 100px 25px
+}
+
+.page-oculus-ready-pcs .family-bundle-header .container {
+    text-align: center
+}
+
+.page-oculus-ready-pcs .family-bundle-header .container .content p {
+    margin-bottom: 0
+}
+
+.page-oculus-ready-pcs .family-bundle {
+    background-color: #f0f0f0;
+    padding-top: 100px
+}
+
+.page-oculus-ready-pcs .family-bundle .container {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.page-oculus-ready-pcs .family-bundle .container .image-content {
+    width: 100%
+}
+
+.page-oculus-ready-pcs .family-bundle .container .image-content .image {
+    max-width: 100%;
+    max-height: 100%
+}
+
+.page-oculus-ready-pcs .hero {
+    background: #fefefe;
+    height: auto
+}
+
+.page-oculus-ready-pcs .hero .content {
+    position: relative;
+    top: 116px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: #fff
+}
+
+.page-oculus-ready-pcs .hero .content .product-name {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px
+}
+
+.page-oculus-ready-pcs .hero .content .subline {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 26px;
+    display: block
+}
+
+.page-oculus-ready-pcs .hero .content p {
+    line-height: 144%;
+    margin-bottom: 32px;
+    font-size: 18px;
+    position: relative;
+    top: auto;
+    color: #fff;
+    padding: 0
+}
+
+.page-oculus-ready-pcs .hero .content>a {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0
+}
+
+.page-oculus-ready-pcs .hero .content>a span {
+    color: #fff;
+    border-color: #fff
+}
+
+.page-oculus-ready-pcs .hero .content>a span:hover,
+.page-oculus-ready-pcs .partner-offers a,
+.page-oculus-ready-pcs .partner-offers a:hover {
+    color: #1c1e20
+}
+
+.page-oculus-ready-pcs .hero .hero--overview-image {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-ready-pcs/mobile/hero.jpg) center center no-repeat;
+    background-size: cover;
+    height: 675px;
+    margin-top: 45px
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-ready-pcs .hero .content .product-name {
+        font-size: 32px
+    }
+    .page-oculus-ready-pcs .hero .content .subline {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-ready-pcs .hero .content {
+        top: 297px
+    }
+    .page-oculus-ready-pcs .hero .hero--overview-image {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-ready-pcs/mobile/hero.jpg) center center no-repeat;
+        background-size: cover;
+        height: 1210px;
+        margin-top: -186px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-ready-pcs .hero .content {
+        top: 260px
+    }
+    .page-oculus-ready-pcs .hero .hero--overview-image {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-ready-pcs/hero.jpg) center center no-repeat;
+        background-size: cover;
+        height: 800px;
+        margin-top: 80px
+    }
+}
+
+.page-oculus-ready-pcs .high-performance {
+    background-color: #f0f0f0
+}
+
+.page-oculus-ready-pcs .high-performance .container {
+    max-width: 100%;
+    padding: 100px 50px;
+    text-align: center
+}
+
+.page-oculus-ready-pcs .high-performance .container .content {
+    display: inline-block;
+    max-width: 580px;
+    padding: 0 0 50px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%
+}
+
+.page-oculus-ready-pcs .high-performance .container .content h2 {
+    display: inline-block;
+    max-width: 450px
+}
+
+.page-oculus-ready-pcs .high-performance .container .image-content {
+    display: inline-block;
+    padding: 0;
+    width: 100%
+}
+
+.page-oculus-ready-pcs .high-performance .container .image-content .image {
+    max-width: 100%;
+    max-height: 100%
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-ready-pcs .high-performance .container .content {
+        padding: 30px 0 0;
+        text-align: left;
+        width: 42%
+    }
+    .page-oculus-ready-pcs .high-performance .container .image-content {
+        padding-top: 1%;
+        width: 57%
+    }
+}
+
+.page-oculus-ready-pcs #newsletter-signup {
+    background-color: #fff
+}
+
+.overlay--recommended-specs .overlay-content {
+    padding: 50px
+}
+
+.overlay--recommended-specs .overlay-content .overlay-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 auto 26px;
+    max-width: 440px;
+    text-align: center
+}
+
+.overlay--recommended-specs .overlay-content .overlay-details hr {
+    border-top: 1px solid #f0f0f0
+}
+
+@media screen and (max-width:640px) {
+    .overlay--recommended-specs .overlay__box {
+        max-height: 80%;
+        overflow-y: auto!important
+    }
+    .overlay--recommended-specs .overlay__box .overlay-content {
+        padding: 20px
+    }
+    .overlay--recommended-specs .overlay__box .overlay-content .overlay-header {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 auto 15px
+    }
+}
+
+.page-oculus-ready-pcs .partner-offers-header {
+    padding: 100px 25px
+}
+
+.page-oculus-ready-pcs .partner-offers-header .container {
+    text-align: center
+}
+
+.page-oculus-ready-pcs .partner-offers-header .container .content p {
+    margin-bottom: 0
+}
+
+.page-oculus-ready-pcs .partner-offers {
+    padding: 0
+}
+
+.page-oculus-ready-pcs .partner-offers .grid-container {
+    min-width: inherit;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: solid 1px #d2d2d2;
+    border-right: solid 1px #d2d2d2
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer {
+    position: relative;
+    height: 407px;
+    text-align: center;
+    border-top: solid 1px #d2d2d2;
+    border-left: solid 1px #d2d2d2;
+    box-sizing: border-box
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer:hover {
+    box-shadow: inset 0 5px 1px -5px #ddd
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer:hover .oc-button--cta-secondary {
+    background-color: #1c1e20;
+    color: #fff
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: opacity .3s
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer .content {
+    opacity: 1;
+    padding-top: 134px
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer .subline {
+    margin: 30px auto;
+    max-width: 154px
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer .logo {
+    height: 65px;
+    padding-bottom: 30px
+}
+
+.page-oculus-ready-pcs .partner-offers .partner-offer .logo img {
+    max-width: 210px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-ready-pcs .partner-offers .partner-offer .content {
+        padding-top: 100px
+    }
+}
+
+.page-oculus-ready-pcs .partner-channels {
+    background-color: #f0f0f0;
+    padding: 100px 0 0;
+    text-align: center
+}
+
+.page-oculus-ready-pcs .partner-channels .grid-container {
+    min-width: inherit;
+    max-width: 980px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel {
+    display: inline-block;
+    padding: 10px;
+    position: relative
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel:hover {
+    box-shadow: inset 0 5px 1px -5px #ddd
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel:hover .oc-button--cta-secondary {
+    background-color: #1c1e20;
+    color: #fff
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel:hover .background {
+    opacity: 0
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel .content {
+    position: relative;
+    padding: 60px 30px;
+    border: 1px solid #cbcbcb;
+    background: #fff
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel .content .logo {
+    padding-bottom: 30px
+}
+
+.page-oculus-ready-pcs .partner-channels .partner-channel .content .logo img {
+    width: 100%;
+    max-width: 200px
+}
+
+.page-oculus-ready-pcs .partner-channels:before {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    content: "";
+    background-color: #fff
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-ready-pcs .partners-channels .partner-channel {
+        height: 80px
+    }
+    .page-oculus-ready-pcs .partners-channels .partner-channel .content {
+        padding: 0 40px
+    }
+    .page-oculus-ready-pcs .section .content p {
+        font-size: 16px;
+        line-height: 24px
+    }
+}
+
+.page-oculus-ready-pcs .section .content {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.page-oculus-touch .section--above {
+    z-index: 5
+}
+
+.page-oculus-touch .hero {
+    background: #fefefe;
+    height: auto;
+    margin: 0
+}
+
+.page-oculus-touch .hero .content {
+    margin: auto;
+    padding-top: 250px;
+    padding-bottom: 24px;
+    text-align: center
+}
+
+.page-oculus-touch .hero .content .product-name {
+    font-size: 70px;
+    line-height: 78px;
+    margin-bottom: 40px;
+    color: inherit
+}
+
+.page-oculus-touch .hero .content .subline {
+    font-size: 24px;
+    line-height: 26px;
+    display: block;
+    color: inherit;
+    font-weight: 400;
+    margin: 0 auto
+}
+
+.page-oculus-touch .hero .image {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/hero.jpg) center center no-repeat;
+    background-size: contain;
+    height: 815px;
+    margin-top: -160px
+}
+
+.page-oculus-touch .created-for-touch {
+    position: relative;
+    background: #1c1e20;
+    color: #fff;
+    height: 100%
+}
+
+.page-oculus-touch .created-for-touch .container {
+    max-width: none;
+    padding: 70px 0;
+    width: 100%;
+    vertical-align: middle
+}
+
+.page-oculus-touch .created-for-touch .container .content {
+    margin: auto;
+    height: 100%;
+    padding: 0 24px;
+    max-width: 700px
+}
+
+.page-oculus-touch .created-for-touch .container .content h2,
+.page-oculus-touch .created-for-touch .container .content p {
+    text-align: center
+}
+
+.page-oculus-touch .created-for-touch .container .content p {
+    margin-bottom: 0
+}
+
+.page-oculus-touch .created-for-touch .container .content h2 {
+    margin-bottom: 25px
+}
+
+.page-oculus-touch .mosaic {
+    height: 453px;
+    width: 100%
+}
+
+.page-oculus-touch .mosaic .h-1 {
+    height: 100%
+}
+
+.page-oculus-touch .mosaic .h-1 .item {
+    width: 50%
+}
+
+.page-oculus-touch .mosaic .h-1 .item .content {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.page-oculus-touch .mosaic .h-1 .item .content h2 {
+    color: #fff
+}
+
+.page-oculus-touch .mosaic .h-1 .item.w-1 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/medium.jpg)
+}
+
+.page-oculus-touch .mosaic .h-1 .item.w-2 {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/toybox.jpg)
+}
+
+.page-oculus-touch .disclaimer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #16181a
+}
+
+.page-oculus-touch .disclaimer .content {
+    max-width: 900px;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    color: #777879;
+    padding: 0;
+    margin: 0 auto
+}
+
+.page-oculus-touch .disclaimer .content p {
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (max-width:641px) {
+    .page-oculus-touch .hero {
+        background: #fefefe;
+        height: auto;
+        margin: 0
+    }
+    .page-oculus-touch .hero .content {
+        margin: auto;
+        padding: 100px 0 200px;
+        text-align: center
+    }
+    .page-oculus-touch .hero .content .product-name {
+        font-size: 45px;
+        line-height: 45px;
+        margin-bottom: 25px;
+        color: inherit
+    }
+    .page-oculus-touch .hero .content .subline {
+        font-size: 18px;
+        display: block;
+        color: inherit;
+        font-weight: 400
+    }
+    .page-oculus-touch .hero .image {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/phone/hero.jpg) center center no-repeat;
+        background-size: contain;
+        height: 350px
+    }
+    .page-oculus-touch .created-for-touch {
+        height: 100%;
+        padding: 50px 0 0
+    }
+    .page-oculus-touch .created-for-touch .container {
+        padding: 0
+    }
+    .page-oculus-touch .created-for-touch .container .content {
+        padding: 0 24px
+    }
+    .page-oculus-touch .created-for-touch .container .content p {
+        margin-bottom: 0;
+        padding-bottom: 50px
+    }
+    .page-oculus-touch .mosaic {
+        height: 100%
+    }
+    .page-oculus-touch .mosaic .h-1 .item {
+        width: 100%
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    .page-oculus-touch .hero {
+        height: auto
+    }
+    .page-oculus-touch .hero .content {
+        padding-top: 200px;
+        padding-bottom: 175px
+    }
+    .page-oculus-touch .hero .content .product-name {
+        font-size: 60px;
+        line-height: 90px;
+        margin-bottom: 25px
+    }
+    .page-oculus-touch .hero .content .subline {
+        font-size: 26px
+    }
+    .page-oculus-touch .hero .image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/tablet/hero.jpg);
+        height: 558px
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-1 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb1.jpg)
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-2 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb2.jpg)
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-3 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb3.jpg)
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-4 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb4.jpg)
+    }
+    .page-oculus-touch .created-for-touch .container .content {
+        padding: 0 24px
+    }
+    .page-oculus-touch .created-for-touch .container .content p {
+        margin-bottom: 0
+    }
+}
+
+@media screen and (min-width:1026px) {
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-1 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb1.jpg)
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-2 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb2.jpg)
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-3 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb3.jpg)
+    }
+    .page-oculus-touch .technology-thumbs .thumbs .item.item-4 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/technology-thumb4.jpg)
+    }
+}
+
+.page-oculus-touch .natural-gestures {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden
+}
+
+.page-oculus-touch .natural-gestures__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.page-oculus-touch .natural-gestures__content {
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    padding: 60px 25px 0;
+    max-width: 500px
+}
+
+.page-oculus-touch .natural-gestures__content p {
+    font-size: 14px;
+    line-height: 21px
+}
+
+@media screen and (min-width:641px) {
+    .page-oculus-touch .natural-gestures__content p {
+        font-size: 16px;
+        line-height: 24px
+    }
+}
+
+.page-oculus-touch .natural-gestures__title {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: opacity .6s linear .1s, transform .6s ease
+}
+
+.page-oculus-touch .natural-gestures__title.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-oculus-touch .natural-gestures__description {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: opacity .6s linear .1s, transform .6s ease
+}
+
+.page-oculus-touch .natural-gestures__description.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-oculus-touch .natural-gestures__background {
+    position: absolute;
+    z-index: 1;
+    background: #000;
+    top: -50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(35deg)
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .natural-gestures__background {
+        top: auto;
+        bottom: -680px;
+        width: 1400px;
+        height: 1400px;
+        margin-left: -700px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__content {
+        padding-top: 90px
+    }
+    .page-oculus-touch .natural-gestures__background {
+        width: 6000px;
+        height: 3000px;
+        margin-left: -1100px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__content {
+        padding-top: 260px
+    }
+    .page-oculus-touch .natural-gestures__background {
+        width: 6000px;
+        height: 3000px;
+        margin-left: -1640px
+    }
+}
+
+.page-oculus-touch .natural-gestures__graphics {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 25px
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .natural-gestures__graphics {
+        height: 300px;
+        max-width: 300px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__graphics {
+        height: 540px;
+        max-width: 680px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__graphics {
+        height: 780px;
+        max-width: 1200px
+    }
+}
+
+.page-oculus-touch .natural-gestures__graphics-items {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.page-oculus-touch .natural-gestures__left-hand {
+    position: absolute;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/natural-instincts/left-hand.png) no-repeat;
+    background-size: contain;
+    left: 0;
+    transition: transform .6s ease-out
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__left-hand {
+        width: calc(1000px * .6);
+        height: calc(640px * .6);
+        top: calc(70px * .6);
+        margin-left: calc(-450px * .6)
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .page-oculus-touch .natural-gestures__left-hand {
+        margin-left: -370px
+    }
+}
+
+@media screen and (orientation:portrait) {
+    .page-oculus-touch .natural-gestures__left-hand {
+        margin-left: -320px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__left-hand {
+        width: 1000px;
+        height: 640px;
+        top: 70px;
+        margin-left: -550px
+    }
+}
+
+.page-oculus-touch .natural-gestures__right-hand {
+    position: absolute;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/natural-instincts/right-hand.png) no-repeat;
+    background-size: contain;
+    right: 0;
+    transition: transform .6s ease-out
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .natural-gestures__right-hand {
+        width: calc(1130px * .3);
+        height: calc(850px * .3);
+        top: 110px;
+        margin-right: 160px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__right-hand {
+        width: calc(1130px * .6);
+        height: calc(850px * .6);
+        top: 200px;
+        margin-right: 120px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__right-hand {
+        width: 1130px;
+        height: 850px;
+        top: 250px;
+        margin-right: 170px
+    }
+}
+
+.page-oculus-touch .natural-gestures__shape-ball {
+    position: absolute;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/natural-instincts/shape-ball.png) no-repeat;
+    background-size: contain;
+    right: 0;
+    transition: transform .6s ease-out
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .natural-gestures__shape-ball {
+        width: calc(50px * .3);
+        height: calc(50px * .3);
+        top: -20px;
+        margin-right: 60px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__shape-ball {
+        width: calc(50px * .6);
+        height: calc(50px * .6);
+        top: -180px;
+        margin-right: 60px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__shape-ball {
+        width: 50px;
+        height: 50px;
+        top: -280px;
+        margin-right: 60px
+    }
+}
+
+.page-oculus-touch .natural-gestures__shape-pyramid {
+    position: absolute;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/natural-instincts/shape-pyramid.png) no-repeat;
+    background-size: contain;
+    right: 0;
+    transition: transform .6s ease-out
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .natural-gestures__shape-pyramid {
+        width: calc(80px * .3);
+        height: calc(110px * .3);
+        top: -10px;
+        margin-right: 140px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__shape-pyramid {
+        width: calc(80px * .6);
+        height: calc(110px * .6);
+        top: -170px;
+        margin-right: 190px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__shape-pyramid {
+        width: 80px;
+        height: 110px;
+        top: -270px;
+        margin-right: 380px
+    }
+}
+
+.page-oculus-touch .natural-gestures__shape-diamond {
+    position: absolute;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/natural-instincts/shape-diamond.png) no-repeat;
+    background-size: contain;
+    right: 0;
+    transition: transform .6s ease-out
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .natural-gestures__shape-diamond {
+        width: calc(270px * .3);
+        height: calc(270px * .3);
+        top: 20px;
+        margin-right: 60px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .natural-gestures__shape-diamond {
+        width: calc(270px * .6);
+        height: calc(270px * .6);
+        top: -80px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-oculus-touch .natural-gestures__shape-diamond {
+        width: 270px;
+        height: 270px;
+        top: -180px
+    }
+}
+
+.page-product .touch-direct-control {
+    text-align: center;
+    position: relative;
+    background: #000;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden
+}
+
+.page-product .touch-direct-control__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #323436;
+    background-color: #000
+}
+
+.page-product .touch-direct-control__content {
+    position: relative;
+    z-index: 3;
+    margin: 0 auto;
+    padding: 60px 25px 0;
+    max-width: 500px
+}
+
+.page-product .touch-direct-control__content h2 {
+    color: #fff
+}
+
+.page-product .touch-direct-control__content p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff
+}
+
+@media screen and (min-width:641px) {
+    .page-product .touch-direct-control__content p {
+        font-size: 16px;
+        line-height: 24px
+    }
+}
+
+.page-product .touch-direct-control__title {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: opacity .6s linear .1s, transform .6s ease
+}
+
+.page-product .touch-direct-control__title.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-product .touch-direct-control__description {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: opacity .6s linear .1s, transform .6s ease
+}
+
+.page-product .touch-direct-control__description.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-product .touch-direct-control__background {
+    position: absolute;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/direct-control/floor.png) center bottom no-repeat;
+    background-size: auto 50%;
+    z-index: 1;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    opacity: .5
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-product .touch-direct-control__content {
+        padding-top: 90px
+    }
+    .page-product .touch-direct-control__background {
+        background-size: 100% 75%
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-product .touch-direct-control__content {
+        padding-top: 140px
+    }
+    .page-product .touch-direct-control__background {
+        background-size: 110% 100%
+    }
+}
+
+.page-product .touch-direct-control__graphics {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 25px
+}
+
+@media screen and (max-width:640px) {
+    .page-product .touch-direct-control__graphics {
+        height: 260px;
+        max-width: 360px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-product .touch-direct-control__graphics {
+        height: 460px;
+        max-width: 680px
+    }
+}
+
+.page-product .touch-direct-control__graphics-items {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+@media screen and (min-width:1025px) {
+    .page-product .touch-direct-control__graphics {
+        height: 660px;
+        max-width: 1200px
+    }
+    .page-product .touch-direct-control__graphics-items {
+        top: -60px
+    }
+}
+
+.page-product .touch-direct-control__hand {
+    position: absolute;
+    top: 0
+}
+
+.page-product .touch-direct-control__hand--left {
+    left: 0
+}
+
+.page-product .touch-direct-control__hand--right {
+    right: 0
+}
+
+@media screen and (max-width:640px) {
+    .page-product .touch-direct-control__hand {
+        width: calc(500px * .3);
+        height: calc(630px * .3)
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-product .touch-direct-control__hand {
+        width: calc(500px * .6);
+        height: calc(630px * .6)
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-product .touch-direct-control__hand--left {
+        left: 50px
+    }
+    .page-product .touch-direct-control__hand--right {
+        right: 50px
+    }
+    .page-product .touch-direct-control__hand {
+        width: 500px;
+        height: 630px
+    }
+}
+
+.page-product .touch-direct-control__controller {
+    position: relative;
+    z-index: 3;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/direct-control/hand-controller.png) center 0 no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%
+}
+
+.page-product .touch-direct-control__controller-arm {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/direct-control/hand-controller-arm.png) center bottom no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 52%;
+    transform-origin: 50% 120%
+}
+
+.page-product .touch-direct-control__wireframe {
+    position: relative;
+    z-index: 3;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/direct-control/hand-wireframe.png) center 0 no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%
+}
+
+.page-product .touch-direct-control__shadow {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    padding-top: 24%
+}
+
+.page-product .touch-direct-control__shadow--controller {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/direct-control/hand-controller-shadow.png) center bottom no-repeat;
+    background-size: contain
+}
+
+.page-product .touch-direct-control__shadow--wireframe {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/direct-control/hand-wireframe-shadow.png) center bottom no-repeat;
+    background-size: contain
+}
+
+.page-oculus-touch .bullet-train {
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+    width: 100%
+}
+
+@media screen and (max-width:640px) {
+    .page-oculus-touch .bullet-train {
+        height: 320px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .page-oculus-touch .bullet-train {
+        height: 600px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-product .touch-direct-control__controller-arm {
+        transform-origin: 50% 100%
+    }
+    .page-oculus-touch .bullet-train {
+        height: 900px
+    }
+}
+
+.page-oculus-touch .bullet-train__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.page-oculus-touch .bullet-train__wrapper.is-fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-oculus-touch .bullet-train__background {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    text-align: center;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/bullet-train/background.jpg) center center no-repeat #000;
+    background-size: cover
+}
+
+.page-oculus-touch .bullet-train__graphics {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 25px;
+    height: 100%;
+    max-width: 1200px
+}
+
+@media screen and (max-height:760px),
+screen and (max-height:820px) and (max-width:1200px) {
+    .page-oculus-touch .bullet-train__graphics {
+        max-width: 800px
+    }
+}
+
+.page-oculus-touch .bullet-train__graphics-items {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.page-oculus-touch .bullet-train__hands {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
+}
+
+.page-oculus-touch .bullet-train__robot {
+    position: absolute;
+    z-index: 4;
+    left: 25%;
+    top: 100px;
+    height: 0;
+    width: 45%
+}
+
+.page-oculus-touch .bullet-train__robot-graphic {
+    display: block;
+    position: relative;
+    height: 0;
+    padding-top: 68%;
+    width: 100%;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/bullet-train/robot.png) no-repeat;
+    background-size: contain;
+    animation: robotFlyPath 8s infinite ease-in-out
+}
+
+.page-oculus-touch .bullet-train__hand-left {
+    position: absolute;
+    z-index: 4;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/bullet-train/gun-left.png) left bottom no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: calc(86% * .6);
+    transform: translate3d(0, 0, 0);
+    bottom: 120px;
+    left: -16%;
+    width: 56%
+}
+
+@media screen and (max-width:768px) {
+    .page-oculus-touch .bullet-train__hand-left {
+        width: calc(100% * .64)
+    }
+}
+
+@media screen and (max-width:460px) {
+    .page-oculus-touch .bullet-train__hand-left {
+        bottom: 80px;
+        left: -16%;
+        padding-top: calc(86% * .7);
+        width: calc(100% * .64)
+    }
+}
+
+.page-oculus-touch .bullet-train__hand-right {
+    position: absolute;
+    z-index: 4;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/bullet-train/gun-right.png) right bottom no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: calc(86% * .6);
+    transform: translate3d(0, 0, 0);
+    bottom: 120px;
+    right: -16%;
+    width: 56%
+}
+
+@media screen and (max-width:768px) {
+    .page-oculus-touch .bullet-train__hand-right {
+        width: calc(100% * .6)
+    }
+}
+
+@media screen and (max-width:460px) {
+    .page-oculus-touch .bullet-train__hand-right {
+        bottom: 80px;
+        right: -16%;
+        padding-top: calc(86% * .7);
+        width: calc(100% * .64)
+    }
+}
+
+@keyframes robotFlyPath {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0)
+    }
+    50% {
+        transform: translate3d(0, 20px, 0) rotate(-2deg)
+    }
+}
+
+.page-oculus-touch .pre-order-now {
+    position: relative;
+    text-align: center;
+    visibility: hidden
+}
+
+.page-oculus-touch .pre-order-now.is-visible {
+    visibility: visible
+}
+
+.page-oculus-touch .pre-order-now__wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff
+}
+
+.page-oculus-touch .pre-order-now__wrapper.is-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-oculus-touch .pre-order-now__content {
+    position: relative;
+    padding: 15% 0 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+
+@media screen and (max-height:860px),
+screen and (max-width:768px) {
+    .page-oculus-touch .pre-order-now__content {
+        padding-top: 120px
+    }
+}
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+    .page-oculus-touch .bullet-train__graphics {
+        max-width: 400px
+    }
+    .page-oculus-touch .pre-order-now__content {
+        padding-top: 40px
+    }
+}
+
+.page-oculus-touch .pre-order-now__title {
+    font-size: 40px
+}
+
+.page-oculus-touch .pre-order-now__subtitle {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #a4a5a6!important;
+    font-weight: 400
+}
+
+@media screen and (max-width:768px) {
+    .page-oculus-touch .pre-order-now__title {
+        font-size: 30px
+    }
+    .page-oculus-touch .pre-order-now__subtitle {
+        margin-top: 18px;
+        font-size: 24px
+    }
+}
+
+.page-oculus-touch .pre-order-now__button {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+    transition: opacity .6s linear .9s, transform .6s ease .8s
+}
+
+.page-oculus-touch .pre-order-now__button.is-in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+.page-oculus-touch .pre-order-now__controllers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0 auto
+}
+
+.page-oculus-touch .pre-order-now__graphics {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 25px;
+    height: 100%;
+    max-width: 1200px
+}
+
+@media screen and (max-height:760px),
+screen and (max-height:820px) and (max-width:1200px) {
+    .page-oculus-touch .pre-order-now__graphics {
+        max-width: 800px
+    }
+}
+
+@media screen and (max-width:767px) and (orientation:landscape) {
+    .page-oculus-touch .pre-order-now__graphics {
+        max-width: 400px
+    }
+}
+
+.page-oculus-touch .pre-order-now__graphics-item {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.page-oculus-touch .pre-order-now__controller-left {
+    position: absolute;
+    bottom: 0;
+    left: -25%;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/pre-order-now/controller-left.png) left bottom no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: calc(86% * .6);
+    width: calc(100% * .6)
+}
+
+@media screen and (max-width:768px) {
+    .page-oculus-touch .pre-order-now__controller-left {
+        left: -25%;
+        padding-top: calc(86% * .7);
+        width: calc(100% * .7)
+    }
+}
+
+@media screen and (max-width:460px) {
+    .page-oculus-touch .pre-order-now__controller-left {
+        left: -35%;
+        padding-top: calc(86% * .82);
+        width: calc(100% * .82)
+    }
+}
+
+.page-oculus-touch .pre-order-now__controller-right {
+    position: absolute;
+    bottom: 0;
+    right: -25%;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/oculus-touch/pre-order-now/controller-right.png) right bottom no-repeat;
+    background-size: contain;
+    height: 0;
+    padding-top: calc(86% * .6);
+    width: calc(100% * .6)
+}
+
+@media screen and (max-width:768px) {
+    .page-oculus-touch .pre-order-now__controller-right {
+        right: -25%;
+        padding-top: calc(86% * .7);
+        width: calc(100% * .7)
+    }
+}
+
+@media screen and (max-width:460px) {
+    .page-oculus-touch .pre-order-now__controller-right {
+        right: -35%;
+        padding-top: calc(86% * .82);
+        width: calc(100% * .82)
+    }
+}
+
+.presskit-content .contactPanel {
+    padding: 20px 0 0
+}
+
+.page-gearvr {
+    text-align: center
+}
+
+.page-gearvr .owl-carousel .owl-item .carousel__slide {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 0
+}
+
+.page-gearvr .content h2 {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 19px
+}
+
+.page-gearvr .content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 50px
+}
+
+.page-gearvr .section.hero {
+    background: #eaeaec;
+    height: auto;
+    margin: 0
+}
+
+.page-gearvr .section.hero .container {
+    padding: 26px
+}
+
+.page-gearvr .section.hero .content {
+    color: #1c1e20;
+    margin: auto;
+    padding-top: 70px;
+    text-align: center;
+    z-index: 1
+}
+
+.page-gearvr .section.hero .content .product-name {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/gear-vr-powered-by.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 125px;
+    padding: 0 30px
+}
+
+.page-gearvr .section.hero .content p {
+    font-size: 19px;
+    margin: 70px 0 50px
+}
+
+.page-gearvr .section.hero .image {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/gear-vr-hero.jpg) center top/cover no-repeat;
+    height: 0;
+    padding-top: 145%;
+    margin-top: -80%
+}
+
+.page-gearvr .section.power-of-two {
+    padding: 50px 0 0;
+    position: relative;
+    min-height: 450px
+}
+
+.page-gearvr .section.power-of-two .bg {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/power-of-two.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-top: 110px
+}
+
+.page-gearvr .section.power-of-two .content {
+    padding: 0 24px;
+    width: auto;
+    position: relative
+}
+
+.page-gearvr .section.power-of-two .content h2 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 30px
+}
+
+.page-gearvr .section.power-of-two .compatible-phones {
+    display: none
+}
+
+.page-gearvr .section.power-of-two:after {
+    content: ' ';
+    display: block;
+    min-height: 430px;
+    width: 100%;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/power-of-two.jpg) center center no-repeat;
+    background-size: cover;
+    margin: 60px 0 0
+}
+
+.page-gearvr .section.technology {
+    position: relative;
+    height: 100%
+}
+
+.page-gearvr .section.technology .content {
+    padding: 0 24px;
+    text-align: center
+}
+
+.page-gearvr .section.product-gallery {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/gallery-bg.jpg);
+    background-position: center center;
+    background-size: cover
+}
+
+.page-gearvr .section.product-gallery .owl-carousel .owl-controls {
+    padding: 30px 0
+}
+
+.page-gearvr .section.gear-accessory {
+    background-color: #f0f0f0;
+    padding: 140px 0
+}
+
+.page-gearvr .section.gear-accessory .container {
+    max-width: 972px;
+    min-height: 311px
+}
+
+.page-gearvr .section.gear-accessory .container .content {
+    display: inline-block;
+    max-width: 387px;
+    padding-top: 30px;
+    vertical-align: top
+}
+
+.page-gearvr .section.gear-accessory .container .content h2,
+.page-gearvr .section.gear-accessory .container .content p {
+    margin-bottom: 25px
+}
+
+.page-gearvr .section.gear-accessory .container .image-content {
+    display: inline-block;
+    padding-left: 120px
+}
+
+.page-gearvr .section.order-now {
+    padding: 100px 0 0
+}
+
+.page-gearvr .section.order-now .image {
+    max-width: 100%
+}
+
+.page-gearvr .section.purchase-options {
+    background-color: #f0f0f0;
+    padding: 100px 0 0;
+    text-align: center
+}
+
+.page-gearvr .section.purchase-options .grid-container {
+    min-width: inherit;
+    max-width: 980px;
+    padding-left: 20px;
+    padding-right: 20px
+}
+
+.page-gearvr .section.purchase-options .partner-channel {
+    display: inline-block;
+    padding: 10px;
+    position: relative
+}
+
+.page-gearvr .section.purchase-options .partner-channel:hover {
+    box-shadow: inset 0 5px 1px -5px #ddd
+}
+
+.page-gearvr .section.purchase-options .partner-channel:hover .oc-button--cta-secondary {
+    background-color: #1c1e20;
+    color: #fff
+}
+
+.page-gearvr .section.purchase-options .partner-channel:hover .background {
+    opacity: 0
+}
+
+.page-gearvr .section.purchase-options .partner-channel .content {
+    padding: 60px 30px;
+    border: 1px solid #cbcbcb;
+    background: #fff
+}
+
+.page-gearvr .section.purchase-options .partner-channel .content .logo {
+    display: block;
+    min-height: 185px
+}
+
+.page-gearvr .section.purchase-options .partner-channel .content .logo img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 200px;
+    padding-top: 80px
+}
+
+.page-gearvr .section.purchase-options:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 34%;
+    content: "";
+    background-color: #fff
+}
+
+.page-gearvr .section.disclaimer {
+    background-color: #16181a;
+    margin-top: -30px;
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+
+.page-gearvr .section.disclaimer .content {
+    max-width: 900px;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    color: #777879;
+    padding: 0;
+    margin: 0 auto
+}
+
+.page-gearvr .section.disclaimer .content p {
+    padding: 0;
+    margin: 0
+}
+
+@media screen and (max-width:641px) {
+    .page-gearvr .content p {
+        line-height: 24px
+    }
+    .page-gearvr .section.hero .container {
+        display: inline-block;
+        margin-top: -720px;
+        padding: 0 26px;
+        vertical-align: top
+    }
+    .page-gearvr .section.head-game .bg,
+    .page-gearvr .section.portal-pocket .bg,
+    .page-gearvr .section.power-of-two:after {
+        display: none
+    }
+    .page-gearvr .section.hero .container .content {
+        margin-top: 120px
+    }
+    .page-gearvr .section.hero .container .content p {
+        font-size: 15px;
+        line-height: 28px
+    }
+    .page-gearvr .section.hero .image {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/gear-vr-hero.jpg) center center no-repeat;
+        background-size: cover;
+        height: 639px;
+        margin-top: -24px;
+        padding-top: 0
+    }
+    .page-gearvr .section.power-of-two {
+        margin-top: -26px
+    }
+    .page-gearvr .section.head-game .container .content p,
+    .page-gearvr .section.portal-pocket .container .content p {
+        margin: 0
+    }
+    .page-gearvr .section.power-of-two .container .content {
+        padding: 0 24px 70px
+    }
+    .page-gearvr .section.power-of-two .container .content h2 {
+        font-size: 22px;
+        line-height: 28px
+    }
+    .page-gearvr .section.power-of-two .container .content p {
+        margin-bottom: 0
+    }
+    .page-gearvr .section.head-game {
+        padding: 50px 0 0
+    }
+    .page-gearvr .section.head-game .container .background {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/head-game.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 64.84%
+    }
+    .page-gearvr .section.head-game .container .content {
+        padding: 0 24px 50px
+    }
+    .page-gearvr .section.portal-pocket {
+        padding: 50px 0 0
+    }
+    .page-gearvr .section.portal-pocket .container .background {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/mobile/portal-pocket.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 64.84%
+    }
+    .page-gearvr .section.portal-pocket .container .content {
+        padding: 0 24px 50px
+    }
+    .page-gearvr .section.happy-place {
+        height: 100%;
+        padding: 50px 0 0
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide {
+        padding-top: 112%
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.gunjack {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/mobile/01_Gunjack.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.lands-end {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/mobile/02_LandsEnd.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.minecraft {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/mobile/03_Minecraft.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.discover {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/mobile/04_Discover.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.jaunt {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/mobile/05_Jaunt.jpg)!important
+    }
+    .page-gearvr .section.happy-place .container .content {
+        padding: 15px 24px 0
+    }
+    .page-gearvr .section.happy-place .container .content .explore__button {
+        padding-bottom: 50px
+    }
+    .page-gearvr .section.happy-place .container .content p {
+        margin-bottom: 20px
+    }
+    .page-gearvr .section.product-gallery {
+        padding-top: 50px
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide {
+        padding-top: 94%
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-01 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/mobile/01.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-02 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/mobile/02.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-03 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/mobile/03.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-04 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/mobile/04.png)!important
+    }
+    .page-gearvr .section.order-now {
+        padding: 50px 0 0
+    }
+    .page-gearvr .section.order-now .container .content {
+        padding: 0 24px
+    }
+    .page-gearvr .section.gear-accessory {
+        padding: 90px 0
+    }
+    .page-gearvr .section.gear-accessory .container .content {
+        max-width: 360px;
+        padding-top: 0
+    }
+    .page-gearvr .section.gear-accessory .container .image-content {
+        margin: 40px 0 0 -20px;
+        float: none;
+        padding-left: 0
+    }
+    .page-gearvr .section.gear-accessory .container .image-content img {
+        max-width: 290px
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    .page-gearvr .content {
+        max-width: 500px;
+        margin: 0 auto
+    }
+    .page-gearvr .content h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        text-align: center
+    }
+    .page-gearvr .content p {
+        font-size: 18px;
+        line-height: 144%!important;
+        margin-bottom: 70px;
+        text-align: center
+    }
+    .page-gearvr .section {
+        padding: 70px 0 0
+    }
+    .page-gearvr .section.hero .container {
+        margin-top: -20px
+    }
+    .page-gearvr .section.hero .container .content {
+        margin-top: -82%
+    }
+    .page-gearvr .section.hero .container .content p {
+        font-size: 22px
+    }
+    .page-gearvr .section.hero .container .content .subline {
+        font-size: 20px
+    }
+    .page-gearvr .section.hero .image {
+        padding-top: 102%;
+        margin-top: -26%
+    }
+    .page-gearvr .section.power-of-two {
+        overflow: hidden;
+        padding: 0;
+        min-height: 800px
+    }
+    .page-gearvr .section.power-of-two .bg {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0
+    }
+    .page-gearvr .section.head-game .bg,
+    .page-gearvr .section.portal-pocket .bg,
+    .page-gearvr .section.power-of-two:after {
+        display: none
+    }
+    .page-gearvr .section.power-of-two .content {
+        padding-top: 70px;
+        text-align: center;
+        max-width: 540px;
+        margin: auto
+    }
+    .page-gearvr .section.portal-pocket .container .background {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/tablet/portal-pocket.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 64.84%
+    }
+    .page-gearvr .section.portal-pocket .container .content {
+        padding: 0 24px
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide {
+        padding-top: 47%
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.gunjack {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/tablet/01_Gunjack.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.lands-end {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/tablet/02_LandsEnd.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.minecraft {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/tablet/03_Minecraft.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.discover {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/tablet/04_Discover.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.jaunt {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/tablet/05_Jaunt.jpg)!important
+    }
+    .page-gearvr .section.happy-place .container .content {
+        padding: 15px 24px 0
+    }
+    .page-gearvr .section.happy-place .container .content .explore__button {
+        padding-bottom: 50px
+    }
+    .page-gearvr .section.happy-place .container .content p {
+        margin-bottom: 20px
+    }
+    .page-gearvr .section.head-game .container .background {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/tablet/head-game.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 64.84%
+    }
+    .page-gearvr .section.head-game .container .content {
+        padding: 0 24px
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide {
+        padding-top: 47%
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-01 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/tablet/01.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-02 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/tablet/02.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-03 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/tablet/03.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-04 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/tablet/04.png)!important
+    }
+    .page-gearvr .section.order-now {
+        position: relative;
+        display: table;
+        width: 100%;
+        padding: 70px 0 0
+    }
+    .page-gearvr .section.order-now .container {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle
+    }
+    .page-gearvr .section.order-now .content {
+        margin: auto;
+        text-align: center;
+        padding: 0 24px
+    }
+    .page-gearvr .section.gear-accessory .container .content {
+        max-width: 400px;
+        padding-top: 0
+    }
+    .page-gearvr .section.gear-accessory .container .image-content {
+        margin: 40px 0 0 -26px;
+        float: none;
+        padding-left: 0
+    }
+    
+}
+
+@media screen and (min-width:1026px) {
+    .page-gearvr .section.full-bg .bg,
+    .page-gearvr .section.full-bg .bg .bg-wrap {
+        right: 0;
+        top: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0
+    }
+    .page-gearvr {
+        padding-top: 0;
+        text-align: left
+    }
+    .page-gearvr .content h2 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 30px
+    }
+    .page-gearvr .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 0
+    }
+    .page-gearvr .section {
+        padding: 100px 0
+    }
+    .page-gearvr .section.hero {
+        background: 0 0;
+        padding: 58px 0 0
+    }
+    .page-gearvr .section.hero .container {
+        max-width: calc(1384px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left
+    }
+    .page-gearvr .section.hero .content {
+        color: #1c1e20;
+        position: absolute;
+        top: 52%;
+        margin-top: calc(-370px / 2);
+        width: 430px;
+        padding: 0;
+        text-align: left
+    }
+    .page-gearvr .section.hero .content .buy-now {
+        min-width: 225px
+    }
+    .page-gearvr .section.hero .content .product-name {
+        background-position: 0 0;
+        padding: 0
+    }
+    .page-gearvr .section.hero .content p {
+        margin: 30px 0;
+        font-size: 22px;
+        text-align: left
+    }
+    .page-gearvr .section.hero .content .subline {
+        font-size: 20px
+    }
+    .page-gearvr .section.hero .image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/gear-vr-hero.jpg);
+        background-position: center center;
+        background-size: cover;
+        padding-top: 50%;
+        margin-top: -95px;
+        min-height: 100px
+    }
+    .page-gearvr .section.power-of-two {
+        overflow: hidden;
+        padding: 0;
+        margin-bottom: 40px;
+        min-height: 920px
+    }
+    .page-gearvr .section.power-of-two .bg {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 240px;
+        top: 0;
+        background: linear-gradient(#fff, #f2f2f2)
+    }
+    .page-gearvr .section.power-of-two .content {
+        padding-top: 100px;
+        text-align: center;
+        max-width: 610px;
+        margin: auto auto 50px
+    }
+    .page-gearvr .section.head-game .content h2,
+    .page-gearvr .section.portal-pocket .content h2 {
+        max-width: 270px
+    }
+    .page-gearvr .section.power-of-two .content p {
+        margin-bottom: 0
+    }
+    .page-gearvr .section.power-of-two .compatible-phones {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        white-space: nowrap
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .phone {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        margin: 0 -25px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        vertical-align: bottom;
+        position: relative
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .phone span {
+        position: absolute;
+        text-align: center;
+        bottom: -24px;
+        width: 100%;
+        left: 0
+    }
+    .page-gearvr .section.head-game .content h2,
+    .page-gearvr .section.head-game .content p,
+    .page-gearvr .section.portal-pocket .content h2,
+    .page-gearvr .section.portal-pocket .content p {
+        text-align: left
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .galaxy-s7 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/galaxy-s7.png);
+        background-position-y: bottom;
+        height: 560px;
+        width: 392px;
+        transition-delay: .2s!important
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .galaxy-s7 span {
+        left: -28px
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .galaxy-s6 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/galaxy-s6.png);
+        background-position-y: bottom;
+        height: 560px;
+        width: 431px;
+        transition-delay: .4s!important
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .galaxy-s6 span {
+        left: -48px
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .galaxy-note5 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/galaxy-note5.png);
+        background-position-y: bottom;
+        height: 560px;
+        width: 376px;
+        transition-delay: .8s!important
+    }
+    .page-gearvr .section.power-of-two .compatible-phones .galaxy-note5 span {
+        left: 0
+    }
+    .page-gearvr .section.power-of-two:after {
+        display: none
+    }
+    .page-gearvr .section.head-game .bg,
+    .page-gearvr .section.portal-pocket .bg {
+        display: block
+    }
+    .page-gearvr .section.portal-pocket {
+        background: 0 0;
+        min-height: 0;
+        padding: 24px 0 0
+    }
+    .page-gearvr .section.portal-pocket .content {
+        padding: 0
+    }
+    .page-gearvr .section.head-game {
+        background: 0 0;
+        min-height: 0;
+        padding: 24px 0 0
+    }
+    .page-gearvr .section.head-game .content {
+        padding: 0
+    }
+    .page-gearvr .section.happy-place .container .content h2,
+    .page-gearvr .section.happy-place .container .content p,
+    .page-gearvr .section.order-now .content h2,
+    .page-gearvr .section.order-now .content p {
+        text-align: center
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide {
+        padding-top: 44%
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.gunjack {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/desktop/01_Gunjack.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.lands-end {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/desktop/02_LandsEnd.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.minecraft {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/desktop/03_Minecraft.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.discover {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/desktop/04_Discover.jpg)!important
+    }
+    .page-gearvr .section.happy-place .owl-carousel .carousel__slide.jaunt {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/game-content/desktop/05_Jaunt.jpg)!important
+    }
+    .page-gearvr .section.happy-place .container {
+        max-width: none;
+        padding: 15px 24px 0
+    }
+    .page-gearvr .section.happy-place .container .content {
+        max-width: 700px
+    }
+    .page-gearvr .section.happy-place .container .content h2 {
+        margin-bottom: 25px
+    }
+    .page-gearvr .section.technology .container {
+        width: 100%;
+        vertical-align: middle
+    }
+    .page-gearvr .section.technology .content {
+        padding: 0;
+        max-width: 769px;
+        margin: auto;
+        height: 100%
+    }
+    .page-gearvr .section.technology .content h2,
+    .page-gearvr .section.technology .content p {
+        margin-bottom: 25px
+    }
+    .page-gearvr .section.full-bg {
+        overflow: hidden;
+        background: #1c1e20
+    }
+    .page-gearvr .section.full-bg .bg .bg-wrap {
+        width: 100%;
+        height: 100%
+    }
+    .page-gearvr .section.full-bg .bg .bg-wrap .image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    .page-gearvr .section.full-bg .content {
+        width: 430px;
+        top: 50%;
+        margin-top: calc(-250px / 2);
+        position: absolute;
+        color: #fff
+    }
+    .page-gearvr .section.full-bg .content h2 {
+        color: inherit
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .owl-controls {
+        padding: 45px 0 0
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide {
+        padding-top: 41%
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-01 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/desktop/01.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-02 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/desktop/02.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-03 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/desktop/03.png)!important
+    }
+    .page-gearvr .section.product-gallery .owl-carousel .carousel__slide.product-gallery-04 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/product-gallery/desktop/04.png)!important
+    }
+}
+
+@media screen and (min-width:641px) {
+    .tabs ul li a {
+        height: 300px
+    }
+    .tabs ul li a img {
+        margin-bottom: 0;
+        padding-bottom: 20px
+    }
+    .tabs ul li a span.tabs__title {
+        display: block
+    }
+}
+
+.overlay .text .wrap p {
+    line-height: 22px
+}
+
+.features {
+    background: #fff;
+    padding: 0
+}
+
+.features .icon1 .image {
+    background-size: 78px 38px
+}
+
+.features .icon2 .image {
+    background-size: 187px 40px
+}
+
+.features .icon3 .image {
+    background-size: 38px 38px
+}
+
+.page-dk2 .hero .content .product-name {
+    margin-bottom: 5px
+}
+
+.page-dk2 .hero .content .subline {
+    font-weight: 500
+}
+
+@media screen and (max-width:641px) {
+    .page-dk2 .hero .product,
+    .page-dk2 .oled .bg,
+    .page-dk2 .tracking .content .image {
+        display: none
+    }
+    .page-dk2 {
+        text-align: center
+    }
+    .page-dk2 .content h2 {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 20px
+    }
+    .page-dk2 .content p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 35px
+    }
+    .page-dk2 .hero {
+        color: #1c1e20;
+        min-height: 633px;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/mobile/hero.jpg) bottom no-repeat #1e1f23;
+        background-size: contain;
+        box-sizing: border-box;
+        margin: 0
+    }
+    .page-dk2 .hero .content {
+        position: relative;
+        margin-top: 0;
+        padding: 70px 20px 0;
+        text-align: center;
+        color: #fff
+    }
+    .page-dk2 .hero .content .product-name {
+        font-size: 50px
+    }
+    .page-dk2 .hero .content .subline {
+        font-size: 20px;
+        margin-bottom: 16px
+    }
+    .page-dk2 .hero .content p {
+        line-height: 144%;
+        margin-bottom: 32px;
+        font-size: 18px;
+        position: relative;
+        top: auto;
+        color: #fff;
+        padding: 0
+    }
+    .page-dk2 .oled,
+    .page-dk2 .oled .content p {
+        margin-bottom: 0
+    }
+    .page-dk2 .hero .content>a {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0
+    }
+    .page-dk2 .hero .content>a span {
+        color: #fff;
+        border-color: #fff
+    }
+    .page-dk2 .hero .content>a span:hover {
+        color: #1c1e20
+    }
+    .page-dk2 .oled {
+        padding: 40px 0 0;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/mobile/oled.jpg) center center no-repeat;
+        background-size: cover;
+        min-height: 568px;
+        box-sizing: border-box
+    }
+    .page-dk2 .oled .content {
+        padding: 160px 20px 0;
+        width: auto;
+        position: relative;
+        z-index: 200;
+        color: #fff
+    }
+    .page-dk2 .tracking {
+        padding: 60px 0 0;
+        background-size: cover;
+        min-height: 545px;
+        box-sizing: border-box
+    }
+    .page-dk2 .tracking .bg {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/mobile/tracking.jpg) center top no-repeat;
+        background-size: cover;
+        min-height: 235px
+    }
+    .page-dk2 .tracking .content {
+        padding: 100px 24px 0;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        bottom: 60px
+    }
+    .page-dk2 .tracking .content p {
+        margin-bottom: 0
+    }
+    .page-dk2 .technology-thumbs .thumbs .item.item-1 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/technology-thumb1.jpg)
+    }
+    .page-dk2 .technology-thumbs .thumbs .item.item-2 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/technology-thumb2.jpg)
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    .page-dk2 .hero .product,
+    .page-dk2 .oled:after,
+    .page-dk2 .tracking .content .image {
+        display: none
+    }
+    .page-dk2 .content h2 {
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 20px
+    }
+    .page-dk2 .content p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 23px
+    }
+    .page-dk2 .hero {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/mobile/hero.jpg) bottom no-repeat #1e1f23;
+        background-size: contain;
+        box-sizing: border-box;
+        margin: 0 auto;
+        min-height: 950px;
+        padding: 0
+    }
+    .page-dk2 .hero .content {
+        color: #fff;
+        position: relative;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        top: 90px;
+        width: 500px
+    }
+    .page-dk2 .hero .content .product-name {
+        font-size: 80px;
+        margin-bottom: 10px
+    }
+    .page-dk2 .hero .content .subline {
+        font-size: 26px;
+        margin-bottom: 16px;
+        font-weight: 400
+    }
+    .page-dk2 .hero .content p {
+        line-height: 144%;
+        margin-bottom: 32px;
+        font-size: 18px;
+        position: relative;
+        top: auto;
+        color: #fff;
+        padding: 0
+    }
+    .page-dk2 .hero .content>a {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0
+    }
+    .page-dk2 .hero .content>a span {
+        color: #fff;
+        border-color: #fff
+    }
+    .page-dk2 .hero .content>a span:hover {
+        color: #1c1e20
+    }
+    .page-dk2 .oled {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/tablet/oled.jpg) center center no-repeat;
+        background-size: cover;
+        min-height: 930px;
+        box-sizing: border-box;
+        color: #fff;
+        padding-top: 400px
+    }
+    .page-dk2 .oled .content {
+        left: 0;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 auto;
+        top: 350px;
+        width: 500px;
+        text-align: center
+    }
+    .page-dk2 .features.module-center-icons-container .module-center-icons>div {
+        padding: 0 25px
+    }
+    .page-dk2 .tracking {
+        padding: 60px 0 0;
+        min-height: 760px;
+        box-sizing: border-box
+    }
+    .page-dk2 .tracking .bg {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/mobile/tracking.jpg) center top no-repeat;
+        background-size: 80%;
+        min-height: 430px
+    }
+    .page-dk2 .tracking .content {
+        padding: 0;
+        text-align: center;
+        margin: -50px auto;
+        position: relative;
+        bottom: 0;
+        width: 500px
+    }
+    .page-dk2 .tracking .content p {
+        margin-bottom: 0
+    }
+    .page-dk2 .technology {
+        position: relative;
+        display: table;
+        width: 100%
+    }
+    .page-dk2 .full-bg .bg,
+    .page-dk2 .full-bg .bg .bg-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0
+    }
+    .page-dk2 .technology .container {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle
+    }
+    .page-dk2 .technology .content {
+        max-width: 769px;
+        margin: auto;
+        text-align: center;
+        padding: 0 40px
+    }
+    .page-dk2 .technology-thumbs .thumbs .item.item-1 .photo {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/technology-thumb1.jpg) center center/cover no-repeat #000
+    }
+    .page-dk2 .technology-thumbs .thumbs .item.item-2 .photo {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/technology-thumb2.jpg) center center/cover no-repeat #000
+    }
+    .page-dk2 .full-bg {
+        overflow: hidden
+    }
+    .page-dk2 .full-bg .bg .bg-wrap {
+        width: 100%;
+        height: 100%
+    }
+    .page-dk2 .full-bg .bg .bg-wrap .image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    .page-dk2 .full-bg .content {
+        width: 50%;
+        top: 50%;
+        margin-top: -250px/2;
+        position: absolute;
+        color: #fff;
+        padding: 0 0 0 40px;
+        box-sizing: border-box
+    }
+    .page-dk2 .full-bg .content h2 {
+        color: inherit
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .page-dk2 {
+        text-align: left
+    }
+    .page-dk2 .content {
+        z-index: 2
+    }
+    .page-dk2 .content h2 {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 12px
+    }
+    .page-dk2 .content p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px
+    }
+    .page-dk2 .hero {
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/hero-bg.jpg) center bottom no-repeat #1d1f21;
+        background-size: cover;
+        padding: 0;
+        min-height: 1067px;
+        margin: 0
+    }
+    .page-dk2 .hero .headset-background-table {
+        position: absolute;
+        background-color: #fff;
+        bottom: 0;
+        height: 220px;
+        width: 100%
+    }
+    .page-dk2 .hero .headset {
+        min-height: 1067px;
+        position: absolute;
+        width: 100%;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/dk2headset.png) center bottom no-repeat;
+        background-size: auto
+    }
+    .page-dk2 .hero .product {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        pointer-events: none;
+        z-index: 1
+    }
+    .page-dk2 .hero .product .image img {
+        display: block;
+        position: relative;
+        left: 50%;
+        margin-left: -403px
+    }
+    .page-dk2 .hero .content {
+        position: relative;
+        top: 165px;
+        margin: 0 auto;
+        width: 515px;
+        padding: 0;
+        text-align: center;
+        color: #fff
+    }
+    .page-dk2 .hero .content .product-name {
+        font-size: 70px;
+        line-height: 78px;
+        margin-bottom: 10px
+    }
+    .page-dk2 .hero .content .subline {
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 26px;
+        display: block
+    }
+    .page-dk2 .hero .content p {
+        line-height: 144%;
+        margin-bottom: 32px;
+        font-size: 18px;
+        position: relative;
+        top: auto;
+        color: #fff;
+        padding: 0
+    }
+    .page-dk2 .hero .content>a {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 0
+    }
+    .page-dk2 .hero .content>a span {
+        color: #fff;
+        border-color: #fff;
+        min-width: 225px
+    }
+    .page-dk2 .hero .content>a span:hover {
+        color: #1c1e20
+    }
+    .page-dk2 .features.module-center-icons-container .module-center-icons.module-center-icons--small {
+        max-width: 1000px
+    }
+    .page-dk2 .oled {
+        overflow: hidden;
+        padding: 0;
+        background: 0 0
+    }
+    .page-dk2 .oled .bg {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0
+    }
+    .page-dk2 .oled .bg .item {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 104%;
+        background: center center no-repeat;
+        background-size: cover
+    }
+    .page-dk2 .oled .content {
+        top: 400px;
+        width: 590px;
+        padding: 0;
+        position: relative;
+        left: 0;
+        margin: 0 auto;
+        z-index: 200;
+        text-align: center;
+        color: #fff
+    }
+    .page-dk2 .oled .content h2,
+    .page-dk2 .oled .content p {
+        text-align: center
+    }
+    .page-dk2 .oled .content .item {
+        position: absolute;
+        top: 400px;
+        background: red
+    }
+    .page-dk2 .oled:after {
+        display: none
+    }
+    .page-dk2 .tracking {
+        padding: 0 0 90px;
+        background: 0 0;
+        min-height: 0;
+        margin-top: -215px
+    }
+    .page-dk2 .tracking .bg {
+        display: block;
+        position: absolute;
+        top: 220px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: 0 0
+    }
+    .page-dk2 .tracking .content {
+        padding: 100px 0 0;
+        text-align: center;
+        max-width: none;
+        margin: auto;
+        position: relative;
+        bottom: auto;
+        width: 100%
+    }
+    .page-dk2 .full-bg .bg,
+    .page-dk2 .full-bg .bg .bg-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0
+    }
+    .page-dk2 .tracking .content .image {
+        display: block;
+        width: 100%
+    }
+    .page-dk2 .tracking .content .image img {
+        max-width: 100%
+    }
+    .page-dk2 .tracking .content hgroup {
+        max-width: 540px;
+        margin: -50px auto 0
+    }
+    .page-dk2 .technology-thumbs {
+        height: 450px
+    }
+    .page-dk2 .technology-thumbs .thumbs .item {
+        height: 100%
+    }
+    .page-dk2 .technology-thumbs .thumbs .item.item-1 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/technology-thumb1.jpg)
+    }
+    .page-dk2 .technology-thumbs .thumbs .item.item-2 .photo {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/dk2/technology-thumb2.jpg)
+    }
+    .page-dk2 .full-bg {
+        overflow: hidden;
+        background: #1c1e20
+    }
+    .page-dk2 .full-bg .bg .bg-wrap {
+        width: 100%;
+        height: 100%
+    }
+    .page-dk2 .full-bg .bg .bg-wrap .image {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    .page-dk2 .full-bg .content {
+        width: 430px;
+        top: 50%;
+        margin-top: -250px/2;
+        position: absolute;
+        color: #fff
+    }
+    .page-dk2 .full-bg .content h2 {
+        color: inherit
+    }
+}
+
+.home #home-hero {
+    background-color: #ebebeb
+}
+
+.home #home-carousel .owl-item .home-carousel__slide {
+    background-repeat: no-repeat;
+    background-position: top
+}
+
+.home #home-carousel .owl-item hgroup {
+    position: absolute;
+    bottom: 17%
+}
+
+.home #home-carousel .owl-item hgroup h1 {
+    color: #1c1e20;
+    line-height: 30px;
+    margin-bottom: 15px
+}
+
+.home #home-carousel .owl-item hgroup p {
+    color: #a4a5a6
+}
+
+.home #home-carousel .owl-item .full-size-image {
+    background-size: cover!important
+}
+
+.home #home-carousel .owl-item .full-size-image hgroup p {
+    color: #fff
+}
+
+.home #home-carousel .owl-controls {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 15px;
+    left: 0;
+    right: 0
+}
+
+.home #home-carousel .owl-controls .owl-pagination .owl-page span {
+    height: 6px;
+    width: 6px;
+    background-color: #d2d2d2
+}
+
+.home #home-carousel .owl-controls .owl-pagination .owl-page.active span {
+    background-color: #000
+}
+
+@media screen and (max-width:640px) {
+    #home-carousel .owl-item .home-carousel__slide {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 130%
+    }
+    #home-carousel .owl-item .home-carousel__slide.gearvr {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/mobile/gear-vr-s7.jpg)!important
+    }
+    #home-carousel .owl-item .home-carousel__slide.rift {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/mobile/rift_hero_mobile.jpg)!important
+    }
+    #home-carousel .owl-item .home-carousel__slide.oculus-ready-pcs {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/mobile/oculus_ready_pcs_hero_mobile.jpg)!important
+    }
+    #home-carousel .owl-item hgroup h1 {
+        font-size: 22px;
+        margin-bottom: 0
+    }
+    #home-carousel .owl-item hgroup p {
+        padding: 0 24px;
+        line-height: 22px;
+        margin: 0
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    .home #home-carousel .owl-item .home-carousel__slide {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 80%
+    }
+    .home #home-carousel .owl-item .home-carousel__slide.gearvr {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/tablet/gear-vr-s7.jpg)!important
+    }
+    .home #home-carousel .owl-item .home-carousel__slide.rift {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/tablet/rift_hero_tablet.jpg)!important
+    }
+    .home #home-carousel .owl-item .home-carousel__slide.oculus-ready-pcs {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/tablet/oculus_ready_pcs_hero_tablet.jpg)!important
+    }
+    .home #home-carousel .owl-item hgroup {
+        bottom: 10%
+    }
+    .home #home-carousel .owl-item hgroup h1 {
+        margin-bottom: 5px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #home-carousel .desktop {
+        display: block
+    }
+    #home-carousel .owl-item .home-carousel__slide {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80px;
+        padding-top: 45%
+    }
+    #home-carousel .owl-item .home-carousel__slide.gearvr {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/desktop/gear-vr-s7.jpg)!important
+    }
+    #home-carousel .owl-item .home-carousel__slide.rift {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/desktop/rift_hero.jpg)!important
+    }
+    #home-carousel .owl-item .home-carousel__slide.oculus-ready-pcs {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/carousel/desktop/oculus_ready_pcs_hero.jpg)!important
+    }
+    #home-carousel .owl-item .home-carousel__slide hgroup {
+        bottom: 0
+    }
+    #home-carousel .owl-item .full-size-image hgroup {
+        bottom: 20px
+    }
+    #home-carousel .owl-controls {
+        bottom: 0!important;
+        position: relative!important;
+        padding: 27px 0
+    }
+}
+
+.home .explore {
+    background: #fff;
+    overflow: hidden
+}
+
+.home .explore__container {
+    position: relative;
+    height: 721px;
+    text-align: center
+}
+
+.home .explore__content {
+    background: #ebebeb;
+    position: relative;
+    padding: 100px 0;
+    z-index: 4;
+    text-align: center;
+    width: 100%;
+    display: inline-block
+}
+
+.home .explore__heading {
+    padding: 0 20px;
+    margin: 0 auto 25px;
+    max-width: 620px;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 100
+}
+
+@media screen and (min-width:641px) {
+    .home .explore__container {
+        height: 739px
+    }
+    .home .explore__heading {
+        font-size: 36px
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home .explore__container {
+        height: 950px
+    }
+    .home .explore__heading {
+        font-size: 40px;
+        max-width: 740px
+    }
+}
+
+.home .explore__preamble {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+@media screen and (min-width:641px) {
+    .home .explore__preamble {
+        font-size: 15px
+    }
+}
+
+.home .explore__image-container {
+    background: #1c1e20;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 470px;
+    margin-top: -15px
+}
+
+@media screen and (min-width:1024px) {
+    .home .explore__preamble {
+        font-size: 16px;
+        max-width: 680px
+    }
+    .home .explore__image-container {
+        margin-top: -60px;
+        height: 775px
+    }
+}
+
+.home .explore__image-container .content {
+    position: absolute;
+    top: 30%;
+    margin: 0 auto;
+    width: 100%
+}
+
+.home .explore__image-container .content h2 {
+    color: #fff;
+    font-weight: 500
+}
+
+.home .explore__image-container .content h4 {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0 20px
+}
+
+.home .explore__image {
+    width: 100%;
+    height: 100%;
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/explore-phone.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: .6
+}
+
+@media screen and (min-width:641px) {
+    .home .explore__image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/explore-tablet.jpg)
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home .explore__image-container .content {
+        top: 38%
+    }
+    .home .explore__image {
+        margin-top: -11px;
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/explore-desktop.jpg)
+    }
+    .home .products__container .owl-controls .owl-dot.active,
+    .home .products__content .owl-controls .owl-dot.active {
+        display: none
+    }
+}
+
+.home .featured-items-container .featured-item .featured-item__heading h4 {
+    font-size: 12px;
+    line-height: 16px
+}
+
+.home .featured-items-container .featured-item .featured-item__heading h3 {
+    font-size: 22px;
+    line-height: 28px
+}
+
+.home .products {
+    width: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+.home .products__container,
+.home .products__container .owl-item,
+.home .products__container .owl-stage,
+.home .products__container .owl-stage-outer,
+.home .products__content,
+.home .products__content .owl-item,
+.home .products__content .owl-stage,
+.home .products__content .owl-stage-outer {
+    height: 100%
+}
+
+.home .products__container .owl-controls,
+.home .products__content .owl-controls {
+    margin-bottom: -10px
+}
+
+.home .products__container .owl-controls .owl-dots,
+.home .products__content .owl-controls .owl-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center
+}
+
+.home .products__item,
+.home .video__content--bottom .video__play {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.home .products__frame {
+    height: 100%;
+    text-align: center
+}
+
+.home .products__frame--left {
+    background: #f5f5f5
+}
+
+.home .products__frame--right {
+    background: #efefef
+}
+
+@media screen and (min-width:1024px) {
+    .home .products__frame {
+        padding: 0;
+        width: 100%;
+        float: left
+    }
+    .home .products__frame--left {
+        text-align: right
+    }
+    .home .products__frame--right {
+        text-align: left
+    }
+}
+
+.home .video__content,
+.news-content .module-news-container .news-content__pagination {
+    text-align: center
+}
+
+.home .products__item {
+    padding: 100px 0;
+    width: 100%
+}
+
+.home .products__image {
+    height: 300px;
+    margin: 0 auto;
+    max-width: 960px
+}
+
+.home .products__image--rift {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/products-rift-desktop.jpg) center center no-repeat;
+    background-size: contain
+}
+
+.home .products__image--gear {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/products-gear-desktop.jpg) center center no-repeat;
+    background-size: contain
+}
+
+.home .products__label {
+    margin-top: -30px;
+    text-align: center
+}
+
+.home .products__heading {
+    padding: 0 20px;
+    max-width: 620px;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 100;
+    margin: 0 auto 40px
+}
+
+@media screen and (min-width:641px) {
+    .home .products__image {
+        height: 600px
+    }
+    .home .products__heading {
+        font-size: 36px
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home .products__heading {
+        font-size: 40px;
+        max-width: 740px
+    }
+}
+
+.home .video__wrapper {
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.home .video__content--center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 94px
+}
+
+.home .video__content--center .video__heading {
+    padding: 0 20px;
+    margin: 0 auto 25px;
+    max-width: 620px;
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 100
+}
+
+@media screen and (min-width:641px) {
+    .home .video__content--center .video__heading {
+        font-size: 36px
+    }
+}
+
+.home .video__content--bottom {
+    bottom: 9%;
+    position: absolute;
+    width: 100%
+}
+
+@media screen and (min-width:1024px) {
+    .home .video__content--center .video__heading {
+        font-size: 40px;
+        max-width: 740px
+    }
+    .home .video__content--bottom {
+        bottom: 5%
+    }
+}
+
+.home .video__content--bottom .video__heading {
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 10px;
+    vertical-align: middle
+}
+
+.home .video__content--bottom .video__learn-more-container {
+    display: block;
+    margin-top: 14px;
+}
+
+@media screen and (min-width:640px) {
+    .home .video__content--bottom .video__learn-more-container {
+        display: inline-block;
+        margin-top: 0
+    }
+}
+
+.home .video__content--bottom .video__learn-more {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-right: 8px;
+    vertical-align: middle
+}
+
+.home .video__content--bottom .video__learn-more-arrow {
+    vertical-align: middle
+}
+
+.home .video__featured {
+    background-color: #ebebeb;
+    width: 100%;
+    overflow: hidden
+}
+
+.home .video__heading,
+.home .video__subheading {
+    color: #fff
+}
+
+.home .video__preamble {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase
+}
+
+.home.inverted-header .video__content .video__learn-more,
+.home.inverted-header .video__heading,
+.home.inverted-header .video__preamble,
+.news-content .news__article .news__article-summary .news__article-title a,
+.news-content .news__article .news__article-summary p {
+    color: #1c1e20
+}
+
+@media screen and (min-width:641px) {
+    .home .video__preamble {
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home .video__preamble {
+        font-size: 16px;
+        max-width: 680px
+    }
+}
+
+.home .video__play {
+    margin: 0 auto
+}
+
+.home .video__play .icon {
+    vertical-align: middle
+}
+
+.home .video .featured-media--light {
+    background: #ebebeb
+}
+
+.home .video .featured-media__media-wrapper {
+    position: relative;
+    overflow: hidden
+}
+
+.home .video .featured-media__media {
+    background-color: #16181a
+}
+
+.home .video .featured-media__media .video__image {
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.home .video .featured-media__media--normal {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    min-height: 450px;
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: width .3s ease, max-width .3s ease
+}
+
+@media screen and (min-width:1024px) {
+    .home .video .featured-media__media--normal {
+        margin: 50px auto 0
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .home .video .featured-media__media--normal {
+        max-width: 1440px
+    }
+}
+
+.home .video .featured-media__media--hero {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: width .3s ease, max-width .3s ease;
+    z-index: 2;
+    padding-top: 158%
+}
+
+.home .video .featured-media__media--hero .video__image {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/takeover/mobile/touch.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1
+}
+
+.home .video .featured-media__media.video__pN6YCFlS8nU .video__image {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/video-background-desktop.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+@media screen and (min-width:640px) {
+    .home .video .featured-media__media--hero {
+        padding-top: 119%
+    }
+    .home .video .featured-media__media--hero .video__image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/takeover/tablet/touch.jpg)
+    }
+    .home .video .featured-media__media.video__pN6YCFlS8nU {
+        padding-top: 20%
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .home .video .featured-media__media--hero {
+        padding-top: 50%
+    }
+    .home .video .featured-media__media--hero .video__image {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/home/takeover/desktop/touch.jpg);
+        opacity: 1
+    }
+    .home .video .featured-media__media.video__pN6YCFlS8nU {
+        padding-top: 20%
+    }
+    .home .video .featured-media__media.video__pN6YCFlS8nU .video__image {
+        opacity: 1
+    }
+}
+
+.news-content .news__article {
+    border-bottom: 1px solid #d2d2d2;
+    display: block;
+    padding: 30px 0
+}
+
+.news-content .news__article .news__article-image,
+.news-content .news__article .news__article-summary {
+    display: inline-block
+}
+
+.news-content .news__article .news__article-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 210px
+}
+
+.news-content .news__article .news__article-summary {
+    padding-left: 50px
+}
+
+.news-content .news__article .news__article-summary .news-article__read-more {
+    color: #323436;
+    text-decoration: underline
+}
+
+.news-content .module-news-container {
+    position: relative
+}
+
+.news-content .module-news-container .module-news {
+    padding-bottom: 40px
+}
+
+@media screen and (max-width:680px) {
+    .news-content .news__article {
+        display: block
+    }
+    .news-content .news__article .news__article-image {
+        display: none
+    }
+    .news-content .news__article .news__article-summary {
+        width: 100%!important;
+        padding: 25px
+    }
+    .news-content .module-news-container .news-content__pagination .news-content__pagination--next,
+    .news-content .module-news-container .news-content__pagination .news-content__pagination--previous {
+        min-width: 100px;
+        padding: 5px 19px 4px
+    }
+}
+
+@media screen and (min-width:681px) and (max-width:1025px) {
+    .news-content .news__article {
+        display: block
+    }
+    .news-content .news__article .news__article-image,
+    .news-content .news__article .news__article-summary {
+        display: inline-block
+    }
+    .news-content .news__article .news__article-image {
+        width: 150px;
+        margin-left: 10px
+    }
+    .news-content .news__article .news__article-summary {
+        padding-left: 40px
+    }
+}
+
+.company-content-container .title-bar {
+    margin: 0
+}
+
+.company-content-container .module-intro hgroup p,
+.company-content-container .title-bar .title-bar__inner p {
+    font-size: 16px;
+    line-height: 24px
+}
+
+@media screen and (max-width:640px) {
+    .company-content-container .module-intro hgroup p,
+    .company-content-container .title-bar .title-bar__inner p {
+        font-size: 18px;
+        line-height: 26px
+    }
+    .company-content-container .module-image-grid {
+        margin: 50px auto
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .company-content-container .module-intro hgroup p,
+    .company-content-container .title-bar .title-bar__inner p {
+        font-size: 18px;
+        line-height: 26px
+    }
+    .company-content-container .module-image-grid {
+        margin-top: 50px;
+        margin-bottom: 100px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .company-content-container .title-bar {
+        padding: 0
+    }
+    .company-content-container .title-bar .title-bar__inner {
+        display: table-cell
+    }
+    .company-content-container .module-image-grid {
+        margin-bottom: 100px;
+        margin-top: 50px
+    }
+    .wow {
+        opacity: 0;
+        -webkit-transform: translate(0, 50px);
+        -moz-transform: translate(0, 50px);
+        -ms-transform: translate(0, 50px);
+        transform: translate(0, 50px);
+        -webkit-transition: opacity .6s .1s, transform .6s ease;
+        transition: opacity .6s .1s, transform .6s ease
+    }
+    .wow.wow-left {
+        -webkit-transform: translate(-50px, 0);
+        -moz-transform: translate(-50px, 0);
+        -ms-transform: translate(-50px, 0);
+        transform: translate(-50px, 0)
+    }
+    .wow.wow-right {
+        -webkit-transform: translate(50px, 0);
+        -moz-transform: translate(50px, 0);
+        -ms-transform: translate(50px, 0);
+        transform: translate(50px, 0)
+    }
+    .wow.wow-down {
+        -webkit-transform: translate(0, 50px);
+        -moz-transform: translate(0, 50px);
+        -ms-transform: translate(0, 50px);
+        transform: translate(0, 50px)
+    }
+    .wow.wow-up {
+        -webkit-transform: translate(0, -50px);
+        -moz-transform: translate(0, -50px);
+        -ms-transform: translate(0, -50px);
+        transform: translate(0, -50px)
+    }
+}
+
+.events-content {
+    display: none
+}
+
+.events-content .events__event {
+    border-bottom: 1px solid #d2d2d2;
+    display: block;
+    padding: 30px 0
+}
+
+.events-content .events__event .events__event-image,
+.events-content .events__event .events__event-summary {
+    display: inline-block
+}
+
+.events-content .events__event .events__event-image {
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    width: 210px
+}
+
+.events-content .events__event .events__event-summary {
+    padding-left: 50px
+}
+
+.events-content .events__event .events__event-summary .events__event-title a {
+    color: #1c1e20
+}
+
+.events-content .events__event .events__event-summary .event__location {
+    display: block;
+    margin-bottom: 10px
+}
+
+.events-content .events__event .events__event-summary .event__link {
+    color: #1c1e20;
+    cursor: auto;
+    padding: 5px 0;
+    text-decoration: underline
+}
+
+.events-content .module-news-container {
+    position: relative
+}
+
+.events-content .module-news-container .module-news {
+    padding-bottom: 40px
+}
+
+@media screen and (max-width:680px) {
+    .events-content .events__event {
+        display: block
+    }
+    .events-content .events__event .events__event-image {
+        display: none
+    }
+    .events-content .events__event .events__event-summary {
+        width: 100%!important;
+        padding: 25px
+    }
+}
+
+@media screen and (min-width:681px) and (max-width:1025px) {
+    .events-content .events__event {
+        display: block
+    }
+    .events-content .events__event .events__event-image,
+    .events-content .events__event .events__event-summary {
+        display: inline-block
+    }
+    .events-content .events__event .events__event-image {
+        width: 150px;
+        margin-left: 10px
+    }
+    .events-content .events__event .events__event-summary {
+        padding-left: 40px
+    }
+}
+
+.research-content .module-intro {
+    padding: 0
+}
+
+.research-content .module-intro h2 {
+    margin: 40px auto;
+    max-width: 580px
+}
+
+.research-content .module-intro p {
+    max-width: 765px;
+    text-align: left;
+    width: inherit
+}
+
+.research-content .grid-container {
+    max-width: 780px;
+    min-width: 0;
+    padding-left: 20px
+}
+
+.research-content .grid-container ul {
+    margin: 0
+}
+
+.research-content .grid-container ul li {
+    padding: 5px 0
+}
+
+.research-content .divider {
+    padding: 0 20px
+}
+
+.research-content .divider hr {
+    border-top: 1px solid #f0f0f0;
+    margin: 100px auto;
+    max-width: 800px
+}
+
+.research-content .presentations,
+.research-content .publications {
+    padding: 0 20px;
+    text-align: center
+}
+
+.research-content .presentations .presentations-links,
+.research-content .presentations .publications-links,
+.research-content .publications .presentations-links,
+.research-content .publications .publications-links {
+    padding: 40px 0 60px
+}
+
+.research-content .presentations .presentations-links a,
+.research-content .presentations .publications-links a,
+.research-content .publications .presentations-links a,
+.research-content .publications .publications-links a {
+    color: #202020;
+    text-decoration: underline
+}
+
+.wow.wow-in-view {
+    opacity: 1!important;
+    -webkit-transform: translate(0, 0)!important;
+    -moz-transform: translate(0, 0)!important;
+    -ms-transform: translate(0, 0)!important;
+    transform: translate(0, 0)!important
+}
+
+.oc-button--cta-primary {
+    background-color: #1574d4;
+    border-color: #1574d4
+}
+
+.oc-button--cta-primary:hover {
+    background-color: #148aff;
+    border-color: #148aff
+}
+
+.oc-button--cta-secondary:focus {
+    color: #d2d2d2!important
+}
+
+body.nav-open {
+    overflow-y: hidden
+}
+
+.hidden,
+body.nav-open #header .header__menu-container {
+    display: none
+}
+
+.tbd {
+    background-color: red;
+    opacity: .8;
+    border: 1px dotted #a4a5a6;
+    font-weight: 700;
+    color: #fff
+}
+
+.error404 {
+    margin: 10% 5%;
+    text-align: center
+}
+
+.blog-content-container .module-filters-container {
+    padding-top: 70px
+}
+
+.blog-content-container .module-news-container .module-news {
+    padding-bottom: 40px
+}
+
+.blog-content-container .module-news-container .module-news .module-news__title .module-news__title-slash {
+    font-weight: 100;
+    font-size: 26px;
+    padding: 0 5px
+}
+
+.blog-content-container .module-news-container .module-news .blog-post.block-link a {
+    overflow: hidden
+}
+
+.blog-content-container .module-news-container .module-news .blog-post.block-link a .blog-post__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 0;
+    padding-top: 56%
+}
+
+.blog-content-container .module-news-container .module-news .blog-post.block-link a .blog-post__summary {
+    padding-top: 20px;
+    height: 49%;
+    overflow: hidden
+}
+
+.blog-content-container .module-news-container .module-news .blog-post.block-link a .blog-post__summary h3 {
+    margin: 4px 0
+}
+
+.blog-content-container .module-news-container .module-news .blog-post.block-link a .blog-post__summary p {
+    line-height: 24px
+}
+
+.blog-content-container .blog-content__pagination {
+    text-align: center
+}
+
+@media screen and (max-width:767px) {
+    .block-link {
+        padding: 0 9px 18px
+    }
+    .block-link a {
+        height: 100%;
+        overflow: hidden
+    }
+    .blog-content .module-news-container .blog-content__pagination .blog-content__pagination--next,
+    .blog-content .module-news-container .blog-content__pagination .blog-content__pagination--previous {
+        min-width: 100px;
+        padding: 5px 19px 4px
+    }
+    .blog-content .module-filters-container .module-filters .module-filters__controls {
+        padding-top: 0
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:959px) {
+    .block-link {
+        height: 465px;
+        padding: 0 9px 18px
+    }
+    .block-link a {
+        height: 100%;
+        min-height: 0
+    }
+}
+
+@media screen and (min-width:960px) {
+    .blog-post {
+        height: 480px;
+        margin: 8px 0
+    }
+    .blog-post.block-link {
+        padding: 0
+    }
+    .blog-post a {
+        height: 100%;
+        min-height: 0;
+        margin: 0 8px
+    }
+}
+
+.blog-details .title-bar {
+    padding-top: 130px;
+    padding-bottom: 30px
+}
+
+.blog-details .title-bar .title-bar__inner h1 {
+    font-size: 30px;
+    line-height: 36px
+}
+
+.blog-details .title-bar .title-bar__inner p {
+    font-size: 16px;
+    line-height: 24px
+}
+
+.blog-details .title-bar.title-bar--hero {
+    background-color: rgba(28, 30, 32, .95);
+    position: relative;
+    overflow: hidden
+}
+
+.blog-details .title-bar.title-bar--hero .title-bar__inner {
+    position: relative;
+    z-index: 2
+}
+
+.blog-details .title-bar.title-bar--hero .title-bar-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: .3
+}
+
+.blog-details .blog-content ul {
+    margin: 15px 0 20px 5px;
+    padding: 0
+}
+
+.blog-details .blog-content .wp-caption {
+    text-align: center;
+    padding-top: 4px;
+    background-color: #fdfdfd
+}
+
+.blog-details .blog-content .wp-caption .wp-caption-text {
+    color: #333;
+    font-size: .8em;
+    font-style: italic;
+    line-height: 1.2em;
+    margin: 0;
+    padding: .6em 5px
+}
+
+.blog-details .blog-content .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.blog-details .blog-content .alignright {
+    float: right;
+    margin: 10px 0 10px 15px
+}
+
+.blog-details .blog-content .module-news-container {
+    position: relative;
+    padding-bottom: 100px
+}
+
+.blog-details .blog-content .module-news-container .module-news {
+    padding-bottom: 40px
+}
+
+.blog-details .blog-content .blog-content__pagination {
+    text-align: center
+}
+
+.blog-details .blog-content .blog-iframe {
+    margin: 0 auto;
+    max-width: 780px;
+    width: 100%
+}
+
+.blog-details .blog-content .blog-iframe .iframe-container {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative
+}
+
+.blog-details .blog-content .blog-iframe .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+@media screen and (max-width:640px) {
+    .blog-details .title-bar {
+        padding: 130px 0 50px
+    }
+    .blog-details .title-bar .title-bar-background {
+        display: none
+    }
+    .blog-details img {
+        width: 100%;
+        height: 100%
+    }
+}
+
+#overlays .overlay.overlay--share.overlay--share-blog {
+    width: auto
+}
+
+#overlays .overlay.overlay--share.overlay--share-blog .overlay__inner .overlay__box .overlay--share__links {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+.careers-content .module-center-icons-container {
+    padding: 0 0 30px
+}
+
+.careers-content .module-center-icons-container .module-center-icons>div {
+    height: 350px
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image {
+    background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/baxter/baxter-0.6.12/images/global/96_sprite.png)
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image.salary {
+    background-position: 2px -477px
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image.meals {
+    background-position: 3px -573px
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image.amenities {
+    background-position: 4px -671px
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image.balance {
+    background-position: 2px -765px
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image.hardware {
+    background-position: 2px -863px
+}
+
+.careers-content .module-center-icons-container .module-center-icons .icon .image.trips {
+    background-position: 1px -958px
+}
+
+.careers-content .title-bar .title-bar__inner {
+    display: table-cell
+}
+
+.careers-content .module-accordion-table div span {
+    color: #777879
+}
+
+.careers-content .module-accordion-table-container .module-accordion-table>ul>li>ul>li {
+    display: none
+}
+
+.careers-content .module-accordion-table-container .module-accordion-table>ul>li>ul>li.location-match {
+    display: list-item
+}
+
+.careers-content .fine-print {
+    font-size: 14px
+}
+
+.module-center-icons-container .module-center-icons>div .icon .image {
+    border-width: 3px
+}
+
+.careers-content .module-intro {
+    padding: 70px 0 40px
+}
+
+.careers-content .office-image {
+    background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/temp/careers-location.jpg) center center/cover no-repeat #fff;
+    height: 690px
+}
+
+@media screen and (max-width:641px) {
+    .careers-content .module-intro {
+        padding: 50px 0 30px
+    }
+    .careers-content .office-image {
+        height: 275px
+    }
+    .careers-content .module-center-icons-container {
+        padding: 0
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1025px) {
+    .careers-content .office-image {
+        height: 440px
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .careers-content .office-image {
+        height: 690px
+    }
+}
+
+.owl-carousel .module-image-carousel__item .text {
+    margin-top: -10px
+}
+
+.featured-items-container .featured-items .featured-item,
+.featured-items-container .featured-items .featured-item .featured-item__image {
+    height: 300px
+}
+
+#footer .footer__menu li,
+#footer .footer__nav1 li,
+#footer .footer__nav2 li {
+    display: none
+}
+
+@media screen and (max-width:640px) {
+    #footer .footer__nav1 li.footer__nav-item--mobile,
+    #footer .footer__nav2 li.footer__nav-item--mobile {
+        display: list-item
+    }
+    #footer .footer__left {
+        padding-bottom: 25px
+    }
+    #footer .footer__left .footer__logo {
+        margin: 0 25px
+    }
+    #footer .footer__left .footer__logo a {
+        text-align: left
+    }
+    #footer .footer__left .footer__copyright {
+        margin: 0 25px;
+        text-align: left
+    }
+    #footer .footer__nav-item--tablet-hide {
+        display: block
+    }
+    #footer .footer__right .footer__language-container span {
+        font-size: 12px
+    }
+    #footer .footer__right .footer__nav1 li:first-child,
+    #footer .footer__right .footer__nav2 li:first-child {
+        border-top: none
+    }
+    #footer .footer__right .footer_nav1 {
+        padding-left: 25px
+    }
+    #footer .footer__right .footer__nav2 {
+        padding-right: 0;
+        padding-left: 20px
+    }
+    #overlays .overlay__close {
+        top: 0;
+        right: 0
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    #footer .footer__nav1 li.footer__nav-item--tablet,
+    #footer .footer__nav2 li.footer__nav-item--tablet {
+        display: inline-block
+    }
+    #footer .footer__menu li.footer__nav-item--tablet {
+        display: block
+    }
+}
+
+@media screen and (min-width:1025px) {
+    #footer .footer__left {
+        width: 30%
+    }
+    #footer .footer__right {
+        width: 70%
+    }
+    #footer .footer__nav1 li.footer__nav-item--desktop,
+    #footer .footer__nav2 li.footer__nav-item--desktop {
+        display: inline-block
+    }
+    #footer .footer__menu li.footer__nav-item--desktop {
+        display: block
+    }
+}
+
+.module-left-nav-container .module-left-nav .module-left-nav__side ul li a {
+    font-weight: 500
+}
+
+.module-left-nav-container .module-left-nav .module-left-nav__side ul li.active a {
+    font-weight: 600
+}
+
+.module-left-nav-container .module-left-nav .module-left-nav__side ul li.active:before {
+    display: none
+}
+
+.video-button--youtube {
+    cursor: pointer
+}
