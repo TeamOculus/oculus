@@ -15,9 +15,10 @@ export class CreateAccountComponent implements OnInit {
   ngOnInit() {
   }
 
-  addUser() {
+  addUser(object) {
     this.store.dispatch({
-      type: ADD_USER
+      type: ADD_USER,
+      payload: object
     });
   }
 

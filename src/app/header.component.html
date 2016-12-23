@@ -39,7 +39,7 @@
             </div>
 
             <div class="header-account">
-                <p style="color: white" *ngIf="user">{{user.name}}</p>
+                <p style="color: white">{{(user$ | async)?.firstname}}</p>
                 <a class="account-cart" [routerLink]="['cart']">
                     <div class="cart-logo"></div>
                 </a>

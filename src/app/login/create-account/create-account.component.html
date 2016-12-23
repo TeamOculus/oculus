@@ -9,10 +9,13 @@
           <div class="bxGrid">
             <div class="bxGrid__column">
               <div class="bxFormControl">
-                <div class="bxInputLabel"><label class="label" for="username"><div><em class="label-text" data-intl-translation="Oculus Username" data-intl-trid="">Oculus Username</em><span class="question-icon" aria-controls="js_1" aria-haspopup="true" role="null" id="js_3j7" aria-describedby="js_4u3"><i class=""><em class="label-text" data-intl-translation="Click for more information" data-intl-trid="">Click for more information</em></i></span></div></label></div>
-                <div class="bxInputControl"><input type="text" id="username" name="username" value="" class="bxInputControl__input bxInputControl__input--margin-1"
+                <div class="bxInputLabel"><label class="label" for="username">
+                  <div><em class="label-text" data-intl-translation="Oculus Username" data-intl-trid="">Oculus Username</em><span class="question-icon" aria-controls="js_1" aria-haspopup="true" role="null" id="js_3j7" aria-describedby="js_4u3"><i class=""><em class="label-text" data-intl-translation="Click for more information" data-intl-trid="">Click for more information</em></i></span></div></label></div>
+                <div class="bxInputControl">
+                  <input #username type="text" id="username" name="username" value="" class="bxInputControl__input bxInputControl__input--margin-1"
                     autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" tabindex="1"
-                    wrap="soft"></div>
+                    wrap="soft">
+                </div>
               </div>
             </div>
             <div class="bxGrid__column"></div>
@@ -22,7 +25,7 @@
               <div class="bxFormControl">
                 <div class="bxInputLabel"><label class="label" for="first-name"><em class="label-text" data-intl-translation="First Name" data-intl-trid="">First Name</em></label></div>
                 <div
-                  class="bxInputControl"><input type="text" id="first-name" name="firstName" value="" class="bxInputControl__input bxInputControl__input--margin-1"
+                  class="bxInputControl"><input #firstname type="text" id="first-name" name="firstName" value="" class="bxInputControl__input bxInputControl__input--margin-1"
                     autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" tabindex="1"
                     wrap="soft"></div>
               </div>
@@ -31,7 +34,7 @@
               <div class="bxFormControl">
                 <div class="bxInputLabel"><label class="label" for="last-name"><em class="label-text" data-intl-translation="Last Name" data-intl-trid="">Last Name</em></label></div>
                 <div
-                  class="bxInputControl"><input type="text" id="last-name" name="lastName" value="" class="bxInputControl__input bxInputControl__input--margin-1"
+                  class="bxInputControl"><input #lastname type="text" id="last-name" name="lastName" value="" class="bxInputControl__input bxInputControl__input--margin-1"
                     autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" tabindex="1"
                     wrap="soft"></div>
               </div>
@@ -42,7 +45,7 @@
               <div class="bxFormControl">
                 <div class="bxInputLabel"><label class="label" for="email"><em class="label-text" data-intl-translation="Email" data-intl-trid="">Email</em></label></div>
                 <div
-                  class="bxInputControl"><input type="text" id="email" name="email" placeholder="name@example.com" value="" class="bxInputControl__input bxInputControl__input--margin-1"
+                  class="bxInputControl"><input #email type="text" id="email" name="email" placeholder="name@example.com" value="" class="bxInputControl__input bxInputControl__input--margin-1"
                     autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" tabindex="1"
                     wrap="soft"></div>
               </div>
@@ -62,7 +65,7 @@
               <div class="bxFormControl">
                 <div class="bxInputLabel"><label class="label" for="password"><div><em class="label-text" data-intl-translation="Password" data-intl-trid="">Password</em><span class="question-icon" aria-controls="js_2" aria-haspopup="true" role="null" id="js_42x" aria-describedby="js_43f"><i class=""><em class="label-text" data-intl-translation="Click for more information" data-intl-trid="">Click for more information</em></i></span></div></label></div>
                 <div
-                  class="bxInputControl"><input type="password" id="password" name="password" value="" class="bxInputControl__input bxInputControl__input--margin-1"
+                  class="bxInputControl"><input #password type="password" id="password" name="password" value="" class="bxInputControl__input bxInputControl__input--margin-1"
                     autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" tabindex="1"
                     wrap="soft"></div>
               </div>
@@ -85,7 +88,7 @@
             </em>
           </div>
           <div class="button-container"><a class="cancel-button" [routerLink]="['/login']" data-testid="cancel-button"><em class="label-text" data-intl-translation="Cancel" data-intl-trid="">Cancel</em></a>
-            <button (click)="addUser()"
+            <button (click)="addUser({username: username.value, firstname: firstname.value, lastname: lastname.value, email: email.value, password: password.value})"
               class="submit-button" type="submit" data-testid="submit-button"><em class="label-text" data-intl-translation="Create Account" data-intl-trid="">Create Account</em></button>
           </div>
         </form>
