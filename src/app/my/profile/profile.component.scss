@@ -12,7 +12,7 @@ h1 {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
 
-    ._4f1n {
+    .profile-container {
         border-left: 1px solid #f0f0f0;
         min-height: 400px;
         padding: 48px;
@@ -31,7 +31,7 @@ h1 {
             width: 100%;
         }
 
-        ._4h-a {
+        .profile-info-container {
 
             h1 {
                 font: 900 30px/38px "Oculus Sans Bold", "Arial", "Helvetica", sans-serif;
@@ -52,12 +52,12 @@ h1 {
 
                 -webkit-font-smoothing: subpixel-antialiased;
 
-                ._4qba {
+                em {
                     font-style: normal;
                 }
             }
 
-            ._4cip {
+            .info-section {
                 border-bottom: 1px solid #f0f0f0;
                 margin-bottom: 32px;
                 padding-bottom: 16px;
@@ -77,11 +77,11 @@ h1 {
 
                     padding-bottom: 24px;
 
-                    ._4qba {
+                    em {
                         font-style: normal;
                     }
 
-                    ._4cit {
+                    .edit-info-link {
                         color: #8d8e8f;
                         cursor: pointer;
                         font-size: 16px;
@@ -90,18 +90,19 @@ h1 {
                         text-decoration: underline;
                         transition: color 250ms cubic-bezier(.215, .61, .355, 1);
 
-                        ._4qba {
+                        em {
                             font-style: normal;
                         }
                     }
 
-                    ._4cit:hover {
+                    .edit-info-link:hover {
                         color: #4B4D4E;
                         transition: none;
                     }
                 }
 
                 div {
+
                     .bxGrid--parent {
                         min-width: 0;
                         max-width: none;
@@ -142,10 +143,10 @@ h1 {
 
                                 vertical-align: middle;
 
-                                ._4qba {
+                                em {
                                     font-style: normal;
 
-                                    ._20ae {
+                                    .dynamic-user-info {
                                         color: #1c1e20;
                                         cursor: default;
                                         font-weight: 400;
@@ -187,10 +188,10 @@ h1 {
 
                                 vertical-align: middle;
 
-                                ._4qba {
+                                em {
                                     font-style: normal;
 
-                                    ._20ae {
+                                    .dynamic-user-info {
                                         color: #1c1e20;
                                         cursor: default;
                                         font-weight: 400;
@@ -216,16 +217,16 @@ h1 {
                     }
                 }
 
-                ._1h9x {
+                .sub-info {
                     padding-bottom: 16px;
 
-                    ._4qba {
+                    em {
                         font-style: normal;
                     }
                 }
             }
 
-            ._4cip:last-child {
+            .info-section:last-child {
                 border-bottom: 0;
                 margin-bottom: 0;
 
