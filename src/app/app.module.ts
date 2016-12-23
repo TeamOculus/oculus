@@ -23,6 +23,8 @@ import { MyComponent } from './my/my.component';
 import { ProfileComponent } from './my/profile/profile.component';
 import { OrdersComponent } from './my/orders/orders.component';
 
+import {StoreModule} from '@ngrx/store';
+import {user} from './reducers/user_reducer';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { OrdersComponent } from './my/orders/orders.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    StoreModule.provideStore({user})
   ],
   providers: [],
   bootstrap: [AppComponent]
