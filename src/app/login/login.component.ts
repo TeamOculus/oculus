@@ -24,18 +24,24 @@ export class LoginComponent implements OnInit {
       .subscribe(res => {
         console.log("from checkUser subscribe", res);
         if (res){
+          console.log("this is res", res)
           // let username = JSON.parse(res._body).username;
           // let firstname = JSON.parse(res._body).firstname;
           // let lastname = JSON.parse(res._body).lastname;
           // let email = JSON.parse(res._body).email;
           // let password = JSON.parse(res._body).password;
           // const user = {username: username, firstname: firstname, lastname: lastname, email: email, password: password};
-          const user = JSON.parse(res._body);
-          this.store.dispatch({
-            type: ADD_USER,
-            payload: user
-          });
-          this.router.navigate(["/my/profile"])
+          if(res._body === ""){
+            alert("Wrong username or password");
+          } else {
+            const user = JSON.parse(res._body);
+            console.log("this is the user", user);
+            this.store.dispatch({
+              type: ADD_USER,
+              payload: user
+            });
+            this.router.navigate(["/my/profile"])
+          }
         }
       })
   }
