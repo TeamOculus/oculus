@@ -87,7 +87,8 @@
             .
             </em>
           </div>
-          <div class="button-container"><a class="cancel-button" [routerLink]="['/login']" data-testid="cancel-button"><em class="label-text" data-intl-translation="Cancel" data-intl-trid="">Cancel</em></a>
+          <div class="button-container">
+            <a class="cancel-button" [routerLink]="['/login']" data-testid="cancel-button"><em class="label-text" data-intl-translation="Cancel" data-intl-trid="">Cancel</em></a>
             <button (click)="addUser({username: username.value, firstname: firstname.value, lastname: lastname.value, email: email.value, password: password.value})"
               class="submit-button" type="submit" data-testid="submit-button"><em class="label-text" data-intl-translation="Create Account" data-intl-trid="">Create Account</em></button>
           </div>
