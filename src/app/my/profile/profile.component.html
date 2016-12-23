@@ -9,19 +9,19 @@
         <div class="bxGrid bxGrid--parent">
           <div class="bxGrid__column">
             <label class="">
-              <em class="" data-intl-translation="Username: {alias}" data-intl-trid="">Username: <span class="dynamic-user-info">cskidz99</span></em>
+              <em class="" data-intl-translation="Username: {alias}" data-intl-trid="">Username: <span class="dynamic-user-info">{{(user$ | async)?.username}}</span></em>
             </label>
           </div>
           <div class="bxGrid__column">
             <label class="">
-              <em class="" data-intl-translation="Email: {email}" data-intl-trid="">Email: <span class="dynamic-user-info">cskidz99@gmail.com</span></em>
+              <em class="" data-intl-translation="Email: {email}" data-intl-trid="">Email: <span class="dynamic-user-info">{{(user$ | async)?.email}}</span></em>
             </label>
           </div>
         </div>
         <div class="bxGrid bxGrid--parent">
           <div class="bxGrid__column">
             <label class="">
-              <em class="" data-intl-translation="Full Name: {full_name}" data-intl-trid="">Full Name: <span class="dynamic-user-info">Cameron Skidmore</span></em>
+              <em class="" data-intl-translation="Full Name: {full_name}" data-intl-trid="">Full Name: <span class="dynamic-user-info">{{(user$ | async)?.firstname}} {{(user$ | async)?.lastname}}</span></em>
             </label>
           </div>
           <div class="bxGrid__column">

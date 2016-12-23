@@ -10,8 +10,17 @@ export class MainService {
   }
 
   createUser(userObject){
-    console.log("from createuser in service", userObject)
+    console.log("from createUser in service", userObject)
     return this.http.post('http://localhost:3000/api/users',userObject);
+    // return this.http.get('https://api.spotify.com/v1/search?q=michael&type=track').map(res => res.json())
+  }
+
+  checkUser(userObject){
+    console.log("from checkUser in service", userObject)
+    return this.http.post('http://localhost:3000/api/users/login',userObject)
+            .map(x => {
+              return x;
+            });
     // return this.http.get('https://api.spotify.com/v1/search?q=michael&type=track').map(res => res.json())
   }
 
