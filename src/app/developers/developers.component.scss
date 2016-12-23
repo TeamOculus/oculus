@@ -1,0 +1,240 @@
+header {
+    position: relative;
+}
+.sample-img {
+    background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Developers+Component/img6.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.sample-img h1 {
+    color: white;
+    max-width: 600px;
+}
+.sample-img p {
+    color: white;
+    max-width: 600px;
+    text-align: center;
+}
+.top-page img {
+    width: 100%;
+    height: 40vh;
+}
+
+.img-container {
+    position: relative;
+}
+.img-container1 {
+    position: relative
+}
+.text1 {
+    color: white;
+    font-size: 25px;
+    left: 50%;
+    position: absolute;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    max-width: 600px;
+}
+.text {
+    color: white;
+    font-size: 25px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    max-width: 600px;
+}
+.text h1 {
+    font-size: 30px;
+}
+.text p {
+    font-size: 16px;
+}
+.second-content {
+    padding: 20px 24px;
+    
+}
+.image-wrapper {
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 1270px;
+    margin: 0 auto;
+}
+.images{
+     width: calc(97%/3);
+}
+.images img {
+    width: 100%;
+}
+.images div {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.content-wraper {
+    display: flex;
+    justify-content: center;
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 24px 24px;
+   
+}
+.content1 p {
+    font-size: 22px;
+    font-weight: bold;
+}
+.content1 h1 {
+    font-size: 18px;
+    font-weight: normal;
+}
+.content2 p {
+    font-size: 22px;
+    font-weight: bold;
+}
+.content1 {
+   padding-right: 10px;
+   width: 70%;
+}
+.content2 {
+    width: 30%;
+}
+.img70 img{
+    width: 100%;
+}
+.content2 h1 {
+    font-size: 18px;
+}
+.content2 h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.text1 h1 {
+    font-size: 30px;
+}
+.text1 p {
+    font-size: 16px;
+}
+.conteng-five {
+    padding: 20px 20px 0 20px;
+    
+}
+.img-content {
+    width: 50%;
+    padding-right: 22px;
+}
+.img-content img {
+    width: 100%;
+}
+.content-five {
+    margin-top: 30px;
+}
+
+.content-desc {
+    width: 50%;
+    padding-top: 30px;
+    padding-right: 13px;
+}
+
+.content-desc h1 {
+    font-size: 22px;
+}
+.content-desc p {
+    font-size: 16px;
+}
+.content-desc a {
+    text-decoration: none;
+    font-size: 18px;
+}
+.last-content {
+    max-width: 1270px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px 24px;
+   
+}
+.last-content-img {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1270px;
+    margin: 0 auto;
+    
+}
+.last-column {
+    width: calc(97%/3);
+}
+.last-img img {
+    width: 100%;
+    padding-right: 10px;
+    height: 230px;
+}
+.last-desc {
+    border: 1px solid black;
+    margin-top: -3px;
+    margin-bottom: 100px;
+    padding: 0 24px;
+    min-height: 400px;
+}
+.last-desc h1 {
+    font-size: 22px;
+}
+.last-desc h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.last-desc h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+@media screen and (max-width: 770px) {
+    .image-wrapper {
+        flex-wrap: wrap;
+    }
+    .images {
+        width: 100%;
+    }
+    .images div {
+        padding-top: 15px;
+        padding-bottom: 28px;
+    }
+    .content-wraper {
+        flex-wrap: wrap;
+    }
+    .content1 {
+        width: 100%;
+    }
+    .content2 {
+        width: 100%;
+    }
+    .img-content{
+        width: 100%;
+    }
+    .content-desc {
+        width: 100%;
+    }
+    .last-content-img {
+        flex-wrap: wrap
+    }
+    .last-column {
+        width: 100%;
+    }
+    .last-img img {
+        height: auto;
+    }
+    .last-desc {
+        min-height: 200px;
+    }
+
+}
+

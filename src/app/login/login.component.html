@@ -21,7 +21,7 @@
                 <div class="link-container">
                   <a href="https://secure.oculus.com/forgot-password/" class=""><em class="" data-intl-translation="Forgot Password" data-intl-trid="">Forgot Password</em></a>
                   |
-                  <a href="https://secure.oculus.com/sign-up/?login_redirect_uri=https%3A%2F%2Fwww.oculus.com%2Fblog" class=""><em class="" data-intl-translation="Create Account" data-intl-trid="">Create Account</em></a>
+                  <a [routerLink]="['/create-account']" class=""><em class="" data-intl-translation="Create Account" data-intl-trid="">Create Account</em></a>
                 </div>
               </form>
               <form name="nonceRedirectForm" method="post" action="/nonce-redirect/">
