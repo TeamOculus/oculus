@@ -1,14 +1,31 @@
 header {
     position: relative;
-    padding-right: 24px;
-    padding-left: 24px;
 }
-
+.sample-img {
+    background-image: url('https://s3-us-west-1.amazonaws.com/devmtn-oculus/Developers+Component/img6.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.sample-img h1 {
+    color: white;
+    max-width: 600px;
+}
+.sample-img p {
+    color: white;
+    max-width: 600px;
+    text-align: center;
+}
 .top-page img {
     width: 100%;
     height: 40vh;
-
 }
+
 .img-container {
     position: relative;
 }
@@ -42,8 +59,8 @@ header {
     font-size: 16px;
 }
 .second-content {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
+    
 }
 .image-wrapper {
     display: flex;
@@ -69,6 +86,7 @@ header {
     justify-content: center;
     max-width: 1270px;
     margin: 0 auto;
+    padding: 24px 24px;
    
 }
 .content1 p {
@@ -143,6 +161,7 @@ header {
     margin: 0 auto;
     justify-content: center;
     margin-top: 30px;
+    padding: 20px 24px;
    
 }
 .last-content-img {
@@ -178,5 +197,44 @@ header {
     font-size: 18px;
     font-weight: normal;
 }
+@media screen and (max-width: 770px) {
+    .image-wrapper {
+        flex-wrap: wrap;
+    }
+    .images {
+        width: 100%;
+    }
+    .images div {
+        padding-top: 15px;
+        padding-bottom: 28px;
+    }
+    .content-wraper {
+        flex-wrap: wrap;
+    }
+    .content1 {
+        width: 100%;
+    }
+    .content2 {
+        width: 100%;
+    }
+    .img-content{
+        width: 100%;
+    }
+    .content-desc {
+        width: 100%;
+    }
+    .last-content-img {
+        flex-wrap: wrap
+    }
+    .last-column {
+        width: 100%;
+    }
+    .last-img img {
+        height: auto;
+    }
+    .last-desc {
+        min-height: 200px;
+    }
 
+}
 
