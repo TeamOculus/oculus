@@ -19,8 +19,6 @@ export class ProfileComponent implements OnInit {
   constructor(private store: Store<any>, private mainService: MainService, private router: Router) {
     this.user$ = store.select('user');
     // this.firstname = store.select(state => state.user.firstname)
-
-    console.log("from store.select",this.user$)
 }
 
   ngOnInit() {

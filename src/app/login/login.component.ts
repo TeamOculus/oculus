@@ -22,9 +22,6 @@ export class LoginComponent implements OnInit {
 
     this.mainService.checkUser(userObject)
       .subscribe(res => {
-        console.log("from checkUser subscribe", res);
-        if (res){
-          console.log("this is res", res)
           // let username = JSON.parse(res._body).username;
           // let firstname = JSON.parse(res._body).firstname;
           // let lastname = JSON.parse(res._body).lastname;
@@ -35,14 +32,13 @@ export class LoginComponent implements OnInit {
             alert("Wrong username or password");
           } else {
             const user = JSON.parse(res._body);
-            console.log("this is the user", user);
             this.store.dispatch({
               type: ADD_USER,
               payload: user
             });
             this.router.navigate(["/my/profile"])
           }
-        }
+        
       })
   }
 

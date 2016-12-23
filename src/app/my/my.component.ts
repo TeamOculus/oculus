@@ -20,7 +20,6 @@ export class MyComponent implements OnInit {
     this.user$ = store.select('user');
     // this.firstname = store.select(state => state.user.firstname)
 
-    console.log("from store.select",this.user$)
 }
 
   ngOnInit() {
