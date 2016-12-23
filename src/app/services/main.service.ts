@@ -15,4 +15,9 @@ export class MainService {
     // return this.http.get('https://api.spotify.com/v1/search?q=michael&type=track').map(res => res.json())
   }
 
+  getUserInfo(username){
+    console.log("from getuserinfo in service", username);
+    return this.http.get(`http://localhost:3000/api/users/${username}`).map(res => res.json());
+  }
+
 }
