@@ -11,7 +11,8 @@ export class MainService {
 
   createUser(userObject){
     console.log("from createuser in service", userObject)
-    return this.http.post('/api/users', JSON.stringify(userObject));
+    return this.http.post('http://localhost:3000/api/users',userObject);
+    // return this.http.get('https://api.spotify.com/v1/search?q=michael&type=track').map(res => res.json())
   }
 
 }

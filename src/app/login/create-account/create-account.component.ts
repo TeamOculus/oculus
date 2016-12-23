@@ -21,7 +21,10 @@ export class CreateAccountComponent implements OnInit {
       type: ADD_USER,
       payload: userObject
     });
-    this.mainService.createUser(userObject);
+    this.mainService.createUser(userObject)
+      .subscribe(res => {
+        console.log("from createuser subscribe", res);
+      })
   }
 
 }
