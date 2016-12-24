@@ -25,6 +25,8 @@ import { OrdersComponent } from './my/orders/orders.component';
 
 import {StoreModule} from '@ngrx/store';
 import {user} from './reducers/user_reducer';
+import { cart } from './reducers/cart_reducer';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +54,7 @@ import {user} from './reducers/user_reducer';
     FormsModule,
     HttpModule,
     routing,
-    StoreModule.provideStore({user})
+    StoreModule.provideStore({user, cart})
   ],
   providers: [],
   bootstrap: [AppComponent]
