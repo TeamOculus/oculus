@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
           // let password = JSON.parse(res._body).password;
           // const user = {username: username, firstname: firstname, lastname: lastname, email: email, password: password};
           if(res._body === ""){
-            alert("Wrong username or password");
+            alert("Incorrect email or password");
           } else {
             const user = JSON.parse(res._body);
             this.store.dispatch({
