@@ -56,6 +56,29 @@
             color: #1C1E20;
             font-weight: 400;
             margin-bottom: 16px;
+            transition: color 250ms cubic-bezier(.215, .61, .355, 1);
+
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                color: #1C1E20;
+                font-weight: 400;
+                margin-bottom: 16px;
+                transition: color 250ms cubic-bezier(.215, .61, .355, 1);
+            }
+
+            a:hover, a:focus {
+                color: #8d8e8f;
+                transition: none;
+            }
+            // a:focus {
+            //     font-size: 18px;
+            // }
+        }
+
+        li:hover {
+            color: #8d8e8f;
+            transition: none;
         }
     }
     select {

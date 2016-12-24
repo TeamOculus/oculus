@@ -1,12 +1,12 @@
 <div id="my-banner">
-  <h1>Firstname Lastname</h1>
+  <h1>{{(user$ | async)?.firstname}} {{(user$ | async)?.lastname}}</h1>
 </div>
 <div id="my-container">
   <div id="my-container-content">
     <div id="my-menu">
       <ul>
-        <li>My Profile</li>
-        <li>My Orders</li>
+        <li><a [routerLink]="['/my/profile']" id="profile">My Profile</a></li>
+        <li><a [routerLink]="['/my/orders']" id="orders">My Orders</a></li>
         <li>My Gear VR</li>
         <li>My Rift</li>
         <li>My Preview Apps</li>
