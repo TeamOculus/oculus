@@ -53,10 +53,10 @@
             <div class="header-logged-in">
                 <div class="header-logged-in-wrapper">
                     <span>
-                        <a class="header-logged-in-account-link">
+                        <a class="header-logged-in-account-link" (click)="onProfileClick()">
                             <em class="header-logged-in-account-em">
                                 <i class="logged-in-icon"></i>
-                                <span class="header-logged-in-accountname">gnordstrom</span>
+                                <span class="header-logged-in-accountname">username</span>
                                 <i class="logged-in-arrow"></i>
                             </em>
                         </a>
@@ -121,13 +121,11 @@
                     </ul>    
                 </div>
             </li>
-
             <li class="dropdown-li">
                 <a [routerLink]="['gear-vr']">
                     <div class="dropdown-div">Gear VR</div>
                 </a>
             </li>
-
             <li class="dropdown-li">
                 <div>
                     <a (click)="onClickExperiences()">
@@ -151,7 +149,6 @@
                     </ul>    
                 </div>
             </li>
-            
             <li class="dropdown-li">
                 <a [routerLink]="['developers']">
                     <div class="dropdown-div">Developers</div>
@@ -163,5 +160,37 @@
                 </a>
             </li>
         </ul>
+    </div>
+</div>
+
+
+<!-- Small "My Account" Dropdown -->
+<!-- Only show if user logged in and click on user account in top right -->
+<div *ngIf="profileDropdownClick" class="loggedIn-dropdown">
+    <div class="loggedIn-dropdown-container">
+        <div class="loggedIn-dropdown-content">
+            <div class="loggedIn-dropdown-content-box">
+                <div class="loggedIn-empty-div">
+                    <ul class="loggedIn-dropdown-ul">
+                        <li class="loggedIn-dropdown-li" [routerLink]="['my/profile']">
+                            <em class="loggedIn-dropdown-li-em">My Profile</em>
+                        </li>
+                        <li class="loggedIn-dropdown-li" [routerLink]="['my/orders']">
+                            <em class="loggedIn-dropdown-li-em">My Orders</em>
+                        </li>
+                        <li class="loggedIn-dropdown-li">
+                            <em class="loggedIn-dropdown-li-em">My Gear VR</em>
+                        </li>
+                        <li class="loggedIn-dropdown-li">
+                            <em class="loggedIn-dropdown-li-em">My Rift</em>
+                        </li>
+                        <li class="loggedIn-dropdown-li">
+                            <em class="loggedIn-dropdown-li-em">Logout</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <i class="loggedIn-dropdown-icon"></i>
+        </div>
     </div>
 </div>
