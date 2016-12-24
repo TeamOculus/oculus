@@ -81,6 +81,52 @@
 
     <div class="dropdown-links">
         <ul class="dropdown-ul">
+<!-- IF USER IS LOGGED IN, SHOW THIS -->
+            <li class="dropdown-li">
+                <div>
+                    <a (click)="onClickUser()">
+                        <div class="dropdown-li-a-div">
+                            <div class="dropdown-li-a-div-1">
+                                <div class="dropdown-li-a-div-1-container">
+                                    <i class="dropdown-li-a-user-icon"></i>
+                                    <div class="dropdown-li-a-username">Username</div>
+                                </div>
+                            </div>
+                            <i *ngIf="!clickedUserDropdown" class="dropdown-arrow-icon-down arrow-top"></i>
+                            <i *ngIf="clickedUserDropdown" class="dropdown-arrow-icon-up arrow-top"></i>
+                        </div>
+                    </a>
+                    <ul *ngIf="clickedUserDropdown" class="dropdown-toggle-list">
+                        <li class="dropdown-li">
+                            <a [routerLink]="['my/profile']">
+                                <div class="dropdown-div">My Profile</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li">
+                            <a [routerLink]="['my/orders']">
+                                <div class="dropdown-div">My Orders</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li">
+                            <a>
+                                <div class="dropdown-div">My Gear VR</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li">
+                            <a>
+                                <div class="dropdown-div">My Rift</div>
+                            </a>
+                        </li>
+                        <li class="dropdown-li" style="border-bottom: none;">
+                            <a>
+                                <div class="dropdown-div">Logout</div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+<!---->
             <li class="dropdown-li">
                 <a [routerLink]="['login']">
                     <div class="dropdown-div">Login</div>

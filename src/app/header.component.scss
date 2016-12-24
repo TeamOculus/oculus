@@ -1,12 +1,18 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 // 									 TABLE OF CONTENTS										//
-// 	 						1. x					- Line 18								//
-// 	 							1a. x			- Line 49									//
-// 	 							1b. x		- Line 113										//
-// 	 						2. x 					- Line 176								//
+// 	 						1. Main Navigation			- Line 12								//
+// 	 							1a. Logo				- Line 49									//
+// 	 							1b. Main Links			- Line 113										//
+// 	 						2. Hamburger Menu 			- Line 176								//
+// 	 							2a. User LOGGED IN 		- Line 176								//
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 1. Main Navigation 									//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-wrapper {
     height: 60px;
     background-color: #1c1e20;
@@ -22,7 +28,9 @@
     position: relative;
 }
 
-// Logo
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 				  1a. Logo		 				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-logo {
     position: absolute;
 }
@@ -43,7 +51,9 @@
 	width: 52px;
 }
 
-// Main Links
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 				1b. Main Links  				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-links {
     margin: 0;
     padding: 0;
@@ -70,8 +80,11 @@
     color: #777879;
 }
 
-
-// Hamburger Menu
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 2. Hamburger Menu  									//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .hamburger-menu {
     display: none;
     position: absolute;
@@ -136,7 +149,9 @@
     bottom: -8px;
 }
 
-// USER LOGGED IN DISPLAY
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			2a. USER LOGGED IN DISPLAY	 		//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-logged-in {
 	display: inline-block;
 }
@@ -194,8 +209,11 @@
 	margin: 18px 0;
 }
 
-
-// Cart & Login Button
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 1. Cart, Login Button, User Account									//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-account {
     line-height: 60px;
 	margin-right: 28px;
@@ -235,7 +253,11 @@
 }
 
 
-// Dropdown Menu from Hamburger
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 x. Drop-down Hamburger Menu							//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .dropdown {
     background-color: #16181a;
 	bottom: 0;
@@ -307,6 +329,44 @@
 .dropdown-li a {
     text-decoration: none;
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			2a. USER LOGGED IN 			 		//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.dropdown-li-a-div {
+	position: relative;
+	width: 100%;
+}
+.dropdown-li-a-div-1 {
+	color: #fff;
+	transition: color .2s;
+}
+.dropdown-li-a-div-1-container {
+	display: block;
+}
+.dropdown-li-a-user-icon {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/v8LO-UvNIFd.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+	background-size: 192px auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/7YkOlCJCBYB.png');
+	background-position: -48px 0;
+}
+.dropdown-li-a-username {
+	display: inline-block;
+	margin-left: 16px;
+	vertical-align: middle;
+}
+
+
+//////////////////////////////////////////////////////
 .dropdown-div {
     color: #fff;
 	transition: color .2s;
@@ -354,8 +414,6 @@
     -webkit-margin-before: 0px;
 	-webkit-margin-after: 0px;
 }
-
-
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
