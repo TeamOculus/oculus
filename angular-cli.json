@@ -20,7 +20,13 @@
       "styles": [
         "styles.scss"
       ],
-      "scripts": [],
+      "scripts": [
+        "./assets/OwlCarousel2-2.2.0/dist/assets/owl.carousel.min.css",
+        "./assets/OwlCarousel2-2.2.0/dist/assets/owl.theme.default.min.css",
+        "./assets/jquery/jquery-3.1.1.min.js",
+        "./assets/OwlCarousel2-2.2.0/dist/owl.carousel.js"
+
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

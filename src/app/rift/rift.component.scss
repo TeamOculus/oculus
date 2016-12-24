@@ -145,11 +145,11 @@
 .section2 {
     position: relative;
     color: #323436;
-    background: #fff;
+    background: #000;
     background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/phone/travel-bg.jpg) bottom center no-repeat #0c0c0c;
     background-size: cover;
-    color: #fff;
-    height: 720px;
+    color: #000;
+    height: 825px;
 }
 
 .section2-div1 {
@@ -549,8 +549,11 @@
 
 }
 
-.section5-div1-container{
+.section5-div1-container {
+    display: block;
     margin: auto;
+
+
 }
 
 .section5-div2-content {
@@ -576,6 +579,7 @@
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
     font-weight: bold;
+    margin: 0;
     font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
     color: #202020;
     font-weight: 900;
@@ -587,8 +591,324 @@
     -moz-transform: translate(0,0)!important;
     -ms-transform: translate(0,0)!important;
     transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+    transition-delay: 0ms;
 
 }
+
+.section5-div4-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    transition-delay: 0ms;
+
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 6                                         //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section6 {
+    display: block;
+    position: relative;
+    color: #323436;
+    background: #fff;
+    background: #f7f7f7;
+}
+
+.section6-div1-container {
+    display: block;
+    margin: auto;
+}
+
+.section6-div2-content {
+    display: block;
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+}
+
+.section6-div3-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font: 900 55px/55px "Oculus Sans",Arial,Helvetica,sans-serif;
+    color: #202020;
+    font-weight: 900;
+    margin: 0 0 12px;
+    font-size: 30px;
+    line-height: 40px;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+    transition-delay: 0ms;
+}    
+.section6-div4-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    transition-delay: 0ms;
+
+}
+
+.section6-div5-carousel owl-carousel{
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+
+.owl-controls {
+    padding: 30px 0;
+    width: 1280px;
+    height: 137px;
+}
+
+.owl-nav .owl-theme {
+    margin-bottom: 10px;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.owl-prev {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    opacity: .3;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 8%;
+    -webkit-transition: opacity .8s cubic-bezier(.19,1,.22,1);
+    transition: opacity .8s cubic-bezier(.19,1,.22,1);
+    left: 0;
+    background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/carousel-arrow-left.png);
+    display: none;
+}
+
+.owl-next {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    opacity: .3;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 8%;
+    -webkit-transition: opacity .8s cubic-bezier(.19,1,.22,1);
+    transition: opacity .8s cubic-bezier(.19,1,.22,1);
+    right: 0;
+    background-image: url(https://s3-us-west-1.amazonaws.com/devmtn-oculus/Rift+Component/carousel-arrow-right.png);
+    display: none;
+}
+
+.owl-dots .owl-theme{
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 7                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section7 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+}
+
+.section7-div1-grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 880px;
+    max-width: 1260px;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-width: inherit;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section7-div1-grid1 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    background-color: #1c1e20;
+}
+
+.dead {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 3px;
+}
+
+.section7-div3-grid2 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    background-color: #1c1e20;
+}
+
+.climb {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; 
+}
+
+.section7-div4-grid3 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    background-color: #1c1e20;
+}
+
+.unspoken {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.section7-div5-grid4 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    background-color: #1c1e20;
+}
+
+.wilson {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.section7-div6-grid5 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 40.33333333%;
+    // background-color: #1c1e20;
+    position: absolute;
+    left: 426px;
+    bottom: .1px;
+}
+
+.ripcoil {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 6px;
+}
+
+.section7-div7-grid6 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    // background-color: #1c1e20;
+    position: absolute;
+    left: 850px;
+    bottom: .1px;
+}
+
+.vr {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    top: 3px;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 8                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section8 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+    color: #fff;
+    height: 600px;
+    top: 322px;
+}
+
+
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //                          Media Queries                                     //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -672,6 +992,26 @@
         padding-bottom: 100px;
         padding-top: 640px;
         max-width: 540px;
+    }
+    .section3-div5-h2 {
+        line-height: 38px;
+    }
+    .section6-div2-content {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    .section6-div3-h2 {
+        line-height: 38px;
+    }
+    .section6-div9-slide1 {
+        padding-top: 47%;
+        background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/tablet/06.jpg)!important;
+}
+    .section6-div11-slide2 {
+        padding-top: 47%
+    }
+    .section8 {
+        height: 900px;
     }
 }
 
@@ -896,6 +1236,12 @@
     .section4-div14-background {
         background-size: 110% 100%;
     }
+    .section5 {
+        color: #a4a5a6;
+        background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/features-bg.jpg) center center no-repeat;
+        background-size: cover;
+        height: 900px;
+    }
     .section5-div1-container {
         max-width: calc(1184px + 80px);
         margin: auto;
@@ -918,5 +1264,69 @@
     -webkit-transition: opacity .6s .1s,transform .6s ease;
     transition: opacity .6s .1s,transform .6s ease;
     }
+    .section5-div4-p {
+    opacity: 0;
+    -webkit-transform: translate(0,50px);
+    -moz-transform: translate(0,50px);
+    -ms-transform: translate(0,50px);
+    transform: translate(0,50px);
+    -webkit-transition: opacity .6s .1s,transform .6s ease;
+    transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section6-div1-container {
+    max-width: calc(1184px + 80px);
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: left;
+    }
+    .section6-div3-h2 {
+    opacity: 0;
+    -webkit-transform: translate(0,50px);
+    -moz-transform: translate(0,50px);
+    -ms-transform: translate(0,50px);
+    transform: translate(0,50px);
+    -webkit-transition: opacity .6s .1s,transform .6s ease;
+    transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section6-div4-p {
+    opacity: 0;
+    -webkit-transform: translate(0,50px);
+    -moz-transform: translate(0,50px);
+    -ms-transform: translate(0,50px);
+    transform: translate(0,50px);
+    -webkit-transition: opacity .6s .1s,transform .6s ease;
+    transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section6-div9-slide1 {
+         padding-top: 41%;
+         background-image: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/product-gallery/desktop/06.jpg)!important;
+         width: 1280px;
+         height: 525px;
 }
-
+    .owl-controls {
+        padding: 45px 0;
+    }
+    .dead {
+        height: 322px;
+    }
+    .climb {
+        height: 322px;
+    }
+    .unspoken {
+        height: 322px;
+    }
+    .wilson {
+        height: 322px;
+    }
+    .ripcoil {
+        height: 325px;
+    }
+    .vr {
+        height: 322px;
+    }
+    .section8 {
+        color: #fff;
+        height: 900px;
+    }
+}

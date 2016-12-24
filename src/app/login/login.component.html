@@ -9,15 +9,16 @@
             <div>
               <form name="login" class="">
                 <div class="input-container">
-                  <div class="bx-input-control"><input type="text" id="email" name="email" placeholder="Email" tabindex="1" value="" class=""
+                  <div class="bx-input-control"><input #email type="text" id="email" name="email" placeholder="Email" tabindex="1" value="" class=""
                       autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" wrap="soft"></div>
                 </div>
                 <div class="input-container">
-                  <div class="bx-input-control"><input type="password" id="password" name="password" placeholder="Password" tabindex="1" value="" class=""
+                  <div class="bx-input-control"><input #password type="password" id="password" name="password" placeholder="Password" tabindex="1" value="" class=""
                       autocapitalize="none" autocomplete="off" autocorrect="off" cols="80" minlength="0" size="20" rows="4" wrap="soft"></div>
                 </div>
-                <div class="input-container"><button class="" tabindex="1"
-                    type="submit" id="sign_in" autocomplete="off" data-bx-disabled="false"><em class="" data-intl-translation="Sign In" data-intl-trid="">Sign In</em></button></div>
+                <div class="input-container">
+                  <button (click)="checkUser({email: email.value, password: password.value})" class="" tabindex="1" type="submit" id="sign_in" autocomplete="off" data-bx-disabled="false">
+                    <em class="" data-intl-translation="Sign In" data-intl-trid="">Sign In</em></button></div>
                 <div class="link-container">
                   <a href="https://secure.oculus.com/forgot-password/" class=""><em class="" data-intl-translation="Forgot Password" data-intl-trid="">Forgot Password</em></a>
                   |

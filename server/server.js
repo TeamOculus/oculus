@@ -19,6 +19,7 @@ mongoose.connection.once("open", () => {
 const User = require('./schemas/User');
 
 app.post('/api/users', (req,res) => {
+  console.log("post being hit", req.body)
   const user = new User(req.body);
   
   user.save((err, result) => {
@@ -32,9 +33,23 @@ app.post('/api/users', (req,res) => {
   })
 })
 
+app.post('/api/users/login', (req,res) => {
+  console.log("post being hit", req.body);
+  // res.redirect('http://localhost:4200/my/profile'); note: will need to add this in later to hide the username and password from the url
+  User.findOne({email: req.body.email, password: req.body.password}, (err, result) => {
+    if (err){
+      console.log(err)
+      res.status(500).send(err);
+    } else {
+      console.log(result)
+      res.send(result);
+    }
+  })
+})
+
 app.get('/api/users/:username', (req,res) => {
   // first is query, second is projection (what u want back) 1 for show 0 for not show, third is callback
-  User.find({username: req.params.username}, {password: 0}, (err, result) => {
+  User.find({username: req.params.username}, {}, (err, result) => {
     if (err){
       console.log(err)
       res.status(500).send(err);

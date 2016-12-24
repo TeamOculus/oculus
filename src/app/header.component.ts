@@ -21,8 +21,6 @@ export class HeaderComponent implements OnInit {
     this.user$ = store.select('user');
     // this.firstname = store.select(state => state.user.firstname)
 
-    console.log("from store.select",this.user$)
-
     // this.store.select('user')
     //   .subscribe(user => {
     //     console.log("from store.select", user)
