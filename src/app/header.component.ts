@@ -12,6 +12,8 @@ export class HeaderComponent implements OnInit {
   clickedMenu: boolean = false;
   clickedRift: boolean = false;
   clickedExperiences: boolean = false;
+  clickedUserDropdown: boolean = false;
+  profileDropdownClick: boolean = false;
   // isloggedin: boolean = false;
 
   user$: Observable<any>;
@@ -34,11 +36,17 @@ export class HeaderComponent implements OnInit {
   onClickMenu() {
     this.clickedMenu = !this.clickedMenu;
   }
+  onClickUser() {
+    this.clickedUserDropdown = !this.clickedUserDropdown;
+  }
   onClickRift() {
     this.clickedRift = !this.clickedRift;
   }
   onClickExperiences() {
     this.clickedExperiences = !this.clickedExperiences;
+  }
+  onProfileClick() {
+    this.profileDropdownClick = !this.profileDropdownClick;
   }
 
 }

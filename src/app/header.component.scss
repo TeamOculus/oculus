@@ -1,3 +1,22 @@
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 									 TABLE OF CONTENTS										//
+// 	 						1. Main Navigation				- Line 12						//
+// 	 							1a. Logo					- Line 31						//
+// 	 							1b. Main Links				- Line 54						//
+// 	 						2. Hamburger Menu 				- Line 84						//
+// 	 							2a. User LOGGED IN 			- Line 152						//
+// 	 						3. Cart, Login, User Profile	- Line 214						//
+// 	 						4. Drop-down Hamburger Menu		- Line 259						//
+// 	 							4a. USER LOGGED IN 			- Line 335						//
+// 	 						5. Logged-in Dropdown Modal 	- Line 422						//
+// 	 						6. Media Queries 				- Line 494						//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 1. Main Navigation 									//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-wrapper {
     height: 60px;
     background-color: #1c1e20;
@@ -13,7 +32,9 @@
     position: relative;
 }
 
-// Logo
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 				  1a. Logo		 				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-logo {
     position: absolute;
 }
@@ -34,7 +55,9 @@
 	width: 52px;
 }
 
-// Main Links
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 				1b. Main Links  				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-links {
     margin: 0;
     padding: 0;
@@ -61,8 +84,11 @@
     color: #777879;
 }
 
-
-// Hamburger Menu
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 2. Hamburger Menu  									//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .hamburger-menu {
     display: none;
     position: absolute;
@@ -127,8 +153,71 @@
     bottom: -8px;
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			2a. USER LOGGED IN DISPLAY	 		//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.header-logged-in {
+	display: inline-block;
+}
+.header-logged-in-account-link {
+	cursor: pointer;
+	background: transparent;
+	color: #fff;
+	transition: opacity 250ms;
+	text-decoration: none;
+}
+.header-logged-in-account-link:hover, .header-logged-in-account-link:focus, .header-logged-in-account-link:visited, {
+	text-decoration: none;
+} 
+.header-logged-in-account-link:hover {
+	color: #fff;
+	opacity: .35;
+	transition: none;
+}
+.header-logged-in-account-em {
+	font-style: normal;
+}
+.logged-in-icon {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/v8LO-UvNIFd.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+	background-size: 192px auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/7YkOlCJCBYB.png');
+	background-position: -48px 0;
+	margin: 18px 0;
+}
+.header-logged-in-accountname {
+	margin-left: 8px;
+}
+.logged-in-arrow {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/v8LO-UvNIFd.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+	background-size: 192px auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/7YkOlCJCBYB.png');
+	background-position: -48px -216px;
+	margin: 18px 0;
+}
 
-// Cart & Login
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 						 3. Cart, Login Button, User Account							//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .header-account {
     line-height: 60px;
 	margin-right: 28px;
@@ -167,8 +256,11 @@
 	transition: border-color 300ms ease-in, background-color 300ms ease-in;
 }
 
-
-// Dropdown Menu from Hamburger
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								 4. Drop-down Hamburger Menu							//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 .dropdown {
     background-color: #16181a;
 	bottom: 0;
@@ -240,6 +332,44 @@
 .dropdown-li a {
     text-decoration: none;
 }
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			4a. USER LOGGED IN 			 		//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.dropdown-li-a-div {
+	position: relative;
+	width: 100%;
+}
+.dropdown-li-a-div-1 {
+	color: #fff;
+	transition: color .2s;
+}
+.dropdown-li-a-div-1-container {
+	display: block;
+}
+.dropdown-li-a-user-icon {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/v8LO-UvNIFd.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+	background-size: 192px auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/7YkOlCJCBYB.png');
+	background-position: -48px 0;
+}
+.dropdown-li-a-username {
+	display: inline-block;
+	margin-left: 16px;
+	vertical-align: middle;
+}
+
+
+//////////////////////////////////////////////////////
 .dropdown-div {
     color: #fff;
 	transition: color .2s;
@@ -288,7 +418,82 @@
 	-webkit-margin-after: 0px;
 }
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 							5. Logged-in Dropdown Modal: ;								//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.loggedIn-dropdown {
+	outline: none;
+	height: 0;
+	position: absolute;
+	width: 1555px;
+	right: 28px;
+	top: 41.1111px;
+	z-index: 1000;
+}
+.loggedIn-dropdown-container {
+	position: absolute;
+	right: 0px;
+}
+.loggedIn-dropdown-content {
+	padding-bottom: 14px;
+	padding-top: 14px;
+}
+.loggedIn-dropdown-content-box {
+	background: #fff;
+	position: relative;
+	border: 0;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px 1px rgba(0,0,0,.35);
+	line-height: 1.2em;
+}
+.loggedIn-dropdown-ul {
+	list-style-type: none;
+	font-size: 14px;
+	max-height: 400px;
+	overflow-y: auto;
+	padding: 4px 0;
+	margin: 0;
+}
+.loggedIn-dropdown-li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+	border-bottom: 1px #f0f0f0 solid;
+	line-height: 32px;
+	max-width: 300px;
+	overflow-x: hidden;
+	padding: 8px 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.loggedIn-dropdown-li:hover {
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+.loggedIn-dropdown-li-em {
+	font-style: normal;
+}
+.loggedIn-dropdown-icon {
+	font-style: italic;
+	overflow: hidden;
+	position: absolute;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/NvmV47aKbsa.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: 0 -86px;
+	height: 8px;
+	top: 7px;
+	width: 16px;
+	left: 100%;
+	margin-left: -28px;
+}
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 								6. Media Queries											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
 @media screen and (max-width: 999px) {
     .header-main {
         min-width: inherit;

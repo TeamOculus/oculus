@@ -740,50 +740,18 @@
 // 	 								Media Queries   										//
 // 																							//
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
-@media screen and (min-width: 1000px) {
-    .content2-box1-img {
-        opacity: 1;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width : 320px) and (max-width : 496px) {
 	.content-container1 {
-		height: 690px;
-	}
-	.content-container2 {
-		height: 525px;
-	}
-	.content-container4 {
-		height: 582px;
-	}
-	.content-container5 {
-		height: 718px;
-	}
-}
-
-@media screen and (min-width : 848px) and (max-width : 1024px) {
-	.content-container1 {
-		height: 613px;
-	}
-	.content-container2 {
-		height: 475px;
-	}
-	.content-container4 {
-		height: 460px;
-	}
-	.content-container5 {
-		height: 652px;
-	}
-}
-@media screen and (min-width : 672px) and (max-width : 848px) {
-	.content-container1 {
-		height: 557px;
-	}
-	.content-container2 {
 		height: 410px;
 	}
+	.content1-box2 {
+		margin-top: 39px;
+	}
+	.content-container2 {
+		height: 290px;
+	}
 	.content-container4 {
-		height: 448px;
+		height: 314px;
 	}
 	.content5-half {
 		width: 100%;
@@ -829,18 +797,16 @@
 		height: 0%;
 	}
 }
-@media screen and (min-width : 320px) and (max-width : 496px) {
+
+@media screen and (min-width : 672px) and (max-width : 848px) {
 	.content-container1 {
-		height: 410px;
-	}
-	.content1-box2 {
-		margin-top: 39px;
+		height: 557px;
 	}
 	.content-container2 {
-		height: 290px;
+		height: 410px;
 	}
 	.content-container4 {
-		height: 314px;
+		height: 448px;
 	}
 	.content5-half {
 		width: 100%;
@@ -856,4 +822,39 @@
 	.content-container6 {
 		height: 0%;
 	}
+}
+
+@media screen and (min-width : 848px) and (max-width : 1024px) {
+	.content-container1 {
+		height: 613px;
+	}
+	.content-container2 {
+		height: 475px;
+	}
+	.content-container4 {
+		height: 460px;
+	}
+	.content-container5 {
+		height: 652px;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+	.content-container1 {
+		height: 690px;
+	}
+	.content-container2 {
+		height: 525px;
+	}
+	.content-container4 {
+		height: 582px;
+	}
+	.content-container5 {
+		height: 718px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+    .content2-box1-img {
+        opacity: 1;
+    }
 }
