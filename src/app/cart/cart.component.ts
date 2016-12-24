@@ -16,22 +16,26 @@ export class CartComponent implements OnInit {
 
   constructor(private store: Store<any>) {
     console.log("store", store)
-    this.currentUser = store.select('user')
+    store.select('user')
       .subscribe( res => {
-        console.log(res)
+        console.log("from currentuser subscribe", res);
+        this.currentUser = res;
       })
-    this.available = store.select('cart')
+    store.select('cart')
+      .subscribe( res => {
+        console.log("from available subscribe", res);
+        this.available = res;
+      })
   }
 
   ngOnInit() {
     console.log("from this.currentuser", this.currentUser)
 
-    if (this.currentUser._subscriptions.key){
-      console.log("there is logged in user")
-      console.log("from this.available", this.available)
+    if (this.currentUser.username){
+      console.log("there is a logged in user")
     } else {
       console.log("no logged in user")
-      console.log("from this.available", this.available)
+      console.log("this.available", this.available)
     }
   }
 
