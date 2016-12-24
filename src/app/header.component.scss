@@ -127,8 +127,66 @@
     bottom: -8px;
 }
 
+// USER LOGGED IN DISPLAY
+.header-logged-in {
+	display: inline-block;
+}
+.header-logged-in-account-link {
+	cursor: pointer;
+	background: transparent;
+	color: #fff;
+	transition: opacity 250ms;
+	text-decoration: none;
+}
+.header-logged-in-account-link:hover, .header-logged-in-account-link:focus, .header-logged-in-account-link:visited, {
+	text-decoration: none;
+} 
+.header-logged-in-account-link:hover {
+	color: #fff;
+	opacity: .35;
+	transition: none;
+}
+.header-logged-in-account-em {
+	font-style: normal;
+}
+.logged-in-icon {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/v8LO-UvNIFd.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+	background-size: 192px auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/7YkOlCJCBYB.png');
+	background-position: -48px 0;
+	margin: 18px 0;
+}
+.header-logged-in-accountname {
+	margin-left: 8px;
+}
+.logged-in-arrow {
+	background: url('https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/v8LO-UvNIFd.png') no-repeat 0 0;
+	color: rgba(50, 52, 54, 0);
+	display: inline-block;
+	height: 24px;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: crisp-edges;
+	overflow: hidden;
+	text-indent: 24px;
+	vertical-align: bottom;
+	width: 24px;
+	background-size: 192px auto;
+	background-image: url('https://static.xx.fbcdn.net/rsrc.php/v3/yb/r/7YkOlCJCBYB.png');
+	background-position: -48px -216px;
+	margin: 18px 0;
+}
 
-// Cart & Login
+
+// Cart & Login Button
 .header-account {
     line-height: 60px;
 	margin-right: 28px;

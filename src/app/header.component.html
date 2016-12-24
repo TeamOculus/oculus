@@ -37,14 +37,34 @@
                     </div>
                 </a>
             </div>
+<!-- If USER LOGGED IN, show this-->
+            <div class="header-logged-in"></div>
+
+
+
 
             <div class="header-account">
                 <!--this works-->
-                <p style="color: white">{{(user$ | async)?.username}}</p>
+                <!--<p style="color: white">{{(user$ | async)?.username}}</p>-->
                 <a class="account-cart" [routerLink]="['cart']">
                     <div class="cart-logo"></div>
                 </a>
-                <a class="login" [routerLink]="['login']">Login</a>
+<!-- If USER LOGGED IN, show this-->
+            <div class="header-logged-in">
+                <div class="header-logged-in-wrapper">
+                    <span>
+                        <a class="header-logged-in-account-link">
+                            <em class="header-logged-in-account-em">
+                                <i class="logged-in-icon"></i>
+                                <span class="header-logged-in-accountname">gnordstrom</span>
+                                <i class="logged-in-arrow"></i>
+                            </em>
+                        </a>
+                    </span>
+                </div>
+            </div>
+<!-- If USER NOT LOGGED IN, show this-->
+                <!--<a class="login" [routerLink]="['login']">Login</a>-->
             </div>
         </div>
       </div>
