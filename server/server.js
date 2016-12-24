@@ -20,8 +20,9 @@ const User = require('./schemas/User');
 
 app.post('/api/users', (req,res) => {
   console.log("post being hit", req.body)
+
   const user = new User(req.body);
-  
+
   user.save((err, result) => {
     if (err){
       console.log(err)
