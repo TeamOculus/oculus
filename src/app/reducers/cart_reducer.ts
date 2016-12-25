@@ -1,6 +1,6 @@
 import {ActionReducer, Action} from '@ngrx/store';
 
-// export const ADD_USER = '';
+export const MOVE_ITEM_AVAIL_TO_CART = 'MOVE_ITEM_AVAIL_TO_CART';
 
 
 export const cart: ActionReducer<any> = (state = {cart: [], available: [
@@ -32,7 +32,7 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
         ships: "Usually ships in 2 business days",
         price: "$79.00 USD"
     }
-]}, action: Action) => {
+], totalprice: 0}, action: Action) => {
     switch(action.type){
         // case ADD_USER:
         //     console.log("from reducer add_user", action);

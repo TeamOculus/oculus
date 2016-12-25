@@ -87,7 +87,7 @@
               <p>Estimated Shipping</p>
             </div>
             <div id="cart-summary-stats-stat">
-              <span>$999.99 USD</span>
+              <span>${{totalprice}}.00 USD</span>
               <p>Total</p>
             </div>
         </div>
@@ -109,7 +109,7 @@
               <img src={{item.img}}>
               <h1>{{item.name}}</h1>
               <h3>{{item.price}}</h3>
-              <button type="button">Add to Cart</button>
+              <button type="button" (click)="addToCart(item)">Add to Cart</button>
             </div>
           </li>
 

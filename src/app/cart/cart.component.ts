@@ -13,6 +13,7 @@ export class CartComponent implements OnInit {
   currentUser;
   cart;
   available;
+  totalprice;
 
   constructor(private store: Store<any>) {
     store.select('user')
@@ -25,6 +26,7 @@ export class CartComponent implements OnInit {
         console.log("from available subscribe", res);
         this.cart = res.cart;
         this.available = res.available;
+        this.totalprice = res.totalprice;
       });
   }
 
@@ -38,6 +40,10 @@ export class CartComponent implements OnInit {
       console.log("this.available", this.available)
       console.log("this.cart", this.cart)
     }
+  }
+
+  addToCart(availItem) {
+    console.log(availItem)
   }
 
 }
