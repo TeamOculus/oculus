@@ -42,7 +42,7 @@ export class CartComponent implements OnInit {
     }
   }
 
-  addToCart(availItem) {
+  availToCart(availItem) {
     console.log(availItem)
   }
 
