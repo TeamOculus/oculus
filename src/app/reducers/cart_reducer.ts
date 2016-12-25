@@ -3,6 +3,7 @@
 import {ActionReducer, Action} from '@ngrx/store';
 
 export const MOVE_ITEM_AVAIL_TO_CART = 'MOVE_ITEM_AVAIL_TO_CART';
+export const MOVE_ITEM_CART_TO_AVAIL = 'MOVE_ITEM_CART_TO_AVAIL';
 
 
 export const cart: ActionReducer<any> = (state = {cart: [], available: [
@@ -45,6 +46,19 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
                     newState.cart.push(newState.available[i]);
                     newState.totalprice += newState.available[i].price;
                     newState.available.splice(i, 1);
+                }
+            }
+            return newState;
+
+        case MOVE_ITEM_CART_TO_AVAIL:
+            let newState = Object.assign({}, state);
+            // console.log(action.payload);
+            // console.log(newState);
+            for (let i = newState.cart.length - 1; i >= 0; i--) {
+                if (newState.cart[i].name === action.payload.name) {
+                    newState.available.push(newState.cart[i]);
+                    newState.totalprice -= newState.cart[i].price;
+                    newState.cart.splice(i, 1);
                 }
             }
             return newState;

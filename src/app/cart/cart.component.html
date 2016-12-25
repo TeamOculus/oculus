@@ -65,7 +65,7 @@
             </td>
             <td class="cart-table-price">${{item.price}}.00 USD</td>
             <td class="cart-table-remove">
-              <i class="fa fa-times" aria-hidden="true"></i>
+              <i (click)="cartToAvail(item)" class="fa fa-times" aria-hidden="true"></i>
             </td>
           </tr>
 

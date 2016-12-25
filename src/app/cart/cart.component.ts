@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { MOVE_ITEM_AVAIL_TO_CART } from './../reducers/cart_reducer';
+import { MOVE_ITEM_CART_TO_AVAIL } from './../reducers/cart_reducer';
 
 
 @Component({
@@ -39,23 +40,36 @@ export class CartComponent implements OnInit {
     console.log("this.cartProps", this.cartProps);
 
     // if logged in vs not
-    if (this.currentUser.username){
-      console.log("user logged in")
+    if (this.currentUser.username) {
+      console.log("user logged in");
     } else {
-      console.log("user not logged in")
+      console.log("user not logged in");
     }
   }
 
   availToCart(availItem) {
     // if logged in vs not
-    if (this.currentUser.username){
-      console.log("user logged in")
+    if (this.currentUser.username) {
+      console.log("user logged in");
     } else {
       console.log("user not logged in");
       this.store.dispatch({
         type: MOVE_ITEM_AVAIL_TO_CART,
         payload: availItem
       })
+    }
+  }
+
+  cartToAvail(cartItem) {
+    // if logged in vs not
+    if (this.currentUser.username){
+      console.log("user logged in")
+    } else {
+      console.log("user not logged in");
+      this.store.dispatch({
+        type: MOVE_ITEM_CART_TO_AVAIL,
+        payload: cartItem
+      });
     }
   }
 
