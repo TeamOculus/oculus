@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs/Observable';
-import { user } from './reducers/user_reducer';
+// import { user } from './reducers/user_reducer';
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
 

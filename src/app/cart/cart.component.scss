@@ -6,6 +6,17 @@ $reg-border: 1px solid #D2D2D2;
 $dark-border: 1px solid #BABABA;
 $dark-button-border: 2px solid #1c1e20;
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        display: inline;
+    }
+}
+
+
 /* Your cart ======================================================== */
 
 #cart-container {
