@@ -50,70 +50,20 @@
               <p>Remove</p>
             </td>
           </tr>
-          <tr>
+
+          <tr *ngFor="let item of cart">
             <td class="cart-table-item">
-              <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
+              <img src={{item.img}}>
               <div class="cart-table-item-description">
-                <h2>Oculus Rift</h2>
-                <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-                <p>Usually ships in 2 business days</p>
+                <h2>{{item.name}}</h2>
+                <p>{{item.included}}</p>
+                <p>{{item.ships}}</p>
               </div>
             </td>
             <td class="cart-table-quantity">
               <span>1</span>
             </td>
-            <td class="cart-table-price">$599.00 USD</td>
-            <td class="cart-table-remove">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </td>
-          </tr>
-          <tr>
-            <td class="cart-table-item">
-              <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-              <div class="cart-table-item-description">
-                <h2>Oculus Rift</h2>
-                <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-                <p>Usually ships in 2 business days</p>
-              </div>
-            </td>
-            <td class="cart-table-quantity">
-              <span>1</span>
-            </td>
-            <td class="cart-table-price">$599.00 USD</td>
-            <td class="cart-table-remove">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </td>
-          </tr>
-          <tr>
-            <td class="cart-table-item">
-              <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-              <div class="cart-table-item-description">
-                <h2>Oculus Rift</h2>
-                <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-                <p>Usually ships in 2 business days</p>
-              </div>
-            </td>
-            <td class="cart-table-quantity">
-              <span>1</span>
-            </td>
-            <td class="cart-table-price">$599.00 USD</td>
-            <td class="cart-table-remove">
-              <i class="fa fa-times" aria-hidden="true"></i>
-            </td>
-          </tr>
-          <tr>
-            <td class="cart-table-item">
-              <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-              <div class="cart-table-item-description">
-                <h2>Oculus Rift</h2>
-                <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-                <p>Usually ships in 2 business days</p>
-              </div>
-            </td>
-            <td class="cart-table-quantity">
-              <span>1</span>
-            </td>
-            <td class="cart-table-price">$599.00 USD</td>
+            <td class="cart-table-price">{{item.price}}</td>
             <td class="cart-table-remove">
               <i class="fa fa-times" aria-hidden="true"></i>
             </td>
@@ -152,30 +102,18 @@
     <div id="cart-related-products">
       <h2>Related Products</h2>
       <div id="cart-products">
-        <div class="cart-products-product">
-          <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-          <h1>Oculus Rift</h1>
-          <h3>$599.00 USD</h3>
-          <button type="button">Add to Cart</button>
-        </div>
-        <div class="cart-products-product">
-          <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-          <h1>Oculus Rift</h1>
-          <h3>$599.00 USD</h3>
-          <button type="button">Add to Cart</button>
-        </div>
-        <div class="cart-products-product">
-          <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-          <h1>Oculus Rift</h1>
-          <h3>$599.00 USD</h3>
-          <button type="button">Add to Cart</button>
-        </div>
-        <div class="cart-products-product">
-          <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png">
-          <h1>Oculus Rift</h1>
-          <h3>$599.00 USD</h3>
-          <button type="button">Add to Cart</button>
-        </div>
+        <ul>
+
+          <li *ngFor="let item of available">
+            <div class="cart-products-product">
+              <img src={{item.img}}>
+              <h1>{{item.name}}</h1>
+              <h3>{{item.price}}</h3>
+              <button type="button">Add to Cart</button>
+            </div>
+          </li>
+
+        </ul>
       </div>
     </div>
 
