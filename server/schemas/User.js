@@ -32,7 +32,7 @@ const User = mongoose.Schema ({
       country: {type: String}
     }
   }],
-  currentcart: [{
+  savedcart: [{
     items: [{
       img: {type: String},
       name: {type: String},

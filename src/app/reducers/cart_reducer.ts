@@ -1,9 +1,11 @@
+import { cart } from './cart_reducer';
 // tslint:disable:quotemark
 
 import {ActionReducer, Action} from '@ngrx/store';
 
 export const MOVE_ITEM_AVAIL_TO_CART = 'MOVE_ITEM_AVAIL_TO_CART';
 export const MOVE_ITEM_CART_TO_AVAIL = 'MOVE_ITEM_CART_TO_AVAIL';
+export const LOAD_SAVED_CART = 'LOAD_SAVED_CART';
 
 
 export const cart: ActionReducer<any> = (state = {cart: [], available: [
@@ -62,6 +64,17 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
                 }
             }
             return newState;
+        case LOAD_SAVED_CART:
+            let newState = Object.assign({}, state);
+            console.log(action.payload);
+            if (action.payload[0].savedcart.length === 0){
+                console.log("no items in saved cart")
+                return state;
+            } else {
+                console.log("there are items in saved cart")
+                newState.cart = action.payload.savedcart;
+                return newState;
+            }
 
         default:
             return state;
