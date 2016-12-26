@@ -80,6 +80,11 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
                         }
                     }
                 }
+                let newPrice = 0;
+                for (let k = newState.cart.length - 1; k >= 0; k--) {
+                    newPrice += newState.cart[k].price;
+                }
+                newState.totalprice = newPrice;
                 return newState;
             }
 

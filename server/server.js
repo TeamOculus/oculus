@@ -71,6 +71,24 @@ app.put('/api/users/:username/addtocart', (req,res) => {
   })
 })
 
+app.put('/api/users/:username/removefromcart', (req,res) => {
+  // 1. who u want to replace, 2. wwhat u want to update, 3. if u want to get something back, 4. callback
+  // findOneAndUpdate is Mongoose command
+  User.findOneAndUpdate({username: req.params.username}, {$pull: {savedcart : {
+    img: req.body.img,
+    name: req.body.name,
+    included: req.body.included,
+    ships: req.body.ships,
+    price: req.body.price
+  } }}, {}, (err, result) => {
+    if (err){
+      res.status(500).send(err);
+    } else {
+      res.send(result);
+    } 
+  })
+})
+
 app.delete('/api/users/:username', (req, res) => {
   User.remove({username: req.params.username}, (err, result) => {
     if (err){

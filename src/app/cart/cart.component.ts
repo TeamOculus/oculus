@@ -84,7 +84,15 @@ export class CartComponent implements OnInit {
     // if logged in vs not
     if (this.currentUser.username){
       console.log("user logged in")
-      
+      this.store.dispatch({
+        type: MOVE_ITEM_CART_TO_AVAIL,
+        payload: cartItem
+      });
+      this.mainService.removeItemFromCart(cartItem, this.currentUser.username)
+        .subscribe(res => {
+          console.log("removed item from database")
+        })
+
     } else {
       console.log("user not logged in");
       this.store.dispatch({
