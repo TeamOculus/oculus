@@ -34,8 +34,12 @@ export class MainService {
   }
 
   removeItemFromCart(item, username) {
-    console.log("from addItemToCart in service", item)
+    console.log("from removeItemFromCart in service", item)
     return this.http.put(`http://localhost:3000/api/users/${username}/removefromcart`, item)
   }
 
+  addToOrders(order) {
+    console.log("from addToOrders in service", order)
+    return this.http.post(`http://localhost:3000/api/orders`, order)
+  }
 }

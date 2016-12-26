@@ -6,9 +6,9 @@ import {ActionReducer, Action} from '@ngrx/store';
 export const MOVE_ITEM_AVAIL_TO_CART = 'MOVE_ITEM_AVAIL_TO_CART';
 export const MOVE_ITEM_CART_TO_AVAIL = 'MOVE_ITEM_CART_TO_AVAIL';
 export const LOAD_SAVED_CART = 'LOAD_SAVED_CART';
+export const RESET_CART = 'RESET_CART';
 
-
-export const cart: ActionReducer<any> = (state = {cart: [], available: [
+const defaultCart = {cart: [], available: [
     {
         img: "https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png",
         name: "Oculus Rift",
@@ -37,7 +37,9 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
         ships: "Usually ships in 2 business days",
         price: 79
     }
-], totalprice: 0}, action: Action) => {
+], totalprice: 0};
+
+export const cart: ActionReducer<any> = (state = defaultCart, action: Action) => {
     switch(action.type){
         case MOVE_ITEM_AVAIL_TO_CART:
             let newState = Object.assign({}, state);
@@ -86,8 +88,10 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
                 }
                 newState.totalprice = newPrice;
                 return newState;
-            }
-
+            };
+        case RESET_CART:
+            console.log("cart reset")
+            return defaultCart;
         default:
             return state;
     }
