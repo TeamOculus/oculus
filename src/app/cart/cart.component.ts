@@ -84,6 +84,7 @@ export class CartComponent implements OnInit {
     // if logged in vs not
     if (this.currentUser.username){
       console.log("user logged in")
+      
     } else {
       console.log("user not logged in");
       this.store.dispatch({

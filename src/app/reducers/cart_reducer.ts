@@ -72,7 +72,14 @@ export const cart: ActionReducer<any> = (state = {cart: [], available: [
                 return state;
             } else {
                 console.log("there are items in saved cart")
-                newState.cart = action.payload.savedcart;
+                newState.cart = action.payload[0].savedcart;
+                for (let i = newState.cart.length - 1; i >= 0; i--) {
+                    for (let j = newState.available.length - 1; j >= 0; j--) {
+                        if (newState.available[j].name === newState.cart[i].name) {
+                            newState.available.splice(j, 1);
+                        }
+                    }
+                }
                 return newState;
             }
 
