@@ -51,7 +51,7 @@
             </td>
           </tr>
 
-          <tr *ngFor="let item of cart">
+          <tr *ngFor="let item of cartProps.cart">
             <td class="cart-table-item">
               <img src={{item.img}}>
               <div class="cart-table-item-description">
@@ -63,9 +63,9 @@
             <td class="cart-table-quantity">
               <span>1</span>
             </td>
-            <td class="cart-table-price">{{item.price}}</td>
+            <td class="cart-table-price">${{item.price}}.00 USD</td>
             <td class="cart-table-remove">
-              <i class="fa fa-times" aria-hidden="true"></i>
+              <i (click)="cartToAvail(item)" class="fa fa-times" aria-hidden="true"></i>
             </td>
           </tr>
 
@@ -87,7 +87,7 @@
               <p>Estimated Shipping</p>
             </div>
             <div id="cart-summary-stats-stat">
-              <span>${{totalprice}}.00 USD</span>
+              <span>${{cost}}.00 USD</span>
               <p>Total</p>
             </div>
         </div>
@@ -104,12 +104,12 @@
       <div id="cart-products">
         <ul>
 
-          <li *ngFor="let item of available">
+          <li *ngFor="let item of cartProps.available">
             <div class="cart-products-product">
               <img src={{item.img}}>
               <h1>{{item.name}}</h1>
-              <h3>{{item.price}}</h3>
-              <button type="button" (click)="addToCart(item)">Add to Cart</button>
+              <h3>${{item.price}}.00 USD</h3>
+              <button type="button" (click)="availToCart(item)">Add to Cart</button>
             </div>
           </li>
 

@@ -32,14 +32,12 @@ const User = mongoose.Schema ({
       country: {type: String}
     }
   }],
-  currentcart: [{
-    items: [{
-      img: {type: String},
-      name: {type: String},
-      included: {type: String},
-      ships: {type: String}
-    }],
-    totalprice: {type: Number}
+  savedcart: [{
+    img: {type: String},
+    name: {type: String},
+    included: {type: String},
+    ships: {type: String},
+    price: {type: Number}
   }]
   // cart: [{type: mongoose.Schema.ObjectId}]
 })
