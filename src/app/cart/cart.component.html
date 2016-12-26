@@ -92,8 +92,8 @@
             </div>
         </div>
         <div id="cart-summary-buttons">
-          <button id="cart-checkout" type="button">Checkout</button>
-          <button id="cart-checkout-guest" type="button">Checkout as Guest</button>
+          <button (click)="navCheckout()" id="cart-checkout" type="button" *ngIf="currentUser.username || !currentUser.username">Checkout</button>
+          <a [routerLink]="['/checkout']"><button id="cart-checkout-guest" type="button" *ngIf="!currentUser.username">Checkout as Guest</button></a>
         </div>
       </div>
     </div>

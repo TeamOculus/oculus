@@ -1,12 +1,12 @@
-import { LOAD_SAVED_CART } from './../reducers/cart_reducer';
 // tslint:disable:quotemark
-
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { MainService } from './../services/main.service';
 import { MOVE_ITEM_AVAIL_TO_CART } from './../reducers/cart_reducer';
 import { MOVE_ITEM_CART_TO_AVAIL } from './../reducers/cart_reducer';
+import { LOAD_SAVED_CART } from './../reducers/cart_reducer';
 
 
 
@@ -22,7 +22,7 @@ export class CartComponent implements OnInit {
   cartProps;
   cost;
 
-  constructor(private store: Store<any>, private mainService: MainService) {
+  constructor(private store: Store<any>, private mainService: MainService, private router: Router) {
     store.select('user')
       .subscribe( res => {
         console.log("from currentuser subscribe", res);
@@ -56,6 +56,14 @@ export class CartComponent implements OnInit {
 
     } else {
       console.log("user not logged in");
+    }
+  }
+
+  navCheckout() {
+    if (this.currentUser.username) {
+      this.router.navigate(['/checkout']);
+    } else {
+      this.router.navigate(['/login'])
     }
   }
 
