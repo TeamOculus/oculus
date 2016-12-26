@@ -61,9 +61,9 @@ export class CartComponent implements OnInit {
 
   navCheckout() {
     if (this.currentUser.username) {
-
+      this.router.navigate(['/checkout']);
     } else {
-
+      this.router.navigate(['/login'])
     }
   }
 
