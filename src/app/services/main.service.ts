@@ -9,12 +9,12 @@ export class MainService {
     console.log("mainService initialized...")
   }
 
-  createUser(userObject){
+  createUser(userObject) {
     console.log("from createUser in service", userObject)
     return this.http.post('http://localhost:3000/api/users',userObject);
   }
 
-  checkUser(userObject){
+  checkUser(userObject) {
     console.log("from checkUser in service", userObject)
     return this.http.post('http://localhost:3000/api/users/login',userObject)
             .map(x => {
@@ -22,10 +22,15 @@ export class MainService {
             });
   }
   
-  getUserInfo(username){
+  getUserInfo(username) {
     console.log("from getuserinfo in service", username);
     return this.http.get(`http://localhost:3000/api/users/${username}`).map(res => res.json());
 
+  }
+
+  addItemToCart(item, username) {
+    console.log("from addItemToCart in service", item)
+    return this.http.put(`http://localhost:3000/api/users/${username}/addtocart`, item)
   }
 
 }

@@ -51,8 +51,8 @@ export class CartComponent implements OnInit {
           this.store.dispatch({
             type: LOAD_SAVED_CART,
             payload: res
-          })
-        })
+          });
+        });
 
     } else {
       console.log("user not logged in");
@@ -63,7 +63,14 @@ export class CartComponent implements OnInit {
     // if logged in vs not
     if (this.currentUser.username) {
       console.log("user logged in", this.currentUser);
-      
+      this.store.dispatch({
+        type: MOVE_ITEM_AVAIL_TO_CART,
+        payload: availItem
+      });
+      this.mainService.addItemToCart(availItem, this.currentUser.username)
+        .subscribe(res => {
+          console.log("added item to database")
+        })
     } else {
       console.log("user not logged in");
       this.store.dispatch({

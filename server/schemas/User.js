@@ -33,13 +33,11 @@ const User = mongoose.Schema ({
     }
   }],
   savedcart: [{
-    items: [{
-      img: {type: String},
-      name: {type: String},
-      included: {type: String},
-      ships: {type: String}
-    }],
-    totalprice: {type: Number}
+    img: {type: String},
+    name: {type: String},
+    included: {type: String},
+    ships: {type: String},
+    price: {type: Number}
   }]
   // cart: [{type: mongoose.Schema.ObjectId}]
 })
