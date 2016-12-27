@@ -5,6 +5,8 @@ import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
 import {LOG_OUT} from './reducers/user_reducer';
+import { RESET_CART } from './reducers/cart_reducer';
+
 
 @Component({
   selector: 'app-header',
@@ -67,6 +69,9 @@ export class HeaderComponent implements OnInit {
   logOut() {
     this.store.dispatch({
       type: LOG_OUT
+    });
+    this.store.dispatch({
+      type: RESET_CART
     });
     this.profileDropdownClick = !this.profileDropdownClick;
     this.router.navigate(['/']);
