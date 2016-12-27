@@ -1,9 +1,10 @@
 import { Router } from '@angular/router';
 import { MainService } from './services/main.service';
 import { Observable } from 'rxjs/Observable';
-// import { user } from './reducers/user_reducer';
+// import { user, LOG_OUT } from './reducers/user_reducer';
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
+import {LOG_OUT} from './reducers/user_reducer';
 
 @Component({
   selector: 'app-header',
@@ -61,6 +62,14 @@ export class HeaderComponent implements OnInit {
   }
   onProfileClick() {
     this.profileDropdownClick = !this.profileDropdownClick;
+  }
+
+  logOut() {
+    this.store.dispatch({
+      type: LOG_OUT
+    });
+    this.profileDropdownClick = !this.profileDropdownClick;
+    this.router.navigate(['/']);
   }
 
 }

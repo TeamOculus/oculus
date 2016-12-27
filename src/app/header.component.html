@@ -117,7 +117,7 @@
                         </li>
                         <li class="dropdown-li" style="border-bottom: none;">
                             <a>
-                                <div class="dropdown-div">Logout</div>
+                                <div class="dropdown-div" (click)="logOut()">Logout</div>
                             </a>
                         </li>
 
@@ -228,7 +228,7 @@
                         <li class="loggedIn-dropdown-li" [routerLink]="['rift']">
                             <em class="loggedIn-dropdown-li-em">My Rift</em>
                         </li>
-                        <li class="loggedIn-dropdown-li">
+                        <li class="loggedIn-dropdown-li" (click)="logOut()">
                             <em class="loggedIn-dropdown-li-em">Logout</em>
                         </li>
                     </ul>
