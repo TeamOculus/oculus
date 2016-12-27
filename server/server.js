@@ -52,6 +52,16 @@ app.get('/api/users/:username', (req,res) => {
   })
 })
 
+app.get('/api/orders/:username', (req, res) => {
+  Order.find({username: req.params.username}, {}, (err, result) => {
+    if(err) {
+      res.status(500).send(err);
+    } else {
+      res.send(result);
+    }
+  })
+})
+
 // $push: {<fieldname>: <value>}
 
 app.put('/api/users/:username/addtocart', (req,res) => {

@@ -49,4 +49,9 @@ export class MainService {
     console.log("from resetCart in service");
     return this.http.put(`http://localhost:3000/api/resetcart/${username}`, null);
   }
+
+  getOrderInfo(username) {
+   console.log("from getorderinfo", username);
+   return this.http.get(`http://localhost:3000/api/orders/${username}`).map(res => res.json());
+  }
 }
