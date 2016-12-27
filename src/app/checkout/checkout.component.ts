@@ -7,6 +7,8 @@ import { MainService } from './../services/main.service';
 import { LOAD_SAVED_CART } from './../reducers/cart_reducer';
 import { RESET_CART } from './../reducers/cart_reducer';
 
+let config = require('./../../../server/config.js');
+
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -15,8 +17,8 @@ import { RESET_CART } from './../reducers/cart_reducer';
 })
 export class CheckoutComponent implements OnInit {
 
-  currentUser;
-  cartProps;
+  currentUser = {};
+  cartProps = {cart: '', available: '', totalprice: ''};
   cost;
 
   constructor(private store: Store<any>, private mainService: MainService, private router: Router) {
@@ -35,6 +37,8 @@ export class CheckoutComponent implements OnInit {
         }
         this.cost = this.cartProps.totalprice + 30;
       });
+
+    this.saveOrder = this.saveOrder.bind(this);
   }
 
   ngOnInit() {
@@ -56,12 +60,7 @@ export class CheckoutComponent implements OnInit {
     }
   }
 
-  submitOrder(shippingInfo){
-    for (let i in shippingInfo) {
-      if (shippingInfo[i] === "") {
-        return alert(`${i} was not filled`)
-      }
-    }
+  saveOrder(shippingInfo) {
     let dateNow = new Date();
     if (this.currentUser.username) {
       let fullOrder = {
@@ -84,7 +83,7 @@ export class CheckoutComponent implements OnInit {
       this.store.dispatch({
         type: RESET_CART
       });
-      this.router.navigate(['/my/orders']);
+      this.router.navigate(['/my/profile']);
     } else {
       let fullOrder = {
         username: "N/A",
@@ -102,8 +101,37 @@ export class CheckoutComponent implements OnInit {
       this.store.dispatch({
         type: RESET_CART
       });
-      this.router.navigate(['/my/orders']);
+      this.router.navigate(['/']);
     }
+  }
+
+  submitOrder(shippingInfo){
+    for (let i in shippingInfo) {
+      if (shippingInfo[i] === "") {
+        return alert(`${i} was not filled`)
+      }
+    }
+    // stripe here
+    let saveOrderPointer = this.saveOrder;
+    var handler = (<any>window).StripeCheckout.configure({
+      key: config.stripe,
+      locale: 'auto',
+      token: function (token: any) {
+          // You can access the token ID with `token.id`.
+          // Get the token ID to your server-side code for use.
+          console.log("from token", token.id)
+
+          //put into db if get token back
+          saveOrderPointer(shippingInfo);
+
+        }
+    });
+    handler.open({
+      name: 'Demo Site',
+      description: '2 widgets',
+      amount: this.cost * (100)
+    });
+
   }
 
 }
