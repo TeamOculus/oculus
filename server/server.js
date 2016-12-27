@@ -101,6 +101,17 @@ app.post('/api/orders', (req,res) => {
   })
 })
 
+app.put('/api/resetcart/:username', (req,res) => {
+  // 1. who u want to replace, 2. wwhat u want to update, 3. if u want to get something back, 4. callback
+  // findOneAndUpdate is Mongoose command
+  User.findOneAndUpdate({username: req.params.username}, {$set: {savedcart : [] }}, {}, (err, result) => {
+    if (err){
+      res.status(500).send(err);
+    } else {
+      res.send(result);
+    } 
+  })
+})
 
 
 // app.delete('/api/users/:username', (req, res) => {

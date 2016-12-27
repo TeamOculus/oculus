@@ -73,6 +73,18 @@ export class CheckoutComponent implements OnInit {
         shipping: shippingInfo
       };
       console.log(fullOrder)
+      this.mainService.addToOrders(fullOrder)
+        .subscribe(res => {
+          console.log("added to orders");
+        });
+      this.mainService.resetCart(this.currentUser.username)
+        .subscribe(res => {
+          console.log("wiped savedcart")
+        })
+      this.store.dispatch({
+        type: RESET_CART
+      });
+      this.router.navigate(['/my/orders']);
     } else {
       let fullOrder = {
         username: "N/A",
@@ -90,9 +102,8 @@ export class CheckoutComponent implements OnInit {
       this.store.dispatch({
         type: RESET_CART
       });
-      this.router.navigate(['/my/orders'])
+      this.router.navigate(['/my/orders']);
     }
-    
   }
 
 }
