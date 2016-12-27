@@ -17,6 +17,7 @@ mongoose.connection.once("open", () => {
 })
 
 const User = require('./schemas/User');
+const Order = require('./schemas/Order');
 
 app.post('/api/users', (req,res) => {
   const user = new User(req.body);
@@ -89,8 +90,9 @@ app.put('/api/users/:username/removefromcart', (req,res) => {
   })
 })
 
-app.delete('/api/users/:username', (req, res) => {
-  User.remove({username: req.params.username}, (err, result) => {
+app.post('/api/orders', (req,res) => {
+  const order = new Order(req.body);
+  order.save((err, result) => {
     if (err){
       res.status(500).send(err);
     } else {
@@ -98,6 +100,29 @@ app.delete('/api/users/:username', (req, res) => {
     }
   })
 })
+
+app.put('/api/resetcart/:username', (req,res) => {
+  // 1. who u want to replace, 2. wwhat u want to update, 3. if u want to get something back, 4. callback
+  // findOneAndUpdate is Mongoose command
+  User.findOneAndUpdate({username: req.params.username}, {$set: {savedcart : [] }}, {}, (err, result) => {
+    if (err){
+      res.status(500).send(err);
+    } else {
+      res.send(result);
+    } 
+  })
+})
+
+
+// app.delete('/api/users/:username', (req, res) => {
+//   User.remove({username: req.params.username}, (err, result) => {
+//     if (err){
+//       res.status(500).send(err);
+//     } else {
+//       res.send(result);
+//     }
+//   })
+// })
 
 // This won't work yet, but to show you how to connect documents/collections: 
 /*

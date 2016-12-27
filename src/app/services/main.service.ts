@@ -1,3 +1,5 @@
+// tslint:disable:quotemark
+
 import { Http } from '@angular/http';
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
@@ -6,17 +8,17 @@ import 'rxjs/add/operator/map';
 export class MainService {
 
   constructor(private http: Http) {
-    console.log("mainService initialized...")
+    console.log("mainService initialized...");
   }
 
   createUser(userObject) {
-    console.log("from createUser in service", userObject)
-    return this.http.post('http://localhost:3000/api/users',userObject);
+    console.log("from createUser in service", userObject);
+    return this.http.post('http://localhost:3000/api/users', userObject);
   }
 
   checkUser(userObject) {
-    console.log("from checkUser in service", userObject)
-    return this.http.post('http://localhost:3000/api/users/login',userObject)
+    console.log("from checkUser in service", userObject);
+    return this.http.post('http://localhost:3000/api/users/login', userObject)
             .map(x => {
               return x;
             });
@@ -29,13 +31,22 @@ export class MainService {
   }
 
   addItemToCart(item, username) {
-    console.log("from addItemToCart in service", item)
-    return this.http.put(`http://localhost:3000/api/users/${username}/addtocart`, item)
+    console.log("from addItemToCart in service", item);
+    return this.http.put(`http://localhost:3000/api/users/${username}/addtocart`, item);
   }
 
   removeItemFromCart(item, username) {
-    console.log("from addItemToCart in service", item)
-    return this.http.put(`http://localhost:3000/api/users/${username}/removefromcart`, item)
+    console.log("from removeItemFromCart in service", item);
+    return this.http.put(`http://localhost:3000/api/users/${username}/removefromcart`, item);
   }
 
+  addToOrders(order) {
+    console.log("from addToOrders in service", order);
+    return this.http.post(`http://localhost:3000/api/orders`, order);
+  }
+
+  resetCart(username) {
+    console.log("from resetCart in service");
+    return this.http.put(`http://localhost:3000/api/resetcart/${username}`, null);
+  }
 }

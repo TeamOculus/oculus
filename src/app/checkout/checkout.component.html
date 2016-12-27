@@ -16,7 +16,7 @@
           <p>Estimated Shipping</p>
         </div>
         <div id="checkout-summary-stats-stat">
-          <span>$999.99 USD</span>
+          <span>${{cost}}.00 USD</span>
           <p>Total</p>
         </div>
       </div>
@@ -28,52 +28,19 @@
       </div>
       <ul>
         <!-- replace with real data -->
-        <li>
+        <li *ngFor="let item of cartProps.cart">
           <div id="checkout-inyourcart-item">
-            <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png" >
+            <img src={{item.img}} >
             <div id="checkout-inyourcart-item-desc">
-              <h2>Oculus Rift</h2>
-              <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-              <p>Usually ships in 2 business days</p>
-              <p>Qty. 1 @ $599.00 USD</p>
+              <h2>{{item.name}}</h2>
+              <p>{{item.included}}</p>
+              <p>{{item.ships}}</p>
+              <p>Qty. 1 @ ${{item.price}}.00 USD</p>
             </div>
           </div>
         </li>
-        <li>
-          <div id="checkout-inyourcart-item">
-            <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png" >
-            <div id="checkout-inyourcart-item-desc">
-              <h2>Oculus Rift</h2>
-              <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-              <p>Usually ships in 2 business days</p>
-              <p>Qty. 1 @ $599.00 USD</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div id="checkout-inyourcart-item">
-            <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png" >
-            <div id="checkout-inyourcart-item-desc">
-              <h2>Oculus Rift</h2>
-              <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-              <p>Usually ships in 2 business days</p>
-              <p>Qty. 1 @ $599.00 USD</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div id="checkout-inyourcart-item">
-            <img src="https://s3-us-west-1.amazonaws.com/devmtn-oculus/Cart+Component/rift.png" >
-            <div id="checkout-inyourcart-item-desc">
-              <h2>Oculus Rift</h2>
-              <p>Includes: headset, sensor, remote, cables, Xbox One controller, and Lucky's Tale.</p>
-              <p>Usually ships in 2 business days</p>
-              <p>Qty. 1 @ $599.00 USD</p>
-            </div>
-          </div>
-        </li>
+        
       </ul>
-      
     </div>
     
     
@@ -91,27 +58,27 @@
       <div class="checkout-form-row">
         <div class="checkout-form-item">
           <h3>First Name</h3>
-          <input type="text">
+          <input #firstname type="text">
         </div>
         <div class="checkout-form-item">
           <h3>Last Name</h3>
-          <input type="text">
+          <input #lastname type="text">
         </div>
       </div>
       <div class="checkout-form-row">
         <div class="checkout-form-item">
           <h3>Phone</h3>
-          <input type="text">
+          <input #phone type="text">
         </div>
         <div class="checkout-form-item">
           <h3>Email</h3>
-          <input type="text">
+          <input #email type="text">
         </div>
       </div>
       <div class="checkout-form-row">
         <div class="checkout-form-item">
           <h3>Address Type</h3>
-          <select>
+          <select #addresstype>
             <option value="residential" selected>Residential</option>
             <option value="commercial">Commercial</option>
           </select>
@@ -120,21 +87,21 @@
       <div class="checkout-form-row">
         <div class="checkout-form-item">
           <h3>Address</h3>
-          <input type="text">
+          <input #address type="text">
         </div>
         <div class="checkout-form-item">
           <h3>Address 2</h3>
-          <input type="text">
+          <input #address2 type="text">
         </div>
       </div>
       <div class="checkout-form-row">
         <div class="checkout-form-item">
           <h3>City</h3>
-          <input type="text">
+          <input #city type="text">
         </div>
         <div class="checkout-form-item">
           <h3>State/Province</h3>
-          <select>
+          <select #state>
             <option value=""><em class="_4qba" data-intl-translation="Select..." data-intl-trid=""><!-- react-text: 191 -->Select...<!-- /react-text --></em></option>
             <option value="AA">AA</option>
             <option value="AE">AE</option>
@@ -196,11 +163,11 @@
       <div class="checkout-form-row">
         <div class="checkout-form-item">
           <h3>Zip/Postal Code</h3>
-          <input type="text">
+          <input #zip type="text">
         </div>
         <div class="checkout-form-item">
           <h3>Country</h3>
-          <select>
+          <select #country>
             <option value="AU">Australia</option>
             <option value="AT">Austria</option>
             <option value="BE">Belgium</option>
@@ -237,7 +204,19 @@
       </div>
       <div id="checkout-payment-content">
         <div class="button-center">
-          <button type="button">Pay with Stripe</button>
+          <button (click)="submitOrder({
+            firstname: firstname.value,
+            lastname: lastname.value,
+            phone: phone.value,
+            email: email.value,
+            addresstype: addresstype.value,
+            address: address.value,
+            address2: address2.value,
+            city: city.value,
+            state: state.value,
+            zip: zip.value,
+            country: country.value
+          })" type="button">Pay with Stripe</button>
         </div>
       </div>
     </div>
