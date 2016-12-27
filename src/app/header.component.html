@@ -38,23 +38,23 @@
                 </a>
             </div>
 <!-- If USER LOGGED IN, show this-->
-            <div class="header-logged-in"></div>
+            <div *ngIf="currentUser.username" class="header-logged-in"></div>
 
 
             <div class="header-account">
                 <!--this works-->
-                <p style="color: white">{{(user$ | async)?.username}}</p>
-                <a class="account-cart" [routerLink]="['cart']">
+                <!--<p style="color: white">{{(user$ | async)?.username}}</p>-->
+                <a *ngIf="currentUser.username" class="account-cart" [routerLink]="['cart']">
                     <div class="cart-logo"></div>
                 </a>
 <!-- If USER LOGGED IN, show this-->
-            <div class="header-logged-in">
+            <div *ngIf="currentUser.username" class="header-logged-in">
                 <div class="header-logged-in-wrapper">
                     <span>
                         <a class="header-logged-in-account-link" (click)="onProfileClick()">
                             <em class="header-logged-in-account-em">
                                 <i class="logged-in-icon"></i>
-                                <span class="header-logged-in-accountname">username</span>
+                                <span class="header-logged-in-accountname">{{currentUser.username}}</span>
                                 <i class="logged-in-arrow"></i>
                             </em>
                         </a>
@@ -62,7 +62,7 @@
                 </div>
             </div>
 <!-- If USER NOT LOGGED IN, show this-->
-                <!--<a class="login" [routerLink]="['login']">Login</a>-->
+                <a *ngIf="!currentUser.username" class="login" [routerLink]="['login']">Login</a>
             </div>
         </div>
       </div>
@@ -106,18 +106,18 @@
                             </a>
                         </li>
                         <li class="dropdown-li">
-                            <a>
+                            <a [routerLink]="['gear-vr']">
                                 <div class="dropdown-div">My Gear VR</div>
                             </a>
                         </li>
                         <li class="dropdown-li">
-                            <a>
+                            <a [routerLink]="['rift']">
                                 <div class="dropdown-div">My Rift</div>
                             </a>
                         </li>
                         <li class="dropdown-li" style="border-bottom: none;">
                             <a>
-                                <div class="dropdown-div">Logout</div>
+                                <div class="dropdown-div" (click)="logOut()">Logout</div>
                             </a>
                         </li>
 
@@ -222,13 +222,13 @@
                         <li class="loggedIn-dropdown-li" [routerLink]="['my/orders']">
                             <em class="loggedIn-dropdown-li-em">My Orders</em>
                         </li>
-                        <li class="loggedIn-dropdown-li">
+                        <li class="loggedIn-dropdown-li" [routerLink]="['gear-vr']">
                             <em class="loggedIn-dropdown-li-em">My Gear VR</em>
                         </li>
-                        <li class="loggedIn-dropdown-li">
+                        <li class="loggedIn-dropdown-li" [routerLink]="['rift']">
                             <em class="loggedIn-dropdown-li-em">My Rift</em>
                         </li>
-                        <li class="loggedIn-dropdown-li">
+                        <li class="loggedIn-dropdown-li" (click)="logOut()">
                             <em class="loggedIn-dropdown-li-em">Logout</em>
                         </li>
                     </ul>
