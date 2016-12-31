@@ -699,9 +699,83 @@
 	border-color: #148aff;
 }
 
-
-
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 11											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.section11 {
+    display: block;
+    background-color: #f0f0f0;
+	padding: 100px 0;
+	text-align: center;
+	width: 100%;
+}
+.section11-h2 {
+    font-family: "Oculus Sans Bold", Arial, Helvetica, sans-serif;
+    display: block;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+    color: #202020;
+    font-weight: 900;
+	margin: 0 0 12px;
+    font-size: 30px;
+	line-height: 40px;
+    padding: 0 20px 40px;
+}
+.section11-email {
+    -webkit-writing-mode: horizontal-tb;
+    text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+    -webkit-rtl-ordering: logical;
+	user-select: text;
+	cursor: auto;
+    margin: 0;
+    font: inherit;
+    -webkit-appearance: none;
+	outline: 0;
+    line-height: normal;
+    border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 14px 15px;
+	width: 220px;
+	background-color: #fff;
+	color: #1c1e20;
+	box-sizing: border-box;
+    margin-bottom: 10px;
+	width: 350px;
+}
+.section11-button {
+    display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
+	font-weight: 600;
+	margin: 0 6px 12px;
+	text-align: center;
+	box-sizing: border-box;
+    border-radius: 22px;
+	border: 2px solid #1c1e20;
+	background-color: transparent;
+	color: #323436;
+	padding: 11px 39px 10px;
+	min-width: 180px;
+	font-size: 14px;
+	-webkit-transition: color .3s,background .3s,border .3s;
+	transition: color .3s,background .3s,border .3s;
+    -webkit-appearance: button;
+	cursor: pointer;
+    margin-left: 20px;
+	margin-right: 0;
+}
 
 
 
@@ -1061,6 +1135,27 @@
     .grid-50 {
         float: left;
 	    width: 50%;
+    }
+}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			 Max-Width: 1024	 				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+@media screen and (max-width: 1024px ) {
+    .section11-signup {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .section11-email {
+        margin-bottom: 15px;
+	    width: 100%;
+    }
+    .section11-button {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-left: auto;
+	    margin-right: auto;
     }
 }
 
