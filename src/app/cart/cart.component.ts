@@ -25,18 +25,18 @@ export class CartComponent implements OnInit {
   constructor(private store: Store<any>, private mainService: MainService, private router: Router) {
     store.select('user')
       .subscribe( res => {
-        console.log("from currentuser subscribe", res);
+        // console.log("from currentuser subscribe", res);
         this.currentUser = res;
       });
     store.select('cart')
       .subscribe( res => {
-        console.log("from cart subscribe", res);
+        // console.log("from cart subscribe", res);
         this.cartProps = {
           cart: res.cart,
           available: res.available,
           totalprice: res.totalprice
         }
-        this.cost = this.cartProps.totalprice;
+        this.cost = this.cartProps.totalprice + 30;
       });
   }
 
@@ -45,7 +45,7 @@ export class CartComponent implements OnInit {
 
     // if logged in vs not
     if (this.currentUser.username) {
-      console.log("user logged in");
+      // console.log("user logged in");
       this.mainService.getUserInfo(this.currentUser.username)
         .subscribe(res => {
           this.store.dispatch({
@@ -55,7 +55,7 @@ export class CartComponent implements OnInit {
         });
 
     } else {
-      console.log("user not logged in");
+      // console.log("user not logged in");
     }
   }
 
@@ -70,17 +70,17 @@ export class CartComponent implements OnInit {
   availToCart(availItem) {
     // if logged in vs not
     if (this.currentUser.username) {
-      console.log("user logged in", this.currentUser);
+      // console.log("user logged in", this.currentUser);
       this.store.dispatch({
         type: MOVE_ITEM_AVAIL_TO_CART,
         payload: availItem
       });
       this.mainService.addItemToCart(availItem, this.currentUser.username)
         .subscribe(res => {
-          console.log("added item to database")
+          // console.log("added item to database")
         })
     } else {
-      console.log("user not logged in");
+      // console.log("user not logged in");
       this.store.dispatch({
         type: MOVE_ITEM_AVAIL_TO_CART,
         payload: availItem
@@ -91,18 +91,18 @@ export class CartComponent implements OnInit {
   cartToAvail(cartItem) {
     // if logged in vs not
     if (this.currentUser.username){
-      console.log("user logged in")
+      // console.log("user logged in")
       this.store.dispatch({
         type: MOVE_ITEM_CART_TO_AVAIL,
         payload: cartItem
       });
       this.mainService.removeItemFromCart(cartItem, this.currentUser.username)
         .subscribe(res => {
-          console.log("removed item from database")
+          // console.log("removed item from database")
         })
 
     } else {
-      console.log("user not logged in");
+      // console.log("user not logged in");
       this.store.dispatch({
         type: MOVE_ITEM_CART_TO_AVAIL,
         payload: cartItem
