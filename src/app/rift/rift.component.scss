@@ -3,7 +3,7 @@
     z-index: 1000;
     position: relative;
     background: 0 0;
-    display: block
+    display: block;
 }
 
 .page-product {
@@ -904,11 +904,1187 @@
     background: #fff;
     color: #fff;
     height: 600px;
+    top: 325px
+   
+}
+
+.section8-div1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: bottom center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    background-image: url(https://static.oculus.com/web/www_static/production/US/f9b466bda1311a8c9257bce91200461838b6680f/images/rift/phone/connected-bg1.jpg);
+}
+
+.section8-div3-content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+    padding-bottom: 30px;
+    max-width: 530px;
+}
+
+.section8-div4-content2 {
+    display: block;
+}
+
+.section8-div5-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    color: #202020;
+    font-weight: 900;
+    margin: 0 0 12px;
+    font-size: 30px;
+    line-height: 40px;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+    transition-delay: 0ms;
+
+}
+
+.section8-div6-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0 0 24px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    transition-delay: 25ms;
+    position: relative;
+    bottom: 200px;
+
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 9                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section9 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+    background-color: #f0f0f0;
     top: 322px;
+    height: 1000px;
+}
+
+.section9-div1-container {
+   display: block;
+}
+
+.section9-div2-content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+}
+
+.section9-div3-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+}
+
+.section9-div4-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0 0 24px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.section9-div5-specs {
+    max-width: 800px;
+    margin: auto;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    max-width: 800px;
+    margin: auto;
+    transition-delay: 475ms;
+}
+
+.section9-div6-accord1 {
+    cursor: pointer;
+    text-align: left;
+}
+
+.section9-div7-recommended{
+
+}
+
+.section9-div8-plus {
+    float: right;
+    font-size: 30px;
+    transition-duration: 1s;
+    vertical-align: text-bottom;
+    transform: rotate(0deg);
+}
+
+.section9-div9-accord2 {
+    cursor: pointer;
+    text-align: left;
+}
+
+.section9-div11-compat {
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #d2d2d2;
+    padding: 14px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 16px 8px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 16px 8px 0 rgba(0,0,0,.1);
+    box-shadow: 0 16px 8px 0 rgba(0,0,0,.1);
+    transition-delay: 0ms;
+}
+
+.section9-div12-compat-cont {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section9-div13-h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    color:inherit;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.section9-div14-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0 0 24px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 20px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#section9-div15-button {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 6px 12px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 22px;
+    border: 2px solid #1c1e20;
+    background-color: transparent;
+    color: #323436;
+    // padding: 11px 39px 10px;
+    // min-width: 180px;
+    // font-size: 14px;
+    // -webkit-transition: color .3s,background .3s,border .3s;
+    transition: color .3s,background .3s,border .3s;
+    font-size: 12px;
+    padding: 5px 29px 4px;
+    min-width: 150px;
+
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    height: 0;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 34px 0;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.spacer {
+    box-sizing: content-box;
+    height: 0;
+    margin: 0!important;
+    height: 0;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 34px 0;
+    border-bottom: 1px solid #d2d2d2;
+    margin: 34px 0!important;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 10                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section10 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+    color: #fff;
+    background-color: #f0f0f0;
+    height: 600px;
+    margin: 0;
+    padding: 0!important;
+    overflow: hidden;
+}
+
+.section10-div1-pic {
+    background-clip: border-box;
+    background-image: url(https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/rift/phone/ready-pcs-laptops.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    height: 100%;
+    margin-top: 0;
+    transform: translate3d(0px, -38.495px, 0px);
+}
+
+.section10-div2-container {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.section10-div3-content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+    max-width: 850px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section10-div4-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    color: #202020;
+    font-weight: 900;
+    margin: 0 0 12px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.section10-div4-h2 {
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+
+}
+
+.section10-div5-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0 0 24px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a:focus, a:hover {
+    color: #0077c0;
+}
+
+a:active, a:focus, a:hover, button:focus {
+    outline: 0;
+}
+a {
+    background: 0 0;
+    text-decoration: none;
+    color: #1574d4;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+} 
+
+.oc-button--cta-primary, .oc-button--cta-secondary {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 6px 12px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 
+.oc-button--cta-secondary {
+    border-radius: 22px;
+    border: 2px solid #1c1e20;
+    background-color: transparent;
+    color: #323436;
+    padding: 11px 39px 10px;
+    min-width: 180px;
+    font-size: 14px;
+    -webkit-transition: color .3s,background .3s,border .3s;
+    transition: color .3s,background .3s,border .3s;
+}
 
+.wow.wow-in-view {
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+}
+.oc-button--cta-secondary.oc-button--cta-secondary--inverse {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.page-rift-headset .section.ready-pcs-laptops .container .content .oc-button--cta-secondary {
+    margin-top: 13px;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 11                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section11 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+    height: 690px;
+    background: url(https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/rift/phone/earphone-accessory.jpg) no-repeat #f0f0f0;
+    background-size: initial;
+    background-position-x: center;
+
+}
+
+.section11-div1-container {
+    
+}
+
+.section11-div2-content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+}
+
+.section11-div3-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    color: #202020;
+    font-weight: 900;
+    margin: 0 0 12px;
+    font-size: 30px;
+    line-height: 40px;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+}
+
+.section11-div4-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+button {
+    -webkit-writing-mode: horizontal-tb;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px BlinkMacSystemFont;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+
+}
+
+.oc-button--cta-primary, .oc-button--cta-secondary {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 6px 12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.oc-button--cta-primary {
+    border-radius: 22px;
+    border: 2px solid #1c1e20;
+    background-color: #1c1e20;
+    color: #fff;
+    padding: 11px 39px 10px;
+    min-width: 180px;
+    font-size: 14px;
+    -webkit-transition: color .3s,background .3s,border .3s;
+    transition: color .3s,background .3s,border .3s;
+}
+
+.oc-button--cta-primary.oc-button--cta-primary--small {
+    font-size: 12px;
+    padding: 5px 29px 4px;
+    min-width: 150px;
+}
+.oc-button--cta-primary {
+    background-color: #1574d4;
+    border-color: #1574d4;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 12                                          // 
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section12 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+}
+
+.section12-div1-container {
+    text-align: center;
+}
+
+.section12-div2-content {
+    display: inline-block;
+}
+
+.section12-image {
+    border: none;
+    width: 100%;
+    margin-left: 60px;
+}
+
+.section12-div3-content2 {
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+    display: inline-block;
+    padding-top: 30px;
+    vertical-align: top;
+    transition-delay: 650ms;
+
+}
+
+.section12-div4-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    font-weight: 900;
+    margin: 0 0 12px;
+    font-size: 30px;
+    line-height: 40px;
+    color: inherit;
+    font-weight: 100;
+    margin-bottom: 25px;
+    
+}
+
+.section12-div5-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+a {
+    background: 0 0;
+    text-decoration: none;
+    color: #1574d4;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: none;
+    cursor: auto;
+    color: #1574d4;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section12-div6-p2 {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+button {
+    -webkit-writing-mode: horizontal-tb;
+        text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px BlinkMacSystemFont;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    font: inherit;
+    overflow: visible;
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+
+
+}
+
+cta-primary.oc-button--cta-primary--small {
+    font-size: 12px;
+    padding: 5px 29px 4px;
+    min-width: 150px;
+}
+.oc-button--cta-primary {
+    background-color: #1574d4;
+    border-color: #1574d4;
+}
+.oc-button--cta-primary {
+    border-radius: 22px;
+    border: 2px solid #1574d4;
+    background-color: #1574d4;
+    color: #fff;
+    padding: 11px 39px 10px;
+    min-width: 180px;
+    font-size: 14px;
+    -webkit-transition: color .3s,background .3s,border .3s;
+    transition: color .3s,background .3s,border .3s;
+}
+.oc-button--cta-primary, .oc-button--cta-secondary {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 6px 12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 13                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section13 {
+    display: block;
+    position: relative;
+    color: #323436;
+    background: #fff;
+}
+
+.section13-div1-container {
+
+}
+
+.section13-div2-content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+    padding-bottom: 0;
+}
+
+.section13-div3-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    font-weight: 900;
+    margin: 0 0 12px;
+    font-size: 30px;
+    line-height: 40px;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    color: inherit;
+    font-weight: 100;
+    transition-delay: 0ms;
+}
+
+.section13-div4-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    line-height: 28px;
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    transition-delay: 0ms;
+}
+
+.section13-div5-ordering {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 880px;
+    max-width: 1260px;
+    padding-left: 40px;
+    padding-right: 40px;
+    opacity: 1!important;
+    -webkit-transform: translate(0,0)!important;
+    -moz-transform: translate(0,0)!important;
+    -ms-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+    text-align: center;
+    min-width: 0;
+    transition-delay: 0ms;
+
+}
+
+.section13-div6-item1 {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    padding: 10px;
+}
+
+.section13-div7-add {
+}
+
+.section13-div8-info {
+    float: left;
+    text-align: left;
+}
+
+.section13-product-title {
+    font-size: 20px;
+    text-align: left;
+}
+
+.section13-product-price {
+    color: #1574d4;
+    display: block;
+    text-align: left;
+}
+
+sup {
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -.5em;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.section13-div9-disclaimer {
+    color: #a4a5a6;
+    display: block;
+    font-size: 12px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.section13-clear {
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    width: 0;
+}
+
+.section13-specs {
+    display: block;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    margin: 34px 0;
+    margin: 12px 0;
+
+}
+
+.section13-div11-spec1 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.section13-headset {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section13-div13-spec2 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.section13-sensor {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    margin-right: 300px;
+}
+
+.section13-div13-spec3 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.section13-remote {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section13-div14-spec4 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.section13-xbox {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section13-div15-item2 {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    padding: 10px;
+}
+
+.section13-controllers {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section13-rock {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section13-requires {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+}
+
+.section13-div17-item3 {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33333333%;
+    padding: 10px;
+}
+
+.section13-div18-disclaimer {
+    color: #a4a5a6;
+    display: block;
+    font-size: 12px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+.section13-div19-message {
+}
+
+.section13-twosensor {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+} 
+
+.section13-touchcontroller {
+    font-size: 16px;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    margin-right: 185px;
+}
+
+.section13-after {
+    clear: both;
+    content: " ";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 14                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section14 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+}
+
+.section14-content {
+    margin: auto;
+    max-width: 640px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 60px 25px;
+
+}
+
+.section14-div2-icon {
+    display: block;
+    margin: 0 auto;
+    background-image: url(https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/rift/location.png);
+    background-repeat: no-repeat;
+    background-size: 82px 82px;
+    width: 82px;
+    height: 82px;
+}
+
+.section14-div3-h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font-family: "Oculus Sans",Arial,Helvetica,sans-serif;
+    font-size: 30px;
+    color: inherit;
+    font-weight: 100;
+    margin: 30px;
+
+}
+
+.section14-div4-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    margin: 0 0 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    background: 0 0;
+    text-decoration: none;
+    color: #1574d4;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+
+.oc-button--cta-secondary {
+    border-radius: 22px;
+    border: 2px solid #1c1e20;
+    background-color: transparent;
+    color: #323436;
+    padding: 11px 39px 10px;
+    min-width: 180px;
+    font-size: 14px;
+    -webkit-transition: color .3s,background .3s,border .3s;
+    transition: color .3s,background .3s,border .3s;
+}
+
+.oc-button--cta-primary, .oc-button--cta-secondary {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0 6px 12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+//                          Section 15                                          //
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
+
+.section15 {
+    position: relative;
+    color: #323436;
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #16181a;
+
+}
+
+.section15-div2-content {
+    max-width: 900px;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    color: #777879;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section15-div3-p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    
+}
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //                          Media Queries                                     //
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
@@ -1013,6 +2189,76 @@
     .section8 {
         height: 900px;
     }
+    .section8-div1 {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/f9b466bda1311a8c9257bce91200461838b6680f/images/rift/tablet/connected-bg1.jpg);
+    }
+    .section8-div3-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        max-width: 550px;
+    }
+    .section8-div5-h2 {
+        line-height: 38px;
+    }
+    .section8-div6-p {
+        max-width: 483px;
+        margin: 0 auto;
+    }
+    .section9-div2-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .section9-div3-h2 {
+        line-height: 38px;
+    }
+    .section10-div1-pic {
+        background-image: url(https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/rift/ready-pcs-laptops.jpg);
+    }
+    .section10-div3-content {
+        padding-top: 100px;
+        padding-bottom: 100px;  
+    }
+    .section10-div4-h2 {
+        line-height: 38px;
+    }
+    .section11 {
+        height: 950px;
+        background: url(https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/rift/tablet/earphone-accessory.jpg) no-repeat #f0f0f0;
+        background-size: contain;
+        background-position-x: center;
+        background-position-y: 270px;
+    }
+    .section11-div2-content {
+        padding-top: 100px;
+        padding-bottom: 100px;  
+    }
+    .section11-div3-h2 {
+        line-height: 38px;
+    }
+    .section12-div3-content2 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .section12-div2-h2 {
+        line-height: 38px;
+    }
+    .section13-div2-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .section13-div3-h2 {
+        line-height: 38px;
+    }
+    .section13-product-title {
+        font-size: 16px;
+    }
+    .section14-content {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .section14-div3-h2 {
+        line-height: 38px;
+    }
 }
 
 
@@ -1109,10 +2355,10 @@
     }
     .section2-div1-content {
         transition: opacity .6s .1s,transform .6s ease;
-        position: absolute;
+        position: relative;
         left: 0;
         right: 0;
-        top: 0;
+        top: -28px;
         bottom: 0;
         height: 105%;
         background: url(https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/rift/travel-bg.jpg) center center no-repeat;
@@ -1329,4 +2575,258 @@
         color: #fff;
         height: 900px;
     }
+    .section8-div1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: center center no-repeat;
+        background-size: cover;
+        background-image: url(https://static.oculus.com/web/www_static/production/US/f9b466bda1311a8c9257bce91200461838b6680f/images/rift/connected-bg1.jpg);
+    }
+    .section8-div2-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section8-div3-content {
+        max-width: 600px;
+    }
+    .section8-div5-h2 {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+        position: relative;
+        bottom: 200px;
+    }
+    .section8-div6-p {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section9-div1-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+        position: relative;
+        // top: 322px;
+    }
+    .section9-div2-content {
+        max-width: 840px;
+    }
+    .section9-div3-h2 {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section9-div4-p {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section9-div5-specs {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+        margin: auto;
+    }
+    .section9-div11-compat {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section9-div12-compat-cont {
+        text-align: left;
+        padding-left: 70px;
+        margin: 0;
+
+    }
+    .section9-div12-compat-cont {
+        padding: 0;
+        margin: 0;  
+    }
+    .section9-div14-p {
+        margin: 0;
+    }
+    #section9-div15-button {
+        margin-left: 0;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+    }
+    .section10 {
+        height: 900px;
+    }
+
+    .section10-div2-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section10-div4-h2 {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section10-div5-p {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+
+    .wow {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
 }
+    .page-product .section .container .oc-button--cta-primary, .page-product .section .container .oc-button--cta-secondary {
+        margin-left: 0;
+}
+
+    .section11 {
+        background: url(https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/rift/earphone-accessory.jpg) no-repeat #f0f0f0;
+        background-size: initial;
+        background-position-x: center;
+        background-position-y: 285px;
+        height: 1200px;
+    }
+    .section11-div1-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section11-div3-h2 {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section11-div4-p {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+
+    .section12-div1-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+        padding: 100px 0;
+    }
+    .section12-div3-content2 {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+        max-width: 380px;
+        padding-bottom: 16%;
+        text-align: left;
+        vertical-align: bottom;
+
+    }
+    .page-product .section .container .oc-button--cta-primary {
+        margin-left: 0;
+    }
+    .section13-div1-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+    .section13-div3-h2 {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section13-div4-p {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section13-div5-ordering {
+        opacity: 0;
+        -webkit-transform: translate(0,50px);
+        -moz-transform: translate(0,50px);
+        -ms-transform: translate(0,50px);
+        transform: translate(0,50px);
+        -webkit-transition: opacity .6s .1s,transform .6s ease;
+        transition: opacity .6s .1s,transform .6s ease;
+    }
+    .section13-product-title {
+        font-size: 20px;
+    }
+    .section15-div1-container {
+        max-width: calc(1184px + 80px);
+        margin: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: left;
+    }
+}
+
