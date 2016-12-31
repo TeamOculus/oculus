@@ -612,14 +612,92 @@
     max-width: 100%;
 }
 
-
-
-
-
-
-
-
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 10											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.section10 {
+    display: block;
+    position: relative;
+	color: #323436;
+	background: #fff;
+    background-color: #f0f0f0;
+	padding: 100px 0 0;
+	text-align: center;
+}
+.section10:before {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 34%;
+	content: "";
+	background-color: #fff;
+}
+.section10-grid {
+    margin-left: auto;
+	margin-right: auto;
+    min-width: inherit;
+	max-width: 980px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.section10-grid-item {
+    box-sizing: border-box;
+    display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+.grid-33 {
+    width: 33%;
+}
+.section10-buy-now {
+    background: 0 0;
+	text-decoration: none;
+	color: #1574d4;
+	transition: color .2s;
+}
+.section10-grid-content {
+    padding: 60px 30px;
+	border: 1px solid #cbcbcb;
+	background: #fff;
+}
+.section10-grid-logo {
+    display: block;
+	min-height: 185px;
+}
+.section10-grid-logo img {
+    position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 200px;
+	padding-top: 80px;
+}
+.section10-grid-button {
+    display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
+	font-weight: 600;
+	margin: 0 6px 12px;
+	text-align: center;
+	box-sizing: border-box;
+    border-radius: 22px;
+	border: 2px solid #1c1e20;
+	color: #fff;
+	padding: 11px 39px 10px;
+	min-width: 180px;
+	font-size: 14px;
+    background-color: #1574d4;
+	border-color: #1574d4;
+    opacity: 1!important;
+    transform: translate(0,0)!important;
+    transition-delay: 0ms;
+}
+.section10-grid-button:hover {
+    background-color: #148aff;
+	border-color: #148aff;
+}
 
 
 
@@ -958,6 +1036,31 @@
         line-height: 144%!important;
         margin-bottom: 70px;
         text-align: center;
+    }
+// Section 10
+    .section10-grid-content {
+        max-width: 500px;
+	    margin: 0 auto;
+    }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 			 Max-Width: 767px	 				//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+@media screen and (max-width: 767px) {
+    .grid-100 {
+        clear: both;
+        width: 100%;
+    }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 	 	    Min: 768px <--->  Max: 959px 			//																		
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+@media screen and (min-width: 768px) and (max-width: 959px) {
+    .grid-50 {
+        float: left;
+	    width: 50%;
     }
 }
 
@@ -1401,6 +1504,9 @@
         margin-bottom: 0;
         text-align: center;
     }
-
+// Section 10
+    .section10-grid-button {
+        transition: opacity .6s .1s,transform .6s ease;
+    }
 
 }
