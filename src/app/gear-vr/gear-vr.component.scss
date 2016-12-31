@@ -461,8 +461,20 @@
     transition-delay: 250ms;
 }
 
-
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+// 																							//
+// 	 									Section 7											//
+// 																							//
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+.section7 {
+    display: block;
+    position: relative;
+    color: #323436;
+    background: #fff;
+    background-image: url('https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/gearvr/product-gallery/gallery-bg.jpg');
+	background-position: center center;
+	background-size: cover;
+}
 
 
 
@@ -581,6 +593,10 @@
         width: 100%;
         height: 0;
         padding-top: 64.84%;
+    }
+// Section 7
+    .section7 {
+        padding-top: 50px;
     }
 }
 
@@ -732,7 +748,10 @@
         height: 0;
         padding-top: 64.84%;
     }
-    
+// Section 7
+    .section7 {
+        padding: 70px 0 0;
+    }
 }
 
 
@@ -1129,6 +1148,10 @@
         line-height: 1.5;
         margin-bottom: 0;
         text-align: left;
+    }
+// Section 7
+    .section7 {
+        padding: 100px 0;
     }
 
 }
