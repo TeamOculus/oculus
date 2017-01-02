@@ -54,4 +54,9 @@ export class MainService {
    console.log("from getorderinfo", username);
    return this.http.get(`http://localhost:3000/api/orders/${username}`).map(res => res.json());
   }
+
+  sendToken(token){
+    console.log("from sendToken", token);
+    return this.http.post(`http://localhost:3000/api/stripe`, token);
+  }
 }

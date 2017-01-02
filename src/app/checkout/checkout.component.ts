@@ -113,14 +113,19 @@ export class CheckoutComponent implements OnInit {
     }
     // stripe here
     let saveOrderPointer = this.saveOrder;
+    let mainServicePointer = this.mainService;
+    let costPointer = this.cost;
     var handler = (<any>window).StripeCheckout.configure({
-      key: config.stripe,
+      key: config.stripepk,
       locale: 'auto',
       token: function (token: any) {
           // You can access the token ID with `token.id`.
           // Get the token ID to your server-side code for use.
           console.log("from token", token.id)
-
+          mainServicePointer.sendToken({token: token, cost: costPointer})
+            .subscribe(res => {
+              console.log("sent token")
+            });
           //put into db if get token back
           saveOrderPointer(shippingInfo);
 
