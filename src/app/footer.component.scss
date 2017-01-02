@@ -107,6 +107,9 @@
 					font-weight: 400;
 					text-decoration: none;
 				}
+				.sitemap1-grid-ul-item-a:hover, .sitemap1-grid-ul-item-a:focus {
+					color: #fff;
+				}
 			}
 
 			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
@@ -141,6 +144,10 @@
 				letter-spacing: .025em;
 				text-transform: uppercase;
 			}
+			.sitemap2-grid-column-h3:hover {
+				background: #323436;
+				color: #fff;
+			}
 			.sitemap2-grid-column-ul {
 				display: block;
 				-webkit-margin-before: 1em;
@@ -165,6 +172,13 @@
 					color: #777879;
 					font-weight: 400;
 					text-decoration: none;
+				}
+				.sitemap2-grid-ul-item:hover {
+					background: #323436;
+					
+					.sitemap2-grid-ul-item-a {
+						color: #fff;
+					}
 				}
 			}
 		}
