@@ -357,9 +357,25 @@
 	background: #fff;
     height: 900px;
 }
+
+.section5-bg {
+   
+}
+.section5-bg-wrap {
+    
+}
+
 .section5-image {
     border: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
 }
+
 .section5-container {
     margin: auto;
 }
@@ -474,6 +490,18 @@
     background-image: url('https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/gearvr/product-gallery/gallery-bg.jpg');
 	background-position: center center;
 	background-size: cover;
+}
+.section7-div1 {
+    height: 876px;
+}
+.section7-div2 {
+    background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 0;
+    padding-top: 41%;
+    background-image: url('https://static.oculus.com/web/www_static/production/US/373919fbb30d1dce2ee64673e43ae30cdc8dc2ed/images/gearvr/product-gallery/desktop/01.png');
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
@@ -876,6 +904,9 @@
     .section7 {
         padding-top: 50px;
     }
+    .section7-div1 {
+        height: 276px;
+    }
 // Section 8
     .section8 {
         padding: 90px 0 0;
@@ -998,6 +1029,34 @@
     .section5-bg {
         display: none;
     }
+    .section5-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0
+    }
+    .section5-bg-wrap {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        height: 100%
+    }
+
+
+    .section5-image {
+        border: none;
+        position: relative;
+        height: 100%;
+        width: 100%;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
     .section5-container-content {
         max-width: 500px;
 	    margin: 0 auto;
@@ -1059,6 +1118,9 @@
 // Section 7
     .section7 {
         padding: 70px 0 0;
+    }
+    .section7-div1 {
+        height: 450px;
     }
 // Section 8
     .section8-container-content {
@@ -1413,11 +1475,11 @@
 // Section 5
     .section5 {
         padding: 100px 0;
+	    background: #1c1e20;
         background: 0 0;
         min-height: 0;
         padding: 24px 0 0;
         overflow: hidden;
-	    background: #1c1e20;
     }
     .section5-bg {
         right: 0;
@@ -1426,6 +1488,8 @@
         bottom: 0;
         left: 0;
         display: block;
+        width: 100%;
+        height: 100%;
     }
     .section5-bg-wrap {
         right: 0;
