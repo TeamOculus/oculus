@@ -43,9 +43,9 @@
 
             <div class="header-account">
                 <!--this works-->
-                <!--<p style="color: white">{{(user$ | async)?.username}}</p>-->
-                <a class="account-cart" [routerLink]="['cart']">
+                <a *ngIf="cartProps.cart.length !== 0" class="account-cart" [routerLink]="['cart']">
                     <div class="cart-logo"></div>
+                    <div class="cart-items cart-items-p">{{cartProps.cart.length}}</div>
                 </a>
 <!-- If USER LOGGED IN, show this-->
             <div *ngIf="currentUser.username" class="header-logged-in">
