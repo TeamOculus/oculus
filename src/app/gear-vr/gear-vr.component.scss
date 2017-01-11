@@ -357,18 +357,6 @@
 	background: #fff;
     height: 900px;
 }
-
-.section5-image {
-    border: none;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0)
-}
-
 .section5-container {
     margin: auto;
 }
@@ -428,10 +416,7 @@
     position: relative;
 	color: #323436;
 	background: #fff;
-    height: 900px;
-}
-.section6-image {
-    border: none;
+    // height: 900px;
 }
 .section6-container {
     margin: auto;
@@ -1086,9 +1071,6 @@
         padding: 70px 0 0;
         height: auto;
     }
-    .section6-bg {
-        display: none;
-    }
     .section6-container-content {
         max-width: 500px;
 	    margin: 0 auto;
@@ -1544,48 +1526,23 @@
     }
 // Section 6
     .section6 {
-        padding: 100px 0;
+        // padding: 20px 0;
         background: 0 0;
         min-height: 0;
-        padding: 24px 0 0;
+        // padding: 24px 0 0;
         overflow: hidden;
-	    background: #1c1e20;
+	    background: #fff;
     }
-    .section6-bg {
-        right: 0;
-        top: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: block;
-    }
-    .section6-bg-wrap {
-        right: 0;
-        top: 0;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-	    height: 100%;
-    }
-    .section6-image {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        -webkit-transform: translate(0,0);
-        -moz-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        transform: translate(0,0);
-    }
+
     .section6-container {
-        max-width: calc(1184px + 80px);
+        // max-width: calc(1184px + 80px);
         margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
+        // padding-left: 40px;
+        // padding-right: 40px;
         text-align: left;
     }
     .section6-container-content {
-        padding: 0;
+        padding: 40px;
         width: 430px;
         top: 50%;
         // top: 33%;
@@ -1613,6 +1570,31 @@
         line-height: 1.5;
         margin-bottom: 0;
         text-align: left;
+    }
+    .section6-container-content {
+        max-width: 500px;
+	    margin: 0 auto;
+        padding: 0 24px;
+    }
+    .section6-container-content-h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .section6-container-content-p {
+        font-size: 18px;
+        line-height: 144%!important;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    .section6-container-background {
+        background-image: url('https://static.oculus.com/web/www_static/production/US/1b2690a6efbe1b8e4685a1e6973c009440c2e19c/images/gearvr/tablet/head-game.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 64.84%;
     }
 // Section 7
     .section7 {
