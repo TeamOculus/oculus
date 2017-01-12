@@ -10,6 +10,7 @@ var port = 3000;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use('/', express.static(__dirname + './../dist'));
 
 mongoose.connect(config.mongo);
 mongoose.connection.once("open", () => {
