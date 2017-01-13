@@ -13,12 +13,12 @@ export class MainService {
 
   createUser(userObject) {
     console.log("from createUser in service", userObject);
-    return this.http.post('http://localhost:3000/api/users', userObject);
+    return this.http.post('/api/users', userObject);
   }
 
   checkUser(userObject) {
     console.log("from checkUser in service", userObject);
-    return this.http.post('http://localhost:3000/api/users/login', userObject)
+    return this.http.post('/api/users/login', userObject)
             .map(x => {
               return x;
             });
@@ -26,37 +26,37 @@ export class MainService {
   
   getUserInfo(username) {
     console.log("from getuserinfo in service", username);
-    return this.http.get(`http://localhost:3000/api/users/${username}`).map(res => res.json());
+    return this.http.get(`/api/users/${username}`).map(res => res.json());
 
   }
 
   addItemToCart(item, username) {
     console.log("from addItemToCart in service", item);
-    return this.http.put(`http://localhost:3000/api/users/${username}/addtocart`, item);
+    return this.http.put(`/api/users/${username}/addtocart`, item);
   }
 
   removeItemFromCart(item, username) {
     console.log("from removeItemFromCart in service", item);
-    return this.http.put(`http://localhost:3000/api/users/${username}/removefromcart`, item);
+    return this.http.put(`/api/users/${username}/removefromcart`, item);
   }
 
   addToOrders(order) {
     console.log("from addToOrders in service", order);
-    return this.http.post(`http://localhost:3000/api/orders`, order);
+    return this.http.post(`/api/orders`, order);
   }
 
   resetCart(username) {
     console.log("from resetCart in service");
-    return this.http.put(`http://localhost:3000/api/resetcart/${username}`, null);
+    return this.http.put(`/api/resetcart/${username}`, null);
   }
 
   getOrderInfo(username) {
    console.log("from getorderinfo", username);
-   return this.http.get(`http://localhost:3000/api/orders/${username}`).map(res => res.json());
+   return this.http.get(`/api/orders/${username}`).map(res => res.json());
   }
 
   sendToken(token){
     console.log("from sendToken", token);
-    return this.http.post(`http://localhost:3000/api/stripe`, token);
+    return this.http.post(`/api/stripe`, token);
   }
 }
