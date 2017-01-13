@@ -15,8 +15,8 @@ export class RiftComponent implements OnInit {
       const w = window.innerWidth;
       const x = event.clientX;
       // console.log(x / w * 30 - 15);
-      document.querySelector(".section4-div8-hand").style.transform=`translate3d(-38.6875px, 0px, 0px) rotate(${x /w * 30 -15}deg)`;
-      document.querySelector(".section4-div12-wireframe").style.transform=`translate3d(-38.6875px, 0px, 0px) rotate(${x /w * 30 -15}deg)`;
+      document.querySelector(".section4-div8-hand").style.transform=`translate3d(-38.6875px, 0px, 0px) rotate(${x /w * 45 -15}deg)`;
+      document.querySelector(".section4-div12-wireframe").style.transform=`translate3d(-38.6875px, 0px, 0px) rotate(${x /w * 45 -15}deg)`;
     })
     jQuery(".section1-content-div").fadeIn("slow", function() {
       ;
